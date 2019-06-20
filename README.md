@@ -13,6 +13,7 @@ C#, HTML, Java, Javascript, PHP
 Planowane elementy: <br/>
 - główny świat po którym można się poruszać i wchodzić w interakcję z niektórymi "NPC'ami" - oferować oni będą minigry w które możemy zagrać <br/> 
 - NPC się poruszają (https://docs.unity3d.com/Manual/nav-BuildingNavMesh.html) <br/>
+- motyw z plecakiem w którym przechowujemy rzeczy (w naszym przypadku książki) <br/>
 - zdobywanie waluty (pieniędzy) <br/>
 - możliwość wydania waluty w sklepie na książki które podnoszą umiejętności <br/>
 - kreator postaci (możliwość przydzielenia atrybutów) </br>
@@ -29,6 +30,7 @@ W - przód <br/>
 A - lewo <br/>
 S - dół <br/>
 D - prawo <br/>
+B - otwarcie plecaka w którym mamy książki <br/>
 F - interakcja z NPC (wejście w rozmowe) <br/>
 Spacja [przytrzymanie] - złapanie i przesuwanie puzzla <br/>
 LPM (lewy przycisk myszy) - klikanie w quizie, sklepie, kupowanie książek etc 
