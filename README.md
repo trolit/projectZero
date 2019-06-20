@@ -24,4 +24,11 @@ Planowane elementy: <br/>
 ![zdjecie zostalo usuniete](https://i.pinimg.com/originals/fe/a5/c0/fea5c00c531619211f9232d1f6d702af.jpg)
 
 
-
+Klawiszologia (proponowane) <br/>
+W - przód <br/>
+A - lewo <br/>
+S - dół <br/>
+D - prawo <br/>
+F - interakcja z NPC (wejście w rozmowe) <br/>
+Spacja [przytrzymanie] - złapanie i przesuwanie puzzla <br/>
+LPM (lewy przycisk myszy) - klikanie w quizie, sklepie, kupowanie książek etc 
