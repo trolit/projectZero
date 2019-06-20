@@ -34,3 +34,14 @@ B - otwarcie plecaka w którym mamy książki <br/>
 F - interakcja z NPC (wejście w rozmowe) <br/>
 Spacja [przytrzymanie] - złapanie i przesuwanie puzzla <br/>
 LPM (lewy przycisk myszy) - klikanie w quizie, sklepie, kupowanie książek etc 
+
+
+Organizacja(struktura) projektu <br/>
+W Folderze scripts proponuje nastepujaca strukture (tak mogłaby finalnie wyglądać): <br/>
+- NPCs (dotyczy skryptów dla postaci z ktorymi gracz moze wchodzic w interakcje) </br>
+- Player (dotyczy skryptów gracza) <br/>
+- Minigame_Quiz <br/>
+- Minigame_Maze <br/>
+- Minigame_Pinpin <br/>
+- Minigame_Puzzle <br/>
+- Game (dotyczy skryptów jak przechodzenie pomiędzy scenami, zapisywanie stanu gry, ustawienia) <br/>
