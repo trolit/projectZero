@@ -49,3 +49,10 @@ W Folderze scripts proponuje nastepujaca strukture (tak mogłaby finalnie wyglą
 - Minigame_Pinpin <br/>
 - Minigame_Puzzle <br/>
 - Game (dotyczy skryptów jak przechodzenie pomiędzy scenami, zapisywanie stanu gry, ustawienia) <br/>
+
+
+
+
+#### Opt
+- struktura istotnym aspketem projektu <br/>
+- czy gry mogą uczyć? <br/>
