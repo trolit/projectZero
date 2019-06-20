@@ -2,15 +2,15 @@
 
 Projekt realizowany w ramach pracy dyplomowej. 
 
-Wersja Unity: <br/>
+#### Wersja Unity:
 2018.3.12f1 
 
 
-Języki programowania jako atrybuty postaci: <br/>
+#### Języki programowania jako atrybuty postaci
 C#, HTML, Java, Javascript, PHP
 
 
-Planowane elementy: <br/>
+#### Planowane elementy
 - główny świat po którym można się poruszać i wchodzić w interakcję z niektórymi "NPC'ami" - oferować oni będą minigry w które możemy zagrać <br/> 
 - NPC się poruszają (https://docs.unity3d.com/Manual/nav-BuildingNavMesh.html) <br/>
 - motyw z plecakiem w którym przechowujemy rzeczy (w naszym przypadku książki) <br/>
@@ -25,7 +25,9 @@ Planowane elementy: <br/>
 ![zdjecie zostalo usuniete](https://i.pinimg.com/originals/fe/a5/c0/fea5c00c531619211f9232d1f6d702af.jpg)
 
 
-Klawiszologia (proponowane) <br/>
+
+
+#### Klawiszologia (proponowane) 
 W - przód <br/>
 A - lewo <br/>
 S - dół <br/>
@@ -36,7 +38,9 @@ Spacja [przytrzymanie] - złapanie i przesuwanie puzzla <br/>
 LPM (lewy przycisk myszy) - klikanie w quizie, sklepie, kupowanie książek etc 
 
 
-Organizacja(struktura) projektu <br/>
+
+
+#### Organizacja(struktura) projektu 
 W Folderze scripts proponuje nastepujaca strukture (tak mogłaby finalnie wyglądać): <br/>
 - NPCs (dotyczy skryptów dla postaci z ktorymi gracz moze wchodzic w interakcje) </br>
 - Player (dotyczy skryptów gracza) <br/>
