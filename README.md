@@ -6,6 +6,10 @@ Projekt realizowany w ramach pracy dyplomowej.
 2018.3.12f1 
 
 
+#### Wersja .NET Framework:
+v 4.7.1 
+
+
 #### Języki programowania jako atrybuty postaci
 C#, HTML, Java, Javascript, PHP
 
