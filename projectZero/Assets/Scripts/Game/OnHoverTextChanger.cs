@@ -12,13 +12,13 @@ namespace Assets.Scripts.Game
         public void OnPointerEnter(PointerEventData eventData)
         {
             _text.color = Color.cyan;
-            _text.fontSize = 25;
+            _text.fontSize = 20;
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
             _text.color = Color.white;
-            _text.fontSize = 19;
+            _text.fontSize = 16;
         }
     }
 }

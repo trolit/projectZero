@@ -9,5 +9,10 @@ namespace Assets.Scripts.Game
         {
             SceneManager.LoadScene(sceneName);
         }
+
+        public void LoadSceneAsync(string sceneName)
+        {
+            SceneManager.LoadSceneAsync(sceneName);
+        }
     }
 }
