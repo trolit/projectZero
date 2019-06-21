@@ -60,3 +60,9 @@ W Folderze scripts proponuje nastepujaca strukture (tak mogłaby finalnie wyglą
 #### Opt
 - struktura istotnym aspketem projektu <br/>
 - czy gry mogą uczyć? <br/>
+
+
+
+
+#### Informacja ! 
+W pliku wykorzystane.txt będziemy umieszczać linki i nazwy rzeczy które bierzemy żeby potem w pracy napisać co wykorzystaliśmy
