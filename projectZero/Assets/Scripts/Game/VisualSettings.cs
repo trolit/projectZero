@@ -23,15 +23,6 @@ namespace Assets.Scripts.Game
         // arrays here
         Resolution[] _resolutions;
 
-        void Awake()
-        {
-            int antialiasing = PlayerPrefs.GetInt("ant_a");
-
-            // load antialiasing 
-            QualitySettings.antiAliasing = antialiasing;
-            SetAntiAliasingDropdown(antialiasing);
-        }
-
         void Start()
         {
             // fix?
@@ -45,6 +36,10 @@ namespace Assets.Scripts.Game
             int vsyncSwitch = PlayerPrefs.GetInt("vsync");
             int fullscreen = PlayerPrefs.GetInt("fullscreen");
 
+            // load quality level
+            QualitySettings.SetQualityLevel(qualityIndex);
+            GraphicsDropdown.value = qualityIndex;
+
             // set fullscreen toggle
             FullscreenToggle.isOn = fullscreen == 1;
 
@@ -54,9 +49,11 @@ namespace Assets.Scripts.Game
             // load screen resolution
             Screen.SetResolution(width_scr, height_scr, Screen.fullScreen);
 
-            // load quality level
-            QualitySettings.SetQualityLevel(qualityIndex);
-            GraphicsDropdown.value = qualityIndex;
+            int antialiasing = PlayerPrefs.GetInt("ant_a");
+
+            // load antialiasing 
+            QualitySettings.antiAliasing = antialiasing;
+            SetAntiAliasingDropdown(antialiasing);
 
             // load texture quality
             QualitySettings.masterTextureLimit = texture_quality;
@@ -100,13 +97,14 @@ namespace Assets.Scripts.Game
         {
             QualitySettings.SetQualityLevel(qualityIndex);
 
-            AntialiasingDropdown.value = (int) QualitySettings.antiAliasing - 1;
+            AntialiasingDropdown.value = QualitySettings.antiAliasing - 1;
             AntialiasingDropdown.RefreshShownValue();
-            TextureQualityDropdown.value = (int) QualitySettings.masterTextureLimit;
 
+            TextureQualityDropdown.value = QualitySettings.masterTextureLimit;
             TextureQualityDropdown.RefreshShownValue();
 
             GraphicsDropdown.RefreshShownValue();
+
             if (QualitySettings.vSyncCount > 0)
             {
                 Vsynctoggle.isOn = true;
@@ -209,11 +207,18 @@ namespace Assets.Scripts.Game
         public void SaveVisualSettings()
         {
             PlayerPrefs.SetInt("quality", QualitySettings.GetQualityLevel());
+
             PlayerPrefs.SetInt("width", Screen.currentResolution.width);
+
             PlayerPrefs.SetInt("height", Screen.currentResolution.height);
+
             PlayerPrefs.SetInt("ant_a", QualitySettings.antiAliasing);
+
             PlayerPrefs.SetInt("text_q", QualitySettings.masterTextureLimit);
+
             PlayerPrefs.SetInt("vsync", QualitySettings.vSyncCount);
+
+            PlayerPrefs.SetInt("savedSettings", 1);
         }
     }
 }

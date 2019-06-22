@@ -26,24 +26,26 @@ namespace Assets.Scripts.Game
             float music = PlayerPrefs.GetFloat("music");
             MusicMixer.SetFloat("music", Mathf.Log(music) * 20);
 
-            // loading parameters...
-            int qualityIndex = PlayerPrefs.GetInt("quality");
-            int width_scr = PlayerPrefs.GetInt("width");
-            int height_scr = PlayerPrefs.GetInt("height");
-            int texture_quality = PlayerPrefs.GetInt("text_q");
-            int vsyncSwitch = PlayerPrefs.GetInt("vsync");
+            // load parameters...
+            if (PlayerPrefs.GetInt("savedSettings") == 1)
+            {
+                int qualityIndex = PlayerPrefs.GetInt("quality");
+                int texture_quality = PlayerPrefs.GetInt("text_q");
+                int vsyncSwitch = PlayerPrefs.GetInt("vsync");
+                int antialiasing = PlayerPrefs.GetInt("ant_a");
 
-            // set vsync
-            QualitySettings.vSyncCount = vsyncSwitch;
+                // load quality level
+                QualitySettings.SetQualityLevel(qualityIndex);
 
-            // load screen resolution
-            Screen.SetResolution(width_scr, height_scr, Screen.fullScreen);
+                // load antialiasing
+                QualitySettings.antiAliasing = antialiasing;
 
-            // load quality level
-            QualitySettings.SetQualityLevel(qualityIndex);
+                // set vsync
+                QualitySettings.vSyncCount = vsyncSwitch;
 
-            // load texture quality
-            QualitySettings.masterTextureLimit = texture_quality;
+                // load texture quality
+                QualitySettings.masterTextureLimit = texture_quality;
+            }          
         }
     }
 }
