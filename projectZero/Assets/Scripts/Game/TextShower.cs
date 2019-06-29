@@ -6,19 +6,19 @@ namespace Assets.Scripts.Game
     public class TextShower : MonoBehaviour
     {
         [SerializeField]
-        private Text Text;
+        private Text _text;
 
         [SerializeField]
-        private string Description;
+        private string _description;
 
         public void DisplayText()
         {
-            if (string.IsNullOrEmpty(Description))
+            if (string.IsNullOrEmpty(_description))
             {
-                Debug.Log("Żaden tekst nie został wprowadzony do obiektu => " + Text);
+                Debug.Log("Żaden tekst nie został wprowadzony do obiektu => " + _text);
             }
 
-            Text.text = Description;
+            _text.text = _description;
 
             // run HideText function after 1.5 seconds
             Invoke("HideText", 1.5f);
@@ -26,7 +26,7 @@ namespace Assets.Scripts.Game
 
         public void HideText()
         {
-            Text.text = "";
+            _text.text = "";
         }
     }
 }
