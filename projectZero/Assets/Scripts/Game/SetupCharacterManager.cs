@@ -107,6 +107,20 @@ namespace Assets.Scripts.Game
             PlayerPrefs.SetString("name", nameField.text);
         }
 
+        public void SaveSkills()
+        {
+            PlayerPrefs.SetInt("csharp", (int) _csharpSlider.value);
+            PlayerPrefs.SetInt("html", (int) _htmlSlider.value);
+            PlayerPrefs.SetInt("php", (int) _phpSlider.value);
+            PlayerPrefs.SetInt("java", (int) _javaSlider.value);
+            PlayerPrefs.SetInt("javascript", (int) _javascriptSlider.value);
+        }
+
+        public void SaveThatGameStarted()
+        {
+            PlayerPrefs.SetInt("newgame", 1);
+        }
+
         public void SetInteractables()
         {
             int choice = PlayerPrefs.GetInt("model") - 1;
