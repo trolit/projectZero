@@ -50,6 +50,11 @@ namespace Assets.Scripts.Game.Player
 
                 Camera.PlayerTransform = Robot.transform;
             }
+            else
+            {
+                Debug.Log(
+                    $"Character wasn't picked! (model value was: {PlayerPrefs.GetInt("model")})");
+            }
         }
     }
 }

@@ -51,6 +51,7 @@ namespace Assets.Scripts.Game
             _sliders[3] = _javascriptSlider;
             _sliders[4] = _phpSlider;
 
+            // Default model is 1 (cactus)
             PlayerPrefs.SetInt("model", 1);
 
             _resetButton.gameObject.SetActive(false);
