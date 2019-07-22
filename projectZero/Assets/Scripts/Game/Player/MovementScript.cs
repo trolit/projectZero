@@ -8,7 +8,7 @@ namespace Assets.Scripts.Game.Player
 
         private Rigidbody _transform;
 
-        [SerializeField] private float _speed;
+        [SerializeField] public float Speed;
 
         // Start is called before the first frame update
         void Start()
@@ -41,7 +41,7 @@ namespace Assets.Scripts.Game.Player
             // Move forward
             if (Input.GetKey(KeyCode.W))
             {
-                _transform.AddForce(new Vector3(0, 0, 5) * _speed, ForceMode.VelocityChange);
+                _transform.AddForce(new Vector3(0, 0, 5) * Speed, ForceMode.VelocityChange);
 
                 _transform.rotation = Quaternion.LookRotation(Vector3.forward);
             }
@@ -49,7 +49,7 @@ namespace Assets.Scripts.Game.Player
             // Move left
             if (Input.GetKey(KeyCode.A))
             {
-                _transform.AddForce(new Vector3(-5, 0, 0) * _speed, ForceMode.VelocityChange);
+                _transform.AddForce(new Vector3(-5, 0, 0) * Speed, ForceMode.VelocityChange);
 
                 _transform.rotation = Quaternion.LookRotation(Vector3.left);
             }
@@ -57,7 +57,7 @@ namespace Assets.Scripts.Game.Player
             // Move back
             if (Input.GetKey(KeyCode.S))
             {
-                _transform.AddForce(new Vector3(0, 0, -5) * _speed, ForceMode.VelocityChange);
+                _transform.AddForce(new Vector3(0, 0, -5) * Speed, ForceMode.VelocityChange);
 
                 _transform.rotation = Quaternion.LookRotation(Vector3.back);
             }
@@ -65,7 +65,7 @@ namespace Assets.Scripts.Game.Player
             // Move right
             if (Input.GetKey(KeyCode.D))
             {
-                _transform.AddForce(new Vector3(5, 0, 0) * _speed, ForceMode.VelocityChange);
+                _transform.AddForce(new Vector3(5, 0, 0) * Speed, ForceMode.VelocityChange);
 
                 _transform.rotation = Quaternion.LookRotation(Vector3.right);
             }
