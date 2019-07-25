@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Scripts.Puzzle
 {
@@ -7,9 +6,23 @@ namespace Assets.Scripts.Puzzle
     {
         private GameObject _player;
 
+        private GameObject _collidedObject;
+
+        private int _carryFlag = 0;
+
         void Start()
         {
             _player = GameObject.FindWithTag("Player");
+        }
+
+        void LateUpdate()
+        {
+            if (Input.GetKeyUp(KeyCode.F))
+            {
+                var collider = _collidedObject.GetComponent<BoxCollider>();
+                collider.enabled = true;
+                _carryFlag = 0;
+            }
         }
 
         void OnCollisionStay(Collision block)
@@ -17,8 +30,13 @@ namespace Assets.Scripts.Puzzle
             if (block.gameObject.tag == "Draggable"
                 && Input.GetKey(KeyCode.F))
             {
-                // block.collider.enabled = false;
-                block.transform.parent = _player.transform;
+                if (_carryFlag == 0)
+                {
+                    _collidedObject = block.gameObject;
+                    block.collider.enabled = false;
+                    block.transform.parent = _player.transform;
+                    _carryFlag = 1;
+                }
             }
             else
             {
