@@ -15,5 +15,10 @@ namespace Assets.Scripts.Puzzle.Pad_Checkers
                 Pad4Result = false;
             }
         }
+
+        void OnCollisionExit(Collision block)
+        {
+            Pad4Result = false;
+        }
     }
 }
