@@ -19,8 +19,8 @@ namespace Assets.Scripts.Puzzle
         {
             if (Input.GetKeyUp(KeyCode.F))
             {
-                var collider = _collidedObject.GetComponent<BoxCollider>();
-                collider.enabled = true;
+                var objCollider = _collidedObject.GetComponent<BoxCollider>();
+                objCollider.enabled = true;
                 _carryFlag = 0;
             }
         }
