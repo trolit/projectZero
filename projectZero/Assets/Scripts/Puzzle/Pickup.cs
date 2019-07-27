@@ -20,7 +20,11 @@ namespace Assets.Scripts.Puzzle
             if (Input.GetKeyUp(KeyCode.F))
             {
                 var objCollider = _collidedObject.GetComponent<BoxCollider>();
-                objCollider.enabled = true;
+
+                if (objCollider != null)
+                {
+                    objCollider.enabled = true;
+                }
                 _carryFlag = 0;
             }
         }

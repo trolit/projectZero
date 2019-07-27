@@ -5,6 +5,14 @@ namespace Assets.Scripts.Camera
     public class TopDown_Camera : MonoBehaviour
     {
         [SerializeField]
+        private Transform _slime;
+
+        [SerializeField]
+        private Transform _robot;
+
+        [SerializeField]
+        private Transform _cactus;
+
         private Transform Target;
 
         [SerializeField]
@@ -24,6 +32,26 @@ namespace Assets.Scripts.Camera
         // Start is called before the first frame update
         void Start()
         {
+            // Load which character was picked
+            int characterId = PlayerPrefs.GetInt("model");
+
+            if (characterId == 1)
+            {
+                Target = _cactus;
+            }
+            else if (characterId == 2)
+            {
+                Target = _slime;
+            }
+            else if (characterId == 3)
+            {
+                Target = _robot;
+            }
+            else
+            {
+                Debug.Log("Error trying to read and set model!");
+            }
+
             HandleCamera();
         }
 

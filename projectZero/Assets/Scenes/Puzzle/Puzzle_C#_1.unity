@@ -7845,7 +7845,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &447427494
 Transform:
   m_ObjectHideFlags: 0
@@ -18874,7 +18874,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da83cec6cbbc42140a70bb2e4ef73dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 1970521199}
+  _slime: {fileID: 1970521199}
+  _robot: {fileID: 1970521192}
+  _cactus: {fileID: 1970521198}
   Height: 326.6
   Distance: 182.4
   Angle: 0
@@ -37052,12 +37054,12 @@ PrefabInstance:
     - target: {fileID: 805906908929534663, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -360.1
+      value: -414.6
       objectReference: {fileID: 0}
     - target: {fileID: 805906908929534663, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1058
+      value: -969.3
       objectReference: {fileID: 0}
     - target: {fileID: 805906908929534663, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
@@ -37382,7 +37384,7 @@ PrefabInstance:
     - target: {fileID: 801805780920678588, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -951.2
+      value: -1131.9
       objectReference: {fileID: 0}
     - target: {fileID: 801805780920678588, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
@@ -37404,8 +37406,29 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 116
       objectReference: {fileID: 0}
+    - target: {fileID: 801805782032240553, guid: 24155ed1402a670499f5a5a6f7d8ce22,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 801805782537711133, guid: 24155ed1402a670499f5a5a6f7d8ce22,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 801805782537711133, guid: 24155ed1402a670499f5a5a6f7d8ce22,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 116
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24155ed1402a670499f5a5a6f7d8ce22, type: 3}
+--- !u!4 &1970521192 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 805906908929534663, guid: 24155ed1402a670499f5a5a6f7d8ce22,
+    type: 3}
+  m_PrefabInstance: {fileID: 1970521191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1970521193 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 803321431793518399, guid: 24155ed1402a670499f5a5a6f7d8ce22,
@@ -37443,19 +37466,50 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1970521195}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 0179bcf19d4fd574d9dd860802b5328a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 10
   m_Height: 52.720715
   m_Direction: 1
   m_Center: {x: 0, y: 24.819468, z: 0}
+--- !u!4 &1970521198 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 801805780920678588, guid: 24155ed1402a670499f5a5a6f7d8ce22,
+    type: 3}
+  m_PrefabInstance: {fileID: 1970521191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1970521199 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 806698114689388225, guid: 24155ed1402a670499f5a5a6f7d8ce22,
     type: 3}
   m_PrefabInstance: {fileID: 1970521191}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &1970521200
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970521193}
+  m_Material: {fileID: 13400000, guid: 0179bcf19d4fd574d9dd860802b5328a, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.0641771
+  m_Center: {x: 0.0038481671, y: 0.053789195, z: -0.0007086106}
+--- !u!114 &1970521201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970521193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e73e46a6ef1a044a49cc6e30b26984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &1970521205
 CapsuleCollider:
   m_ObjectHideFlags: 0
