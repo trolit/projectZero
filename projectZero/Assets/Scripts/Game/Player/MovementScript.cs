@@ -8,7 +8,11 @@ namespace Assets.Scripts.Game.Player
 
         private Rigidbody _transform;
 
-        [SerializeField] public float Speed;
+        [SerializeField]
+        public AudioSource SfxSource;
+
+        [SerializeField]
+        public float Speed;
 
         // Start is called before the first frame update
         void Start()
@@ -33,6 +37,9 @@ namespace Assets.Scripts.Game.Player
                 Input.GetKey(KeyCode.D))
             {
                 _animator.SetBool("Move", true);
+
+                if(SfxSource.isPlaying == false)
+                    SfxSource.Play();
             }
         }
 

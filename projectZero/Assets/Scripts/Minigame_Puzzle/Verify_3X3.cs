@@ -21,11 +21,8 @@ namespace Assets.Scripts.Minigame_Puzzle
 
         protected static bool Pad9Result;
 
-        protected static bool GameFinished;
-
         void Start()
         {
-            GameFinished = false;
             Pad2Result = false;
             Pad3Result = false;
             Pad4Result = false;
@@ -50,8 +47,6 @@ namespace Assets.Scripts.Minigame_Puzzle
                 && Pad5Result && Pad6Result && Pad7Result
                 && Pad8Result && Pad9Result)
             {
-                GameFinished = true;
-
                 var script = GetComponent<WinScript>();
 
                 script.enabled = true;

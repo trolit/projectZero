@@ -18,6 +18,8 @@ namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
                 block.gameObject.tag = "UnDraggable";
 
                 Pad5Result = true;
+
+                enabled = false;
             }
             else
             {
@@ -28,14 +30,6 @@ namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
         void OnCollisionExit(Collision block)
         {
             Pad5Result = false;
-        }
-
-        void Update()
-        {
-            if (GameFinished)
-            {
-                enabled = false;
-            }
         }
     }
 }
