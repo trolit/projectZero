@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts.Puzzle
+namespace Assets.Scripts.Minigame_Puzzle
 {
     public class Pickup : MonoBehaviour
     {
@@ -17,7 +17,7 @@ namespace Assets.Scripts.Puzzle
 
         void LateUpdate()
         {
-            if (Input.GetKeyUp(KeyCode.F))
+            if (Input.GetKeyUp(KeyCode.Space))
             {
                 var objCollider = _collidedObject.GetComponent<BoxCollider>();
 
@@ -32,7 +32,7 @@ namespace Assets.Scripts.Puzzle
         void OnCollisionStay(Collision block)
         {
             if (block.gameObject.tag == "Draggable"
-                && Input.GetKey(KeyCode.F))
+                && Input.GetKey(KeyCode.Space))
             {
                 if (_carryFlag == 0)
                 {
@@ -46,6 +46,11 @@ namespace Assets.Scripts.Puzzle
             {
                 block.transform.parent = null;
             }
+        }
+
+        void OnCollisionExit(Collision block)
+        {
+            block.transform.parent = null;
         }
     }
 }
