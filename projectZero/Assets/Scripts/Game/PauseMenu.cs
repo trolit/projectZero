@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Game
 {
@@ -31,6 +32,13 @@ namespace Assets.Scripts.Game
             Time.timeScale = 1f;
 
             GameIsPaused = false;
+        }
+
+        public void Restart()
+        {
+            Time.timeScale = 1f;
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadSceneAsync(scene.name);
         }
 
         void Pause()
