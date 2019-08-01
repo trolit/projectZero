@@ -18,51 +18,35 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private Text _pointsDisplay;
 
-        [SerializeField]
-        private Slider _htmlSlider;
-
-        [SerializeField]
-        private Slider _csharpSlider;
-        [SerializeField]
-
-        private Slider _javaSlider;
-
-        [SerializeField]
-        private Slider _javascriptSlider;
-
-        [SerializeField]
-        private Slider _phpSlider;
-
-        private Slider[] _sliders;
-
         private int _pointsLeft;
 
+        private int _CSharp;
+        private int _HTML;
+        private int _Java;
+        private int _Javascript;
+        private int _PHP;
+
         [SerializeField]
-        private Button _resetButton;
+        private Text _CSharpText;
+
+        [SerializeField]
+        private Text _HTMLText;
+
+        [SerializeField]
+        private Text _JavaText;
+
+        [SerializeField]
+        private Text _JavascriptText;
+
+        [SerializeField]
+        private Text _PHPText;
 
         void Start()
         {
             _pointsLeft = _pointsAmount;
 
-            _sliders = new Slider[5];
-            _sliders[0] = _htmlSlider;
-            _sliders[1] = _csharpSlider;
-            _sliders[2] = _javaSlider;
-            _sliders[3] = _javascriptSlider;
-            _sliders[4] = _phpSlider;
-
             // Default model is 1 (cactus)
             PlayerPrefs.SetInt("model", 1);
-
-            _resetButton.gameObject.SetActive(false);
-        }
-
-        void FixedUpdate()
-        {
-            if (_pointsLeft <= 0)
-            {
-                _resetButton.gameObject.SetActive(true);
-            }
         }
 
         private void Awake()
@@ -108,13 +92,153 @@ namespace Assets.Scripts.Game
             PlayerPrefs.SetString("name", nameField.text);
         }
 
+        public void AddCSharp()
+        {
+            if (_pointsLeft > 0)
+            {
+                _CSharp++;
+
+                _pointsLeft--;
+
+                _pointsDisplay.text = $"{_pointsLeft}";
+
+                _CSharpText.text = $"({_CSharp})";
+            }
+        }
+
+        public void RemoveCSharp()
+        {
+            if (_CSharp > 0)
+            {
+                _CSharp--;
+
+                _pointsLeft++;
+
+                _pointsDisplay.text = $"{_pointsLeft}";
+
+                _CSharpText.text = $"({_CSharp})";
+            }
+        }
+
+        public void AddHtml()
+        {
+            if (_pointsLeft > 0)
+            {
+                _HTML++;
+
+                _pointsLeft--;
+
+                _pointsDisplay.text = $"{_pointsLeft}";
+
+                _HTMLText.text = $"({_HTML})";
+            }
+        }
+
+        public void RemoveHtml()
+        {
+            if (_HTML > 0)
+            {
+                _HTML--;
+
+                _pointsLeft++;
+
+                _pointsDisplay.text = $"{_pointsLeft}";
+
+                _HTMLText.text = $"({_HTML})";
+            }
+        }
+
+        public void AddPhp()
+        {
+            if (_pointsLeft > 0)
+            {
+                _PHP++;
+
+                _pointsLeft--;
+
+                _pointsDisplay.text = $"{_pointsLeft}";
+
+                _PHPText.text = $"({_PHP})";
+            }
+        }
+
+        public void RemovePhp()
+        {
+            if (_PHP > 0)
+            {
+                _PHP--;
+
+                _pointsLeft++;
+
+                _pointsDisplay.text = $"{_pointsLeft}";
+
+                _PHPText.text = $"({_PHP})";
+            }
+        }
+
+        public void AddJava()
+        {
+            if (_pointsLeft > 0)
+            {
+                _Java++;
+
+                _pointsLeft--;
+
+                _pointsDisplay.text = $"{_pointsLeft}";
+
+                _JavaText.text = $"({_Java})";
+            }
+        }
+
+        public void RemoveJava()
+        {
+            if (_Java > 0)
+            {
+                _Java--;
+
+                _pointsLeft++;
+
+                _pointsDisplay.text = $"{_pointsLeft}";
+
+                _JavaText.text = $"({_Java})";
+            }
+        }
+
+        public void AddJavascript()
+        {
+            if (_pointsLeft > 0)
+            {
+                _Javascript++;
+
+                _pointsLeft--;
+
+                _pointsDisplay.text = $"{_pointsLeft}";
+
+                _JavascriptText.text = $"({_Javascript})";
+            }
+        }
+
+        public void RemoveJavascript()
+        {
+            if (_Javascript > 0)
+            {
+                _Javascript--;
+
+                _pointsLeft++;
+
+                _pointsDisplay.text = $"{_pointsLeft}";
+
+                _JavascriptText.text = $"({_Javascript})";
+            }
+        }
+
         public void SaveSkills()
         {
-            PlayerPrefs.SetInt("csharp", (int) _csharpSlider.value);
-            PlayerPrefs.SetInt("html", (int) _htmlSlider.value);
-            PlayerPrefs.SetInt("php", (int) _phpSlider.value);
-            PlayerPrefs.SetInt("java", (int) _javaSlider.value);
-            PlayerPrefs.SetInt("javascript", (int) _javascriptSlider.value);
+            PlayerPrefs.SetInt("csharp", _CSharp);
+            PlayerPrefs.SetInt("html", _HTML);
+            PlayerPrefs.SetInt("php", _PHP);
+            PlayerPrefs.SetInt("java", _Java);
+            PlayerPrefs.SetInt("javascript", _Javascript);
         }
 
         public void SaveThatGameStarted()
@@ -135,41 +259,6 @@ namespace Assets.Scripts.Game
                     buttons[choice].interactable = false;
                 }
             }
-        }
-
-        public void CheckPoints()
-        {
-            int value = 0;
-
-            foreach (var slider in _sliders)
-            {
-                value += (int) slider.value;
-            }
-
-            if (value >= 5)
-            {
-                foreach (var slider in _sliders)
-                {
-                    slider.interactable = false;
-                }
-            }
-
-            _pointsLeft = _pointsAmount - value;
-
-            _pointsDisplay.text = _pointsLeft.ToString();
-        }
-
-        public void ResetPoints()
-        {
-            foreach (var slider in _sliders)
-            {
-                slider.value = 0;
-                slider.interactable = true;
-            }
-
-            _resetButton.gameObject.SetActive(false);
-
-            CheckPoints();
         }
     }
 }
