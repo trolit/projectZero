@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.Game
+namespace Assets.Scripts.CharacterCreation
 {
     public class SetupCharacterManager : MonoBehaviour
     {
