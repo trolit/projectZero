@@ -12,6 +12,18 @@ namespace Assets.Scripts.Minigame_Maze
         [SerializeField]
         private Text _maxToPickText;
 
+        [SerializeField]
+        private GameObject _fullSummaryText;
+
+        [SerializeField]
+        private GameObject _halfSummaryText;
+
+        [SerializeField]
+        private GameObject _quarterSummaryText;
+
+        [SerializeField]
+        private Text _moneyText;
+
         public static int CurrentlyPicked = 0;
 
         public static int BugsPicked = 0;
@@ -21,6 +33,9 @@ namespace Assets.Scripts.Minigame_Maze
 
         void Start()
         {
+            CurrentlyPicked = 0;
+            BugsPicked = 0;
+
             _currentlyPickedText.text = CurrentlyPicked.ToString();
             _maxToPickText.text = _maxToPick.ToString();
         }
@@ -33,6 +48,22 @@ namespace Assets.Scripts.Minigame_Maze
             {
                 var script = GetComponent<WinScript>();
 
+                if (BugsPicked == 3)
+                {
+                    _halfSummaryText.SetActive(true);
+                }
+                else if (BugsPicked > 3)
+                {
+                    _quarterSummaryText.SetActive(true);
+                }
+                else
+                {
+                    _fullSummaryText.SetActive(true);
+                }
+
+                _moneyText.text = (250 - (BugsPicked * 20)).ToString();
+
+                // Launch script
                 script.enabled = true;
 
                 // Turn off Update()

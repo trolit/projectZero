@@ -15,6 +15,8 @@ namespace Assets.Scripts.Game
 
         void Awake()
         {
+            _winWindow.SetActive(false);
+
             enabled = false;
         }
 
