@@ -49,7 +49,7 @@ namespace Assets.Scripts.Game.Player
             if (Input.GetKey(KeyCode.W))
             {
                 _transform.AddForce(new Vector3(0, 0, 5) * Speed, ForceMode.VelocityChange);
-
+                
                 _transform.rotation = Quaternion.LookRotation(Vector3.forward);
             }
 
@@ -76,6 +76,9 @@ namespace Assets.Scripts.Game.Player
 
                 _transform.rotation = Quaternion.LookRotation(Vector3.right);
             }
+
+            // Falling force
+            _transform.AddForce(new Vector3(0, -2, 0) * Speed, ForceMode.VelocityChange);
         }
     }
 }

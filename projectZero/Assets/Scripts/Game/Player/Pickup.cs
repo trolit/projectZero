@@ -19,13 +19,16 @@ namespace Assets.Scripts.Game.Player
         {
             if (Input.GetKeyUp(KeyCode.Space))
             {
-                var objCollider = _collidedObject.GetComponent<BoxCollider>();
-
-                if (objCollider != null)
+                if (_carryFlag == 1)
                 {
-                    objCollider.enabled = true;
+                    var objCollider = _collidedObject.GetComponent<BoxCollider>();
+
+                    if (objCollider != null)
+                    {
+                        objCollider.enabled = true;
+                    }
+                    _carryFlag = 0;
                 }
-                _carryFlag = 0;
             }
         }
 
