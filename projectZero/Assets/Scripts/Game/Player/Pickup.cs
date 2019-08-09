@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Scripts.Minigame_Puzzle
+namespace Assets.Scripts.Game.Player
 {
     public class Pickup : MonoBehaviour
     {
