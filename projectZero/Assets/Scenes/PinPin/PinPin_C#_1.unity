@@ -2244,9 +2244,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8045c5c42e73ff478686fa09f186f0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _block01: {fileID: 9346497}
+  _block02: {fileID: 1312483195}
+  _block03: {fileID: 242376902}
+  _sfxAudioSource: {fileID: 1626838055}
+  _correctClip: {fileID: 8300000, guid: 7bdaf1e6869c3364192cfe10af19d3db, type: 3}
+  _wrongClip: {fileID: 8300000, guid: b6dcf5f63420e824e8ff23822a50d47e, type: 3}
   _sectionObject: {fileID: 1776653451}
   _pinModel: {fileID: 2012106512}
   _groundObject: {fileID: 287092550}
+  _buttonObject: {fileID: 164752642}
   _cameraCurrentPosition: {fileID: 1023038086}
   _cameraNewPosition: 555
 --- !u!1 &171997341 stripped
@@ -2389,11 +2396,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8045c5c42e73ff478686fa09f186f0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _block01: {fileID: 1003772883}
+  _block02: {fileID: 1125824190}
+  _block03: {fileID: 1075477561}
+  _sfxAudioSource: {fileID: 1626838055}
+  _correctClip: {fileID: 8300000, guid: 7bdaf1e6869c3364192cfe10af19d3db, type: 3}
+  _wrongClip: {fileID: 8300000, guid: b6dcf5f63420e824e8ff23822a50d47e, type: 3}
   _sectionObject: {fileID: 1308957281}
   _pinModel: {fileID: 48906778}
   _groundObject: {fileID: 70984785}
+  _buttonObject: {fileID: 182917180}
   _cameraCurrentPosition: {fileID: 1023038086}
-  _cameraNewPosition: -47
+  _cameraNewPosition: 99
 --- !u!65 &182917182
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6956,6 +6970,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 613542012}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &620195638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 620195639}
+  m_Layer: 0
+  m_Name: GlobalCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &620195639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620195638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1191, y: -769.9144, z: 2340}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &651866058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12140,6 +12184,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block03
       objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Wrong
+      objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 466
@@ -12908,6 +12956,10 @@ PrefabInstance:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
       value: Block02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Wrong
       objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18016,11 +18068,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8045c5c42e73ff478686fa09f186f0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _block01: {fileID: 842595628}
+  _block02: {fileID: 1669699684}
+  _block03: {fileID: 1666934776}
+  _sfxAudioSource: {fileID: 1626838055}
+  _correctClip: {fileID: 8300000, guid: 7bdaf1e6869c3364192cfe10af19d3db, type: 3}
+  _wrongClip: {fileID: 8300000, guid: b6dcf5f63420e824e8ff23822a50d47e, type: 3}
   _sectionObject: {fileID: 1422479514}
   _pinModel: {fileID: 1879138467}
   _groundObject: {fileID: 1752708058}
+  _buttonObject: {fileID: 1563015686}
   _cameraCurrentPosition: {fileID: 1023038086}
-  _cameraNewPosition: 0
+  _cameraNewPosition: 90
 --- !u!65 &1563015688
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19443,6 +19502,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block03
       objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Wrong
+      objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 466
@@ -19611,6 +19674,10 @@ PrefabInstance:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
       value: Block02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
+      propertyPath: m_TagString
+      value: Wrong
       objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x

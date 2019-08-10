@@ -9,6 +9,8 @@ namespace Assets.Scripts.Minigame_PinPin
 
         public static bool IsCorrect = false;
 
+        public static int MistakesAmount = 0;
+
         void OnCollisionEnter(Collision block)
         {
             Debug.Log("Sprawdzam => " + block.gameObject.name);
