@@ -53,10 +53,10 @@ W - przód <br/>
 A - lewo <br/>
 S - dół <br/>
 D - prawo <br/>
-B - otwarcie plecaka w którym mamy książki <br/>
+B - otwarcie plecaka w którym mamy książki (badz tez nie jak zadnej jeszcze nie kupilismy) <br/>
 F - interakcja z NPC (wejście w rozmowe) <br/>
-Spacja [przytrzymanie] - złapanie i przesuwanie puzzla <br/>
-LPM (lewy przycisk myszy) - klikanie w quizie, sklepie, kupowanie książek etc 
+Spacja [przytrzymanie] - złapanie i przesuwanie puzzla/pinezki <br/>
+LPM (lewy przycisk myszy) - klikanie w sklepie -> kupowanie książek, otwieranie książek z inventory etc 
 
 ### 2.3 Wykorzystane rzeczy
 W pliku wykorzystane.txt będziemy umieszczać linki i nazwy rzeczy które bierzemy do projektu aby potem je w zakładce Credits uwzględnić
