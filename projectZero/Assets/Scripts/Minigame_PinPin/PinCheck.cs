@@ -11,6 +11,14 @@ namespace Assets.Scripts.Minigame_PinPin
 
         public static int MistakesAmount = 0;
 
+        [SerializeField]
+        private GameObject _verifyButton;
+
+        void Start()
+        {
+            _verifyButton.SetActive(false);
+        }
+
         void OnCollisionEnter(Collision block)
         {
             Debug.Log("Sprawdzam => " + block.gameObject.name);
@@ -26,6 +34,10 @@ namespace Assets.Scripts.Minigame_PinPin
                 Debug.Log("Wybrano nieprawidlowy blok!");
 
                 IsCorrect = false;
+            }
+            else if (block.gameObject.tag == "Player")
+            {
+                _verifyButton.SetActive(true);
             }
         }
     }
