@@ -1,31 +1,41 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Camera;
+using UnityEngine;
 
 namespace Assets.Scripts.Minigame_PinPin
 {
     public class VerifySection : MonoBehaviour
     {
         [SerializeField]
-        private GameObject _section;
-
-        [SerializeField]
-        private GameObject _sectionGround;
+        private GameObject _sectionObject;
 
         [SerializeField]
         private GameObject _pinModel;
 
+        [SerializeField]
+        private GameObject _groundObject;
+
+        [SerializeField]
+        private Transform _cameraCurrentPosition;
+
+        [SerializeField]
+        private float _cameraNewPosition;
+
         void OnCollisionEnter(Collision player)
         {
             if (player.gameObject.tag == "Player")
-            {           
-                // Check
+            {
                 if (PinCheck.IsCorrect)
                 {
-                    Destroy(_section);
-                    Destroy(_sectionGround);
-                    Destroy(_pinModel);
+                    _sectionObject.SetActive(false);
+                    _pinModel.SetActive(false);
+                    _groundObject.SetActive(false);
+
+                    _cameraCurrentPosition.GetComponent<TopDown_Camera>().Height
+                        = _cameraNewPosition;
+
+                    PinCheck.IsCorrect = false;
                 }
             }
         }
-
     }
 }

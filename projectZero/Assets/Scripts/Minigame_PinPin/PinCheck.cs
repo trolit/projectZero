@@ -11,11 +11,19 @@ namespace Assets.Scripts.Minigame_PinPin
 
         void OnCollisionEnter(Collision block)
         {
+            Debug.Log("Sprawdzam => " + block.gameObject.name);
+
             if (block.gameObject.name == _correctObjectName)
             {
                 Debug.Log("Wybrano prawidlowy blok!");
 
                 IsCorrect = true;
+            }
+            else if (block.gameObject.tag == "Wrong")
+            {
+                Debug.Log("Wybrano nieprawidlowy blok!");
+
+                IsCorrect = false;
             }
         }
     }

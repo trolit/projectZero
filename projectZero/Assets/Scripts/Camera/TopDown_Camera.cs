@@ -16,7 +16,7 @@ namespace Assets.Scripts.Camera
         private Transform Target;
 
         [SerializeField]
-        private float Height = 10f;
+        public float Height = 10f;
 
         [SerializeField]
         private float Distance = 20f;
