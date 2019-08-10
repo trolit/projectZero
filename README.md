@@ -7,17 +7,17 @@ Po wejściu do gry gracz porusza się swoją postacią po świecie, który podzi
 
 Gra została przygotowana w taki sposób aby przy jednym podejściu nie dało się wykupić wszystkich książek - a więc aby zdobyć maksymalne umiejętności we wszystkich językach. Ma to na celu nie tylko zachęcić do ponownego przejścia gry z innym rozdysponowaniem umiejętności ale też po to aby dać do zrozumienia graczowi, że nie jesteśmy w stanie być specjalistami we wszystkich językach. Możemy znać każdy język ale i tak prędzej czy później będziemy musieli skorzystać z pomocy "wujka Google" aby przypomnieć sobie jak daną rzecz się robiło.        
 
-#### 1.1 Języki programowania jako atrybuty postaci
+### 1.1 Języki programowania jako atrybuty postaci
 C#, HTML, Java, Javascript, PHP
 
-#### 1.2 Rodzaje terenu
+### 1.2 Rodzaje terenu
 C# - teren zalesiony (wiosna) <br/>
 Java - teren pustynny <br/>
 HTML - teren górzysty <br/>
 JavaScript - teren zimowy <br/>
 PHP - teren zalesiony (jesień) <br/>
 
-#### 1.3 Minigry
+### 1.3 Minigry
 W tej sekcji dowiesz się na temat zaimplementowanych minigier.
 
 #### 1.3.1 Minigra quiz (wieżowiec)
@@ -34,7 +34,7 @@ Minigra labirynt to gra w której zadaniem gracza jest unikanie "bugów" i zbier
 
 ## 2. Sekcja dla devów
 
-#### 2.1 Planowane elementy
+### 2.1 Planowane elementy
 - główny świat po którym można się poruszać i wchodzić w interakcję z niektórymi "NPC'ami" - oferować oni będą minigry w które możemy zagrać <br/> 
 - NPC się poruszają (https://docs.unity3d.com/Manual/nav-BuildingNavMesh.html) <br/>
 - motyw z plecakiem w którym przechowujemy rzeczy (w naszym przypadku książki) <br/>
@@ -48,7 +48,7 @@ Minigra labirynt to gra w której zadaniem gracza jest unikanie "bugów" i zbier
 - mini-gra na zasadzie układania puzzli z kodu, w perspektywie "z góry" - coś w stylu jak poniżej <br/>
 ![zdjecie zostalo usuniete](https://i.pinimg.com/originals/fe/a5/c0/fea5c00c531619211f9232d1f6d702af.jpg)
 
-#### 2.2 Klawiszologia 
+### 2.2 Klawiszologia 
 W - przód <br/>
 A - lewo <br/>
 S - dół <br/>
@@ -58,11 +58,11 @@ F - interakcja z NPC (wejście w rozmowe) <br/>
 Spacja [przytrzymanie] - złapanie i przesuwanie puzzla <br/>
 LPM (lewy przycisk myszy) - klikanie w quizie, sklepie, kupowanie książek etc 
 
-#### 2.3 Wykorzystane rzeczy
+### 2.3 Wykorzystane rzeczy
 W pliku wykorzystane.txt będziemy umieszczać linki i nazwy rzeczy które bierzemy do projektu aby potem je w zakładce Credits uwzględnić
 
-#### 2.4 Wersja Unity:
+### 2.4 Wersja Unity:
 2018.3.12f1 
 
-#### 2.5 Wersja .NET Framework:
+### 2.5 Wersja .NET Framework:
 v 4.7.1 
