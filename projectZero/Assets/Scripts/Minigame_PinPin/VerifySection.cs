@@ -84,6 +84,8 @@ namespace Assets.Scripts.Minigame_PinPin
                     _sfxAudioSource.PlayOneShot(_wrongClip);
 
                     PinCheck.MistakesAmount++;
+
+                    // Debug.Log("Liczba bledow => " + PinCheck.MistakesAmount);
                 }
 
                 Invoke("ResetButton", 1.5f);
