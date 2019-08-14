@@ -11,14 +11,14 @@ Gra została przygotowana w taki sposób aby przy jednym podejściu nie dało si
 C#, HTML, Java, Javascript, PHP
 
 ### 1.2 Rodzaje terenu
-C# - teren zalesiony (wiosna) <br/>
+C# - teren zalesiony (styl wiosenny) <br/>
 Java - teren pustynny <br/>
 HTML - teren górzysty <br/>
 JavaScript - teren zimowy <br/>
-PHP - teren zalesiony (jesień) <br/>
+PHP - teren zalesiony (styl jesienny) <br/>
 
 ### 1.3 Minigry
-W tej sekcji dowiesz się na temat zaimplementowanych minigier.
+W tej sekcji dowiesz się więcej na temat zaimplementowanych minigier.
 
 #### 1.3.1 Minigra quiz (wieżowiec)
 W tej minigrze postać pojawia się na szczycie "wieżowca", który zbudowany jest z kilku poziomów. Każdy poziom to pytanie i cztery odpowiedzi do wyboru. Wybranie błędnej odpowiedzi nie wpływa na wieżowiec. Gracz znajduje się na danym poziomie do momentu aż nie wybierze prawidłowej odpowiedzi. Po wybraniu poprawnej - poziom wieżowca obniża się i gracz trafia na niższy poziom w którym jest kolejne pytanie i kolejne odpowiedzi. Minigra trwa dopóki gracz nie dojdzie do podstawy wieżowca. Zazwyczaj jest to po 4-5 odbytych poziomach.
@@ -37,7 +37,7 @@ Minigra labirynt to gra w której zadaniem gracza jest unikanie "bugów" i zbier
 ### 2.1 Planowane elementy
 - główny świat po którym można się poruszać i wchodzić w interakcję z niektórymi "NPC'ami" - oferować oni będą minigry w które możemy zagrać <br/> 
 - NPC się poruszają (https://docs.unity3d.com/Manual/nav-BuildingNavMesh.html) <br/>
-- motyw z plecakiem w którym przechowujemy rzeczy (w naszym przypadku książki) <br/>
+- motyw z plecakiem w którym przechowujemy rzeczy (w naszym przypadku książki) czyli tak zwane "Inventory" <br/>
 - zdobywanie waluty (pieniędzy) <br/>
 - możliwość wydania waluty w sklepie na książki które podnoszą umiejętności <br/>
 - kreator postaci (możliwość przydzielenia atrybutów) </br>
@@ -45,10 +45,11 @@ Minigra labirynt to gra w której zadaniem gracza jest unikanie "bugów" i zbier
 - mini-gra na zasadzie quizu <br/>
 - mini-gra na zasadzie labiryntu w którym są bugi na które nie wolno wejść i trzeba przejść do wyjścia :) </br>
 - mini-gra na zasadzie podpięcia do danego fragmentu kodu odpowiedniego języka programowania <br/>
-- mini-gra na zasadzie układania puzzli z kodu, w perspektywie "z góry" - coś w stylu jak poniżej <br/>
-![zdjecie zostalo usuniete](https://i.pinimg.com/originals/fe/a5/c0/fea5c00c531619211f9232d1f6d702af.jpg)
+- mini-gra na zasadzie układania puzzli z kodu <br/>
+- zróżnicowany level design każdej z mini-gierek <br/>
 
 ### 2.2 Klawiszologia 
+Uwaga! Klawiszologia może się różnić w zależności od tego w jaką mini-gierkę gramy bądź też czy znajdujemy się na mapie głównej <br/>
 W - przód <br/>
 A - lewo <br/>
 S - dół <br/>
