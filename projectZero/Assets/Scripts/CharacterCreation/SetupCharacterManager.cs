@@ -44,6 +44,7 @@ namespace Assets.Scripts.CharacterCreation
         {
             _pointsLeft = _pointsAmount;
 
+            
             // Default model is 1 (cactus)
             PlayerPrefs.SetInt("model", 1);
         }
@@ -88,6 +89,11 @@ namespace Assets.Scripts.CharacterCreation
 
         public void SaveName(InputField nameField)
         {
+            if (string.IsNullOrWhiteSpace(nameField.text))
+            {
+                nameField.text = "Mars";
+            }
+
             PlayerPrefs.SetString("name", nameField.text);
         }
 
