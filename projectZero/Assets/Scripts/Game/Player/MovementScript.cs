@@ -8,7 +8,11 @@ namespace Assets.Scripts.Game.Player
 
         private Rigidbody _transform;
 
-        [SerializeField] public float Speed;
+        [SerializeField]
+        public AudioSource SfxSource;
+
+        [SerializeField]
+        public float Speed;
 
         // Start is called before the first frame update
         void Start()
@@ -33,6 +37,9 @@ namespace Assets.Scripts.Game.Player
                 Input.GetKey(KeyCode.D))
             {
                 _animator.SetBool("Move", true);
+
+                if(SfxSource.isPlaying == false)
+                    SfxSource.Play();
             }
         }
 
@@ -42,7 +49,7 @@ namespace Assets.Scripts.Game.Player
             if (Input.GetKey(KeyCode.W))
             {
                 _transform.AddForce(new Vector3(0, 0, 5) * Speed, ForceMode.VelocityChange);
-
+                
                 _transform.rotation = Quaternion.LookRotation(Vector3.forward);
             }
 
@@ -69,6 +76,9 @@ namespace Assets.Scripts.Game.Player
 
                 _transform.rotation = Quaternion.LookRotation(Vector3.right);
             }
+
+            // Falling force
+            _transform.AddForce(new Vector3(0, -2, 0) * Speed, ForceMode.VelocityChange);
         }
     }
 }
