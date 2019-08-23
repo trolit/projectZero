@@ -11,9 +11,20 @@ namespace Assets.Scripts.Minigame_PinPin
         [SerializeField]
         private int _startingPrize = 250;
 
+        private int _prize = 0;
+
         void Awake()
         {
-            _prizeText.text = (_startingPrize - (PinCheck.MistakesAmount * 20)).ToString();
+            _prize = _startingPrize - PinCheck.MistakesAmount * 20;
+
+            _prizeText.text = _prize.ToString();
+        }
+
+        public void SendMoney()
+        {
+            var res = Time.realtimeSinceStartup;
+
+            PlayerPrefs.SetInt("money", _prize);
         }
     }
 }
