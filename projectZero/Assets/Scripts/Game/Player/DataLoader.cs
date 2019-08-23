@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using Input = UnityEngine.Input;
 
 namespace Assets.Scripts.Game.Player
 {
@@ -17,6 +16,29 @@ namespace Assets.Scripts.Game.Player
         public Texture SlimeAvatar;
 
         public RawImage Avatar;
+
+        public Text MoneyText;
+
+        
+        public Slider HtmlSlider;
+
+        public Text HtmlText;
+
+        public Slider CSharpSlider;
+
+        public Text CSharpText;
+
+        public Slider PhpSlider;
+
+        public Text PhpText;
+
+        public Slider JavaSlider;
+
+        public Text JavaText;
+
+        public Slider JavascriptSlider;
+
+        public Text JavascriptText;
 
         // Start is called before the first frame update
         void Start()
@@ -48,6 +70,12 @@ namespace Assets.Scripts.Game.Player
                 }
                 else
                 {
+                    SetLanguage(HtmlSlider, HtmlText, "html");
+                    SetLanguage(JavascriptSlider, JavascriptText, "javascript");
+                    SetLanguage(JavaSlider, JavaText, "java");
+                    SetLanguage(PhpSlider, PhpText, "php");
+                    SetLanguage(CSharpSlider, CSharpText, "csharp");
+                    LoadMoney();
                     Pause();
                 }
             }
@@ -71,6 +99,20 @@ namespace Assets.Scripts.Game.Player
             GameIsPaused = true;
         }
 
-        
+        void LoadMoney()
+        {
+            var money = PlayerPrefs.GetInt("money");
+
+            MoneyText.text = money.ToString();
+        }
+
+        void SetLanguage(Slider slider, Text text, string property)
+        {
+            var value = PlayerPrefs.GetInt(property);
+
+            text.text = value.ToString() + "/9";
+
+            slider.value = value;
+        }
     }
 }
