@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Game;
+﻿using System;
+using Assets.Scripts.Game;
 using UnityEngine;
 
 namespace Assets.Scripts.Minigame_Puzzle
@@ -21,6 +22,9 @@ namespace Assets.Scripts.Minigame_Puzzle
 
         protected static bool Pad9Result;
 
+        [SerializeField]
+        protected string Command;
+
         void Start()
         {
             Pad2Result = false;
@@ -34,14 +38,14 @@ namespace Assets.Scripts.Minigame_Puzzle
 
         void Update()
         {
-            //Debug.Log("Pad2 => " + Pad2Result);
-            //Debug.Log("Pad3 => " + Pad3Result);
-            //Debug.Log("Pad4 => " + Pad4Result);
-            //Debug.Log("Pad5 => " + Pad5Result);
-            //Debug.Log("Pad6 => " + Pad6Result);
-            //Debug.Log("Pad7 => " + Pad7Result);
-            //Debug.Log("Pad8 => " + Pad8Result);
-            //Debug.Log("Pad9 => " + Pad9Result);
+            Debug.Log("Pad2 => " + Pad2Result);
+            Debug.Log("Pad3 => " + Pad3Result);
+            Debug.Log("Pad4 => " + Pad4Result);
+            Debug.Log("Pad5 => " + Pad5Result);
+            Debug.Log("Pad6 => " + Pad6Result);
+            Debug.Log("Pad7 => " + Pad7Result);
+            Debug.Log("Pad8 => " + Pad8Result);
+            Debug.Log("Pad9 => " + Pad9Result);
 
             if (Pad2Result && Pad3Result && Pad4Result
                 && Pad5Result && Pad6Result && Pad7Result
