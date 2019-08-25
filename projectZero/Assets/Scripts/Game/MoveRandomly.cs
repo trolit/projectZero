@@ -7,10 +7,13 @@ namespace Assets.Scripts.Game
     {
         public float Timer;
 
+        // Frequency of FindNewTarget()
         public int NewTarget;
 
+        // Reference 
         public NavMeshAgent Nav;
 
+        // Stores randomized position
         public Vector3 Target;
 
         public int MinX;
@@ -42,8 +45,9 @@ namespace Assets.Scripts.Game
 
         void FindNewTarget()
         {
-            float x = gameObject.transform.position.x;
-            float z = gameObject.transform.position.z;
+            // Temporarily disabled
+            // float x = gameObject.transform.position.x;
+            // float z = gameObject.transform.position.z;
 
             float xPos = Random.Range(MinX, MaxX);
             float zPos = Random.Range(MinZ, MaxZ);
