@@ -46,11 +46,11 @@ namespace Assets.Scripts.Game
         void FindNewTarget()
         {
             // Temporarily disabled
-            // float x = gameObject.transform.position.x;
-            // float z = gameObject.transform.position.z;
+            float x = gameObject.transform.position.x;
+            float z = gameObject.transform.position.z;
 
-            float xPos = Random.Range(MinX, MaxX);
-            float zPos = Random.Range(MinZ, MaxZ);
+            float xPos = x + Random.Range(x - MinX, x + MaxX);
+            float zPos = z + Random.Range(z - MinZ, z + MaxZ);
 
             Target = new Vector3(xPos, gameObject.transform.position.y, zPos);
 
