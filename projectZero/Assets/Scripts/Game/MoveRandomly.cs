@@ -37,15 +37,12 @@ namespace Assets.Scripts.Game
 
         private Vector3 GetNewRandomPosition()
         {
-            float currentX = transform.position.x;
-            float currentZ = transform.position.z;
-
             // setting these ranges is vital larger seems better 
-            float x = currentX + Random.Range(currentX - MinX, currentX + MaxX);
+            float x = Random.Range(MinX, MaxX);
 
-            float z = currentZ + Random.Range(currentZ - MinZ, currentZ + MaxZ);
+            float z = Random.Range(MinZ, MaxZ);
 
-            Vector3 pos = new Vector3(x, transform.position.y, z);
+            Vector3 pos = new Vector3(transform.position.x + x, transform.position.y, transform.position.z + z);
 
             return pos;
         }
@@ -59,7 +56,7 @@ namespace Assets.Scripts.Game
             _validPath = _navMeshAgent.CalculatePath(_target, _path);
 
             if (!_validPath)
-                Debug.Log("Found invalid path! Finding new one...");
+                Debug.Log("Found invalid path!");
 
             while (!_validPath)
             {
@@ -67,7 +64,9 @@ namespace Assets.Scripts.Game
 
                 GetNewPath();
 
-                _validPath = _navMeshAgent.CalculatePath(_target, _path);
+                _validPath = true;
+
+                // _validPath = _navMeshAgent.CalculatePath(_target, _path);
             }
 
             _inCoRoutine = false;
@@ -80,3 +79,4 @@ namespace Assets.Scripts.Game
         }
     }
 }
+
