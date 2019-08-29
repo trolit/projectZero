@@ -1,60 +1,82 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.AI;
 
 namespace Assets.Scripts.Game
 {
+    [RequireComponent(typeof(NavMeshAgent))]
     public class MoveRandomly : MonoBehaviour
     {
-        public float Timer;
+        public float TimeForNewPath;
+        public float MinX;
+        public float MaxX;
+        public float MinZ;
+        public float MaxZ;
 
-        // Frequency of FindNewTarget()
-        public int NewTarget;
+        NavMeshAgent _navMeshAgent;
+        NavMeshPath _path;
+        bool _inCoRoutine;
+        Vector3 _target;
+        bool _validPath;
 
-        // Reference 
-        public NavMeshAgent Nav;
-
-        // Stores randomized position
-        public Vector3 Target;
-
-        public int MinX;
-
-        public int MaxX;
-
-        public int MinZ;
-
-        public int MaxZ;
-
-        // Start is called before the first frame update
-        void Start()
+        // Use this for initialization
+        private void Start()
         {
-            Nav = gameObject.GetComponent<NavMeshAgent>();
+            _navMeshAgent = GetComponent<NavMeshAgent>();
+            _path = new NavMeshPath();
+
+            GetNewPath();
         }
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
-            Timer += Time.deltaTime;
-
-            if (Timer >= NewTarget)
-            {
-                FindNewTarget();
-
-                Timer = 0;
-            }
+            if (_inCoRoutine == false)
+                StartCoroutine(DoSomething());
         }
 
-        void FindNewTarget()
+        private Vector3 GetNewRandomPosition()
         {
-            // Temporarily disabled
-            float x = gameObject.transform.position.x;
-            float z = gameObject.transform.position.z;
+            float currentX = transform.position.x;
+            float currentZ = transform.position.z;
 
-            float xPos = x + Random.Range(x - MinX, x + MaxX);
-            float zPos = z + Random.Range(z - MinZ, z + MaxZ);
+            // setting these ranges is vital larger seems better 
+            float x = currentX + Random.Range(currentX - MinX, currentX + MaxX);
 
-            Target = new Vector3(xPos, gameObject.transform.position.y, zPos);
+            float z = currentZ + Random.Range(currentZ - MinZ, currentZ + MaxZ);
 
-            Nav.SetDestination(Target);
+            Vector3 pos = new Vector3(x, transform.position.y, z);
+
+            return pos;
+        }
+
+        private IEnumerator DoSomething()
+        {
+            _inCoRoutine = true;
+            yield return new WaitForSeconds(TimeForNewPath);
+
+            GetNewPath();
+            _validPath = _navMeshAgent.CalculatePath(_target, _path);
+
+            if (!_validPath)
+                Debug.Log("Found invalid path! Finding new one...");
+
+            while (!_validPath)
+            {
+                yield return new WaitForSeconds(0.01f);
+
+                GetNewPath();
+
+                _validPath = _navMeshAgent.CalculatePath(_target, _path);
+            }
+
+            _inCoRoutine = false;
+        }
+
+        private void GetNewPath()
+        {
+            _target = GetNewRandomPosition();
+            _navMeshAgent.SetDestination(_target);
         }
     }
 }
