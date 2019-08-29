@@ -8,10 +8,8 @@ namespace Assets.Scripts.Game
     public class MoveRandomly : MonoBehaviour
     {
         public float TimeForNewPath;
-        public float MinX;
-        public float MaxX;
-        public float MinZ;
-        public float MaxZ;
+        public float XValue;
+        public float ZValue;
 
         NavMeshAgent _navMeshAgent;
         NavMeshPath _path;
@@ -38,9 +36,9 @@ namespace Assets.Scripts.Game
         private Vector3 GetNewRandomPosition()
         {
             // setting these ranges is vital larger seems better 
-            float x = Random.Range(MinX, MaxX);
+            float x = Random.Range(-XValue, XValue);
 
-            float z = Random.Range(MinZ, MaxZ);
+            float z = Random.Range(-ZValue, ZValue);
 
             Vector3 pos = new Vector3(transform.position.x + x, transform.position.y, transform.position.z + z);
 
