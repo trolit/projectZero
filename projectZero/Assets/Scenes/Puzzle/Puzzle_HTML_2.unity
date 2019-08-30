@@ -12287,6 +12287,12 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!4 &189921057 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab,
+    type: 3}
+  m_PrefabInstance: {fileID: 545936988}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &193534015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20408,6 +20414,84 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 541830459}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &545936988
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1599904476}
+    m_Modifications:
+    - target: {fileID: 1584313364877740, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_Name
+      value: SCharacter_Bird2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584313364877740, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2182.8052
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1312.0712
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 549.5052
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.92130417
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.38884273
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 134.235
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 28.721645
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 28.721636
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 28.721645
+      objectReference: {fileID: 0}
+    - target: {fileID: 95744679087321986, guid: 6d8c53370341c254eb80f72f77a48dab,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: df0275f652a0ae6449a935afc6e06eda, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
 --- !u!1001 &546636673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28889,7 +28973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &757820529
 Transform:
   m_ObjectHideFlags: 0
@@ -45783,6 +45867,8 @@ Transform:
   - {fileID: 1416877086}
   - {fileID: 1026625117}
   - {fileID: 1919102971}
+  - {fileID: 189921057}
+  - {fileID: 1739371380}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48521,6 +48607,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4310614304489658, guid: 5cbae0602ce9acf41a98fda3a353569a,
     type: 3}
   m_PrefabInstance: {fileID: 1723184320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1739371379
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1599904476}
+    m_Modifications:
+    - target: {fileID: 1584313364877740, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_Name
+      value: SCharacter_Bird2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1584313364877740, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2150.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1278.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.33164382
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9434047
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 38.737003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 28.721645
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 28.721636
+      objectReference: {fileID: 0}
+    - target: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 28.721645
+      objectReference: {fileID: 0}
+    - target: {fileID: 95744679087321986, guid: 6d8c53370341c254eb80f72f77a48dab,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: df0275f652a0ae6449a935afc6e06eda, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6d8c53370341c254eb80f72f77a48dab, type: 3}
+--- !u!4 &1739371380 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4428894631334056, guid: 6d8c53370341c254eb80f72f77a48dab,
+    type: 3}
+  m_PrefabInstance: {fileID: 1739371379}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &1739858223 stripped
 RectTransform:
@@ -58622,19 +58792,16 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "1) HTML5 czyli j\u0119zyk znacznik\xF3w nak\u0142ada na u\u017Cytkownik\xF3w
-        pewn\u0105 konwencj\u0119 wedlug, kt\xF3rej powinno si\u0119 rozpocz\u0105c
-        tworzenie pliku HTML. Powinni\u015Bmy zacz\u0105\u0107 j\u0105 od instrukcji,
-        kt\xF3ra informuje przegl\u0105darke w jakiej wersji zosta\u0142a napisana
-        strona. W naszym przypadku fragment: <color=yellow><!DOCTYPE html></color>
-        oznacza wykorzystanie HTML5.\n2) Plik z rozszerzeniem <color=yellow>html</color>
-        powinien posiada\u0107 znaczniki: html, head, body. Ka\u017Cdy ma swoje przeznaczenie.
-        <color=yellow>Html</color> informuje o tym, \u017Ce wewn\u0105trz znajduje
-        si\u0119 j\u0119zyk znacznik\xF3w. W sekcji <color=yellow>head</color> dodajemy
-        referencje do plik\xF3w albo skrypt\xF3w a w <color=yellow>body</color> umieszczamy
-        tre\u015B\u0107 strony.\n3) Strony o rozszerzeniu <color=yellow>html</color>
-        znajdziesz, je\u017Celi b\u0119dziesz projektowa\u0107 front-end aplikacji
-        w np. Angularze. "
+      value: "1) <color=yellow>ol</color> jest skr\xF3tem od ordered list czyli w
+        j\u0119zyku polskim od listy numerowanej\n2) Atrybut <color=yellow>start</color>
+        u\u017Cyty w znaczniku <color=yellow>ol</color> pozwala ustali\u0107 od jakiej
+        warto\u015Bci maj\u0105 by\u0107 numerowane elementy listy \n3) List\u0119
+        nienumerowan\u0105 (np. wypunktowan\u0105) stworzymy za pomoc\u0105 znacznika
+        <color=yellow>ul</color> co jest skr\xF3tem od unordered list\n4) Wygl\u0105d
+        takiej listy mo\u017Cemy urozmaici\u0107 za pomoc\u0105 kaskadowego arkusza
+        styl\xF3w - <color=yellow>CSS</color>. Mo\u017Cemy w znacznikach zagnie\u017Cdza\u0107
+        atrybut <color=yellow>style</color>, kt\xF3ry pozwoli nam uzyska\u0107 wi\u0119cej
+        opcji do edycji wygl\u0105du. "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
