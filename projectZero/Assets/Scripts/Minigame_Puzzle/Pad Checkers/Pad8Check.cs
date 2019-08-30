@@ -29,7 +29,10 @@ namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
 
         void OnCollisionExit(Collision block)
         {
-            Pad8Result = false;
+            if (!_leaf.activeInHierarchy)
+            {
+                Pad8Result = false;
+            }
         }
     }
 }
