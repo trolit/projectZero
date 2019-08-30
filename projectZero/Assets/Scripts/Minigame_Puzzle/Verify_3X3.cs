@@ -51,6 +51,11 @@ namespace Assets.Scripts.Minigame_Puzzle
             {
                 Pad9Result = true;
             }
+
+            if (_command.Contains("Pad8True"))
+            {
+                Pad8Result = true;
+            }
         }
 
         private void Update()
