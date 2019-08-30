@@ -16,7 +16,7 @@ namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
                 _leaf.SetActive(true);
 
                 block.gameObject.tag = "UnDraggable";
-
+                
                 Pad3Result = true;
 
                 enabled = false;
