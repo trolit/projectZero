@@ -1,5 +1,4 @@
-﻿using System;
-using Assets.Scripts.Game;
+﻿using Assets.Scripts.Game;
 using UnityEngine;
 
 namespace Assets.Scripts.Minigame_Puzzle
@@ -23,20 +22,38 @@ namespace Assets.Scripts.Minigame_Puzzle
         protected static bool Pad9Result;
 
         [SerializeField]
-        protected string Command;
+        private string _command;
 
-        void Start()
+        // Set all to false
+        // Awake RUNS BEFORE Start
+        private void Awake()
         {
             Pad2Result = false;
             Pad3Result = false;
             Pad4Result = false;
             Pad5Result = false;
             Pad6Result = false;
+            Pad7Result = false;
             Pad8Result = false;
             Pad9Result = false;
         }
 
-        void Update()
+        // If some puzzles need to have already marked as true elements
+        // SET them here
+        private void Start()
+        {
+            if (_command.Contains("Pad4True"))
+            {
+                Pad4Result = true;
+            }
+
+            if (_command.Contains("Pad9True"))
+            {
+                Pad9Result = true;
+            }
+        }
+
+        private void Update()
         {
             //Debug.Log("Pad2 => " + Pad2Result);
             //Debug.Log("Pad3 => " + Pad3Result);

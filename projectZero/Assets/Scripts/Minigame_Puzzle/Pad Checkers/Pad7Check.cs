@@ -11,7 +11,7 @@ namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
         {
             if (block.gameObject.name == "ForestBlock07")
             {
-                Debug.Log("Ustawiam Pad7 na true!");
+                Debug.Log("Setting Pad7 on true!");
 
                 _leaf.SetActive(true);
 
