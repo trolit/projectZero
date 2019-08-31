@@ -9,7 +9,7 @@ namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
 
         void OnCollisionEnter(Collision block)
         {
-            if (block.gameObject.name == "ForestBlock03")
+            if (block.gameObject.name == "Block03")
             {
                 Debug.Log("Setting Pad3 on true!");
 
