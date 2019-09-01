@@ -40,14 +40,14 @@ Minigra labirynt to gra w której zadaniem gracza jest unikanie "bugów" i zbier
 ## 2. Sekcja dla devów
 
 ### 2.1 Planowane elementy
-:white_check_mark: perspektywa rozgrywki z lotu ptaka (top down view)
+:white_check_mark: perspektywa rozgrywki z lotu ptaka (top down view) <br/>
 :white_check_mark: główny świat podzielony na krainy </br>
 :white_check_mark: zróżnicowany styl każdej z przygotowanych krain </br>
 :white_check_mark: poruszające się istoty dzięki technologii Unity (navigation meshes) <br/>
 :white_check_mark: możliwość interakcji z wybranymi istotami <br/>
 :white_check_mark: plecak w którym przechowywane są książki, które można odczytać <br/>
 :white_check_mark: kreator postaci <br/>
-:white_check_mark: waluta 
+:white_check_mark: waluta <br/>
 :white_check_mark: rozwój postaci poprzez czytanie książek <br/>
 :white_check_mark: minigra typu wieżowiec (quiz) <br/>
 :white_check_mark: minigra typu labirynt <br/>
