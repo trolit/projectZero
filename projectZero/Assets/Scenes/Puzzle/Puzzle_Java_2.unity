@@ -18223,19 +18223,28 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "1) J\u0119zyki programowania <color=yellow>Java</color> i <color=yellow>C#</color>
-        s\u0105 bardzo podobne. S\u0105 to j\u0119zki nastawione na programowanie
-        obiektowe, kt\xF3re opiera si\u0119 z kolei na 4 filarach: abstrakcja, hermetyzacja,
-        polimorfizm i dziedziczenie.\n2) Komentarz jednoliniowy w <color=yellow>Java</color>
-        zapisuje si\u0119 poprzedzaj\u0105c go dwoma znakami <color=yellow>/</color>
-        (slash). Taki spos\xF3b komentowania pojedynczej linii obowi\u0105zuje tak\u017Ce
-        w j\u0119zyku <color=yellow>C#</color>.\n3) Implementacja takiego interfejsu
-        (implementacja w przypadku interfejsu oznacza dziedziczenie) polega\u0142aby
-        na dopisaniu do <color=yellow>class nazwaKlasy</color> zwrotu <color=yellow>implements
-        nazwaInterfejsu</color> (podczas gdy w j\u0119zyku <color=yellow>C#</color>
-        u\u017Cywamy znaku dwukropka np. <color=yellow>class Test : IAnimal</color>)
-        \n4) Klasy maj\u0105 pierwsz\u0105 liter\u0119 du\u017C\u0105 natomiast metody
-        ma\u0142\u0105."
+      value: "1) Zauwa\u017C, \u017Ce konstrukcja p\u0119tli while w j\u0119zyku <color=yellow>Java</color>
+        wygl\u0105da tak jak w np. j\u0119zyku <color=yellow>C#</color>. Prawd\u0119
+        m\xF3wi\u0105c konstrukcje takich rzeczy jak p\u0119tle, instrukcje <color=yellow>break</color>,
+        <color=yellow>continue</color> wygl\u0105daj\u0105 w wi\u0119kszo\u015Bci
+        j\u0119zyk\xF3w programowania tak samo. Wtedy je\u017Celi masz ochot\u0119
+        na poznanie kolejnego j\u0119zyka masz mniej element\xF3w do prze\u0107wiczenia\n2)
+        <color=yellow>Iteratorem</color> mo\u017Cemy okre\u015Bli\u0107 zmienn\u0105
+        z pomoc\u0105 kt\xF3rej konstruujemy p\u0119tl\u0119\n3) Instrukcja <color=yellow>continue</color>
+        powoduje pomini\u0119cie kodu umieszczonego w p\u0119tli poni\u017Cej tej
+        instrukcji i natychmiastowe przej\u015Bcie do cz\u0119sci odpowiadaj\u0105cej
+        za zwi\u0119kszanie <color=yellow>iteratora</color>. \n4) Pami\u0119taj, \u017Ce
+        continue mo\u017Cemy u\u017Cy\u0107 tylko w <color=yellow>p\u0119tli</color> "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_FontData.m_AlignByGeometry
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
