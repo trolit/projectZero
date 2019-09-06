@@ -26953,12 +26953,12 @@ PrefabInstance:
     - target: {fileID: 805906908929534663, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -414.6
+      value: -558
       objectReference: {fileID: 0}
     - target: {fileID: 805906908929534663, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -969.3
+      value: -936
       objectReference: {fileID: 0}
     - target: {fileID: 805906908929534663, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
@@ -26993,7 +26993,7 @@ PrefabInstance:
     - target: {fileID: 806698114689388225, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1043
+      value: -1009.7
       objectReference: {fileID: 0}
     - target: {fileID: 806698114689388225, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
@@ -27003,7 +27003,7 @@ PrefabInstance:
     - target: {fileID: 806698114689388225, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -414
+      value: -557.4
       objectReference: {fileID: 0}
     - target: {fileID: 806698114689388225, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
@@ -27058,7 +27058,7 @@ PrefabInstance:
     - target: {fileID: 801805780920678588, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -419.4
+      value: -562.8
       objectReference: {fileID: 0}
     - target: {fileID: 801805780920678588, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
@@ -27068,7 +27068,7 @@ PrefabInstance:
     - target: {fileID: 801805780920678588, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1131.9
+      value: -1098.6001
       objectReference: {fileID: 0}
     - target: {fileID: 801805780920678588, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
@@ -27610,7 +27610,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1972718672
 Transform:
   m_ObjectHideFlags: 0
@@ -30327,22 +30327,22 @@ PrefabInstance:
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 66.5137
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -30372,12 +30372,12 @@ PrefabInstance:
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 100.28111
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -166.31259
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -30457,23 +30457,29 @@ PrefabInstance:
     - target: {fileID: 1892338143118689036, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 250
+      value: 225
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "1) Je\u017Celi instrukcja warunkowa <color=yellow>if</color> zawiera
-        tylko jedn\u0105 lini\u0119 kodu to nie musimy umieszcza\u0107 jej mi\u0119dzy
-        klamrami { }. Kwesti\u0105 sporn\u0105 jest czy powinno si\u0119 z tego korzysta\u0107
-        czy nie. Ilu programist\xF3w tyle opinii. \n2) Operacja <color=yellow>i +=
-        2</color> to skr\xF3cona wersja <color=yellow> i = i + 2 </color>\n3) <color=yellow>Console.WriteLine</color>
-        to wypisanie tekstu na ekran aplikacji konsolowej w nowej linii\n4) W p\u0119tli
-        <color=yellow>for</color> nie musimy wykorzystywa\u0107 wszystkich blok\xF3w.
-        Przyk\u0142adowo <color=yellow>for(; zm < 2; zm++) </color>b\u0119dzie prawid\u0142ow\u0105
-        konstrukcj\u0105 pod warunkiem, \u017Ce zainicjalizowali\u015Bmy zmienn\u0105
-        <color=yellow>zm</color>. Skrajny przyk\u0142ad: <color=yellow>for(;;)</color>
-        jest te\u017C prawid\u0142owy. Musimy pami\u0119ta\u0107 o tym aby liczba
-        \u015Brednik\xF3w (2) si\u0119 zgadza\u0142a."
+      value: "1) Kod j\u0119zyka <color=yellow>PHP</color> zapisywany jest w bloku,
+        kt\xF3ry rozpoczyna si\u0119 <color=yellow><?php</color> a ko\u0144czy <color=yellow>?></color>.
+        \n2) Funkcja <color=yellow>date(\"H\")</color> zwraca godzin\u0119 z przedzia\u0142u
+        od 0 do 23. Dla przyk\u0142adu <color=yellow>date(\"l\")</color> zwr\xF3ci\u0142oby
+        dzie\u0144 tygodnia w formie napisu. Funkcja <color=yellow>date</color> pozwala
+        uzyska\u0107 du\u017Co ciekawych informacji odno\u015Bnie czasu. \n3) Zmienne
+        w <color=yellow>PHP</color> poprzedzane s\u0105 znakiem dolara - <color=yellow>$</color>.
+        Wtedy napis znajduj\u0105cy si\u0119 obok takiego znaku jest traktowany jako
+        zmienna. \n4) Instrukcja <color=yellow>echo</color> w <color=yellow>PHP</color>
+        pozwala na wypisanie zadanego ci\u0105gu np. <color=yellow>echo \"Project\"
+        . date(\"l\") . \"Zero\"</color>\n5) <color=yellow>If</color> to instrukcja
+        warunkowa. \u017Beby wykona\u0142 si\u0119 blok kodu znajduj\u0105cy si\u0119
+        wewn\u0105trz instrukcji, musi zosta\u0107 spe\u0142niony zadany warunek. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_Text
+      value: 225
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
@@ -30495,6 +30501,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Info_Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8024199979698410960, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -30508,22 +30519,22 @@ PrefabInstance:
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 66.5137
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
@@ -30553,12 +30564,12 @@ PrefabInstance:
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 100.28111
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -166.31259
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
