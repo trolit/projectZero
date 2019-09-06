@@ -47717,7 +47717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1972718672
 Transform:
   m_ObjectHideFlags: 0
@@ -53399,29 +53399,29 @@ PrefabInstance:
     - target: {fileID: 1892338143118689036, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 225
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "1) Kod j\u0119zyka <color=yellow>PHP</color> zapisywany jest w bloku,
-        kt\xF3ry rozpoczyna si\u0119 <color=yellow><?php</color> a ko\u0144czy <color=yellow>?></color>.
-        \n2) Funkcja <color=yellow>date(\"H\")</color> zwraca godzin\u0119 z przedzia\u0142u
-        od 0 do 23. Dla przyk\u0142adu <color=yellow>date(\"l\")</color> zwr\xF3ci\u0142oby
-        dzie\u0144 tygodnia w formie napisu. Funkcja <color=yellow>date</color> pozwala
-        uzyska\u0107 du\u017Co ciekawych informacji odno\u015Bnie czasu. \n3) Zmienne
-        w <color=yellow>PHP</color> poprzedzane s\u0105 znakiem dolara - <color=yellow>$</color>.
-        Wtedy napis znajduj\u0105cy si\u0119 obok takiego znaku jest traktowany jako
-        zmienna. \n4) Instrukcja <color=yellow>echo</color> w <color=yellow>PHP</color>
-        pozwala na wypisanie zadanego ci\u0105gu np. <color=yellow>echo \"Project\"
-        . date(\"l\") . \"Zero\"</color>\n5) <color=yellow>If</color> to instrukcja
-        warunkowa. \u017Beby wykona\u0142 si\u0119 blok kodu znajduj\u0105cy si\u0119
-        wewn\u0105trz instrukcji, musi zosta\u0107 spe\u0142niony zadany warunek. "
+      value: "1) Funkcja <color=yellow>define(arg1, arg2, arg3)</color> pozwala na
+        zdefiniowanie sta\u0142ej. Pierwszy argument to okre\u015Blenie nazwy sta\u0142ej.
+        \ Drugim argumentem jest warto\u015B\u0107, kt\xF3r\u0105 przypisujemy do
+        sta\u0142ej. Argument 3 jest opcjonalny. Mo\u017Cemy przekaza\u0107 w nim
+        warto\u015B\u0107 <color=yellow>true</color> je\u017Celi chcemy aby odwo\u0142uj\u0105c
+        si\u0119 do sta\u0142ej nie mia\u0142a znaczenia wielko\u015B\u0107 liter.
+        \n2) Je\u017Celi chcemy odnie\u015B\u0107 si\u0119 do zdefiniowanej sta\u0142ej
+        (uzyska\u0107 warto\u015B\u0107, kt\xF3r\u0105 przechowuje) to zwr\xF3\u0107my
+        uwage, \u017Ce w ich przypadku nazw <color=yellow>nie poprzedzamy znakiem
+        dolara</color>.\n3)  W <color=yellow>PHP7</color> mo\u017Cemy zdefiniowa\u0107
+        sta\u0142\u0105, kt\xF3ra przechowuje tablic\u0119 z danymi\n4) Sta\u0142e
+        s\u0105 <color=yellow>globalne</color> - co oznacza, \u017Ce s\u0105 dost\u0119pne
+        w obr\u0119bie ca\u0142ego skryptu"
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: 225
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
