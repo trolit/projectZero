@@ -5341,9 +5341,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Funkcje w programowaniu s\u0105 bardzo istotnym elementem. 0001010101101010101010101010101101010101010101010101\n010101011010101010101010101010101010101010110101010101011010100101010011010100000000000000000000010101010\n00000000000000000000000000000000000000000000000000000\n\n
-    \             Uwaga: wi\u0119kszo\u015B\u0107 informacji zosta\u0142a utracona
-    z powodu zebrania du\u017Cej ilo\u015Bci bug\xF3w. \n                   Je\u017Celi
+  m_Text: "Je\u017Celi zdarzy Ci si\u0119 poprogramowa\u0107 w j\u0119zyku <color=yellow>C#</color>
+    to natkniesz si\u0119 zapewne na tzw. programowanie obiektowe. Jest to spos\xF3b
+    programowania nastawiony na: <color=yellow>dziedziczenie</color>, <color=yellow>hermetyzacje</color>
+    10101011010010101011010, \n\n\n              Uwaga: wi\u0119kszo\u015B\u0107 informacji
+    zosta\u0142a utracona z powodu zebrania du\u017Cej ilo\u015Bci bug\xF3w. \n                   Je\u017Celi
     chcesz dowiedzie\u0107 si\u0119 wi\u0119cej to mo\u017Cesz powt\xF3rzy\u0107 poziom
     :) \n\n                               "
 --- !u!222 &214583262
@@ -12503,16 +12505,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Funkcje w programowaniu s\u0105 bardzo istotnym elementem. G\u0142\xF3wn\u0105
-    zal\u0119t\u0105 za kt\xF3r\u0105 je cenimy jest mo\u017Cliwo\u015B\u0107 ich
-    wielokrotnego wykorzystania.  Przycznia si\u0119 to do posiadania schludnego projektu
-    i unikania nadmiarowo\u015Bci kodu. Szabon funkcji prezentuje si\u0119 nast\u0119puj\u0105co:\n\n
-    \                                <modyfikator dost\u0119pu> <typ> <nazwa> (<parametry>)
-    {}\n\nmodyfikator dost\u0119pu - ustalamy zakres widoczno\u015Bci funkcji\ntyp
-    - ustalamy jaki typ b\u0119dzie zwraca\u0107 funkcja (je\u017Celi nic nie ma zwraca\u0107
-    to u\u017Cywamy s\u0142\xF3wka void)\nnazwa -  nazwa funkcji (powinni\u015Bmy
-    j\u0105 zacz\u0105\u0107 od du\u017Cej litery)\nparametry - mo\u017Cemy poda\u0107
-    jakie argumenty b\u0119dzie przyjmowa\u0107 funkcja"
+  m_Text: "Je\u017Celi zdarzy Ci si\u0119 poprogramowa\u0107 w j\u0119zyku <color=yellow>C#</color>
+    to natkniesz si\u0119 zapewne na tzw. programowanie obiektowe. Jest to spos\xF3b
+    programowania nastawiony na: <color=yellow>dziedziczenie</color>, <color=yellow>hermetyzacje</color>,
+    <color=yellow>polimorfizm</color> i <color=yellow>abstrakcje</color>. Wszystko
+    to po to aby zredukowa\u0107 nadmiarowo\u015B\u0107 kodu i u\u0142atwi\u0107 konserwacj\u0119.
+    B\u0119d\u0105c .NET Developerem przestrzega si\u0119 regu\u0142 <color=yellow>SOLID</color>
+    i stosuje si\u0119 <color=yellow>DI</color> (Dependency Injection).\n\nS - Single
+    Responsibility Principle\nO - Open/Closed Principle\nL - Liskov Substitution Principle\nI
+    - Interface Segregation Principle\nD - Dependency Inversion Principle"
 --- !u!222 &567837545
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27854,11 +27855,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Funkcje w programowaniu s\u0105 bardzo istotnym elementem. G\u0142\xF3wn\u0105
-    zal\u0119t\u0105 za kt\xF3r\u0105 je cenimy jest mo\u017Cliwo\u015B\u0107 ich
-    wielokrotnego wykorzystania.  Przycznia si\u0119 to do posiadania schludnego projektu
-    i unikania nadmiarowo\u015Bci kodu. Szabon funkcji prezentuje si\u0119 nast\u0119puj\u0105co:\n\n
-    \                              0101011010101010110101010110100011010100101001100010100101\n\n
+  m_Text: "Je\u017Celi zdarzy Ci si\u0119 poprogramowa\u0107 w j\u0119zyku <color=yellow>C#</color>
+    to natkniesz si\u0119 zapewne na tzw. programowanie obiektowe. Jest to spos\xF3b
+    programowania nastawiony na: <color=yellow>dziedziczenie</color>, <color=yellow>hermetyzacje</color>,
+    <color=yellow>polimorfizm</color> i <color=yellow>abstrakcje</color>. Wszystko
+    to po to aby zredukowa\u0107 nadmiarowo\u015B\u0107 kodu i u\u0142atwi\u0107 konserwacj\u0119.
+    01010101010100101010101010101010101010101011010010110101001010101010101\n\n\n
     \                  Uwaga: po\u0142owa informacji zosta\u0142a utracona z powodu
     zebrania bug\xF3w. \n               Je\u017Celi chcesz to mo\u017Cesz powt\xF3rzy\u0107
     poziom klikaj\u0105c na odpowiedni przycisk :)\n\n                               "
@@ -50220,7 +50222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1862399371
 MonoBehaviour:
   m_ObjectHideFlags: 0
