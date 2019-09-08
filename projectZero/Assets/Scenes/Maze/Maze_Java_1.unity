@@ -1370,13 +1370,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Je\u017Celi zdarzy Ci si\u0119 poprogramowa\u0107 w j\u0119zyku <color=yellow>C#</color>
-    to natkniesz si\u0119 zapewne na tzw. programowanie obiektowe. Jest to spos\xF3b
-    programowania nastawiony na: <color=yellow>dziedziczenie</color>, <color=yellow>hermetyzacje</color>
-    10101011010010101011010, \n\n\n              Uwaga: wi\u0119kszo\u015B\u0107 informacji
-    zosta\u0142a utracona z powodu zebrania du\u017Cej ilo\u015Bci bug\xF3w. \n                   Je\u017Celi
-    chcesz dowiedzie\u0107 si\u0119 wi\u0119cej to mo\u017Cesz powt\xF3rzy\u0107 poziom
-    :) \n\n                               "
+  m_Text: "<color=yellow>Java</color> to j\u0119zyk programowania nastawiony na programowanie
+    obiektowe. Na pocz\u0105tku nazywa\u0142 si\u0119 <color=yellow>\"Oak\"</color>.
+    Jest jednym z najpopularniejszych j\u0119zyk\xF3w. Backend aplikacji takich jak
+    np. <color=yellow>Gmail</color> al011001011010101010010101010\n\n\n              Uwaga:
+    wi\u0119kszo\u015B\u0107 informacji zosta\u0142a utracona z powodu zebrania du\u017Cej
+    ilo\u015Bci bug\xF3w. \n                   Je\u017Celi chcesz dowiedzie\u0107
+    si\u0119 wi\u0119cej to mo\u017Cesz powt\xF3rzy\u0107 poziom :) \n\n                               "
 --- !u!222 &214583262
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4192,6 +4192,7 @@ Transform:
   - {fileID: 1734273337}
   - {fileID: 2139997742}
   - {fileID: 1046484327}
+  - {fileID: 1954497254}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4965,15 +4966,18 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Je\u017Celi zdarzy Ci si\u0119 poprogramowa\u0107 w j\u0119zyku <color=yellow>C#</color>
-    to natkniesz si\u0119 zapewne na tzw. programowanie obiektowe. Jest to spos\xF3b
-    programowania nastawiony na: <color=yellow>dziedziczenie</color>, <color=yellow>hermetyzacje</color>,
-    <color=yellow>polimorfizm</color> i <color=yellow>abstrakcje</color>. Wszystko
-    to po to aby zredukowa\u0107 nadmiarowo\u015B\u0107 kodu i u\u0142atwi\u0107 konserwacj\u0119.
-    B\u0119d\u0105c .NET Developerem przestrzega si\u0119 regu\u0142 <color=yellow>SOLID</color>
-    i stosuje si\u0119 <color=yellow>DI</color> (Dependency Injection).\n\nS - Single
-    Responsibility Principle\nO - Open/Closed Principle\nL - Liskov Substitution Principle\nI
-    - Interface Segregation Principle\nD - Dependency Inversion Principle"
+  m_Text: "<color=yellow>Java</color> to j\u0119zyk programowania nastawiony na programowanie
+    obiektowe. Na pocz\u0105tku nazywa\u0142 si\u0119 <color=yellow>\"Oak\"</color>.
+    Jest jednym z najpopularniejszych j\u0119zyk\xF3w. Backend aplikacji takich jak
+    np. <color=yellow>Gmail</color> albo <color=yellow>Amazon</color> zosta\u0142
+    napisany w\u0142a\u015Bnie w tym j\u0119zyku! Co jest najciekawsze w tym j\u0119zyku
+    to to, \u017Ce zosta\u0142 on wynaleziony przez przypadek! <color=yellow>Java</color>
+    pochodzi od j\u0119zyka <color=yellow>C i C++</color>. <color=yellow>Warto wspomnie\u0107,
+    \u017Ce C#</color> tak\u017Ce pochodzi od <color=yellow>C i C++</color>.\n\nJe\u017Celi
+    por\xF3wnasz w jaki spos\xF3b deklaruje si\u0119 klas\u0119, interfejs, metod\u0119....
+    jak si\u0119 u\u017Cywa modyfikator\xF3w dost\u0119pu, konstruktor\xF3w to zauwa\u017Cysz,
+    \u017Ce <color=yellow>C#</color> i <color=yellow>Java</color> maj\u0105 wiele
+    wsp\xF3lnego. "
 --- !u!222 &567837545
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6254,6 +6258,101 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &728216633
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1115790531}
+    m_Modifications:
+    - target: {fileID: 146236, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+      propertyPath: m_Name
+      value: rock07 (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 441750, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 267
+      objectReference: {fileID: 0}
+    - target: {fileID: 441750, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -182
+      objectReference: {fileID: 0}
+    - target: {fileID: 441750, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1351
+      objectReference: {fileID: 0}
+    - target: {fileID: 441750, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441750, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99982196
+      objectReference: {fileID: 0}
+    - target: {fileID: 441750, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441750, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.018873164
+      objectReference: {fileID: 0}
+    - target: {fileID: 441750, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+      propertyPath: m_RootOrder
+      value: 109
+      objectReference: {fileID: 0}
+    - target: {fileID: 441750, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441750, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 177.837
+      objectReference: {fileID: 0}
+    - target: {fileID: 441750, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441750, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 324.7301
+      objectReference: {fileID: 0}
+    - target: {fileID: 441750, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 324.7301
+      objectReference: {fileID: 0}
+    - target: {fileID: 441750, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 324.7301
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 802bd3dc24c20394ca2037c1b9c882a0, type: 3}
+--- !u!4 &728216634 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 441750, guid: 802bd3dc24c20394ca2037c1b9c882a0,
+    type: 3}
+  m_PrefabInstance: {fileID: 728216633}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &728216635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 146236, guid: 802bd3dc24c20394ca2037c1b9c882a0,
+    type: 3}
+  m_PrefabInstance: {fileID: 728216633}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &728216636
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728216635}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 7d39097ddbb0a5844beb53d63bfbe52a, type: 3}
 --- !u!1001 &729005700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9221,15 +9320,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4567931139058554, guid: 699289c87c215de47a357b833d76a431, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -550
+      value: -560
       objectReference: {fileID: 0}
     - target: {fileID: 4567931139058554, guid: 699289c87c215de47a357b833d76a431, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 626
+      value: 654.25
       objectReference: {fileID: 0}
     - target: {fileID: 4567931139058554, guid: 699289c87c215de47a357b833d76a431, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1455
+      value: 1415
       objectReference: {fileID: 0}
     - target: {fileID: 4567931139058554, guid: 699289c87c215de47a357b833d76a431, type: 3}
       propertyPath: m_LocalRotation.x
@@ -9265,15 +9364,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4567931139058554, guid: 699289c87c215de47a357b833d76a431, type: 3}
       propertyPath: m_LocalScale.x
-      value: 50.712
+      value: 40.06248
       objectReference: {fileID: 0}
     - target: {fileID: 4567931139058554, guid: 699289c87c215de47a357b833d76a431, type: 3}
       propertyPath: m_LocalScale.y
-      value: 50.712
+      value: 40.06248
       objectReference: {fileID: 0}
     - target: {fileID: 4567931139058554, guid: 699289c87c215de47a357b833d76a431, type: 3}
       propertyPath: m_LocalScale.z
-      value: 50.712
+      value: 40.06248
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 699289c87c215de47a357b833d76a431, type: 3}
@@ -9713,15 +9812,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Je\u017Celi zdarzy Ci si\u0119 poprogramowa\u0107 w j\u0119zyku <color=yellow>C#</color>
-    to natkniesz si\u0119 zapewne na tzw. programowanie obiektowe. Jest to spos\xF3b
-    programowania nastawiony na: <color=yellow>dziedziczenie</color>, <color=yellow>hermetyzacje</color>,
-    <color=yellow>polimorfizm</color> i <color=yellow>abstrakcje</color>. Wszystko
-    to po to aby zredukowa\u0107 nadmiarowo\u015B\u0107 kodu i u\u0142atwi\u0107 konserwacj\u0119.
-    01010101010100101010101010101010101010101011010010110101001010101010101\n\n\n
-    \                  Uwaga: po\u0142owa informacji zosta\u0142a utracona z powodu
-    zebrania bug\xF3w. \n               Je\u017Celi chcesz to mo\u017Cesz powt\xF3rzy\u0107
-    poziom klikaj\u0105c na odpowiedni przycisk :)\n\n                               "
+  m_Text: "<color=yellow>Java</color> to j\u0119zyk programowania nastawiony na programowanie
+    obiektowe. Na pocz\u0105tku nazywa\u0142 si\u0119 <color=yellow>\"Oak\"</color>.
+    Jest jednym z najpopularniejszych j\u0119zyk\xF3w. Backend aplikacji takich jak
+    np. <color=yellow>Gmail</color> albo <color=yellow>Amazon</color> zosta\u0142
+    napisany w\u0142a\u015Bnie w tym j\u0119zyku! Co jest najciekawsze w tym j\u0119zyku
+    to to, \u017Ce zosta\u0142 on wynaleziony przez przypadek! \n\n\n\n                   Uwaga:
+    po\u0142owa informacji zosta\u0142a utracona z powodu zebrania bug\xF3w. \n               Je\u017Celi
+    chcesz to mo\u017Cesz powt\xF3rzy\u0107 poziom klikaj\u0105c na odpowiedni przycisk
+    :)\n\n                               "
 --- !u!222 &1091764264
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10390,6 +10489,7 @@ Transform:
   - {fileID: 1807743822}
   - {fileID: 1287772560}
   - {fileID: 520722023}
+  - {fileID: 728216634}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19113,6 +19213,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1930397952}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1954497253
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 525303606}
+    m_Modifications:
+    - target: {fileID: 1114081256727678, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_Name
+      value: DesertPear (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1221
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 385
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -557
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.82852554
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.55995136
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_RootOrder
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 111.895004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 35.319
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 35.319
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 35.319
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+--- !u!4 &1954497254 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1954497253}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1958434610 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 118734, guid: a45f923de9555884cbe160883ce87a74,
@@ -22102,7 +22277,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: "- mini-gra uznana zostaje za uko\u0144czon\u0105 je\u017Celi zostan\u0105
         zebrane wszystkie fragmenty kodu\n- zebranie 'buga' powoduje zmniejszenie
-        wynagrodzenia "
+        wynagrodzenia a po pewnej ilo\u015Bci nawet utrat\u0119 informacji"
       objectReference: {fileID: 0}
     - target: {fileID: 8024199979698410973, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
