@@ -14,6 +14,8 @@ namespace Assets.Scripts.Game.Player
         [SerializeField]
         public float Speed;
 
+        public static bool IsMoving = false;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -30,6 +32,8 @@ namespace Assets.Scripts.Game.Player
                 Input.GetKeyUp(KeyCode.D))
             {
                 _animator.SetBool("Move", false);
+
+                IsMoving = false;
             }
 
             // Run walk animation
@@ -37,6 +41,8 @@ namespace Assets.Scripts.Game.Player
                 Input.GetKey(KeyCode.D))
             {
                 _animator.SetBool("Move", true);
+
+                IsMoving = true;
 
                 if(SfxSource.isPlaying == false)
                     SfxSource.Play();
