@@ -8155,13 +8155,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<color=yellow>Tablica (z ang. array)</color> jest wa\u017Cnym elementem
-    w j\u0119zykach programowania. U\u017Cywana jest do <color=yellow>przechowywania
-    wielu warto\u015Bci w jednej zmiennej b\u0119d\u0105cej wspomnian\u0105 tablic\u0105</color>.
-    A 0101101010101001100110010101010011001010\n\n\n              Uwaga: wi\u0119kszo\u015B\u0107
-    informacji zosta\u0142a utracona z powodu zebrania du\u017Cej ilo\u015Bci bug\xF3w.
-    \n                   Je\u017Celi chcesz dowiedzie\u0107 si\u0119 wi\u0119cej to
-    mo\u017Cesz powt\xF3rzy\u0107 poziom :) \n\n                               "
+  m_Text: "<color=yellow>Operatory logiczne</color> w programowaniu pe\u0142ni\u0105
+    bardzo wa\u017Cn\u0105 funkcj\u0119. Pozwalaj\u0105 przede wszystkim na <color=yellow>tworzenie
+    bardziej z\u0142o\u017Conych warunk\xF3w</color>. Najcz\u0119\u015Bciej korzystamy
+    z AND(i), OR(lub) i NOT(negacja). 01010110101010101010\n\n\n              Uwaga:
+    wi\u0119kszo\u015B\u0107 informacji zosta\u0142a utracona z powodu zebrania du\u017Cej
+    ilo\u015Bci bug\xF3w. \n                   Je\u017Celi chcesz dowiedzie\u0107
+    si\u0119 wi\u0119cej to mo\u017Cesz powt\xF3rzy\u0107 poziom :) \n\n                               "
 --- !u!222 &214583262
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22985,8 +22985,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 3fe86dc1c4efecc4f88ac3734f1444b7, type: 3}
-    m_FontSize: 41
+    m_Font: {fileID: 12800000, guid: 009a5b96dea79fa42b6b9c161ff7ccbd, type: 3}
+    m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -22997,20 +22997,31 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<color=yellow>Tablica (z ang. array)</color> jest wa\u017Cnym elementem
-    w j\u0119zykach programowania. U\u017Cywana jest do <color=yellow>przechowywania
-    wielu warto\u015Bci w jednej zmiennej b\u0119d\u0105cej wspomnian\u0105 tablic\u0105</color>.
-    Aby zadeklarowa\u0107 tablic\u0119 w j\u0119zyku <color=yellow>Java</color> napi-
-    szemy <color=yellow>String[] cars</color>. Je\u017Celi chcieliby\u015Bmy j\u0105
-    zadeklarowa\u0107 i odrazu przypisa\u0107 kilka warto\u015Bci to mogliby\u015Bmy
-    to zrobi\u0107 przyk\u0142adowo w ten spos\xF3b <color=yellow>String[] cars =
-    {\"Volvo\" , \"BMW\", \"Honda\" }.</color>\n\n\u017Beby dobra\u0107 si\u0119 do
-    jakiego\u015B konkretnego elementu tablicy to napiszemy np. <color=yellow>cars[0]</color>
-    - z tablicy <color=yellow>cars</color> wyci\u0105gam informacj\u0119 znajduj\u0105c\u0105
-    si\u0119 w <color=yellow>indeksie zero</color> czyli \"Volvo\" - <color=yellow>w
-    tabliach numeracja indeks\xF3w \njest od 0</color>! Gdyby\u015Bmy chcieli \"przej\u015B\u0107\"
-    po kilku b\u0105d\u017A wszystkich elementach tablicy <color=yellow>zastosowaliby\u015Bmy
-    \np\u0119tl\u0119.</color>\n"
+  m_Text: "<color=yellow>Operatory logiczne</color> w programowaniu pe\u0142ni\u0105
+    bardzo wa\u017Cn\u0105 funkcj\u0119. Pozwalaj\u0105 przede wszystkim na <color=yellow>tworzenie
+    bardziej z\u0142o\u017Conych warunk\xF3w</color>. Najcz\u0119\u015Bciej korzystamy
+    z AND(i), OR(lub) i NOT(negacja). Te operatory zwracaj\u0105 jedn\u0105 z dw\xF3ch
+    warto\u015Bci: <color=yellow>true</color> lub <color=yellow>false</color>. W <color=yellow>JavaScript</color>
+    zapisujemy je symbolicznie w spos\xF3b nast\u0119puj\u0105cy:\n\nAND zapiszemy
+    jako <color=yellow>&&</color>    np. <color=yellow>if ( zmA == zmB && zmB > 3
+    ) { ... }</color> \nOR zapiszemy jako <color=yellow>||</color>         np. <color=yellow>if
+    ( zmA > 2 || zmB < 5 ) { ... }</color>\nNOT zapiszemy jako  <color=yellow>!</color>
+    \      np. <color=yellow>if ( ! zmA > 2 ) { ... }</color>\n\nAND zwraca warto\u015B\u0107
+    <color=yellow>true</color> tylko wtedy gdy wyra\u017Cenia, kt\xF3re \"otacza\"
+    maj\u0105 warto\u015B\u0107 <color=yellow>true</color>.\nOR zwraca warto\u015B\u0107
+    <color=yellow>true</color> gdy przynajmniej jedno z wyra\u017Ce\u0144, kt\xF3re
+    \"otacza\" ma warto\u015B\u0107 <color=yellow>true</color>.\nNOT powoduje odwr\xF3cenie
+    warunku. Warto\u015B\u0107 <color=yellow>true</color> trakowana jest jako warto\u015B\u0107
+    <color=yellow>false</color> a <color=yellow>false</color> jako warto\u015B\u0107
+    <color=yellow>true</color>.\n\nDodatkow\u0105 rzecz\u0105 kt\xF3r\u0105 warto
+    wiedzie\u0107 o j\u0119zyku <color=yellow>JavaScript</color> to r\xF3\u017Cnica
+    mi\u0119dzy <color=yellow>===</color> a <color=yellow>==</color> je\u017Celi chcemy
+    przyr\xF3wna\u0107 dwie warto\u015Bci. Ot\xF3\u017C je\u017Celi skorzystamy z
+    trzech znak\xF3w r\xF3wno\u015Bci to sprawdzana jest zgodno\u015B\u0107 nie tylko
+    warto\u015Bci ale te\u017C typ\xF3w. W przypadku dw\xF3ch znak\xF3w r\xF3wno\u015Bci
+    por\xF3wnywana jest tylko zawarto\u015B\u0107. Czyli np. wyra\u017Cenie <color=yellow>2
+    == \"2\"</color> zwr\xF3ci <color=yellow>true</color> podczas gdy <color=yellow>2
+    === \"2\"</color> zwr\xF3ci <color=yellow>false</color>. \n\n"
 --- !u!222 &567837545
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -42949,8 +42960,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 3fe86dc1c4efecc4f88ac3734f1444b7, type: 3}
-    m_FontSize: 41
+    m_Font: {fileID: 12800000, guid: 009a5b96dea79fa42b6b9c161ff7ccbd, type: 3}
+    m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -42961,17 +42972,20 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<color=yellow>Tablica (z ang. array)</color> jest wa\u017Cnym elementem
-    w j\u0119zykach programowania. U\u017Cywana jest do <color=yellow>przechowywania
-    wielu warto\u015Bci w jednej zmiennej b\u0119d\u0105cej wspomnian\u0105 tablic\u0105</color>.
-    Aby zadeklarowa\u0107 tablic\u0119 w j\u0119zyku <color=yellow>Java</color> napi-
-    szemy <color=yellow>String[] cars</color>. Je\u017Celi chcieliby\u015Bmy j\u0105
-    zadeklarowa\u0107 i odrazu przypisa\u0107 kilka warto\u015Bci to mogliby\u015Bmy
-    to zrobi\u0107 przyk\u0142adowo w ten spos\xF3b <color=yellow>String[] cars =
-    {\"Volvo\" , \"BMW\", \"Honda\" }.</color> 0101011010101010101010100101010\n\n\n
-    \                  Uwaga: po\u0142owa informacji zosta\u0142a utracona z powodu
-    zebrania bug\xF3w. \n               Je\u017Celi chcesz to mo\u017Cesz powt\xF3rzy\u0107
-    poziom klikaj\u0105c na odpowiedni przycisk :)\n\n                               "
+  m_Text: "<color=yellow>Operatory logiczne</color> w programowaniu pe\u0142ni\u0105
+    bardzo wa\u017Cn\u0105 funkcj\u0119. Pozwalaj\u0105 przede wszystkim na <color=yellow>tworzenie
+    bardziej z\u0142o\u017Conych warunk\xF3w</color>. Najcz\u0119\u015Bciej korzystamy
+    z AND(i), OR(lub) i NOT(negacja). Te operatory zwracaj\u0105 jedn\u0105 z dw\xF3ch
+    warto\u015Bci: <color=yellow>true</color> lub <color=yellow>false</color>. W <color=yellow>JavaScript</color>
+    zapisujemy je symbolicznie w spos\xF3b nast\u0119puj\u0105cy:\n\nAND zapiszemy
+    jako <color=yellow>&&</color>    np. <color=yellow>if ( zmA == zmB && zmB > 3
+    ) { ... }</color> \nOR zapiszemy jako <color=yellow>||</color>         np. <color=yellow>if
+    ( zmA > 2 || zmB < 5 ) { ... }</color>\nNOT zapiszemy jako  <color=yellow>!</color>
+    \      np. <color=yellow>if ( ! zmA > 2 ) { ... }</color>\n\nAND zwraca warto\u015B\u0107
+    010101101010101010010101010101001\n\n\n\n                                         Uwaga:
+    po\u0142owa informacji zosta\u0142a utracona z powodu zebrania bug\xF3w. \n                                    Je\u017Celi
+    chcesz to mo\u017Cesz powt\xF3rzy\u0107 poziom klikaj\u0105c na odpowiedni przycisk
+    :)\n\n                               "
 --- !u!222 &1091764264
 CanvasRenderer:
   m_ObjectHideFlags: 0
