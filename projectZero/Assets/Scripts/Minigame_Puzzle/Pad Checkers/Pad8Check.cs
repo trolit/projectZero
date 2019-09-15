@@ -9,9 +9,9 @@ namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
 
         void OnCollisionEnter(Collision block)
         {
-            if (block.gameObject.name == "ForestBlock08")
+            if (block.gameObject.name == "Block08")
             {
-                Debug.Log("Ustawiam Pad8 na true!");
+                Debug.Log("Setting Pa8 on true!");
 
                 _leaf.SetActive(true);
 
@@ -29,7 +29,10 @@ namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
 
         void OnCollisionExit(Collision block)
         {
-            Pad8Result = false;
+            if (!_leaf.activeInHierarchy)
+            {
+                Pad8Result = false;
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
 {
@@ -9,9 +10,9 @@ namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
 
         void OnCollisionEnter(Collision block)
         {
-            if (block.gameObject.name == "ForestBlock04")
+            if (block.gameObject.name == "Block04")
             {
-                Debug.Log("Ustawiam Pad4 na true!");
+                Debug.Log("Setting Pad4 on true!");
 
                 _leaf.SetActive(true);
 
@@ -29,7 +30,10 @@ namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
 
         void OnCollisionExit(Collision block)
         {
-            Pad4Result = false;
+            if (!_leaf.activeInHierarchy)
+            {
+                Pad4Result = false;
+            }
         }
     }
 }

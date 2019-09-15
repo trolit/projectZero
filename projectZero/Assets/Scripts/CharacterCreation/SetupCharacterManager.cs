@@ -63,6 +63,22 @@ namespace Assets.Scripts.CharacterCreation
             }
         }
 
+        void Update()
+        {
+            if (_pointsLeft == 1 || _pointsLeft == 2)
+            {
+                _pointsDisplay.color = Color.yellow;
+            }
+            else if (_pointsLeft == 0)
+            {
+                _pointsDisplay.color = Color.red;
+            }
+            else
+            {
+                _pointsDisplay.color = Color.white;
+            }
+        }
+
         public void EnableModel(Transform modelTransform)
         {
             for (int i = 0; i < transform.childCount; i++)

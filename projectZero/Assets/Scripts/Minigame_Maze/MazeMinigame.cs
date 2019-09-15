@@ -24,6 +24,8 @@ namespace Assets.Scripts.Minigame_Maze
         [SerializeField]
         private Text _moneyText;
 
+        private int _moneyAmount;
+
         public static int CurrentlyPicked = 0;
 
         public static int BugsPicked = 0;
@@ -61,7 +63,9 @@ namespace Assets.Scripts.Minigame_Maze
                     _fullSummaryText.SetActive(true);
                 }
 
-                _moneyText.text = (250 - (BugsPicked * 20)).ToString();
+                _moneyAmount = (250 - (BugsPicked * 20));
+
+                _moneyText.text = _moneyAmount.ToString();
 
                 // Launch script
                 script.enabled = true;
@@ -69,6 +73,13 @@ namespace Assets.Scripts.Minigame_Maze
                 // Turn off Update()
                 enabled = false;
             }
+        }
+
+        public void TransferMoney()
+        {
+            var currentMoney = PlayerPrefs.GetInt("money");
+
+            PlayerPrefs.SetInt("money", currentMoney + _moneyAmount);
         }
     }
 }
