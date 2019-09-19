@@ -3404,6 +3404,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8521122757502403062}
+  - component: {fileID: 8351309272946106103}
   m_Layer: 0
   m_Name: Windmill House
   m_TagString: Untagged
@@ -3434,6 +3435,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8351309272946106103
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8521122757502403063}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 85.845215, y: 52.557404, z: 139.2157}
+  m_Center: {x: -116.61807, y: -301.91052, z: 38.266907}
 --- !u!1 &8521122758035552043
 GameObject:
   m_ObjectHideFlags: 0
