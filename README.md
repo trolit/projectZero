@@ -84,7 +84,14 @@ Po zakończeniu projektowania :)
 :white_check_mark: system repetytywności (nie uda się rozegrać wszystkich minigier za jednym podejściem) <br/>
 :white_check_mark: system osiągnięć (medale) - JEŻELI STARCZY CZASU <br/>
 
-### 2.2 Klawiszologia 
+### 2.2 Grafiki koncepcyjne
+| Zarys mapy | Przykład mapy | Zarys mapy z przejściami |
+| :---:  | :---:  | :---:  |
+| <img src="https://github.com/trolit/projectZero/blob/storage/photos/con_0.png?raw=true" alt="Koncepcja mapy" width="450px" height="190px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/con_1.jpg?raw=true" alt="Koncepcja mapy" width="450px" height="250px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/con_2.jpg?raw=true" alt="Koncepcja mapy" width="450px" height="190px"></img> |
+| Koncept minigry wieżowiec | Wieżowiec koncept działania |  |
+| <img src="https://github.com/trolit/projectZero/blob/storage/photos/con_3.png?raw=true" alt="Koncepcja mapy" width="450px" height="190px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/con_4.png?raw=true" alt="Koncepcja mapy" width="450px" height="190px"></img> |
+
+### 2.3 Klawiszologia 
 Uwaga! Klawiszologia może się różnić w zależności od tego w jaką mini-gierkę gramy bądź też czy znajdujemy się na mapie głównej <br/>
 W - przód <br/> 
 A - lewo <br/>
@@ -95,21 +102,21 @@ F - interakcja z NPC (wejście w rozmowe) <br/>
 Spacja [przytrzymanie] - złapanie i przesuwanie puzzla/pinezki <br/>
 LPM (lewy przycisk myszy) - klikanie w sklepie -> kupowanie książek, otwieranie książek z inventory(plecaka) etc 
 
-### 2.3 Wykorzystane materiały
+### 2.4 Wykorzystane materiały
 W pliku Wykorzystane.txt umieszczone są odnośniki do rzeczy, które zostały wykorzystane w projekcie - głównie są to assety, muzyka i grafiki. Będą one uwiecznione w sekcji "Uznania" w grze. 
 
-### 2.4 Wersja Unity
+### 2.5 Wersja Unity
 2018.3.12f1 
 
-### 2.5 Wersja .NET Framework:
+### 2.6 Wersja .NET Framework:
 v 4.7.1 
 
-### 2.6 Klucze 
+### 2.7 Klucze 
 po zakończeniu projektu
 
-### 2.7 Zawartość podsumowań
+### 2.8 Zawartość podsumowań
 po zakończeniu projektu
 
-### 2.8 Realizacja zadań
+### 2.9 Realizacja zadań
 po zakończeniu projektu
 
