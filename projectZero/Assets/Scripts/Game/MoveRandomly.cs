@@ -12,7 +12,6 @@ namespace Assets.Scripts.Game
         public float ZValue;
 
         NavMeshAgent _navMeshAgent;
-        NavMeshPath _path;
         bool _inCoRoutine;
         Vector3 _target;
         bool _validPath;
@@ -21,7 +20,7 @@ namespace Assets.Scripts.Game
         private void Start()
         {
             _navMeshAgent = GetComponent<NavMeshAgent>();
-            _path = new NavMeshPath();
+            new NavMeshPath();
 
             GetNewPath();
         }
@@ -29,13 +28,12 @@ namespace Assets.Scripts.Game
         // Update is called once per frame
         private void Update()
         {
-            if (_inCoRoutine == false)
+            if (!_inCoRoutine)
                 StartCoroutine(DoSomething());
         }
 
         private Vector3 GetNewRandomPosition()
         {
-            // setting these ranges is vital larger seems better 
             float x = Random.Range(-XValue, XValue);
 
             float z = Random.Range(-ZValue, ZValue);
@@ -51,20 +49,14 @@ namespace Assets.Scripts.Game
             yield return new WaitForSeconds(TimeForNewPath);
 
             GetNewPath();
-            _validPath = _navMeshAgent.CalculatePath(_target, _path);
 
-            if (!_validPath)
-                Debug.Log("Found invalid path!");
-
-            while (!_validPath)
+            while (_navMeshAgent.pathPending == false)
             {
+                Debug.Log("Path not reachable!");
+
                 yield return new WaitForSeconds(0.01f);
 
                 GetNewPath();
-
-                _validPath = true;
-
-                // _validPath = _navMeshAgent.CalculatePath(_target, _path);
             }
 
             _inCoRoutine = false;
