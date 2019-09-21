@@ -30,17 +30,6 @@ namespace Assets.Scripts.Game
                 StartCoroutine(DoSomething());
         }
 
-        private Vector3 GetNewRandomPosition()
-        {
-            var x = Random.Range(-XValue, XValue);
-
-            var z = Random.Range(-ZValue, ZValue);
-
-            var pos = new Vector3(transform.position.x + x, transform.position.y, transform.position.z + z);
-
-            return pos;
-        }
-
         private IEnumerator DoSomething()
         {
             _inCoRoutine = true;
@@ -66,6 +55,17 @@ namespace Assets.Scripts.Game
         {
             _target = GetNewRandomPosition();
             _navMeshAgent.SetDestination(_target);
+        }
+
+        private Vector3 GetNewRandomPosition()
+        {
+            var x = Random.Range(-XValue, XValue);
+
+            var z = Random.Range(-ZValue, ZValue);
+
+            var pos = new Vector3(transform.position.x + x, transform.position.y, transform.position.z + z);
+
+            return pos;
         }
     }
 }
