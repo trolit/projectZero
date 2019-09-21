@@ -8,13 +8,12 @@ namespace Assets.Scripts.Game
     public class MoveRandomly : MonoBehaviour
     {
         public float TimeForNewPath;
-        public float XValue;
+        public float XValue; 
         public float ZValue;
 
-        NavMeshAgent _navMeshAgent;
-        bool _inCoRoutine;
-        Vector3 _target;
-        bool _validPath;
+        private NavMeshAgent _navMeshAgent;
+        private bool _inCoRoutine;
+        private Vector3 _target;
 
         // Use this for initialization
         private void Start()
@@ -33,11 +32,11 @@ namespace Assets.Scripts.Game
 
         private Vector3 GetNewRandomPosition()
         {
-            float x = Random.Range(-XValue, XValue);
+            var x = Random.Range(-XValue, XValue);
 
-            float z = Random.Range(-ZValue, ZValue);
+            var z = Random.Range(-ZValue, ZValue);
 
-            Vector3 pos = new Vector3(transform.position.x + x, transform.position.y, transform.position.z + z);
+            var pos = new Vector3(transform.position.x + x, transform.position.y, transform.position.z + z);
 
             return pos;
         }
