@@ -20,7 +20,6 @@ namespace Assets.Scripts.Game
         private void Start()
         {
             _navMeshAgent = GetComponent<NavMeshAgent>();
-            new NavMeshPath();
 
             GetNewPath();
         }
@@ -52,7 +51,9 @@ namespace Assets.Scripts.Game
 
             while (_navMeshAgent.pathPending == false)
             {
-                Debug.Log("Path not reachable!");
+                Debug.Log("Path not reachable !");
+                Debug.Log("Coordinates: (X - " + _navMeshAgent.destination.x + ")" +
+                          " (Z - " + _navMeshAgent.destination.z + ")");
 
                 yield return new WaitForSeconds(0.01f);
 
