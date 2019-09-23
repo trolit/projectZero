@@ -21,22 +21,23 @@ namespace Assets.Scripts.Minigame_PinPin
 
         void OnCollisionEnter(Collision block)
         {
-            Debug.Log("Sprawdzam => " + block.gameObject.name);
+            Debug.Log("Checking => " + block.gameObject.name);
 
             if (block.gameObject.name == _correctObjectName)
             {
-                Debug.Log("Wybrano prawidlowy blok!");
+                Debug.Log("Pin placed on correct object!");
 
                 IsCorrect = true;
             }
             else if (block.gameObject.tag == "Wrong")
             {
-                Debug.Log("Wybrano nieprawidlowy blok!");
+                Debug.Log("Pin placed on incorrect object!");
 
                 IsCorrect = false;
             }
             else if (block.gameObject.tag == "Player")
             {
+                // Show verification button 
                 _verifyButton.SetActive(true);
             }
         }
