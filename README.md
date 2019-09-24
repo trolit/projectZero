@@ -57,14 +57,30 @@ Minigra w której układamy puzzle z podanego kodu. Celem jest poprawne rozmiesz
 Minigra labirynt to gra w której zadaniem gracza jest unikanie "bugów" i zbieranie fragmentów kodu. Zebranie bugów powoduje obniżenie ilości informacji, które otrzymamy po ukończeniu gry i obniża ostateczną kwotę uzyskaną za przejście minigry. Jeżeli chcemy poznać te informację i uzyskać większą wygraną to możemy powtórzyć poziom. Przejście poziomu spowoduje jego oznaczenie jako wykonane i nie będzie go można już powtórzyć (tak jak i innych minigier) aby zapobiec "spamowaniu" uzyskiwaniem pieniędzy. 
 </p>
 
-### 1.6 Zrzuty ekranu (screeny)
+### 1.6 Walory edukacyjne
+<p align="justify">
+Gra oferuje poznanie języków C#, HTML, Java, JavaScript, PHP w sposób nierygorystyczny. Oznacza to, że graczowi nie jest narzucany obowiązek analizowania oferowanej wiedzy. Przekazywana jest ona poprzez
+</p>
+
+- treści zawarte w książkach
+- podsumowania minigier
+  - w rozgrywkach w stylu puzzle poruszane są elementy, które wystąpiły w układankach
+  - poziomy typu labirynt to ciekawe informacje  
+  - typu pinpin zawierają poprawne fragmenty kodów z rozgrywki 
+  - typu wieżowiec zawierają podsumowania wybranych odpowiedzi
+
+Przedstawione informacje są skondensowane w taki sposób aby
+- nie odrzucały/zamęczały gracza nadmiarem tekstu,
+- były na zasadzie "haseł-kluczy" więc jeżeli jakiś element zainteresuje gracza to może łatwo na własną rękę dowiedzieć się więcej
+
+### 1.7 Zrzuty ekranu (screeny)
 Po zakończeniu projektowania :)
 
 ## 2. Sekcja dla devów
 
 ### 2.1 Planowane elementy
 :white_check_mark: perspektywa rozgrywki z lotu ptaka (top down view) <br/>
-:white_check_mark: główny świat podzielony na krainy </br>
+:white_check_mark: główny świat podzielony na 5 krain </br>
 :white_check_mark: zróżnicowany styl każdej z przygotowanych krain </br>
 :white_check_mark: poruszające się istoty dzięki technologii Unity (navigation meshes) <br/>
 :white_check_mark: możliwość interakcji z wybranymi istotami <br/>
@@ -77,6 +93,7 @@ Po zakończeniu projektowania :)
 :white_check_mark: minigra typu podpięcie <br/>
 :white_check_mark: minigra typu puzzle <br/>
 :white_check_mark: łączna liczba 40 minigier do rozegrania <br/>
+:white_check_mark: łączna liczba 20 książek do sprawdzenia <br/>
 :white_check_mark: podsumowania minigier z dawką programistycznej wiedzy <br/>
 :white_check_mark: zróżnicowany level design minigier w zależności od krainy na której są rozgrywane <br/>
 :white_check_mark: zróżnicowana oprawa muzyczna w każdej minigrze <br/> 
