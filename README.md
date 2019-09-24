@@ -1,4 +1,12 @@
-# Project Zero
+# Project Zero 
+
+
+<p align="center">
+<a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/.NET%20Framework-4.7.1-blueviolet.svg?style=for-the-badge" style="max-height: 300px;"></a>
+<a href="https://en.wikipedia.org/wiki/MIT_License"><img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" style="max-height: 300px;"></a>
+<a href="https://unity3d.com/get-unity/download/archive"><img src="https://img.shields.io/badge/Unity%20Version-2018.3.12f1-orange?style=for-the-badge" style="max-height: 300px;"></a>
+<a href="https://www.techopedia.com/definition/32207/target-platform"><img src="https://img.shields.io/badge/Target%20Platform-Win32/Win64-green?style=for-the-badge" style="max-height: 300px;"></a>
+</p>
 
 ## 1. O projekcie
 <p align="justify">
