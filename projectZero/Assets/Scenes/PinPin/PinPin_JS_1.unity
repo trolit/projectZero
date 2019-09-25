@@ -2537,7 +2537,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "                   if ( a == 3 ) { \n                      // ...\n                   }"
+  m_text: "                   if ( '3' == 3 ) { \n                      // false\n
+    \                  }"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2606,10 +2607,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 118297546}
-    characterCount: 85
+    characterCount: 89
     spriteCount: 0
     spaceCount: 70
-    wordCount: 4
+    wordCount: 5
     linkCount: 0
     lineCount: 3
     pageCount: 1
@@ -3987,7 +3988,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "                   if ( a === 3 ) { \n                        // ...\n
+  m_text: "                   if ( '3' === 3 ) { \n                        // false\n
     \                  }"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4057,10 +4058,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 161281249}
-    characterCount: 88
+    characterCount: 92
     spriteCount: 0
     spaceCount: 72
-    wordCount: 4
+    wordCount: 5
     linkCount: 0
     lineCount: 3
     pageCount: 1
@@ -10184,7 +10185,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "                   if ( $a == 3 ) {\n                        // ...\n                   }"
+  m_text: "                  $a = '3'\n \n                  if ( $a == 3 ) {\n                        //
+    true\n                   }"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10253,12 +10255,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 428050592}
-    characterCount: 87
+    characterCount: 116
     spriteCount: 0
-    spaceCount: 71
-    wordCount: 4
+    spaceCount: 93
+    wordCount: 7
     linkCount: 0
-    lineCount: 3
+    lineCount: 5
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -42321,7 +42323,7 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "  \n  if ( a == 3 ) { \n      // ...\n  }"
+      value: "  \n  if ( '3' === 3 ) { \n       // false\n  }"
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
