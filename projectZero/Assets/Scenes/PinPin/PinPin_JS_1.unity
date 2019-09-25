@@ -30255,8 +30255,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 687, y: -325}
-  m_SizeDelta: {x: 582, y: 464.3}
+  m_AnchoredPosition: {x: 678.5, y: -325}
+  m_SizeDelta: {x: 599, y: 464.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1530655745
 MonoBehaviour:
@@ -30291,7 +30291,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "  \nvar value = \"5\";\n\n  var result = \n        Convert.ToInt32(value)+3;\n\n"
+  m_Text: "  \n  var text = \"This is my page\";\r\n\n  var n = text\n         .includes(\"game\");\n\n"
 --- !u!222 &1530655746
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -32238,8 +32238,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 105, y: -325}
-  m_SizeDelta: {x: 582, y: 464.3}
+  m_AnchoredPosition: {x: 8.55, y: -325}
+  m_SizeDelta: {x: 740.9, y: 464.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1641460988
 MonoBehaviour:
@@ -32274,8 +32274,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "  \npublic interface IShop {\n      void SellFruit(int Id);\n\n      void
-    BuyProduct(string Name);\n  }"
+  m_Text: "  \n  const height = 175;\n\n  var result = height + 65;\n  \n  document.getElementById\n
+    \            (\"heightBar\").innerHTML = result;"
 --- !u!222 &1641460989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -42321,8 +42321,7 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "  \npublic class Fruit {\n\n     public int Id {get; set;}\n\n     public
-        string Name {get; set;}\n}"
+      value: "  \n  if ( a == 3 ) { \n      // ...\n  }"
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -42339,6 +42338,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -100.125
       objectReference: {fileID: 0}
+    - target: {fileID: 1892338141756605053, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3
+      objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631211, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -42347,12 +42351,12 @@ PrefabInstance:
     - target: {fileID: 1892338142016631211, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -477.00006
+      value: -564.95
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631211, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 582
+      value: 406.1
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631210, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -42362,7 +42366,7 @@ PrefabInstance:
     - target: {fileID: 1892338142315868345, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "W j\u0119zyku C# zapiszesz"
+      value: "W j\u0119zyku JavaScript zapiszesz"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
