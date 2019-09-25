@@ -8,20 +8,17 @@ namespace Assets.Scripts.Game
     public class MoveRandomly : MonoBehaviour
     {
         public float TimeForNewPath;
-        public float XValue;
+        public float XValue; 
         public float ZValue;
 
-        NavMeshAgent _navMeshAgent;
-        NavMeshPath _path;
-        bool _inCoRoutine;
-        Vector3 _target;
-        bool _validPath;
+        private NavMeshAgent _navMeshAgent;
+        private bool _inCoRoutine;
+        private Vector3 _target;
 
         // Use this for initialization
         private void Start()
         {
             _navMeshAgent = GetComponent<NavMeshAgent>();
-            _path = new NavMeshPath();
 
             GetNewPath();
         }
@@ -29,20 +26,8 @@ namespace Assets.Scripts.Game
         // Update is called once per frame
         private void Update()
         {
-            if (_inCoRoutine == false)
+            if (!_inCoRoutine)
                 StartCoroutine(DoSomething());
-        }
-
-        private Vector3 GetNewRandomPosition()
-        {
-            // setting these ranges is vital larger seems better 
-            float x = Random.Range(-XValue, XValue);
-
-            float z = Random.Range(-ZValue, ZValue);
-
-            Vector3 pos = new Vector3(transform.position.x + x, transform.position.y, transform.position.z + z);
-
-            return pos;
         }
 
         private IEnumerator DoSomething()
@@ -51,20 +36,16 @@ namespace Assets.Scripts.Game
             yield return new WaitForSeconds(TimeForNewPath);
 
             GetNewPath();
-            _validPath = _navMeshAgent.CalculatePath(_target, _path);
 
-            if (!_validPath)
-                Debug.Log("Found invalid path!");
-
-            while (!_validPath)
+            while (_navMeshAgent.pathPending == false)
             {
+                Debug.Log("Path not reachable !");
+                Debug.Log("Coordinates: (X - " + _navMeshAgent.destination.x + ")" +
+                          " (Z - " + _navMeshAgent.destination.z + ")");
+
                 yield return new WaitForSeconds(0.01f);
 
                 GetNewPath();
-
-                _validPath = true;
-
-                // _validPath = _navMeshAgent.CalculatePath(_target, _path);
             }
 
             _inCoRoutine = false;
@@ -74,6 +55,17 @@ namespace Assets.Scripts.Game
         {
             _target = GetNewRandomPosition();
             _navMeshAgent.SetDestination(_target);
+        }
+
+        private Vector3 GetNewRandomPosition()
+        {
+            var x = Random.Range(-XValue, XValue);
+
+            var z = Random.Range(-ZValue, ZValue);
+
+            var pos = new Vector3(transform.position.x + x, transform.position.y, transform.position.z + z);
+
+            return pos;
         }
     }
 }
