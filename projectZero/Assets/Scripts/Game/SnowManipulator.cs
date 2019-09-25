@@ -37,8 +37,10 @@ namespace Assets.Scripts.Game
         {
             if (_snowParticleSystem == null)
             {
-                Debug.Log("No snow particle assigned! Make sure that property Snow Particle System is not null");
-                enabled = false;
+                Debug.LogError("No particle assigned! Make sure that property Snow Particle System is not null");
+                
+                // turn off
+                Debug.Break();
             }
 
             _mainModule = _snowParticleSystem.main;
@@ -55,6 +57,8 @@ namespace Assets.Scripts.Game
 
         private IEnumerator ManipulateSnow()
         {
+            _inCoRoutine = true;
+
             yield return new WaitForSeconds(_timeUntilNewManipulation);
 
             if (_independentRandomization)
@@ -66,11 +70,22 @@ namespace Assets.Scripts.Game
                 DependentRandomization();
             }
 
+            _inCoRoutine = false;
         }
 
         private float RandomizeValue(float min, float max)
         {
-            return Random.Range(min, max);
+            var result = Random.Range(min, max);
+
+            return result;
+        }
+
+        private bool Randomizable()
+        {
+            // Returns 0 or 1 
+            var result = Random.Range(0, 2);
+            
+            return result == 1;
         }
 
         private void DependentRandomization()
@@ -84,7 +99,17 @@ namespace Assets.Scripts.Game
 
         private void IndependentRandomization()
         {
+            if (Randomizable())
+            {
+                _mainModule.startSpeed =
+                    RandomizeValue(_minSpeed, _maxSpeed);
+            }
 
+            if (Randomizable())
+            {
+                _emissionModule.rateOverTime =
+                    RandomizeValue(_minEmissionRate, _maxEmissionRate);
+            }
         }
     }
 }
