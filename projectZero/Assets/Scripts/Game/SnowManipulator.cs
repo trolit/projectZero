@@ -11,25 +11,32 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private float _timeUntilNewManipulation = 5f;
 
+        // Starting speed
         [SerializeField]
         private float _minSpeed = 1f;
 
         [SerializeField]
         private float _maxSpeed = 3f;
 
+        // Emission rate
         [SerializeField]
         private float _minEmissionRate = 10f;
 
         [SerializeField]
         private float _maxEmissionRate = 100f;
 
+        // Set this value to tree if you want 
+        // Independent randomization for particle
+        // parameters 
         [SerializeField]
         private bool _independentRandomization = false;
 
         private bool _inCoRoutine = false;
 
+        // Holds reference to ParticleSystem Main Module 
         private ParticleSystem.MainModule _mainModule;
 
+        // Holds reference to ParticleSystem Emission Module
         private ParticleSystem.EmissionModule _emissionModule;
 
         // Start is called before the first frame update
@@ -39,7 +46,7 @@ namespace Assets.Scripts.Game
             {
                 Debug.LogError("No particle assigned! Make sure that property Snow Particle System is not null");
                 
-                // turn off
+                // Break editor play mode
                 Debug.Break();
             }
 
@@ -55,6 +62,7 @@ namespace Assets.Scripts.Game
                 StartCoroutine(ManipulateSnow());
         }
 
+        // Handles particle system manipulation
         private IEnumerator ManipulateSnow()
         {
             _inCoRoutine = true;
@@ -88,6 +96,8 @@ namespace Assets.Scripts.Game
             return result == 1;
         }
 
+        // Handles dependent randomization which means
+        // that every property gets randomized
         private void DependentRandomization()
         {
             _mainModule.startSpeed = 
@@ -97,6 +107,9 @@ namespace Assets.Scripts.Game
                 RandomizeValue(_minEmissionRate, _maxEmissionRate);
         }
 
+        // Handles independent randomization which means
+        // that  property gets randomized but ONLY WHEN
+        // Randomizable() returned true
         private void IndependentRandomization()
         {
             if (Randomizable())
