@@ -71,6 +71,7 @@ Gra oferuje poznanie języków C#, HTML, Java, JavaScript, PHP w sposób nierygo
 </p>
 
 - treści zawarte w książkach
+- treści zawarte w ekranach wczytywania (tzw. loading screeny)
 - podsumowania minigier
   - w rozgrywkach w stylu puzzle poruszane są elementy, które wystąpiły w układankach
   - poziomy typu labirynt to ciekawe informacje  
