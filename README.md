@@ -113,7 +113,7 @@ do późniejszej publikacji
 | Zarys krain | Przykład mapy | Zarys z przejściami |
 | :---:  | :---:  | :---:  |
 | <img src="https://github.com/trolit/projectZero/blob/storage/photos/con_0.png?raw=true" alt="Koncepcja mapy" width="450px" height="190px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/con_1.jpg?raw=true" alt="Koncepcja mapy" width="450px" height="250px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/con_2.jpg?raw=true" alt="Koncepcja mapy" width="450px" height="190px"></img> |
-| Minigra wieżowiec | Wieżowiec - działanie | Menu |
+| Wieżowiec (z boku) | Wieżowiec (z góry) | Menu |
 | <img src="https://github.com/trolit/projectZero/blob/storage/photos/con_3.png?raw=true" alt="Koncepcja mapy" width="450px" height="190px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/con_4.png?raw=true" alt="Koncepcja mapy" width="450px" height="190px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/con_5.jpg?raw=true" alt="Koncepcja menu" width="450px" height="190px"></img> | 
 | Tworzenie postaci |
 | <img src="https://github.com/trolit/projectZero/blob/storage/photos/con_6.jpg?raw=true" alt="Koncepcja tworzenia postaci" width="450px" height="190px"></img> |
