@@ -2033,8 +2033,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: '     var x <color=green>// variable</color> = 5; <color=green>// assign
-    5</color>'
+  m_text: "     var x <color=green>// variable</color> = 5; \n     <color=green>//
+    declaration \n     // and initialization </color>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2103,12 +2103,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 118297546}
-    characterCount: 39
+    characterCount: 77
     spriteCount: 0
-    spaceCount: 13
-    wordCount: 7
+    spaceCount: 28
+    wordCount: 8
     linkCount: 0
-    lineCount: 1
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -3137,7 +3137,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: '     var x = 5; <color=green>/ variable declaration</color>'
+  m_text: "     var x = 5; <color=green>/ variable declaration\n     and initialization</color>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3206,12 +3206,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 161281249}
-    characterCount: 38
+    characterCount: 62
     spriteCount: 0
-    spaceCount: 11
-    wordCount: 6
+    spaceCount: 18
+    wordCount: 8
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -7679,7 +7679,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: '     var x = 5; <color=green>// variable declaration</color>'
+  m_text: "     var x = 5; <color=green>// variable declaration</color>\n     <color=green>//
+    and initialization </color>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7748,12 +7749,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 428050592}
-    characterCount: 39
+    characterCount: 67
     spriteCount: 0
-    spaceCount: 11
-    wordCount: 6
+    spaceCount: 20
+    wordCount: 8
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -31822,8 +31823,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 678.5, y: -325}
-  m_SizeDelta: {x: 599, y: 464.3}
+  m_AnchoredPosition: {x: 652.3, y: -338}
+  m_SizeDelta: {x: 651.4, y: 438.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1530655745
 MonoBehaviour:
@@ -31858,7 +31859,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "  \n  var text = \"This is my page\";\r\n\n  var n = text\n         .includes(\"game\");\n\n"
+  m_Text: " \n var tastes = [\"Cola\", \"Apple\",\n                         \"Orange\"];\n\n
+    tastes.sort();"
 --- !u!222 &1530655746
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -34619,8 +34621,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.55, y: -325}
-  m_SizeDelta: {x: 740.9, y: 464.3}
+  m_AnchoredPosition: {x: 72.925064, y: -325}
+  m_SizeDelta: {x: 507.35, y: 464.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1641460988
 MonoBehaviour:
@@ -34655,8 +34657,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "  \n  const height = 175;\n\n  var result = height + 65;\n  \n  document.getElementById\n
-    \            (\"heightBar\").innerHTML = result;"
+  m_Text: "  \n\nvar txt = \"Project Zero\";\r\n\nvar sln = txt.length;"
 --- !u!222 &1641460989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -45083,7 +45084,12 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "  \n  if ( '3' === 3 ) { \n       // false\n  }"
+      value: '
+
+
+        var x = 5; <color=lime>// variable declaration</color>
+
+        <color=lime>// and initialization </color>'
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -45113,12 +45119,12 @@ PrefabInstance:
     - target: {fileID: 1892338142016631211, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -564.95
+      value: -474.4
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631211, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 406.1
+      value: 587.3
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631210, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
