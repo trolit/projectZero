@@ -9,6 +9,8 @@
 </p>
 
 ## O projekcie
+
+### Wstęp
 <p align="justify">
 Projekt realizowany w ramach pracy inżynierskiej pod kryptonimem "Project Zero". Autorem pomysłu na pracę inżynierską jest Paweł Idzikowski. Został on zaakceptowany przez współautora - Adama Grabowskiego oraz w dalszym etapie przez promotora - dr. Piotra Jastrzębskiego. Project Zero to gra wykonana w Unity 3D w perspektywie "top-down view" - widoku z lotu ptaka. Oprócz dawania rozrywki ma ona też na celu pomóc w nauce programowania. Odbiorcami są przede wszystkim osoby rozpoczynające swoją przygodę z programowaniem ale także i te, które chciałyby sobie coś przypomnieć. Języki, które obejmuje gra to: Java, JavaScript, C#, HTML i PHP. Gracz tworzy postać, której przypisuje z podstawowej puli punkty do atrybutów. Atrybutami są języki programowania. <br/> 
 </p>
@@ -20,16 +22,6 @@ Gra została przygotowana w taki sposób aby przy jednym podejściu nie dało si
 </p>
 <p align="justify">
 Pewnie interesuje Was informacja dlaczego nazwa projektu brzmi Project Zero? Można to interpretować na wiele sposobów. Dla przykładu: zero bo gra oferuje treści dla osób, które zaczynają programowanie i chciałyby zdobyć jakiś pogląd na temat uwzględnionych języków. Inna interpretacja: jest to większe przedsiewzięcie autorów w środowisku Unity3D. Można też tytułowe "zero" potraktować jako projekt wyjściowy w ramach pracy inżynierskiej. Jest sporo pomysłów na interpretację tego tytułu :)   
-</p>
-
-### Od autora (Paweł Idzikowski)
-<p align="justify">
-Ze względu na zakres wykonanych zadań Project Zero uznać można za pełnoprawny tytuł. Projekt nie obejmuje wszystkich aspektów każdego z uwzględnionych języków. Dałoby się to co prawda zrobić jednak postawmy sobie pytanie - Czy taka gra nie stałaby się nudna po X jednostek czasu? Moim zdaniem - tak. Czy pomógłby najwyższy budżet? Nie. Na chwilę obecną nie ma takiej gry. Skupienie się na danym języku np. C# to już na starcie ograniczenie liczby odbiorców. W czasach obecnych nieodłącznym elementem topowych gier jest tryb wieloosobowy. Wartym uwagi jest także czynnik - wiek odbiorców. Kolejna rzecz - technologie stale się rozwijają więc gra, która niebyłaby stale aktualizowana to gra martwa. Jedyny sposób w jaki widzę takie gry to gry typu indie - nieduży budżet, masa fajnych rozwiązań i przemycona niewielka liczba informacji tak aby zachęcić odbiorcę do poczytania na własną rękę. W Project Zero wiedza przekazywana jest właśnie w taki sposób aby zachęcała graczy do zgłębiania omawianych treści poza grą. Oprócz tworzenia czegoś co miałoby mieć "użyteczne podłoże", zależało mi też na tym aby był to projekt, którym warto się pochwalić i zapisać jako udany projekt do kolekcji :) 
-</p>
-
-### Od autora (Adam Grabowski)
-<p align="justify">
-W trakcie budowy
 </p>
 
 ### Języki programowania jako atrybuty postaci
@@ -84,6 +76,16 @@ Przedstawione informacje są skondensowane w taki sposób aby
 
 ### Zrzuty ekranu (screeny)
 do późniejszej publikacji
+
+## Od autora (Paweł Idzikowski)
+<p align="justify">
+Ze względu na zakres wykonanych zadań Project Zero uznać można za pełnoprawny tytuł. Projekt nie obejmuje wszystkich aspektów każdego z uwzględnionych języków. Dałoby się to co prawda zrobić jednak postawmy sobie pytanie - Czy taka gra nie stałaby się nudna po X jednostek czasu? Moim zdaniem - tak. Czy pomógłby najwyższy budżet? Nie. Na chwilę obecną nie ma takiej gry. Skupienie się na danym języku np. C# to już na starcie ograniczenie liczby odbiorców. W czasach obecnych nieodłącznym elementem topowych gier jest tryb wieloosobowy. Wartym uwagi jest także czynnik - wiek odbiorców. Kolejna rzecz - technologie stale się rozwijają więc gra, która niebyłaby stale aktualizowana to gra martwa. Jedyny sposób w jaki widzę takie gry to gry typu indie - nieduży budżet, masa fajnych rozwiązań i przemycona niewielka liczba informacji tak aby zachęcić odbiorcę do poczytania na własną rękę. W Project Zero wiedza przekazywana jest właśnie w taki sposób aby zachęcała graczy do zgłębiania omawianych treści poza grą. Oprócz tworzenia czegoś co miałoby mieć "użyteczne podłoże", zależało mi też na tym aby był to projekt, którym warto się pochwalić i zapisać jako udany projekt do kolekcji :) 
+</p>
+
+## Od autora (Adam Grabowski)
+<p align="justify">
+W trakcie budowy
+</p>
 
 ## Sekcja dla devów
 
