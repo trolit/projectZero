@@ -44422,8 +44422,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " \n var tastes = [\"Cola\", \"Apple\",\n                         \"Orange\"];\n\n
-    tastes.sort();"
+  m_Text: "  \n\n  class Apple extends Fruit {\n      \n  }"
 --- !u!222 &1530655746
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -47032,7 +47031,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "  \n\nvar txt = \"Project Zero\";\r\n\nvar sln = txt.length;"
+  m_Text: "  \n\n\nArrayList<String> cars =  \n      new ArrayList<String>();"
 --- !u!222 &1641460989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -51442,7 +51441,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1781714644
 Transform:
   m_ObjectHideFlags: 0
@@ -62215,12 +62214,8 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: '
-
-
-        var x = 5; <color=lime>// variable declaration</color>
-
-        <color=lime>// and initialization </color>'
+      value: "\n\n  class Orange implements Fruit {\n\n    public void setFreshness()
+        {\n       \n    }\n  }"
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -62250,12 +62245,12 @@ PrefabInstance:
     - target: {fileID: 1892338142016631211, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -474.4
+      value: -494.3
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631211, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 587.3
+      value: 627.2
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631210, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -62265,7 +62260,7 @@ PrefabInstance:
     - target: {fileID: 1892338142315868345, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "W j\u0119zyku JavaScript zapiszesz"
+      value: "W j\u0119zyku <color=yellow>Java</color> zapiszesz"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
