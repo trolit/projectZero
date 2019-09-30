@@ -77,12 +77,12 @@ Przedstawione informacje są skondensowane w taki sposób aby
 ### Zrzuty ekranu (screeny)
 do późniejszej publikacji
 
-## Od autora (Paweł Idzikowski)
+### Od autora (Paweł Idzikowski)
 <p align="justify">
 Ze względu na zakres wykonanych zadań Project Zero uznać można za pełnoprawny tytuł. Projekt nie obejmuje wszystkich aspektów każdego z uwzględnionych języków. Dałoby się to co prawda zrobić jednak postawmy sobie pytanie - Czy taka gra nie stałaby się nudna po X jednostek czasu? Moim zdaniem - tak. Czy pomógłby najwyższy budżet? Nie. Na chwilę obecną nie ma takiej gry. Skupienie się na danym języku np. C# to już na starcie ograniczenie liczby odbiorców. W czasach obecnych nieodłącznym elementem topowych gier jest tryb wieloosobowy. Wartym uwagi jest także czynnik - wiek odbiorców. Kolejna rzecz - technologie stale się rozwijają więc gra, która niebyłaby stale aktualizowana to gra martwa. Jedyny sposób w jaki widzę takie gry to gry typu indie - nieduży budżet, masa fajnych rozwiązań i przemycona niewielka liczba informacji tak aby zachęcić odbiorcę do poczytania na własną rękę. W Project Zero wiedza przekazywana jest właśnie w taki sposób aby zachęcała graczy do zgłębiania omawianych treści poza grą. Oprócz tworzenia czegoś co miałoby mieć "użyteczne podłoże", zależało mi też na tym aby był to projekt, którym warto się pochwalić i zapisać jako udany projekt do kolekcji :) 
 </p>
 
-## Od autora (Adam Grabowski)
+### Od autora (Adam Grabowski)
 <p align="justify">
 W trakcie budowy
 </p>
@@ -111,6 +111,15 @@ W trakcie budowy
 :white_check_mark: ustawienia najważniejszych aspektów gry <br/>
 :white_check_mark: system repetytywności (nie uda się rozegrać wszystkich minigier za jednym podejściem) <br/>
 :white_check_mark: system osiągnięć (medale) - JEŻELI STARCZY CZASU <br/>
+
+### Kolory reprezentacyjne krain
+| Język | Kolor | Kodowa nazwa w Unity | Próbka |
+| :---:  | :---:  | :---:  | :---: |
+| C# | limonkowy | lime | ![#00FF00](https://placehold.it/25/00FF00/000000?text=+) |
+| JavaScript | jasnoniebieski | cyan | ![#00ffff](https://placehold.it/25/00ffff/000000?text=+) |
+| Java | żółty | yellow | ![#FFFF00](https://placehold.it/25/FFFF00/000000?text=+) |
+| HTML | magenta | magenta | ![#ff00ff](https://placehold.it/25/ff00ff/000000?text=+) |
+| PHP | pomarańczowy | orange | ![#FFA500](https://placehold.it/25/FFA500/000000?text=+) |
 
 ### Grafiki koncepcyjne
 | Zarys krain | Przykład mapy | Zarys z przejściami |
