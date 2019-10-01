@@ -90,27 +90,28 @@ W trakcie budowy
 ## Sekcja dla devów
 
 ### Planowane elementy
-:white_check_mark: perspektywa rozgrywki z lotu ptaka (top down view) <br/>
-:white_check_mark: główny świat podzielony na 5 krain </br>
-:white_check_mark: zróżnicowany styl każdej z przygotowanych krain </br>
-:white_check_mark: poruszające się istoty dzięki technologii Unity (navigation meshes) <br/>
-:white_check_mark: możliwość interakcji z wybranymi istotami <br/>
-:white_check_mark: plecak w którym przechowywane są książki, które można odczytać <br/>
-:white_check_mark: kreator postaci <br/>
-:white_check_mark: waluta <br/>
-:white_check_mark: rozwój postaci poprzez czytanie książek <br/>
-:white_check_mark: minigra typu wieżowiec (quiz) <br/>
-:white_check_mark: minigra typu labirynt <br/>
-:white_check_mark: minigra typu podpięcie <br/>
-:white_check_mark: minigra typu puzzle <br/>
-:white_check_mark: łączna liczba 40 minigier do rozegrania <br/>
-:white_check_mark: łączna liczba 20 książek do sprawdzenia <br/>
-:white_check_mark: podsumowania minigier z dawką programistycznej wiedzy <br/>
-:white_check_mark: zróżnicowany level design minigier w zależności od krainy na której są rozgrywane <br/>
-:white_check_mark: zróżnicowana oprawa muzyczna w każdej minigrze <br/> 
-:white_check_mark: ustawienia najważniejszych aspektów gry <br/>
-:white_check_mark: system repetytywności (nie uda się rozegrać wszystkich minigier za jednym podejściem) <br/>
-:white_check_mark: system osiągnięć (medale) - JEŻELI STARCZY CZASU <br/>
+:zero::zero: perspektywa rozgrywki z lotu ptaka (top down view) <br/>
+:zero::one: główny świat podzielony na 5 krain </br>
+:zero::two: zróżnicowany styl każdej z przygotowanych krain </br>
+:zero::three: poruszające się istoty dzięki technologii Unity (navigation meshes) <br/>
+:zero::four: możliwość interakcji z wybranymi istotami <br/>
+:zero::five: plecak w którym przechowywane są książki, które można odczytać <br/>
+:zero::six: kreator postaci <br/>
+:zero::seven: waluta <br/>
+:zero::eight: rozwój postaci poprzez czytanie książek <br/>
+:zero::nine: minigra typu wieżowiec (quiz) <br/>
+:one::zero: minigra typu labirynt <br/>
+:one::one: minigra typu pinpin (podpięcie) <br/>
+:one::two: minigra typu puzzle <br/>
+:one::three: łączna liczba 40 minigier do rozegrania <br/>
+:one::four: łączna liczba 20 książek do sprawdzenia <br/>
+:one::five: ponad 40 utworów muzycznych <br/>
+:one::six: podsumowania minigier z dawką programistycznej wiedzy <br/>
+:one::seven: zróżnicowany level design minigier w zależności od krainy na której są rozgrywane <br/>
+:one::eight: zróżnicowana oprawa muzyczna w każdej minigrze <br/> 
+:one::nine: ustawienia najważniejszych aspektów gry <br/>
+:two::zero: system repetytywności (nie uda się rozegrać wszystkich minigier za jednym podejściem) <br/>
+:two::one: system osiągnięć (medale) - JEŻELI STARCZY CZASU <br/>
 
 ### Kolory reprezentacyjne krain
 | Język | Kolor | Kodowa nazwa w Unity | Próbka |
