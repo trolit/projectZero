@@ -8,7 +8,8 @@ namespace Assets.Scripts.Game
     // OBJECT THAT CONTAINS 2 ANIMATIONS 
 
     // Warning: Animator needs to contain Walk parameter
-    // of type Integer
+    // of type Integer where value 0 means Idle and value
+    // 1 means Walk
     [RequireComponent(typeof(NavMeshAgent))]
     public class MoveRandomly2 : MonoBehaviour
     {
