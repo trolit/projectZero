@@ -16178,8 +16178,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 1
-  m_fontSizeBase: 1
+  m_fontSize: 3.12
+  m_fontSizeBase: 3.12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -46085,8 +46085,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 1
-  m_fontSizeBase: 1
+  m_fontSize: 3.12
+  m_fontSizeBase: 3.12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -52192,8 +52192,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 652.3, y: -338}
-  m_SizeDelta: {x: 651.4, y: 438.3}
+  m_AnchoredPosition: {x: 698.5, y: -338}
+  m_SizeDelta: {x: 558.8, y: 438.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1530655745
 MonoBehaviour:
@@ -52228,7 +52228,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "  \n\n  class Apple extends Fruit {\n      \n  }"
+  m_Text: "     \n      int i = 0;\r\n       \n      while (i < 100) {\r\n           System.out.println(i);\r\n
+    \          i++;\r\n      }"
 --- !u!222 &1530655746
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -54468,8 +54469,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 1
-  m_fontSizeBase: 1
+  m_fontSize: 3.12
+  m_fontSizeBase: 3.12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -56481,8 +56482,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 72.925064, y: -325}
-  m_SizeDelta: {x: 507.35, y: 464.3}
+  m_AnchoredPosition: {x: 136.38, y: -325}
+  m_SizeDelta: {x: 634.14, y: 464.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1641460988
 MonoBehaviour:
@@ -56517,7 +56518,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "  \n\n\nArrayList<String> cars =  \n      new ArrayList<String>();"
+  m_Text: "  \nabstract class Animal {\r\n   public abstract void animalSound();\r\n\n
+    \  public void sleep() {\r\n     System.out.println(\"Zzz\");\r\n   }\r\n}"
 --- !u!222 &1641460989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -61784,7 +61786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1781714644
 Transform:
   m_ObjectHideFlags: 0
@@ -77176,8 +77178,8 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "\n\n  class Orange implements Fruit {\n\n    public void setFreshness()
-        {\n       \n    }\n  }"
+      value: "  \nScanner myScanner = \n                     new Scanner(System.in);\nSystem.out.println\n
+        \                    (\"Enter fruit name\");\r\n\rString userName = \n                     myScanner.nextLine();\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -77207,12 +77209,12 @@ PrefabInstance:
     - target: {fileID: 1892338142016631211, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -494.3
+      value: -523.9
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631211, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 627.2
+      value: 686.4
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631210, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -77223,6 +77225,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "W j\u0119zyku <color=yellow>Java</color> zapiszesz"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892338143118689139, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -454
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
