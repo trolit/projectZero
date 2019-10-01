@@ -15,7 +15,11 @@ namespace Assets.Scripts.Game
         public float TimeForNewState;
         public float XValue; 
         public float ZValue;
-   
+
+        // from 5 to 20 seconds by default
+        // enables/disables TimeRandomizer method
+        public bool _randomTimeForNewState = false;
+
         private NavMeshAgent _navMeshAgent;
         private bool _inCoRoutine;
         private Vector3 _target;
@@ -52,6 +56,11 @@ namespace Assets.Scripts.Game
 
             var result = StateRandomizer();
 
+            if (_randomTimeForNewState == true)
+            {
+                TimeForNewState = TimeRandomizer(5, 20);
+            }
+
             if (result == 0)
             {
                 // Stay in place
@@ -85,6 +94,13 @@ namespace Assets.Scripts.Game
         {
             // Returns 0 or 1 
             var result = Random.Range(0, 2);
+
+            return result;
+        }
+
+        private float TimeRandomizer(float min, float max)
+        {
+            var result = Random.Range(min, max);
 
             return result;
         }
