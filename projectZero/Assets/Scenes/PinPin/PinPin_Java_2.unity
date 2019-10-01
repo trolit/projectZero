@@ -1409,7 +1409,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
-      value: Block01_sec01
+      value: Block01
       objectReference: {fileID: 0}
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_TagString
@@ -1979,7 +1979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1086ad49d06d7e54686f7dea53cf6eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctObjectName: Block03_sec02
+  _correctObjectName: Block01_sec02
   _verifyButton: {fileID: 182917180}
 --- !u!65 &48906780
 BoxCollider:
@@ -4429,8 +4429,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "  class Orange implements Fruit {\n\n    public void setFreshness() {\n
-    \      \n    }\n\n  }"
+  m_text: "  echo 'Enter fruit name';\n\n  $userName = readline();"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4458,8 +4457,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 1.28
-  m_fontSizeBase: 1.28
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4499,12 +4498,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 118297546}
-    characterCount: 86
+    characterCount: 53
     spriteCount: 0
-    spaceCount: 32
-    wordCount: 8
+    spaceCount: 11
+    wordCount: 7
     linkCount: 0
-    lineCount: 7
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -6201,8 +6200,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "  class Orange : IFruit {\n\n    public void SetFreshness() {\n       \n
-    \   }\n\n  }"
+  m_text: "  Console.WriteLine\n                 (\"Enter fruit name\");\n\n  string
+    userName = \n               Console.ReadLine();"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6230,8 +6229,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 1.28
-  m_fontSizeBase: 1.28
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6271,12 +6270,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 161281249}
-    characterCount: 78
+    characterCount: 115
     spriteCount: 0
-    spaceCount: 32
-    wordCount: 7
+    spaceCount: 45
+    wordCount: 10
     linkCount: 0
-    lineCount: 7
+    lineCount: 5
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -13246,7 +13245,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "  class Apple extends Fruit {\n      \n  }"
+  m_text: "      int i = 0;\r\n       \n         while (i < 100) {\r\n                 System.out.println(i);\r\n
+    \                i++;\r\n         }"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13274,8 +13274,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 1.28
-  m_fontSizeBase: 1.28
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -13315,12 +13315,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 354979107}
-    characterCount: 40
+    characterCount: 128
     spriteCount: 0
-    spaceCount: 16
-    wordCount: 5
+    spaceCount: 77
+    wordCount: 12
     linkCount: 0
-    lineCount: 3
+    lineCount: 6
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -15277,8 +15277,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "  class Orange, Fruit {\n\n    public void SetFreshness() {\n       \n
-    \   }\n\n  }"
+  m_text: "  Scanner myScanner = \n                     new Scanner(System.in);\n\n
+    \ System.out.println\n                     (\"Enter fruit name\");\r\n\r\n  String
+    userName = \n                     myScanner.nextLine();\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15306,8 +15307,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 1.28
-  m_fontSizeBase: 1.28
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -15347,12 +15348,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 428050592}
-    characterCount: 76
+    characterCount: 200
     spriteCount: 0
-    spaceCount: 31
-    wordCount: 7
+    spaceCount: 86
+    wordCount: 17
     linkCount: 0
-    lineCount: 7
+    lineCount: 8
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -16177,8 +16178,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 3.12
-  m_fontSizeBase: 3.12
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -20252,7 +20253,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "  Apple extends Fruit {\n      \n  }"
+  m_text: "      $i = 0;\r\n       \n         while ($i < 100) {\r\n                 echo
+    \"$i <br/>\"\n                 $i++;\r\n         }"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20280,8 +20282,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 1.28
-  m_fontSizeBase: 1.28
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -20321,12 +20323,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 563139086}
-    characterCount: 34
+    characterCount: 119
     spriteCount: 0
-    spaceCount: 15
-    wordCount: 4
+    spaceCount: 78
+    wordCount: 10
     linkCount: 0
-    lineCount: 3
+    lineCount: 6
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -34179,7 +34181,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
-      value: Block01
+      value: Block01_sec02
       objectReference: {fileID: 0}
     - target: {fileID: 4135533477319584, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34323,7 +34325,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "  ArrayList<String> cars = \n               new ArrayList<String>();"
+  m_text: "  class abstract Animal (\n\n         public void animalSound();\r\n\n
+    \        public void sleep() {\r\n                 System.out.println(\"Zzz\");\n
+    \        }\r\n  )"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -34351,8 +34355,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 1.28
-  m_fontSizeBase: 1.28
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -34392,12 +34396,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1009902016}
-    characterCount: 67
+    characterCount: 156
     spriteCount: 0
-    spaceCount: 22
-    wordCount: 7
+    spaceCount: 63
+    wordCount: 14
     linkCount: 0
-    lineCount: 2
+    lineCount: 8
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -35721,7 +35725,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "  class Apple : Fruit {\n      \n  }"
+  m_text: "       int i = 0;\r\n       \n         while (i < 100) {\r\n                 Console.WriteLine(i);\n
+    \                i++;\r\n         }"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -35749,8 +35754,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 1.28
-  m_fontSizeBase: 1.28
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -35790,12 +35795,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1032409414}
-    characterCount: 34
+    characterCount: 127
     spriteCount: 0
-    spaceCount: 16
-    wordCount: 4
+    spaceCount: 78
+    wordCount: 11
     linkCount: 0
-    lineCount: 3
+    lineCount: 6
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -37513,7 +37518,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
-      value: Block03_sec02
+      value: Block03
       objectReference: {fileID: 0}
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_TagString
@@ -44803,8 +44808,8 @@ Transform:
   - {fileID: 1003772882}
   - {fileID: 1125824189}
   - {fileID: 1075477560}
-  - {fileID: 48906777}
   - {fileID: 182917179}
+  - {fileID: 48906777}
   m_Father: {fileID: 1626838054}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45025,7 +45030,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
-      value: Block03
+      value: Block03_sec01
       objectReference: {fileID: 0}
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_TagString
@@ -46080,8 +46085,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 3.12
-  m_fontSizeBase: 3.12
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -52261,8 +52266,8 @@ Transform:
   m_Children:
   - {fileID: 1634286014}
   - {fileID: 1011590261}
-  - {fileID: 189909980}
   - {fileID: 1046704815}
+  - {fileID: 189909980}
   - {fileID: 352057410}
   - {fileID: 1265857007}
   m_Father: {fileID: 503952030}
@@ -54463,8 +54468,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 3.12
-  m_fontSizeBase: 3.12
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -71521,7 +71526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1086ad49d06d7e54686f7dea53cf6eb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _correctObjectName: Block01_sec01
+  _correctObjectName: Block03_sec01
   _verifyButton: {fileID: 164752642}
 --- !u!1 &2012245020
 GameObject:
@@ -73696,7 +73701,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "  string[] cars = \n                 new string[3];"
+  m_text: "  abstract class Animal {\r\n\n         public abstract void animalSound();\r\n\n
+    \        public void sleep() {\r\n                 System.out.println(\"Zzz\");\r\n
+    \        }\r\n  }"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -73724,8 +73731,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 1.28
-  m_fontSizeBase: 1.28
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -73765,12 +73772,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2063965466}
-    characterCount: 50
+    characterCount: 167
     spriteCount: 0
-    spaceCount: 24
-    wordCount: 6
+    spaceCount: 64
+    wordCount: 15
     linkCount: 0
-    lineCount: 2
+    lineCount: 8
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -74428,7 +74435,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "  List<string> cars = \n                       new List<string>();"
+  m_text: "  abstract class Animal {\r\n\n         public abstract void AnimalSound();\r\n\n
+    \        public void Sleep() {\r\n                 Console.WriteLine(\"Zzz\");\r\n
+    \        }\r\n  }"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -74456,8 +74465,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 1.28
-  m_fontSizeBase: 1.28
+  m_fontSize: 1
+  m_fontSizeBase: 1
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -74497,12 +74506,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2073885527}
-    characterCount: 65
+    characterCount: 166
     spriteCount: 0
-    spaceCount: 30
-    wordCount: 7
+    spaceCount: 64
+    wordCount: 14
     linkCount: 0
-    lineCount: 2
+    lineCount: 8
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
