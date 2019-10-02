@@ -12,7 +12,7 @@ namespace Assets.Scripts.Game
     // of type Integer where value 0 means Idle and value
     // 1 means Walk
 
-    // Warning: SphereCollider MUST BE SET as TRIGGER
+    // Warning: SphereCollider MUST BE SET as TRIGGER!
     [RequireComponent(typeof(NavMeshAgent))]
     [RequireComponent(typeof(SphereCollider))]
     [RequireComponent(typeof(AudioSource))]
@@ -28,21 +28,19 @@ namespace Assets.Scripts.Game
 
         public AudioClip SoundEffect;
 
-        public AudioSource SoundSource;
-
-        // Set cooldown for the next sound effect to occur
-        public float Cooldown;
-        
         private NavMeshAgent _navMeshAgent;
         private bool _inCoRoutine;
         private Vector3 _target;
         private Animator _animator;
+        private AudioSource _soundSource;
 
         // Use this for initialization
         private void Start()
         {
             _navMeshAgent = GetComponent<NavMeshAgent>();
-            
+
+            _soundSource = GetComponent<AudioSource>();
+
             _animator = GetComponent<Animator>();
             
             if (_animator == null)
@@ -66,7 +64,7 @@ namespace Assets.Scripts.Game
         {
             if (other.gameObject.tag == "Player")
             {
-                SoundSource.PlayOneShot(SoundEffect);
+                _soundSource.PlayOneShot(SoundEffect);
             }
         }
 
