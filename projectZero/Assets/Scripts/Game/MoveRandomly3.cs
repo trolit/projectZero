@@ -22,9 +22,11 @@ namespace Assets.Scripts.Game
         public float XValue; 
         public float ZValue;
 
-        // from 5 to 20 seconds by default
         // enables/disables TimeRandomizer method
         public bool _randomTimeForNewState = false;
+
+        public float minTime = 5f;
+        public float maxTime = 20f;
 
         public AudioClip SoundEffect;
 
@@ -56,6 +58,18 @@ namespace Assets.Scripts.Game
         // Update is called once per frame
         private void Update()
         {
+            // If reached destination - stop walk animation
+            if (!_navMeshAgent.pathPending)
+            {
+                if (_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
+                {
+                    if (!_navMeshAgent.hasPath || _navMeshAgent.velocity.sqrMagnitude == 0f)
+                    {
+                        _animator.SetInteger("Walk", 0);
+                    }
+                }
+            }
+
             if (!_inCoRoutine)
                 StartCoroutine(DoSomething());
         }
@@ -77,7 +91,7 @@ namespace Assets.Scripts.Game
 
             if (_randomTimeForNewState == true)
             {
-                TimeForNewState = TimeRandomizer(5, 20);
+                TimeForNewState = TimeRandomizer(minTime, maxTime);
             }
 
             if (result == 0)
