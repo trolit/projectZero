@@ -33,7 +33,8 @@ Pewnie interesuje Was informacja dlaczego nazwa projektu brzmi Project Zero? Mo�
 :small_orange_diamond: Pieniądze mogą być wydane w sklepach <br/>
 :small_orange_diamond: Podstawowym asortymentem sklepów są książki <br/>
 :small_orange_diamond: Książka zawiera informacje na temat wybranego języka. Dodatkowo jej odczytanie rozwija umiejętności gracza w języku, którego dotyczy <br/>
-:small_orange_diamond: Celem gry jest poznanie/przypomnienie języków, które gra porusza. 
+:small_orange_diamond: Celem gry jest poznanie/przypomnienie języków, które gra porusza <br/>
+:small_orange_diamond: Grę można uznać za "ukończoną" jeżeli gracz przejdzie wszystkie dostępne minigry (nie jednym podejściem) 
 </p>
 
 ### Rodzaje krain i ich tereny
