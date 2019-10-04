@@ -57598,8 +57598,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 630.3, y: -325}
-  m_SizeDelta: {x: 695.4, y: 464.3}
+  m_AnchoredPosition: {x: 630.3, y: -344.8}
+  m_SizeDelta: {x: 695.4, y: 424.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1530655745
 MonoBehaviour:
@@ -57634,7 +57634,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "      \n\n      <!-- Valid HTML comment -->\r\n      <p>Text goes here.</p>"
+  m_Text: "  \n    <?php\r\n    $numbersArray = \n                    array(1, 105,
+    60);\r\n    sort($numbersArray);\r\n    ?>"
 --- !u!222 &1530655746
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -62657,8 +62658,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 64.5, y: -327.54}
-  m_SizeDelta: {x: 662.9, y: 459.22}
+  m_AnchoredPosition: {x: 76.5, y: -294}
+  m_SizeDelta: {x: 600.5, y: 459.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1641460988
 MonoBehaviour:
@@ -62693,8 +62694,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "     \n\n     <div class=\"block1\">\r\n       <h2>Project Zero</h2>\r\n
-    \      <p>Curious?</p>\r\n     </div>"
+  m_Text: "  \n\n  \t\t<?php\r\n  \t\t$i = 5;\r\n   \t\t do {\r $i--;\n    \t\t\techo
+    $i;\r\n    \t\t} while ($i > 0);\r\n  \t\t?>"
 --- !u!222 &1641460989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -83413,8 +83414,8 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "        \n\n         <ul>\r\n            <li>Orange</li>\r\n            <li>Apple</li>\r\n
-        \           <li>Pear</li>\r\n         </ul>"
+      value: "        \n\n    <?php\r\n    function sayHelloWorld() {\r\n    \techo
+        \"Hello world!\";\r\n    }\r\n\r     ?>"
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -83459,7 +83460,7 @@ PrefabInstance:
     - target: {fileID: 1892338142315868345, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "W j\u0119zyku <color=magenta>HTML</color> zapiszesz"
+      value: "W j\u0119zyku <color=orange>PHP</color> zapiszesz"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
@@ -83814,7 +83815,7 @@ PrefabInstance:
       propertyPath: m_Text
       value: "- mini-gra zostaje uznana za uko\u0144czon\u0105 je\u017Celi gracz przejdzie
         wszystkie etapy\n- jeden etap polega na umieszczeniu pucharu na bloku w kt\xF3rym
-        jest przedstawiony <color=orange>poprawny</color> kod j\u0119zyka <color=orange>HTML</color>\n-
+        jest przedstawiony <color=orange>poprawny</color> kod j\u0119zyka <color=orange>PHP</color>\n-
         pomy\u0142ka wp\u0142ywa na wygran\u0105"
       objectReference: {fileID: 0}
     - target: {fileID: 8024199981459156011, guid: f083664868c7e9447bec8f0ecadbd761,
