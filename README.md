@@ -39,8 +39,8 @@ Pewnie interesuje Was informacja, dlaczego nazwa projektu brzmi Project Zero? Mo
 :small_orange_diamond: Książka zawiera informacje na temat wybranego języka. Dodatkowo jej odczytanie rozwija umiejętności gracza w języku, którego dotyczy pozwalając uzyskać dostęp do kolejnych minigier. <br/>
 :small_orange_diamond: Celem gry jest poznanie/przypomnienie elementów, które gra porusza. <br/>
 :small_orange_diamond: Grę można uznać za "ukończoną" w 100%, jeżeli gracz przejdzie wszystkie dostępne minigry (nie jednym podejściem!). <br/>
-:small_orange_diamond: Nie jest możliwe przegranie rozgrywki z koniecznością rozpoczęcia nowej.
-:small_orange_diamond: Jedyną grą jaką można powtórzyć ponownie jest gra typu labirynt.
+:small_orange_diamond: Nie jest możliwe przegranie rozgrywki z koniecznością rozpoczęcia nowej. <br/>
+:small_orange_diamond: Jedyną grą jaką można powtórzyć ponownie jest gra typu labirynt. 
 </p>
 
 ### Rodzaje krain i ich tereny
