@@ -2,10 +2,12 @@
 
 
 <p align="center">
-<a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/.NET%20Framework-4.7.1-blueviolet.svg?style=for-the-badge" style="max-height: 300px;"></a>
+ <a href="https://www.techopedia.com/definition/32207/target-platform"><img src="https://img.shields.io/badge/Genre-Sandbox%20RPG,%20Educational-blue?color=DC4C46&style=for-the-badge" style="max-height: 300px;"></a>
+<a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Project%20initation-16%20June%202019-blue?color=5B5EA6&style=for-the-badge" style="max-height: 300px;"></a>
+<a href="https://www.techopedia.com/definition/32207/target-platform"><img src="https://img.shields.io/badge/Target%20Platform-Win32/Win64-green?style=for-the-badge&color=C48F65" style="max-height: 300px;"></a>
+<a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Framework-4.7.1-blueviolet.svg?style=for-the-badge&logo=.NET" style="max-height: 300px;"></a>
+<a href="https://unity3d.com/get-unity/download/archive"><img src="https://img.shields.io/badge/Version-2018.3.12f1-orange?color=577284&style=for-the-badge&logo=unity" style="max-height: 300px;"></a>
 <a href="https://en.wikipedia.org/wiki/MIT_License"><img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" style="max-height: 300px;"></a>
-<a href="https://unity3d.com/get-unity/download/archive"><img src="https://img.shields.io/badge/Unity%20Version-2018.3.12f1-orange?style=for-the-badge" style="max-height: 300px;"></a>
-<a href="https://www.techopedia.com/definition/32207/target-platform"><img src="https://img.shields.io/badge/Target%20Platform-Win32/Win64-green?style=for-the-badge" style="max-height: 300px;"></a>
 </p>
 
 ## O projekcie
