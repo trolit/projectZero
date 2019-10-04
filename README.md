@@ -64,7 +64,7 @@ Minigra, w której układamy puzzle z podanego kodu. Celem jest poprawne rozmies
 
 #### Minigra labirynt
 <p align="justify">
-Minigra labirynt to gra, w której zadaniem gracza jest unikanie "bugów" i zbieranie fragmentów kodu. Zebranie bugów powoduje obniżenie ilości informacji, które otrzymamy po ukończeniu gry i obniża ostateczną kwotę uzyskaną za przejście minigry. Jeżeli chcemy poznać te informację i uzyskać większą wygraną to możemy powtórzyć poziom. W przypadku zakończenia rozgrywki zadanie zostaje oznaczene jako wykonane, gracz otrzymuje kwotę, która została mu pokazana na ekranie i nie będzie mógł już powtórzyć tego poziomu. 
+Minigra labirynt to gra, w której zadaniem gracza jest unikanie "bugów" i zbieranie fragmentów kodu. Zebranie od zadanej ilości bugów powoduje obniżenie ilości informacji, które otrzymamy po ukończeniu gry i obniża ostateczną kwotę uzyskaną za przejście minigry. Jeżeli chcemy poznać te informację i uzyskać większą wygraną to możemy powtórzyć poziom. W przypadku zakończenia rozgrywki zadanie zostaje oznaczene jako wykonane, gracz otrzymuje kwotę, która została mu pokazana na ekranie i nie będzie mógł już powtórzyć tego poziomu. Labirynt jest jedynym typem gry, który można powtórzyć.
 </p>
 
 ### Walory edukacyjne
