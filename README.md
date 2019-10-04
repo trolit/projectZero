@@ -34,7 +34,8 @@ Pewnie interesuje Was informacja, dlaczego nazwa projektu brzmi Project Zero? Mo
 :small_orange_diamond: Podstawowym asortymentem sklepów są książki <br/>
 :small_orange_diamond: Książka zawiera informacje na temat wybranego języka. Dodatkowo jej odczytanie rozwija umiejętności gracza w języku, którego dotyczy <br/>
 :small_orange_diamond: Celem gry jest poznanie/przypomnienie języków, które gra porusza <br/>
-:small_orange_diamond: Grę można uznać za "ukończoną", jeżeli gracz przejdzie wszystkie dostępne minigry (nie jednym podejściem) 
+:small_orange_diamond: Grę można uznać za "ukończoną", jeżeli gracz przejdzie wszystkie dostępne minigry (nie jednym podejściem!) <br/>
+:small_orange_diamond: Gra odbywa się na zasadzie gatunku "Sandbox". Nie jest możliwe przegranie rozgrywki z koniecznością rozpoczęcia nowej jak to bywa w grach typu "Roguelike" jak np. Noita. 
 </p>
 
 ### Rodzaje krain i ich tereny
@@ -86,16 +87,16 @@ Przedstawione informacje są skondensowane w taki sposób aby
 
 ### Od autora (Paweł Idzikowski)
 <p align="justify">
-Ze względu na zakres wykonanych zadań Project Zero uznać można za pełnoprawny tytuł. Projekt nie obejmuje wszystkich aspektów każdego z uwzględnionych języków. Dałoby się to co prawda zrobić, jednak postawmy sobie pytanie - Czy taka gra nie stałaby się nudna po X jednostek czasu? Moim zdaniem - tak. Czy pomógłby najwyższy budżet? Nie. Na chwilę obecną nie ma takiej gry. Skupienie się na danym języku np. C# to już na starcie ograniczenie liczby odbiorców. W czasach obecnych nieodłącznym elementem topowych gier jest tryb wieloosobowy. Wartym uwagi jest także czynnik - wiek odbiorców. Kolejna rzecz - technologie, stale się rozwijają więc gra, która niebyłaby stale aktualizowana to gra martwa. Jedyny sposób, w jaki widzę takie gry, to gry typu indie - nieduży budżet, masa fajnych rozwiązań i przemycona niewielka liczba informacji. W Project Zero wiedza przekazywana jest właśnie w taki sposób, aby zachęcała graczy do zgłębiania omawianych treści poza grą. Oprócz tworzenia czegoś, co miałoby mieć "użyteczne podłoże", zależało mi też na tym, aby był to projekt, którym warto się pochwalić i zapisać jako udany projekt do kolekcji :) 
+Ze względu na zakres wykonanych zadań Project Zero traktuję jako pełnoprawny tytuł. Projekt nie obejmuje wszystkich aspektów każdego z uwzględnionych języków. Dałoby się to co prawda zrobić, jednak postawmy sobie pytanie - Czy taka gra nie stałaby się nudna po X jednostek czasu? Moim zdaniem - tak. Czy pomógłby najwyższy budżet? Nie. Na chwilę obecną gry uczące programowania idą bardziej w kierunku podstaw, czyli myślenia, jak ułożyć kod z prostych komend typu idź do przodu, obróć się w prawo aby dotrzeć z punktu A do B aniżeli konkretów z danego języka. Przykładem takiej produkcji jest Rabbids Coding, która - na marginesie - swoją premierę ma wyzaczoną na 8 października 2019 roku i będzie dostępna dla każdego... także.. warto zerknąć. Ćwiczenie znajomości konkretnego języka jest bardziej widoczne w aplikacjach (np. na platformę Androida). Sam z ciekawości taką aplikację sprawdziłem jednak nie utrzymała się długo na moim urządzeniu ale to już inna kwestia. Wracając do tematu sensu takich gier.. Skupienie się na jakimś języku np. C# to już na starcie ograniczenie liczby odbiorców - nie każdy musi go lubić. W czasach obecnych nieodłącznym elementem większości topowych gier jest tryb wieloosobowy. Przy analizie produktu czynnikiem kluczowym jest też wiek odbiorców. Inna kwestią - technologie. Stale się rozwijają więc gra, która niebyłaby modernizowana pod względem treści to gra martwa. Jedyny sposób, w jaki widzę takie gry, to gry typu indie - nieduży budżet, masa fajnych rozwiązań i przemycona w jakimś stopniu liczba istotnych informacji. Może tytuł z rywalizacją online? W zwartym zespole posiadającym animatorów, designerów modeli, programistów i level designerów myślę, że produkt miałby szansę zyskać duże zainteresowanie nie tylko graczy ale i osób z obszaru edukacji w tematyce IT. W Project Zero wiedza przekazywana jest właśnie w sposób, aby zachęcać odbiorce do zgłębiania omawianych treści poza grą. Oprócz tworzenia czegoś, co miałoby mieć "użyteczne podłoże", zależało mi też na tym, aby był to projekt, którym warto się pochwalić i zapisać jako udany projekt do kolekcji :) 
 </p>
 
 ### Od autora (Adam Grabowski)
 <p align="justify">
-W trakcie budowy
+W trakcie budowy... 
 </p>
 
-### Zrzuty ekranu (screeny)
-do późniejszej publikacji
+### Zrzuty ekranu z gry
+<do późniejszej publikacji>
 
 ## Sekcja dla devów
 
@@ -124,7 +125,7 @@ do późniejszej publikacji
 :one::two: minigra typu puzzle <br/>
 :one::three: łączna liczba 40 minigier do rozegrania <br/>
 :one::four: łączna liczba 20 książek do sprawdzenia <br/>
-:one::five: ponad 40 utworów muzycznych do odsłuchania <br/>
+:one::five: ponad 40 utworów muzycznych do zbadania <br/>
 :one::six: podsumowania minigier oraz ekrany wczytywania z dawką programistycznej wiedzy <br/>
 :one::seven: zróżnicowany level design minigier <br/>
 :one::eight: zróżnicowana oprawa muzyczna w każdej minigrze <br/> 
@@ -144,6 +145,7 @@ do późniejszej publikacji
 
 ### Klawiszologia 
 Uwaga! Klawiszologia może się różnić w zależności od tego w jaką mini-gierkę gramy bądź też czy znajdujemy się na mapie głównej <br/>
+Należy mieć także na uwadze, że klawiszologia w finalnym projekcie może się różnić od tej zaprezentowanej poniżej! <br/>
 W - przód <br/> 
 A - lewo <br/>
 S - dół <br/>
@@ -163,11 +165,10 @@ W pliku Wykorzystane.txt umieszczone są odnośniki do rzeczy, które zostały w
 v 4.7.1 
 
 ### Klucze 
-do późniejszej publikacji
+<do późniejszej publikacji>
 
 ### Zawartość podsumowań
-do późniejszej publikacji
+<do późniejszej publikacji>
 
 ### Zrealizowane zadania
-do późniejszej publikacji
-
+<do późniejszej publikacji>
