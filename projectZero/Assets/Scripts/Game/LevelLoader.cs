@@ -19,6 +19,14 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private Text _progressText;
 
+        void Start()
+        {
+            //if (_sceneName == "Menu")
+            //{
+            //    LoadLevel();
+            //}
+        }
+
         public void LoadLevel()
         {
             StartCoroutine(LoadAsynchronously());
