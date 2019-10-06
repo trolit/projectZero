@@ -141,8 +141,8 @@ oczekiwanie na publikacje
 :one::eight: zróżnicowana oprawa muzyczna w każdej minigrze <br/> 
 :one::nine: ustawienia najważniejszych aspektów gry <br/>
 :two::zero: repetytywność (nie uda się rozegrać wszystkich minigier za jednym podejściem) <br/>
-:two::one: medale - jeżeli czas pozwoli <br/>
-:two::three: dodatkowe rzeczy w sklepie - jeżeli czas pozwoli <br/>
+:two::one: medale <br/>
+:two::three: dodatkowe rzeczy w sklepie (opcjonalnie) <br/>
 
 ### Kolory reprezentacyjne krain
 | Język | Kolor | Kodowa nazwa w Unity | Próbka |
