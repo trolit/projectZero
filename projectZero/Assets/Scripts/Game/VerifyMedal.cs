@@ -7,6 +7,14 @@ namespace Assets.Scripts.Game
     public class VerifyMedal : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         [SerializeField]
+        private RawImage _arrowPlace;
+
+        // Specify texture of an arrow that will be visible
+        // if medal will be completed
+        [SerializeField]
+        private Texture _unlockedArrow;
+
+        [SerializeField]
         private RawImage _medal;
 
         [SerializeField]
@@ -48,6 +56,14 @@ namespace Assets.Scripts.Game
             else
             {
                 _questionMark.SetActive(false);
+
+                // Change arrow place texture only ON objects THAT 
+                // have _maxValue different than 5. 5 is restricted
+                // for main medal which doesnt have arrows specified
+                if (_maxValue == 5)
+                {
+                    _arrowPlace.texture = _unlockedArrow;
+                }
 
                 _isUnlocked = true;
             }
