@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 namespace Assets.Scripts.Game
 {
+    // Designed for loading scenes with UI progress bar element
+
     public class LevelLoader : MonoBehaviour
     {
         [SerializeField]
@@ -21,10 +23,10 @@ namespace Assets.Scripts.Game
 
         void Start()
         {
-            //if (_sceneName == "Menu")
-            //{
-            //    LoadLevel();
-            //}
+            if (_sceneName == "Menu")
+            {
+                LoadLevel();
+            }
         }
 
         public void LoadLevel()
