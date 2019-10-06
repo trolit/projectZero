@@ -18,13 +18,20 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private Text _amountText;
 
+        [SerializeField]
+        private string _keyCode;
+
         private int _gamesPlayed;
 
         private bool _isUnlocked = false;
 
+        private RectTransform _panelRectTransform;
+
         void Start()
         {
-            _gamesPlayed = PlayerPrefs.GetInt("php#timesUnique");
+            _panelRectTransform = GetComponent<RectTransform>();
+
+            _gamesPlayed = PlayerPrefs.GetInt(_keyCode);
 
             if (_gamesPlayed < 10)
             {
@@ -49,6 +56,7 @@ namespace Assets.Scripts.Game
             {
                 _amountText.text = $"{_gamesPlayed} / 10";
                 _info.SetActive(true);
+                _panelRectTransform.SetAsLastSibling();
             }
         }
 
