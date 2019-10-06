@@ -21,19 +21,25 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private string _keyCode;
 
-        private int _gamesPlayed;
+        private int _storedValue;
 
         private bool _isUnlocked = false;
 
         private RectTransform _panelRectTransform;
 
+        private int _maxValue;
+
         void Start()
         {
             _panelRectTransform = GetComponent<RectTransform>();
 
-            _gamesPlayed = PlayerPrefs.GetInt(_keyCode);
+            _storedValue = PlayerPrefs.GetInt(_keyCode);
 
-            if (_gamesPlayed < 10)
+            // If _keyCode means medalsUnlocked set value to 5
+            // else set to 10
+            _maxValue = _keyCode == "medalsUnlocked" ? 5 : 10;
+
+            if (_storedValue < _maxValue)
             {
                 _medal.color = new Color(0.5f, 0.5f, 0.5f);
 
@@ -54,7 +60,7 @@ namespace Assets.Scripts.Game
         {
             if (_isUnlocked == false)
             {
-                _amountText.text = $"{_gamesPlayed} / 10";
+                _amountText.text = $"{_storedValue} / {_maxValue}";
                 _info.SetActive(true);
                 _panelRectTransform.SetAsLastSibling();
             }
