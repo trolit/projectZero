@@ -57,6 +57,7 @@ namespace Console
         private void Start()
         {
             consoleCanvas.gameObject.SetActive(false);
+            consoleText.text = "Project Zero dev Console v0.5 \n";
         }
 
         private void CreateCommands()
@@ -79,11 +80,25 @@ namespace Console
                 consoleCanvas.gameObject.SetActive
                     (!consoleCanvas.gameObject.activeInHierarchy);
             }
+
+            if (consoleCanvas.gameObject.activeInHierarchy)
+            {
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    if (string.IsNullOrEmpty(inputText.text) == false)
+                    {
+                        AddMessageToConsole(inputText.text);
+
+                        ParseInput(inputText.text);
+                    }
+                }
+            }
         }
 
         private void AddMessageToConsole(string msg)
         {
             consoleText.text += msg + "\n";
+
             // 0f ==> force scrollRect to go to the bottom
             // 0.5f ==> force scrollRect ro go to the middle etc.
             scrollRect.verticalNormalizedPosition = 0f;

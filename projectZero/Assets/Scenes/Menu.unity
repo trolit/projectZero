@@ -2267,7 +2267,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000040902978, y: 0.000028700422}
+  m_AnchoredPosition: {x: -0.000040902978, y: 0.000043919477}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1224483695
@@ -2916,7 +2916,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1579781194}
-  - component: {fileID: 1579781197}
   - component: {fileID: 1579781196}
   - component: {fileID: 1579781195}
   m_Layer: 5
@@ -2982,23 +2981,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579781193}
   m_CullTransparentMesh: 0
---- !u!114 &1579781197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1579781193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a305e4321e5d6f54e83887233293709c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  consoleCanvas: {fileID: 1468066510}
-  scrollRect: {fileID: 612714745}
-  consoleText: {fileID: 588343292}
-  inputText: {fileID: 1867904233}
-  consoleInput: {fileID: 1997913393}
 --- !u!1 &1588756037
 GameObject:
   m_ObjectHideFlags: 0
@@ -3324,7 +3306,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 443880396}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999999
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
