@@ -34363,7 +34363,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 028211aee7075324cbd8798d737b3be2,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 8c96714d13ee52a439184a64527942b0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 283ade4ad99509f4eb15fe0201b010ff, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.32
   m_Pitch: 1
@@ -59291,10 +59291,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_Text
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -59455,10 +59455,10 @@ PrefabInstance:
         atrybut <color=yellow>style</color>, kt\xF3ry pozwoli nam uzyska\u0107 wi\u0119cej
         opcji do edycji wygl\u0105du. "
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_Text
-      value: 125
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
@@ -59658,6 +59658,13 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_Text
+      value: "- rozmie\u015B\u0107 poprawnie w wyznaczonych miejscach dost\u0119pne
+        znaczniki HTML\n- poprawnie umieszczony fragment zostaje oznaczony czerwonym
+        li\u015Bciem i nie mo\u017Ce zosta\u0107 wi\u0119cej przesuni\u0119ty"
+      objectReference: {fileID: 0}
     - target: {fileID: 8024199981016936121, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -59667,13 +59674,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 689.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
-        type: 3}
-      propertyPath: m_Text
-      value: "- rozmie\u015B\u0107 poprawnie w wyznaczonych miejscach dost\u0119pne
-        znaczniki HTML\n- poprawnie umieszczony fragment zostaje oznaczony czerwonym
-        li\u015Bciem i nie mo\u017Ce zosta\u0107 wi\u0119cej przesuni\u0119ty"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083664868c7e9447bec8f0ecadbd761, type: 3}

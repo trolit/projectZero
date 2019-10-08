@@ -4,6 +4,8 @@ using UnityEngine.AI;
 
 namespace Assets.Scripts.Game
 {
+    // SCRIPT ALLOWS TO CREATE RANDOM MOVEMENT FOR
+    // OBJECT THAT CONTAINS ONLY MOVEMENT ANIMATION
     [RequireComponent(typeof(NavMeshAgent))]
     public class MoveRandomly : MonoBehaviour
     {
