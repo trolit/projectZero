@@ -44,8 +44,8 @@ namespace Assets.Scripts.Game
             _storedValue = PlayerPrefs.GetInt(_keyCode);
 
             // If _keyCode means medalsUnlocked set value to 5
-            // else set to 10
-            _maxValue = _keyCode == "medalsUnlocked" ? 5 : 10;
+            // else set to 8
+            _maxValue = _keyCode == "medalsUnlocked" ? 5 : 8;
 
             if (_storedValue < _maxValue)
             {
