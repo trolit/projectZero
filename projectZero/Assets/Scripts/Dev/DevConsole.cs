@@ -66,7 +66,7 @@ namespace Console
             ConsoleCanvas.gameObject.SetActive(false);
             ConsoleText.text = "<size=20><color=cyan>Project Zero</color></size> dev Console <color=cyan><b>v0.5</b></color> \n"
                 + "Type <color=orange>help</color> for list of available commands. \n" +
-                "Type <color=orange>help <command></color> for command details. \n";
+                "Type <color=orange>help <command></color> for command details. \n \n \n";
 
             CreateCommands();
         }
