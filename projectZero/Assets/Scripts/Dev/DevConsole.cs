@@ -18,10 +18,14 @@ namespace Console
 
         public void AddCommandToConsole()
         {
+            string addMessage = " command has been added to the console.";
+            
+            DevConsole.AddCommandsToConsole(Command, this);
 
+            DevConsole.AddStaticMessageToConsole(Name + addMessage);
         }
 
-        public abstract void RunCommand();
+        public abstract void RunCommand(string[] data);
     }
 
     public class DevConsole : MonoBehaviour
@@ -32,15 +36,15 @@ namespace Console
 
         [Header("UI Components")]
 
-        public Canvas consoleCanvas;
+        public Canvas ConsoleCanvas;
 
-        public ScrollRect scrollRect;
+        public ScrollRect ScrollRect;
 
-        public Text consoleText;
+        public Text ConsoleText;
 
-        public Text inputText;
+        public Text InputText;
 
-        public InputField consoleInput;
+        public InputField ConsoleInput;
 
         private void Awake()
         {
@@ -56,13 +60,17 @@ namespace Console
 
         private void Start()
         {
-            consoleCanvas.gameObject.SetActive(false);
-            consoleText.text = "Project Zero dev Console v0.5 \n";
+            ConsoleCanvas.gameObject.SetActive(false);
+            ConsoleText.text = "<size=20><color=cyan>Project Zero</color></size> dev Console <color=cyan><b>v0.5</b></color> \n";
+
+            CreateCommands();
         }
 
         private void CreateCommands()
         {
+            CommandSetKeyValue commandSetKeyValue = CommandSetKeyValue.CreateCommand();
 
+            CommandHelp commandHelp = CommandHelp.CreateCommand();
         }
 
         public static void AddCommandsToConsole(string name, ConsoleCommand command)
@@ -77,19 +85,19 @@ namespace Console
         {
             if (Input.GetKeyDown(KeyCode.BackQuote))
             {
-                consoleCanvas.gameObject.SetActive
-                    (!consoleCanvas.gameObject.activeInHierarchy);
+                ConsoleCanvas.gameObject.SetActive
+                    (!ConsoleCanvas.gameObject.activeInHierarchy);
             }
 
-            if (consoleCanvas.gameObject.activeInHierarchy)
+            if (ConsoleCanvas.gameObject.activeInHierarchy)
             {
                 if (Input.GetKeyDown(KeyCode.Return))
                 {
-                    if (string.IsNullOrEmpty(inputText.text) == false)
+                    if (string.IsNullOrEmpty(InputText.text) == false)
                     {
-                        AddMessageToConsole(inputText.text);
+                        AddMessageToConsole(InputText.text);
 
-                        ParseInput(inputText.text);
+                        ParseInput(InputText.text);
                     }
                 }
             }
@@ -97,17 +105,17 @@ namespace Console
 
         private void AddMessageToConsole(string msg)
         {
-            consoleText.text += msg + "\n";
+            ConsoleText.text += msg + "\n";
 
             // 0f ==> force scrollRect to go to the bottom
             // 0.5f ==> force scrollRect ro go to the middle etc.
-            scrollRect.verticalNormalizedPosition = 0f;
+            // scrollRect.verticalNormalizedPosition = 0f;
         }
 
         public static void AddStaticMessageToConsole(string msg)
         {
-            DevConsole.Instance.consoleText.text += msg + "\n";
-            DevConsole.Instance.scrollRect.verticalNormalizedPosition = 0f;
+            DevConsole.Instance.ConsoleText.text += msg + "\n";
+            // DevConsole.Instance.scrollRect.verticalNormalizedPosition = 0f;
         }
 
         private void ParseInput(string input)
@@ -128,7 +136,8 @@ namespace Console
             }
             else
             {
-                Commands[splitInput[0]].RunCommand();
+                Debug.Log("Error");
+                Commands[splitInput[0]].RunCommand(splitInput);
             }
         }
     }

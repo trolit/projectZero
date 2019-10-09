@@ -207,7 +207,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &74941854
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1934,11 +1934,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a305e4321e5d6f54e83887233293709c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  consoleCanvas: {fileID: 1468066510}
-  scrollRect: {fileID: 612714745}
-  consoleText: {fileID: 588343292}
-  inputText: {fileID: 1867904233}
-  consoleInput: {fileID: 1997913393}
+  ConsoleCanvas: {fileID: 1468066510}
+  ScrollRect: {fileID: 612714745}
+  ConsoleText: {fileID: 588343292}
+  InputText: {fileID: 1867904233}
+  ConsoleInput: {fileID: 1997913393}
 --- !u!1 &1075455949 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 677619875906467101, guid: 58598ba971f2a8840bcc4342fa62a73a,
@@ -2267,7 +2267,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000040902978, y: 0.000043919477}
+  m_AnchoredPosition: {x: -0.000040902978, y: 0.000028794371}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1224483695
