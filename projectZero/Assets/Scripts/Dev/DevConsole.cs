@@ -93,11 +93,13 @@ namespace Console
 
         private void CreateCommands()
         {
-            CommandSetKeyValue commandSetKeyValue = CommandSetKeyValue.CreateCommand();
+            var commandSetKeyValue = CommandSetKeyValue.CreateCommand();
 
-            CommandHelp commandHelp = CommandHelp.CreateCommand();
+            var commandHelp = CommandHelp.CreateCommand();
 
-            CommandLoadByName commandLoadByName = CommandLoadByName.CreateCommand();
+            var commandLoadByName = CommandLoadByName.CreateCommand();
+
+            var commandIsReady = CommandIsReady.CreateCommand();
         }
 
         public static void AddCommandsToConsole(string name, ConsoleCommand command)
