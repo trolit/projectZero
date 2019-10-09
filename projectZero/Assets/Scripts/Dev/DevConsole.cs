@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace Console
@@ -92,6 +93,7 @@ namespace Console
                 ConsoleCanvas.gameObject.SetActive
                     (!ConsoleCanvas.gameObject.activeInHierarchy);
 
+                ConsoleInput.ActivateInputField();
                 ConsoleInput.Select();
             }
 
@@ -108,8 +110,9 @@ namespace Console
 
                     ConsoleInput.text = "";
 
-                    ScrollRect.normalizedPosition = new Vector2(0, 0);
-                }
+                    ConsoleInput.ActivateInputField();
+                    ConsoleInput.Select();
+                }               
             }
         }
 
@@ -143,6 +146,10 @@ namespace Console
             {
                 Commands[splitInput[0]].RunCommand(splitInput);
             }
+
+            Canvas.ForceUpdateCanvases();
+            ScrollRect.verticalScrollbar.value = 0f;
+            Canvas.ForceUpdateCanvases();
         }
     }
 }

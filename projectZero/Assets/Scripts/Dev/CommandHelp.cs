@@ -27,7 +27,8 @@ namespace Console
             var commands = DevConsole.Commands;
 
             if (data.Length == 1)
-            {               
+            {
+                DevConsole.AddStaticMessageToConsole("--------------------------------------------------");
                 DevConsole.AddStaticMessageToConsole("Available commands");
 
                 int counter = 1;
