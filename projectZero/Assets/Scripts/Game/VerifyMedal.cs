@@ -60,7 +60,7 @@ namespace Assets.Scripts.Game
                 // Change arrow place texture only ON objects THAT 
                 // have _maxValue different than 5. 5 is restricted
                 // for main medal which doesnt have arrows specified
-                if (_maxValue == 5)
+                if (_maxValue != 5)
                 {
                     _arrowPlace.texture = _unlockedArrow;
                 }
@@ -69,6 +69,7 @@ namespace Assets.Scripts.Game
             }
 
             _info.SetActive(false);
+
             _amountText.text = "";
         }
 
@@ -77,7 +78,9 @@ namespace Assets.Scripts.Game
             if (_isUnlocked == false)
             {
                 _amountText.text = $"{_storedValue} / {_maxValue}";
+
                 _info.SetActive(true);
+
                 _panelRectTransform.SetAsLastSibling();
             }
         }
