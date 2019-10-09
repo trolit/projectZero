@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using static Console.DevConsole;
 
 namespace Console
 {
@@ -16,7 +17,7 @@ namespace Console
             Command = "help";
             Description = "Returns description for specified command (or all available commands if parameter is not specified)";
             Help = "Syntax: help <command name> \n" +
-                   "Parameter <color=lime><command name></color> is optional \n";
+                   $"<color={OptionalColor}><command name></color> is optional";
             Example = "help set";
 
             AddCommandToConsole();
@@ -24,45 +25,43 @@ namespace Console
 
         public override void RunCommand(string[] data)
         {
-            var commands = DevConsole.Commands;
-
             if (data.Length == 1)
             {
-                DevConsole.AddStaticMessageToConsole("--------------------------------------------------");
-                DevConsole.AddStaticMessageToConsole("Available commands");
+                AddStaticMessageToConsole("--------------------------------------------------");
+                AddStaticMessageToConsole("Available commands");
 
                 int counter = 1;
 
-                foreach (KeyValuePair<string, ConsoleCommand> command in DevConsole.Commands)
+                foreach (KeyValuePair<string, ConsoleCommand> command in Commands)
                 {
-                    DevConsole.AddStaticMessageToConsole(counter + ") " + command.Key);
+                    AddStaticMessageToConsole(counter + ") " + command.Key);
 
                     counter++;
                 }
             }
-            else if (data.Length == 2 && DevConsole.Commands.ContainsKey(data[1].ToLower()))
+            else if (data.Length == 2 && Commands.ContainsKey(data[1].ToLower()))
             {
                 var parameter = data[1].ToLower();
 
-                var command = DevConsole.Commands[parameter];
+                var command = Commands[parameter];
 
-                DevConsole.AddStaticMessageToConsole("--------------------------------------------------");
-                DevConsole.AddStaticMessageToConsole("<b>Title of command</b>");
-                DevConsole.AddStaticMessageToConsole(command.Name + "\n");
-                DevConsole.AddStaticMessageToConsole("<b>Description</b>");
-                DevConsole.AddStaticMessageToConsole(command.Description + "\n");
-                DevConsole.AddStaticMessageToConsole("<b>Usage</b>");
-                DevConsole.AddStaticMessageToConsole(command.Help + "\n");
-                DevConsole.AddStaticMessageToConsole("<b>Example</b>");
-                DevConsole.AddStaticMessageToConsole(command.Example + "\n");
+                AddStaticMessageToConsole("--------------------------------------------------");
+                AddStaticMessageToConsole("<b>Title of command</b>");
+                AddStaticMessageToConsole(command.Name + "\n");
+                AddStaticMessageToConsole("<b>Description</b>");
+                AddStaticMessageToConsole(command.Description + "\n");
+                AddStaticMessageToConsole("<b>Usage</b>");
+                AddStaticMessageToConsole(command.Help + "\n");
+                AddStaticMessageToConsole("<b>Example</b>");
+                AddStaticMessageToConsole(command.Example + "\n");
             }
-            else if (DevConsole.Commands.ContainsKey(data[1].ToLower()) == false)
+            else if (Commands.ContainsKey(data[1].ToLower()) == false)
             {
-                DevConsole.AddStaticMessageToConsole($"Unrecognized command <color=yellow>{data[1]}</color>");
+                AddStaticMessageToConsole(NotRecognized);
             }
             else
             {
-                DevConsole.AddStaticMessageToConsole("help command <color=yellow>syntax incorrect</color>");
+                AddStaticMessageToConsole(ParametersAmount);
             }
 
         }

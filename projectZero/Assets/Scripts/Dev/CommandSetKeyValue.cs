@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using static Console.DevConsole;
 
 namespace Console
 {
@@ -14,10 +15,9 @@ namespace Console
         {
             Name = "Set";
             Command = "set";
-            Description = "Sets key value";
-            Help = "Set is command to set key value \n" +
-                   "Syntax: set <key> <type> <value> \n" +
-                   "<color=red>All parameters are required!</color>";
+            Description = "Sets specified key value";
+            Help = "Syntax: set <key> <type> <value> \n" +
+                   $"<color={RequiredColor}>All parameters are required!</color>";
             Example = "set money int 5000";
 
             AddCommandToConsole();
@@ -25,28 +25,35 @@ namespace Console
 
         public override void RunCommand(string[] data)
         {
-            var type = data[2].ToLower();
-            var key = data[1].ToLower();
-            
-            if (type == "float")
+            if (data.Length == 4)
             {
-                var value = float.Parse(data[3]);
+                var type = data[2].ToLower();
+                var key = data[1].ToLower();
 
-                PlayerPrefs.SetFloat(key, value);
+                if (type == "float")
+                {
+                    var value = float.Parse(data[3]);
 
-                DevConsole.AddStaticMessageToConsole("Command executed successfully.");
-            }
-            else if (type == "int")
-            {
-                var value = int.Parse(data[3]);
+                    PlayerPrefs.SetFloat(key, value);
 
-                PlayerPrefs.SetInt(key, value);
+                    AddStaticMessageToConsole(ExecutedSuccessfully);
+                }
+                else if (type == "int")
+                {
+                    var value = int.Parse(data[3]);
 
-                DevConsole.AddStaticMessageToConsole("Command executed successfully.");
+                    PlayerPrefs.SetInt(key, value);
+
+                    AddStaticMessageToConsole(ExecutedSuccessfully);
+                }
+                else
+                {
+                    AddStaticMessageToConsole($"Type of command <color={WarningColor}>not supported</color>!");
+                }
             }
             else
             {
-                DevConsole.AddStaticMessageToConsole("Type of command not supported!");
+                AddStaticMessageToConsole(ParametersAmount);
             }
         }
 
