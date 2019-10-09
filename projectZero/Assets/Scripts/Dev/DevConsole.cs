@@ -16,13 +16,15 @@ namespace Console
 
         public abstract string Help { get; protected set; }
 
+        public abstract string Example { get; protected set; }
+
         public void AddCommandToConsole()
         {
-            string addMessage = " command has been added to the console.";
+            // string addMessage = " command has been added to the console.";
             
             DevConsole.AddCommandsToConsole(Command, this);
 
-            DevConsole.AddStaticMessageToConsole(Name + addMessage);
+            // DevConsole.AddStaticMessageToConsole(Name + addMessage);
         }
 
         public abstract void RunCommand(string[] data);
@@ -61,7 +63,9 @@ namespace Console
         private void Start()
         {
             ConsoleCanvas.gameObject.SetActive(false);
-            ConsoleText.text = "<size=20><color=cyan>Project Zero</color></size> dev Console <color=cyan><b>v0.5</b></color> \n";
+            ConsoleText.text = "<size=20><color=cyan>Project Zero</color></size> dev Console <color=cyan><b>v0.5</b></color> \n"
+                + "Type <color=orange>help</color> for list of available commands. \n" +
+                "Type <color=orange>help <command></color> for command details. \n";
 
             CreateCommands();
         }
@@ -87,6 +91,8 @@ namespace Console
             {
                 ConsoleCanvas.gameObject.SetActive
                     (!ConsoleCanvas.gameObject.activeInHierarchy);
+
+                ConsoleInput.Select();
             }
 
             if (ConsoleCanvas.gameObject.activeInHierarchy)
@@ -99,6 +105,10 @@ namespace Console
 
                         ParseInput(InputText.text);
                     }
+
+                    ConsoleInput.text = "";
+
+                    ScrollRect.normalizedPosition = new Vector2(0, 0);
                 }
             }
         }
@@ -106,16 +116,11 @@ namespace Console
         private void AddMessageToConsole(string msg)
         {
             ConsoleText.text += msg + "\n";
-
-            // 0f ==> force scrollRect to go to the bottom
-            // 0.5f ==> force scrollRect ro go to the middle etc.
-            // scrollRect.verticalNormalizedPosition = 0f;
         }
 
         public static void AddStaticMessageToConsole(string msg)
         {
-            DevConsole.Instance.ConsoleText.text += msg + "\n";
-            // DevConsole.Instance.scrollRect.verticalNormalizedPosition = 0f;
+            Instance.ConsoleText.text += msg + "\n";
         }
 
         private void ParseInput(string input)
@@ -136,7 +141,6 @@ namespace Console
             }
             else
             {
-                Debug.Log("Error");
                 Commands[splitInput[0]].RunCommand(splitInput);
             }
         }

@@ -8,15 +8,17 @@ namespace Console
         public override string Command { get; protected set; }
         public override string Description { get; protected set; }
         public override string Help { get; protected set; }
+        public override string Example { get; protected set; }
 
         public CommandSetKeyValue()
         {
             Name = "Set";
             Command = "set";
             Description = "Sets key value";
-            Help = "Set is command to set key value \n " +
+            Help = "Set is command to set key value \n" +
                    "Syntax: set <key> <type> <value> \n" +
-                   " <color=red>All parameters are required!</color>";
+                   "<color=red>All parameters are required!</color>";
+            Example = "set money int 5000";
 
             AddCommandToConsole();
         }
