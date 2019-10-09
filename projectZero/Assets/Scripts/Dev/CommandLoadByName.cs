@@ -16,7 +16,9 @@ namespace Console
         {
             Name = "Load scene by name";
             Command = "load";
-            Description = "Loads specified level (scene). Scene name is case sensitive.";
+            Description = "Loads specified level (scene). Scene name is case sensitive. " +
+                          $"<color={WarningColor}>BEFORE</color> running this command on minigame levels" +
+                          $" MAKE SURE that YOU PICKED CHARACTER by using <color={WarningColor}>isReady</color> command.";
             Help = "Syntax: load <scene name> \n" +
                    $"<color={RequiredColor}><scene name></color> is required!";
             Example = "load Menu";
