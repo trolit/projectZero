@@ -5,11 +5,11 @@ namespace Console
 {
     public class CommandSetKeyValue : ConsoleCommand
     {
-        public override string Name { get; protected set; }
-        public override string Command { get; protected set; }
-        public override string Description { get; protected set; }
-        public override string Help { get; protected set; }
-        public override string Example { get; protected set; }
+        public sealed override string Name { get; protected set; }
+        public sealed override string Command { get; protected set; }
+        public sealed override string Description { get; protected set; }
+        public sealed override string Help { get; protected set; }
+        public sealed override string Example { get; protected set; }
 
         public CommandSetKeyValue()
         {
