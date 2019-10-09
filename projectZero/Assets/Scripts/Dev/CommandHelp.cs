@@ -39,9 +39,9 @@ namespace Console
                     counter++;
                 }
             }
-            else if (data.Length == 2 && Commands.ContainsKey(data[1].ToLower()))
+            else if (data.Length == 2 && Commands.ContainsKey(data[1]))
             {
-                var parameter = data[1].ToLower();
+                var parameter = data[1];
 
                 var command = Commands[parameter];
 
@@ -55,7 +55,7 @@ namespace Console
                 AddStaticMessageToConsole("<b>Example</b>");
                 AddStaticMessageToConsole(command.Example + "\n");
             }
-            else if (Commands.ContainsKey(data[1].ToLower()) == false)
+            else if (Commands.ContainsKey(data[1]) == false)
             {
                 AddStaticMessageToConsole(NotRecognized);
             }

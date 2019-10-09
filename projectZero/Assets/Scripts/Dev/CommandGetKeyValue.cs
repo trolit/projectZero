@@ -4,7 +4,7 @@ using static Console.DevConsole;
 
 namespace Console
 {
-    public class CommandIsReady : ConsoleCommand
+    public class CommandGetKeyValue : ConsoleCommand
     {
         public sealed override string Name { get; protected set; }
         public sealed override string Command { get; protected set; }
@@ -12,11 +12,11 @@ namespace Console
         public sealed override string Help { get; protected set; }
         public sealed override string Example { get; protected set; }
 
-        public CommandIsReady()
+        public CommandGetKeyValue()
         {
-            Name = "Is Ready";
-            Command = "isReady";
-            Description = "Returns MODEL=TRUE (id) if character is picked, else MODEL=FALSE.";
+            Name = "Get key value";
+            Command = "getKeyInfo";
+            Description = "Returns value that is being held by specified key.";
             Help = "Syntax: isReady";
             Example = "isReady";
 
@@ -46,9 +46,9 @@ namespace Console
 
         }
 
-        public static CommandIsReady CreateCommand()
+        public static CommandGetKeyValue CreateCommand()
         {
-            return new CommandIsReady();
+            return new CommandGetKeyValue();
         }
     }
 }
