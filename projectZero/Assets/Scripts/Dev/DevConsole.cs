@@ -56,14 +56,14 @@ namespace Console
 
         public static string WarningColor = "#ffcc00";
 
-        public static string Executed = "#e600e6";
+        public static string ExecutedColor = "#e600e6";
 
         // *********************************************************
         // LIST OF COMMON MESSAGES
 
         public static string NotRecognized = $"Command not <color={WarningColor}>recognized</color>!";
 
-        public static string ExecutedSuccessfully = $"Command executed <color={Executed}>successfully</color>";
+        public static string ExecutedSuccessfully = $"Command executed <color={ExecutedColor}>successfully</color>";
 
         public static string ParametersAmount = $"Wrong <color={WarningColor}>amount of parameters</color>";
 
@@ -84,7 +84,7 @@ namespace Console
         private void Start()
         {
             ConsoleCanvas.gameObject.SetActive(false);
-            ConsoleText.text = "<size=25><color=cyan>Project Zero</color></size> dev Console <color=cyan><b><size=18>v0.5</size></b></color> \n"
+            ConsoleText.text = "<size=30><color=cyan>Project Zero</color></size> dev Console <color=cyan><b><size=18>v0.5</size></b></color> \n"
                 + "Type <color=orange>help</color> for list of available commands. \n" +
                 "Type <color=orange>help <command></color> for command details. \n \n \n";
 
@@ -96,6 +96,8 @@ namespace Console
             CommandSetKeyValue commandSetKeyValue = CommandSetKeyValue.CreateCommand();
 
             CommandHelp commandHelp = CommandHelp.CreateCommand();
+
+            CommandLoadByName commandLoadByName = CommandLoadByName.CreateCommand();
         }
 
         public static void AddCommandsToConsole(string name, ConsoleCommand command)
