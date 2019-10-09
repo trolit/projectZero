@@ -67,6 +67,8 @@ namespace Console
 
         public static string ParametersAmount = $"Wrong <color={WarningColor}>amount of parameters</color>";
 
+        public static string TypeNotSupported = $"Type of command <color={WarningColor}>not supported</color>!";
+
         // *********************************************************
 
         private void Awake()
@@ -100,6 +102,8 @@ namespace Console
             var commandLoadByName = CommandLoadByName.CreateCommand();
 
             var commandIsReady = CommandIsReady.CreateCommand();
+
+            var commandGetKeyValue = CommandGetKeyValue.CreateCommand();
         }
 
         public static void AddCommandsToConsole(string name, ConsoleCommand command)

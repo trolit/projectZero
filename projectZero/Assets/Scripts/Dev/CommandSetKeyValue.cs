@@ -27,8 +27,8 @@ namespace Console
         {
             if (data.Length == 4)
             {
-                var type = data[2].ToLower();
-                var key = data[1].ToLower();
+                var type = data[2];
+                var key = data[1];
 
                 if (type == "float")
                 {
@@ -48,8 +48,10 @@ namespace Console
                 }
                 else
                 {
-                    AddStaticMessageToConsole($"Type of command <color={WarningColor}>not supported</color>!");
+                    AddStaticMessageToConsole(TypeNotSupported);
                 }
+
+                PlayerPrefs.Save();
             }
             else
             {

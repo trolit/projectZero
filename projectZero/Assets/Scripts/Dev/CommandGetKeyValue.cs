@@ -15,28 +15,37 @@ namespace Console
         public CommandGetKeyValue()
         {
             Name = "Get key value";
-            Command = "getKeyInfo";
+            Command = "get";
             Description = "Returns value that is being held by specified key.";
-            Help = "Syntax: isReady";
-            Example = "isReady";
+            Help = "Syntax: get <type> <key> \n" +
+                   $"<color={RequiredColor}>All parameters are required!</color>"; ;
+            Example = "get money int";
 
             AddCommandToConsole();
         }
 
         public override void RunCommand(string[] data)
         {
-            if (data.Length == 1)
+            if (data.Length == 3)
             {
-                var modelId = PlayerPrefs.GetInt("model");
-                int[] correctValues = {1, 2, 3};
+                var type = data[1];
+                var keyName = data[2];
 
-                if (correctValues.Contains(modelId))
+                if (type == "int")
                 {
-                    AddStaticMessageToConsole($"MODEL = <color={OptionalColor}>TRUE</color> ({modelId})");
+                    var value = PlayerPrefs.GetInt(keyName);
+
+                    AddStaticMessageToConsole($"<color={WarningColor}>returned val =></color> {value}");
+                }
+                else if (type == "float")
+                {
+                    var value = PlayerPrefs.GetFloat(keyName);
+
+                    AddStaticMessageToConsole($"<color={WarningColor}>returned val =></color> {value}");
                 }
                 else
                 {
-                    AddStaticMessageToConsole($"MODEL = <color={RequiredColor}>FALSE</color>");
+                    AddStaticMessageToConsole(TypeNotSupported);
                 }
             }
             else
