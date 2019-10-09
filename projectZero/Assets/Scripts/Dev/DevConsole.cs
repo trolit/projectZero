@@ -146,6 +146,12 @@ namespace Console
                     ConsoleInput.Select();
                 }               
             }
+
+            if (ConsoleCanvas.gameObject.activeInHierarchy == false)
+            {
+                ConsoleInput.text = "";
+            }
+                
         }
 
         private void AddMessageToConsole(string msg)
