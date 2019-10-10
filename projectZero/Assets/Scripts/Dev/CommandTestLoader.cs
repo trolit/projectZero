@@ -1,10 +1,11 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Game;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using static Console.DevConsole;
 
 namespace Console
 {
-    public class CommandLoadByName : ConsoleCommand
+    public class CommandTestLoader : ConsoleCommand
     {
         public sealed override string Name { get; protected set; }
         public sealed override string Command { get; protected set; }
@@ -12,16 +13,16 @@ namespace Console
         public sealed override string Help { get; protected set; }
         public sealed override string Example { get; protected set; }
 
-        public CommandLoadByName()
+        public CommandTestLoader()
         {
-            Name = "Load scene by name";
-            Command = "load";
-            Description = "Loads specified level (scene). Scene name is case sensitive. " +
-                          $"<color={WarningColor}>BEFORE</color> running this command on minigame levels" +
+            Name = "Test minigame loader";
+            Command = "test";
+            Description = "Loads minigame loader (scene) by name that next loads minigame level." +
+                          "Useful to check if loading text work properly and images too in minigame loader." +
                           $" MAKE SURE that YOU PICKED CHARACTER by using <color={WarningColor}>isReady</color> command.";
-            Help = "Syntax: load <scene name> \n" +
+            Help = "Syntax: test <scene name> \n" +
                    $"<color={RequiredColor}><scene name></color> is required!";
-            Example = "load Menu";
+            Example = "test Maze_PHP_1";
 
             AddCommandToConsole();
         }
@@ -41,7 +42,9 @@ namespace Console
                 {
                     AddStaticMessageToConsole($"<color={ExecutedColor}>Executing</color> command..");
 
-                    SceneManager.LoadSceneAsync(sceneName);
+                    LevelLoader.CrossSceneInformation = sceneName;
+
+                    SceneManager.LoadSceneAsync("MinigameLoader");
                 }              
             }
             else
@@ -50,9 +53,9 @@ namespace Console
             }
         }
 
-        public static CommandLoadByName CreateCommand()
+        public static CommandTestLoader CreateCommand()
         {
-            return new CommandLoadByName();
+            return new CommandTestLoader();
         }
     }
 }
