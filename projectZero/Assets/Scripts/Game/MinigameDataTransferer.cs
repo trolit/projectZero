@@ -17,7 +17,7 @@ namespace Assets.Scripts.Game
             {
                 LevelLoader.CrossSceneInformation = _sceneName;
 
-                SceneManager.LoadSceneAsync(_sceneName);
+                SceneManager.LoadSceneAsync("MinigameLoader");
             }
             else
             {

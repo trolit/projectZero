@@ -26,15 +26,21 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private bool _isAutomated = false;  // if marked as true - LevelLoader will start loading scene by itself
 
+        [SerializeField]
+        private bool _isUnderTest = false;
+
         void Start()
         {
-            if (_isAutomated && string.IsNullOrWhiteSpace(_sceneName) == false)
+            if (_isUnderTest != true)
             {
-                LoadLevel();
-            }
-            else if (string.IsNullOrWhiteSpace(CrossSceneInformation) == false)
-            {
-                LoadMinigameLoader();
+                if (_isAutomated && string.IsNullOrWhiteSpace(_sceneName) == false)
+                {
+                    LoadLevel();
+                }
+                else if (_isAutomated && string.IsNullOrWhiteSpace(CrossSceneInformation) == false)
+                {
+                    LoadMinigameLoader();
+                }
             }
         }
 
