@@ -9,6 +9,8 @@ namespace Assets.Scripts.Game
 
     public class LevelLoader : MonoBehaviour
     {
+        public static string CrossSceneInformation { get; set; }
+
         [SerializeField]
         private Slider _slider;
 
@@ -21,9 +23,12 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private Text _progressText;
 
+        [SerializeField]
+        private bool _isAutomated = false;  // if marked as true - LevelLoader will start loading scene by itself
+
         void Start()
         {
-            if (_sceneName == "Menu")
+            if (_isAutomated)
             {
                 LoadLevel();
             }
