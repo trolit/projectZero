@@ -18,6 +18,9 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private List<Texture> _imagesList;
 
+        [SerializeField]
+        private RawImage _sceneImage;
+
         private Color _lime = new Color(0f, 255f, 0f);
 
         private Color _orange = new Color(255f, 165f, 0f);
@@ -40,30 +43,160 @@ namespace Assets.Scripts.Game
                 _languageText.text += "<color=cyan> JavaScript</color>";
 
                 _sliderFillImage.color = Color.cyan;
+
+                switch (LevelLoader.CrossSceneInformation)
+                {
+                    case "PinPin_JS_1":
+                        _sceneImage.texture = _imagesList[16];
+                        break;
+                    case "PinPin_JS_2":
+                        _sceneImage.texture = _imagesList[17];
+                        break;
+                    case "Puzzle_JS_1":
+                        _sceneImage.texture = _imagesList[26];
+                        break;
+                    case "Puzzle_JS_2":
+                        _sceneImage.texture = _imagesList[27];
+                        break;
+                    case "Maze_JS_1":
+                        _sceneImage.texture = _imagesList[6];
+                        break;
+                    case "Maze_JS_2":
+                        _sceneImage.texture = _imagesList[6];
+                        break;
+                    default:
+                        Debug.LogError("No image according to source!");
+                        Debug.Break();
+                        break;
+                }
             }
             else if (LevelLoader.CrossSceneInformation.Contains("C#"))
             {
                 _languageText.text += "<color=lime> C#</color>";
 
                 _sliderFillImage.color = _lime;
+
+                switch (LevelLoader.CrossSceneInformation)
+                {
+                    case "PinPin_C#_1":
+                        _sceneImage.texture = _imagesList[10];
+                        break;
+                    case "PinPin_C#_2":
+                        _sceneImage.texture = _imagesList[11];
+                        break;
+                    case "Puzzle_C#_1":
+                        _sceneImage.texture = _imagesList[20];
+                        break;
+                    case "Puzzle_C#_2":
+                        _sceneImage.texture = _imagesList[21];
+                        break;
+                    case "Maze_C#_1":
+                        _sceneImage.texture = _imagesList[0];
+                        break;
+                    case "Maze_C#_2":
+                        _sceneImage.texture = _imagesList[1];
+                        break;
+                    default:
+                        Debug.LogError("No image according to source!");
+                        Debug.Break();
+                        break;
+                }
             }
             else if (LevelLoader.CrossSceneInformation.Contains("Java"))
             {
                 _languageText.text += "<color=yellow> Java</color>";
 
                 _sliderFillImage.color = Color.yellow;
+
+                switch (LevelLoader.CrossSceneInformation)
+                {
+                    case "PinPin_Java_1":
+                        _sceneImage.texture = _imagesList[14];
+                        break;
+                    case "PinPin_Java_2":
+                        _sceneImage.texture = _imagesList[15];
+                        break;
+                    case "Puzzle_Java_1":
+                        _sceneImage.texture = _imagesList[24];
+                        break;
+                    case "Puzzle_Java_2":
+                        _sceneImage.texture = _imagesList[25];
+                        break;
+                    case "Maze_Java_1":
+                        _sceneImage.texture = _imagesList[4];
+                        break;
+                    case "Maze_Java_2":
+                        _sceneImage.texture = _imagesList[5];
+                        break;
+                    default:
+                        Debug.LogError("No image according to source!");
+                        Debug.Break();
+                        break;
+                }
             }
             else if (LevelLoader.CrossSceneInformation.Contains("HTML"))
             {
                 _languageText.text += "<color=magenta> HTML</color>";
 
                 _sliderFillImage.color = Color.magenta;
+
+                switch (LevelLoader.CrossSceneInformation)
+                {
+                    case "PinPin_HTML_1":
+                        _sceneImage.texture = _imagesList[12];
+                        break;
+                    case "PinPin_HTML_2":
+                        _sceneImage.texture = _imagesList[13];
+                        break;
+                    case "Puzzle_HTML_1":
+                        _sceneImage.texture = _imagesList[22];
+                        break;
+                    case "Puzzle_HTML_2":
+                        _sceneImage.texture = _imagesList[23];
+                        break;
+                    case "Maze_HTML_1":
+                        _sceneImage.texture = _imagesList[2];
+                        break;
+                    case "Maze_HTML_2":
+                        _sceneImage.texture = _imagesList[3];
+                        break;
+                    default:
+                        Debug.LogError("No image according to source!");
+                        Debug.Break();
+                        break;
+                }
             }
             else if (LevelLoader.CrossSceneInformation.Contains("PHP"))
             {
                 _languageText.text += "<color=orange> PHP</color>";
 
                 _sliderFillImage.color = _orange;
+
+                switch (LevelLoader.CrossSceneInformation)
+                {
+                    case "PinPin_PHP_1":
+                        _sceneImage.texture = _imagesList[18];
+                        break;
+                    case "PinPin_PHP_2":
+                        _sceneImage.texture = _imagesList[19];
+                        break;
+                    case "Puzzle_PHP_1":
+                        _sceneImage.texture = _imagesList[28];
+                        break;
+                    case "Puzzle_PHP_2":
+                        _sceneImage.texture = _imagesList[29];
+                        break;
+                    case "Maze_PHP_1":
+                        _sceneImage.texture = _imagesList[8];
+                        break;
+                    case "Maze_PHP_2":
+                        _sceneImage.texture = _imagesList[9];
+                        break;
+                    default:
+                        Debug.LogError("No image according to source!");
+                        Debug.Break();
+                        break;
+                }
             }
 
             if (TextStorage.Texts != null)
