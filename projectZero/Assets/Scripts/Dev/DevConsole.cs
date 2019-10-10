@@ -69,6 +69,9 @@ namespace Console
 
         public static string TypeNotSupported = $"Type of command <color={WarningColor}>not supported</color>!";
 
+        public static string SceneNotFound = $"Scene <color={WarningColor}>not found</color>!" +
+                                             $" Make sure that you have placed it inside <color={WarningColor}>build settings</color>.";
+
         // *********************************************************
 
         private void Awake()

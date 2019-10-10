@@ -34,8 +34,7 @@ namespace Console
 
                 if (Application.CanStreamedLevelBeLoaded(sceneName) == false)
                 {
-                    AddStaticMessageToConsole($"Scene <color={WarningColor}>not found</color>!" +
-                                              $" Make sure that you have placed it inside <color={WarningColor}>build settings</color>.");
+                    AddStaticMessageToConsole(SceneNotFound);
                 }
                 else
                 {

@@ -17,7 +17,7 @@ namespace Console
         {
             Name = "Test minigame loader";
             Command = "test";
-            Description = "Loads minigame loader (scene) by name that next loads minigame level." +
+            Description = "Loads minigame loader (scene) by name. Loader (if not under test) will change scene if ready." +
                           "Useful to check if loading text work properly and images too in minigame loader." +
                           $" MAKE SURE that YOU PICKED CHARACTER by using <color={WarningColor}>isReady</color> command.";
             Help = "Syntax: test <scene name> \n" +
@@ -35,8 +35,7 @@ namespace Console
 
                 if (Application.CanStreamedLevelBeLoaded(sceneName) == false)
                 {
-                    AddStaticMessageToConsole($"Scene <color={WarningColor}>not found</color>!" +
-                                              $" Make sure that you have placed it inside <color={WarningColor}>build settings</color>.");
+                    AddStaticMessageToConsole(SceneNotFound);
                 }
                 else
                 {

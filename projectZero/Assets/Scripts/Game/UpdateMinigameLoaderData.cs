@@ -23,7 +23,8 @@ namespace Assets.Scripts.Game
 
         private Color _lime = new Color(0f, 255f, 0f);
 
-        private Color _orange = new Color(255f, 165f, 0f);
+        // The orange color needs to be in 32 bit format
+        private Color32 _orange = new Color32(227, 150, 16, 255);
 
         // Start is called before the first frame update
         void Awake()
