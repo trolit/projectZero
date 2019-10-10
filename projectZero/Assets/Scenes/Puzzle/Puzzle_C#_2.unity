@@ -3929,6 +3929,79 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: fc0b74aafdf405448a1373f53604f720, type: 3}
+--- !u!1 &354300331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 354300333}
+  - component: {fileID: 354300332}
+  m_Layer: 0
+  m_Name: Screenshot Camera [Display 2]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!20 &354300332
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354300331}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_GateFitMode: 2
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 30792
+  field of view: 70
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 823
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 1
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &354300333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354300331}
+  m_LocalRotation: {x: 0.440669, y: -0.18839745, z: 0.11001278, w: 0.87075514}
+  m_LocalPosition: {x: 107, y: 622, z: -120}
+  m_LocalScale: {x: 1.01, y: 1.01, z: 1.01}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 53.987003, y: -23.148, z: 2.49}
 --- !u!1 &358516756
 GameObject:
   m_ObjectHideFlags: 0
@@ -3958,7 +4031,7 @@ Transform:
   m_Children:
   - {fileID: 765441592}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &363072530
 PrefabInstance:
@@ -5645,7 +5718,7 @@ Transform:
   - {fileID: 1472554585}
   - {fileID: 883936753}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &451184565
 PrefabInstance:
@@ -7437,7 +7510,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 42.881, y: -95.605, z: 165.707}
 --- !u!1 &540558401 stripped
 GameObject:
@@ -7598,7 +7671,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &569044359
 PrefabInstance:
@@ -7824,7 +7897,7 @@ Transform:
   - {fileID: 1064467474}
   - {fileID: 242556688}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &573033840 stripped
 GameObject:
@@ -10090,7 +10163,7 @@ Transform:
   - {fileID: 1634901617}
   - {fileID: 1309236877}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &818409449
 PrefabInstance:
@@ -13875,7 +13948,7 @@ Transform:
   - {fileID: 174159547}
   - {fileID: 459745623}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!21 &1125419557
 Material:
@@ -14702,7 +14775,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1208008363
 BoxCollider:
@@ -15060,7 +15133,7 @@ Transform:
   - {fileID: 1869584489}
   - {fileID: 1391014786}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1221674827
 PrefabInstance:
@@ -15694,7 +15767,7 @@ Transform:
   - {fileID: 780466114}
   - {fileID: 1449371842}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1309236876
 PrefabInstance:
@@ -20209,7 +20282,7 @@ Transform:
   - {fileID: 363072531}
   - {fileID: 1023857739}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1622913683
 BoxCollider:
@@ -21404,7 +21477,7 @@ Transform:
   - {fileID: 798062992}
   - {fileID: 725134031}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1699386475
 PrefabInstance:
@@ -21696,7 +21769,7 @@ Transform:
   - {fileID: 413443309}
   - {fileID: 1221674828}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1725715527
 PrefabInstance:
@@ -22556,7 +22629,7 @@ Transform:
   - {fileID: 1855626591}
   - {fileID: 2051360417}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1836493570
 PrefabInstance:
@@ -25029,7 +25102,7 @@ PrefabInstance:
     - target: {fileID: 801805781578916483, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 801805781578916483, guid: 24155ed1402a670499f5a5a6f7d8ce22,
         type: 3}
@@ -27522,6 +27595,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27632,22 +27710,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
-        type: 3}
-      propertyPath: m_Text
-      value: "1) S\u0142\xF3wko kluczowe class pozwala na zdefiniowanie klasy, kt\xF3ra
-        b\u0119dzie stanowi\u0107 \"przepis\" na tworzenie obiekt\xF3w. Zobacz - w
-        puzzlach by\u0142a klasa Fruit z jednym polem - Name. Mo\u017Cemy zrobi\u0107
-        co\u015B takiego \n<color=yellow>                                                 var
-        apple = new Fruit();   \n                                                  apple.Name
-        = \"Apple\";</color>\nPierwsz\u0105 linijk\u0105 tworzymy obiekt a w drugiej
-        przypisujemy do pola Name tego obiektu napis \"Apple\". \n2) Ka\u017Cda klasa
-        ma domy\u015Blny konstruktor kt\xF3ry mo\u017Cemy nadpisa\u0107. Nadpisanie
-        go polega na zdefiniowaniu wewn\u0105trz klasy funkcji, kt\xF3rej nazwa jest
-        taka sama jak nazwa klasy. Na przyk\u0142ad dla klasy Fruit wygl\u0105da\u0142
-        tak w minigrze: <color=yellow>Fruit() { }</color>. Jednak mo\u017Cna go zmodyfikowa\u0107
-        tak aby wygodniej nam si\u0119 tworzy\u0142o obiekty :)"
-      objectReference: {fileID: 0}
     - target: {fileID: 1892338143118689036, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -27683,10 +27745,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 250
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_Text
+      value: "1) S\u0142\xF3wko kluczowe class pozwala na zdefiniowanie klasy, kt\xF3ra
+        b\u0119dzie stanowi\u0107 \"przepis\" na tworzenie obiekt\xF3w. Zobacz - w
+        puzzlach by\u0142a klasa Fruit z jednym polem - Name. Mo\u017Cemy zrobi\u0107
+        co\u015B takiego \n<color=yellow>                                                 var
+        apple = new Fruit();   \n                                                  apple.Name
+        = \"Apple\";</color>\nPierwsz\u0105 linijk\u0105 tworzymy obiekt a w drugiej
+        przypisujemy do pola Name tego obiektu napis \"Apple\". \n2) Ka\u017Cda klasa
+        ma domy\u015Blny konstruktor kt\xF3ry mo\u017Cemy nadpisa\u0107. Nadpisanie
+        go polega na zdefiniowaniu wewn\u0105trz klasy funkcji, kt\xF3rej nazwa jest
+        taka sama jak nazwa klasy. Na przyk\u0142ad dla klasy Fruit wygl\u0105da\u0142
+        tak w minigrze: <color=yellow>Fruit() { }</color>. Jednak mo\u017Cna go zmodyfikowa\u0107
+        tak aby wygodniej nam si\u0119 tworzy\u0142o obiekty :)"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
