@@ -28,20 +28,29 @@ namespace Assets.Scripts.Game
 
         void Start()
         {
-            if (_isAutomated)
+            if (_isAutomated && string.IsNullOrWhiteSpace(_sceneName) == false)
             {
                 LoadLevel();
+            }
+            else if (string.IsNullOrWhiteSpace(CrossSceneInformation) == false)
+            {
+                LoadMinigameLoader();
             }
         }
 
         public void LoadLevel()
         {
-            StartCoroutine(LoadAsynchronously());
+            StartCoroutine(LoadAsynchronously(_sceneName));
         }
 
-        IEnumerator LoadAsynchronously()
+        public void LoadMinigameLoader()
         {
-            AsyncOperation operation = SceneManager.LoadSceneAsync(_sceneName);
+            StartCoroutine(LoadAsynchronously(CrossSceneInformation));
+        }
+
+        IEnumerator LoadAsynchronously(string sceneName)
+        {
+            AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
 
             _loadingScreen.SetActive(true);
 
