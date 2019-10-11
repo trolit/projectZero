@@ -49,8 +49,11 @@ namespace Assets.Scripts.Game
         {
            return new List<string>
            {
-               "Jezeli cos to cos",
-               "Jak to to to"
+               "Microsoft pierwszy raz wspomniał nazwę C# w 1988 roku",
+               "Składnia języka C# jest podobna do języków z rodziny C jak Java, C, C++",
+               "C# jest dobrym językiem do projektowania gier. Wykorzystać go można w środowisku Unity.",
+               "Project Zero jest grą napisaną w języku C#.",
+               ""
            };
         }
 
@@ -58,8 +61,13 @@ namespace Assets.Scripts.Game
         {
             return new List<string>
             {
-                "Jezeli cos to cos",
-                "Jak to to to"
+                "Początkową nazwą tego języka było Oak/dąb/. Nazwę wymyślił James Gosling na cześć wielkiego dębu, który widział z okna swojego biura w Sun Microsystems.",
+                "Nazwa Oak musiała być zmieniona z racji, że istniała już firma, która miała w swojej nazwie ten wyraz na Java. ",
+                "Pomysł na nazwę Java wziął się z zamiłowania do jednego z gatunków kawy",
+                "Język Java powstał przez przypadek.",
+                "Java wywodzi się głównie z C++ oraz SmallTalk.",
+                "Język ten został zaprojektowany i zaimplementowany w laboratoriach Sun Microsystems w Kalifornii pod kierownictwem Jamesa Goslinga",
+                ""
             };
         }
 
