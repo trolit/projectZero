@@ -50,6 +50,7 @@ namespace Console
             {
                 AddStaticMessageToConsole(ParametersAmount);
             }
+    
         }
 
         public static CommandTestLoader CreateCommand()

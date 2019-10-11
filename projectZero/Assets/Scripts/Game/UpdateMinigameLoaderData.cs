@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static Assets.Scripts.Game.TextStorage;
 
 namespace Assets.Scripts.Game
 {
@@ -27,7 +28,7 @@ namespace Assets.Scripts.Game
         private Color32 _orange = new Color32(227, 150, 16, 255);
 
         // Start is called before the first frame update
-        void Awake()
+        void Start()
         {
             var baseText = "Wczytywanie poziomu krainy";
 
@@ -200,13 +201,15 @@ namespace Assets.Scripts.Game
                 }
             }
 
-            if (TextStorage.Texts != null)
+            Debug.Log("Texts => " + Texts.Count);
+
+            if (Texts != null)
             {
-                var max = TextStorage.Texts.Count;
+                var max = Texts.Count;
 
                 var value = Random.Range(0, max);
 
-                _descriptionText.text = TextStorage.Texts[value];
+                _descriptionText.text = Texts[value];
             }
             else
             {

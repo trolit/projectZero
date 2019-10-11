@@ -10,8 +10,7 @@ namespace Assets.Scripts.Game
     {
         public static List<string> Texts { get; set; }
 
-        // Start is called before the first frame update
-        void Start()
+        void Awake()
         {
             Texts = new List<string>();
 
