@@ -9,6 +9,8 @@ namespace Assets.Scripts.Game
 
     public class LevelLoader : MonoBehaviour
     {
+        public static string CrossSceneInformation { get; set; }
+
         [SerializeField]
         private Slider _slider;
 
@@ -21,22 +23,40 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private Text _progressText;
 
+        [SerializeField]
+        private bool _isAutomated = false;  // if marked as true - LevelLoader will start loading scene by itself
+
+        [SerializeField]
+        private bool _isUnderTest = false;
+
         void Start()
         {
-            if (_sceneName == "Menu")
+            if (_isUnderTest != true)
             {
-                LoadLevel();
+                if (_isAutomated && string.IsNullOrWhiteSpace(_sceneName) == false)
+                {
+                    LoadLevel();
+                }
+                else if (_isAutomated && string.IsNullOrWhiteSpace(CrossSceneInformation) == false)
+                {
+                    LoadMinigameLoader();
+                }
             }
         }
 
         public void LoadLevel()
         {
-            StartCoroutine(LoadAsynchronously());
+            StartCoroutine(LoadAsynchronously(_sceneName));
         }
 
-        IEnumerator LoadAsynchronously()
+        public void LoadMinigameLoader()
         {
-            AsyncOperation operation = SceneManager.LoadSceneAsync(_sceneName);
+            StartCoroutine(LoadAsynchronously(CrossSceneInformation));
+        }
+
+        IEnumerator LoadAsynchronously(string sceneName)
+        {
+            AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
 
             _loadingScreen.SetActive(true);
 
