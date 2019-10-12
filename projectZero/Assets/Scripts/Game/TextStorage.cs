@@ -61,7 +61,7 @@ namespace Assets.Scripts.Game
                "SOLID to zaproponowane przez Roberta C. Martina założenia programowania obiektowego.",
                "S w SOLID oznacza zasadę jednej odpowiedzialności klas. Klasa powinna mieć tylko jedną odpowiedzialność np. WygenerujPDF",
                "O w SOLID oznacza zasadę otwarte na rozbudowe / zamknięte na modyfikację.",
-               "L w SOLID oznacza zasadę podstawienia Liskov. W skrócie oznacza to tyle żeby nie tworzyć klas, których funkcje możemy wywołać w obiektach, które nie powinny mieć tych funkcji bo jest to nielogiczne np. płytaCD i obliczLiczbeStron()",
+               "L w SOLID oznacza zasadę podstawienia Liskov. W skrócie oznacza to tyle żeby nie tworzyć klas, których funkcje możemy wywołać w obiektach, które nie powinny mieć tych funkcji bo jest to nielogiczne np. płytaCD i obliczLiczbeStron().",
                "I w SOLID oznacza zasadę segregacji interfejsów. Lepiej więcej mniejszych niż jeden ogólny.",
                "D w SOLID oznacza zasadę odwrócenia zależności. Wysokopoziomowe moduły nie powinny zależeć od niskopoziomowych.",
                "Moduły wysokiego poziomu decydują o funkcjonowaniu aplikacji (jest to najczęściej warstwa z, którą użytkownik ma do czynienia).",
@@ -74,17 +74,41 @@ namespace Assets.Scripts.Game
                "Przykładowa deklaracja listy: List<T> nazwa = new List<T>(); gdzie T to typ listy",
                "Przykładowa deklaracja tablicy (bez inicjalizacji): T[] nazwa = new T[rozmiarTablicy]; gdzie T to typ tablicy",
                "Klasa to typ ogólny, który określa cechy a nie ich wartości. Mówiąc prosto - klasa jest przepisem na tworzenie obiektów.",
+               "Obiekt to instancja klasy, konkretny byt z rzeczywistości np. BMW to obiekt klasy Samochód",
                "W języku C# klasa może dziedziczyć po maksymalnie jednej klasie, natomiast może implementować wiele interfejsów.",
                "Przewagą języka C# jest potężne środowisko programistyczne - Visual Studio, tzw. IDE",
                "MVC to wzorzec projektowy mający na celu ułatwienie zarządzania aplikacją biznesową.",
-               "Wzorzec projektowy to sposób/przepis na schemat projeku aplkacji np. MVVM, Repozytorium.",
+               "Wzorzec projektowy to sprawdzony sposób/przepis na schemat projektowania aplkacji np. MVVM, Repozytorium.",
                "Modyfikator dostępu to ustawienie w jakim zakresie element bądź typ jest dostępny. Wyróżniamy 4: public, protected, internal, private.",
-               "słówko sealed stosujemy do klasy, którą chcemy zabezpieczyć przed nieumyślnym dziedziczeniu.",
+               "słówko sealed stosujemy do klasy, którą chcemy zabezpieczyć przed nieumyślnym dziedziczeniu. Wtedy jest to tzw. klasa finalna.",
                "Klasą abstrakcyjną nazywamy klasę, która stanowi koncept do budowania dalszych klas.",
                "Public to modyfikator dostępu, który przetłumaczymy: dostępny wszędzie i zawsze.",
                "Protected to modyfikator dostępu, który przetłumaczymy: tylko w bazowej i tych, które dziedziczą po bazowej.",
                "Private to modyfikator dostępu, który przetłumaczymy: tylko w tej klasie w której powstał element.",
-               "Package to modyfikator dostępu, który przetłumaczymy: tylko w obrębie namespace'a (przestrzeni nazw)."
+               "Internal to modyfikator dostępu, który przetłumaczymy: tylko w obrębie namespace'a (przestrzeni nazw).",
+               "Jeżeli stworzymy pole lub metodę i nie nadamy modyfikatora dostępu to domyślnie będzie opatrzone modyfikatorem typu private.",
+               "4 wyróżniki/filary obiektowości to: abstrakcja, hermetyzacja, dziedziczenie, polimorfizm.",
+               "Klasy abstrakcyjne nie pozwalają na tworzenie obiektów.",
+               "W interfejsie nie możemy zaimplementować metody.",
+               "Konstruktor nazywa się tak samo jak klasa.",
+               "Operator new ma za zadanie zainicjować obiekt (rezerwuje pamięć na stercie).",
+               "Przestrzeń nazw (namespace) to zbiór klas, które na ogół mają jakiś wspólny cel do działania.",
+               "Metody statyczne nie mają dostępu do pól niestatycznych!",
+               "Garbage Collector niszczy obiekt i zwalnia pamięć po nich.",
+               "Symbolem destruktora jest tylda czyli ~.",
+               "Dziedziczenie pozwala na rozszerzenie klas o nowe cechy bez powielania kodu.",
+               "Klasa dziedziczona to klasa bazowa a klasa dziedzicząca to klasa potomna.",
+               "Klasa abstrakcyjna może zawierać stałe.",
+               "Klasa abstrakcyjną tworzymy modyfikatorem abstract.",
+               "Klasa abstrakcyjna może zawierać implementacje metod.",
+               "W interfejsie nie wstawiamy pól.",
+               "Interfejsy implementujemy a klasy dziedziczymy.",
+               "Interfejs może dziedziczyć po innym interfejsie.",
+               "Klasa może implementować wiele interfejsów.",
+               "Konstruktor to specjalna funkcja, która tworzy obiekty.",
+               "Konstrukor można przeciążać. np. mając klasę Abc, mamy: Abc() { } i Abc(int a) { } itd.",
+               "Gdy zdefiniujemy konstrukor to konstruktor domyślny nie jest automatycznie tworzony.",
+               "W języku C# operatorem dziedziczenia jak i implementacji interfejsów jest dwukropek."
            };
         }
 
@@ -100,14 +124,17 @@ namespace Assets.Scripts.Game
                 "Język ten został zaprojektowany i zaimplementowany w laboratoriach Sun Microsystems w Kalifornii pod kierownictwem Jamesa Goslinga",
                 "Warto w czasach obecnych poznać jakieś frameworki. Dla języka Java np. Spring",
                 "Eclipse to platforma w której można tworzyć aplikacje w  m.in. języku Java.",
-                "W języku Java aby zastosować dziedziczenie między klasami używa się słówka: extends",
+                "W języku Java aby zastosować dziedziczenie używa się słówka: extends",
                 "W języku Java aby zaimplementować interfejs używa się słówka: implements",
                 "W języku Java przy deklaracji zmiennej trzeba podać typ tej zmiennej w sposób jawny.",
                 "Słówko kluczowe final w przypadku klasy => nie można dziedziczyć po takiej klasie.",
                 "Słówko kluczowe final w przypadku metody => metoda nie może być nadpisana.",
                 "Słówko kluczowe final w przypadku pola => pole jest stałą.",
                 "Słówko kluczowe final w przypadku zmiennej => wartość zmienniej nie może zostać zmieniona kiedy zostanie coś do niej przypisane.",
-                "Tablica to obiekt, który pozwala przechować kolekcję elementów w jednym miejscu."
+                "Tablica to obiekt, który pozwala przechować kolekcję elementów w jednym miejscu.",
+                "Słowo kluczowe oznacza słowo mające szczególne znaczenie w języku programowania.",
+                "Java w 2018 roku w rankingu Tiobe Index zajmuje 1 miejsce pod względem popularności.",
+                "Język Java ma swoją maskotkę i jest nią Duke."
             };
         }
 
@@ -126,7 +153,25 @@ namespace Assets.Scripts.Game
                 "JavaScript nie jest kompilowany tylko interpretowany przez stronę.",
                 "W języku JavaScript null jest obiektem.",
                 "W języku JavaScript NaN (skrót od Not a Number) jest liczbą.",
-                "Funkcje są przechowywane jako zmienne w języku JavaScript."
+                "Funkcje są przechowywane jako zmienne w języku JavaScript.",
+                "JavaScript zaraz obok HTML i CSS to języki, które muszą znać wszyscy developerzy stron.",
+                "Twórcą języka JavaScript jest Brendan Eich.",
+                "Oficjalną nazwą języka JavaScript jest EMCAScript",
+                "Funkcja String.length zwraca długość napisu.",
+                "Funkcja String.indexOf(arg) zwraca indeks/pozycje pierwszego znaku tekstu znalezionego w napisie.",
+                "Indeks w języku JavaScript jest liczony od 0.",
+                "Funkcje String.search i String.indexOf(arg) nie są takie same.",
+                "Funkcja String.replace(arg1, arg2) pozwala na zamianę podanej wartości arg1 na wartość arg2 w napisie.",
+                "Funkcja String.toUpperCase() formatuje napis do dużych liter.",
+                "Funkcja String.trim() pozwala pozbyć się w napisie biały znaków (spacji).",
+                "Math.Pi pozwala uzyskać liczbę PI.",
+                "Obiekt Math w JavaScript pozwala na wykonywanie operacji matematycznych.",
+                "Math.round(arg) pozwala uzyskać zaokrągloną liczbę całkowitą.",
+                "Math.pow(arg1, arg2) pozwala podnieść liczbe arg1 do potęgi arg2.",
+                "Math.floor(Math.random() * 100) + 1 zwróci losową liczbę całkowitą z przedziału od 1 do 100",
+                "Zapis x += 1 to skrócenie operacji typu x = x + 1.",
+                "Dobrą praktyką jest inicjalizacja zmiennych przy ich deklaracji np tablica: myArray = [], obiekt: myObject = {}.",
+                "Dobrą praktyką jest dodawanie bloku default do konstrukcji switch."
             };
         }
 
@@ -134,13 +179,12 @@ namespace Assets.Scripts.Game
         {
             return new List<string>
             {
-                "Maskotką PHP jest wielki niebieski słoń.",
+                "Maskotką PHP jest wielki niebieski słoń. Dlaczego? Bo elePHPant",
                 "PHP to skrót od: Personal Home Page",
                 "Z PHP korzysta ponad 244 milionów stron(>81%) stąd na ten język jest nadal duże zapotrzebowanie.",
                 "W języku PHP możemy programować obiektowo, proceduralnie albo mieszając te dwa sposoby.",
                 "Popularne projekty PHP: Symfony, Laravel, CodeIgniter, Faker",
                 "Język PHP został opublikowany w roku 1995. Wstępnie był napisany w języku C.",
-                "Jak widzimy znak dolara przy jakiejś nazwie to najpewniej jest to zmienna języka PHP.",
                 "Facebook, Yahoo!, Flickr, Wikipedia korzystają z języka PHP.",
                 "Jeżeli chcesz tworzyć tablicę to skorzystaj ze składni języka array().",
                 "Jednym z najcześćiej używanych środowisk do języka PHP jest Netbeans.",
@@ -148,8 +192,16 @@ namespace Assets.Scripts.Game
                 "Funkcja to blok kodu utworzony aby wykonać określone zadanie.",
                 "Stałą w języku PHP zdefiniować można za pomocą define.)",
                 "Pętla do..while różni się od pętli while ponieważ wykona się przynajmniej jeden raz",
-                "Formularze np. kontaktowe, ankiety mogą być obsługiwane przez PHP?",
-                "Dolara używa się w PHP do zmiennych aby odróżnić je od stałych?"
+                "Formularze np. kontaktowe, ankiety mogą być obsługiwane przez PHP - wiele stron jeszcze z nich korzysta.",
+                "Dolara używa się w PHP do zmiennych aby odróżnić je od stałych.",
+                "PHP nie był tworzony początkowo po to by być językiem programowania. Rasmus Lerdorf stworzył go aby móc zarządzać swoją stroną internetową.",
+                "Z początku PHP był znany jako PHP/FI czyli Personal Home Page/Forms Interpreter.",
+                "Początkowym Celem języka PHP była budowa prostych, dynamicznych aplikacji webowych i komunikacja z bazami danych.",
+                "Najnowsza wersja PHP jest okraszona numerkiem 7 (PHP7).",
+                "Skrypty PHP z reguły umieszcza się w plikach HTML.",
+                "Cały kod języka PHP musi zawierać się między znacznikami <?php ?> (najbardziej zalecany sposób).",
+                "Komentarz jednoliniowy można zapisać za pomocą // lub #.",
+                "PHP obsługuje większość baz danych: MySQL, PostgreSQL, Oracle, MS SQL, DB2."
             };
         }
 
@@ -157,7 +209,7 @@ namespace Assets.Scripts.Game
         {
             return new List<string>
             {
-                "W języku HTML powinniśmy pamiętać zawsze o podstawowej strukturze pliku.",
+                "W języku HTML powinniśmy zachowywać strukturę pliku.",
                 "Im więcej znaczników zrobisz tym lepiej? Łatwiej jest wtedy stylować stronę (projektować interfejs) i ją ofunkcjonować.",
                 "W języku HTML możemy zagnieżdżać skrypty JavaScript między znacznikami <script></script>.",
                 "Język HTML jest językiem do tworzenia stron.",
@@ -172,7 +224,13 @@ namespace Assets.Scripts.Game
                 "Wszystkie elementy języka HTML mogą mieć atrybuty np. href.",
                 "Atrybuty w języku HTML zawsze podaje się w znaczniku rozpoczynającym.",
                 "Aby móc zdefiniować te same style dla kilku elementów strony można skorzystać ze znacznika klasy.",
-                "JavaScript sprawia, że strony HTML są bardziej dynamiczne i interaktywne."
+                "JavaScript sprawia, że strony HTML są bardziej dynamiczne i interaktywne.",
+                "HTML został opublikowany po raz pierwszy w 1993 roku.",
+                "Bootstrap jest frameworkiem, który rozszerza i ułatwia pracę z HTML i CSS.",
+                "W HTML po dołączeniu biblioteki Font Awesome możemy wrzucać fajne ikony. W czasach obecnych ikonki są bardzo popularne.",
+                "Dodawanie do znacznika audio czy wideo atrybutu autoplay (automatyczne odtwarzanie) jest złą praktyką.",
+                "HTML5 jest przyjazne dla urządzeń mobilnych.",
+                "W języku HTML5 w znaczniku script nie trzeba specyfikować/wyszczególniać atrybutu type bo JavaScript jest domyślnym językiem skryptowym w HTML."
             };
         }
     }
