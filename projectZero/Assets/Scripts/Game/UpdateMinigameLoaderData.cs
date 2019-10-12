@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using static Assets.Scripts.Game.TextStorage;
@@ -27,10 +28,25 @@ namespace Assets.Scripts.Game
         // The orange color needs to be in 32 bit format
         private Color32 _orange = new Color32(227, 150, 16, 255);
 
+        private int _textsCount;
+
         // Start is called before the first frame update
         void Start()
         {
             var baseText = "Wczytywanie poziomu krainy";
+
+            if (Texts == null)
+            {
+                Debug.LogError($"Texts on {gameObject.name} cannot be null.");
+
+                Debug.Break();
+            }
+
+            RandomizeText();
+
+            _textsCount = Texts.Count;
+
+            StartCoroutine(CallForTextChange());
 
             _languageText.text = baseText;
 
@@ -202,19 +218,23 @@ namespace Assets.Scripts.Game
             }
 
             Debug.Log("Texts => " + Texts.Count);
+        }
 
-            if (Texts != null)
+        private IEnumerator CallForTextChange()
+        {
+            while (true)
             {
-                var max = Texts.Count;
+                yield return new WaitForSeconds(9f);
 
-                var value = Random.Range(0, max);
+                RandomizeText();
+            }
+        }
 
-                _descriptionText.text = Texts[value];
-            }
-            else
-            {
-                _descriptionText.text = "No description provided.";
-            }
+        void RandomizeText()
+        {
+            var value = Random.Range(0, _textsCount);
+
+            _descriptionText.text = Texts[value];
         }
     }
 }

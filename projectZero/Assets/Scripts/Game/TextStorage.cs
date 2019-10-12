@@ -207,7 +207,7 @@ namespace Assets.Scripts.Game
                 "Język PHP jest interpretowanym, skryptowym, językiem programowania.",
                 "Funkcja to blok kodu utworzony aby wykonać określone zadanie.",
                 "Stałą w języku PHP zdefiniować można za pomocą define.)",
-                "Pętla do..while różni się od pętli while ponieważ wykona się przynajmniej jeden raz",
+                "Pętla do..while różni się od pętli while ponieważ wykona się przynajmniej jeden raz.",
                 "Formularze np. kontaktowe, ankiety mogą być obsługiwane przez PHP - wiele stron jeszcze z nich korzysta.",
                 "Dolara używa się w PHP do zmiennych aby odróżnić je od stałych.",
                 "PHP nie był tworzony początkowo po to by być językiem programowania. Rasmus Lerdorf stworzył go aby móc zarządzać swoją stroną internetową.",
