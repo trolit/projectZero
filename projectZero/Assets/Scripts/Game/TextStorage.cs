@@ -105,7 +105,8 @@ namespace Assets.Scripts.Game
                "Konstruktor to specjalna funkcja, która tworzy obiekty.",
                "Konstruktor można przeciążać. np. mając klasę Abc, mamy: Abc() { } i Abc(int a) { } itd.",
                "Gdy zdefiniujemy konstrukor to konstruktor domyślny nie jest automatycznie tworzony.",
-               "W języku C# operatorem dziedziczenia jak i implementacji interfejsów jest dwukropek."
+               "W języku C# operatorem dziedziczenia jak i implementacji interfejsów jest dwukropek.",
+               "Inną nazwą dla funkcji jest podprogram albo procedura."
            };
         }
 
