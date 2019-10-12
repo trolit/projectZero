@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -159,6 +160,12 @@ namespace Console
                 
         }
 
+        private IEnumerator ScrollDown()
+        {
+            yield return new WaitForSeconds(0.1f);
+            ScrollRect.verticalNormalizedPosition = 0f;
+        }
+
         private void AddMessageToConsole(string msg)
         {
             ConsoleText.text += msg + "\n";
@@ -190,9 +197,7 @@ namespace Console
                 Commands[splitInput[0]].RunCommand(splitInput);
             }
 
-            Canvas.ForceUpdateCanvases();
-            ScrollRect.verticalScrollbar.value = 0f;
-            Canvas.ForceUpdateCanvases();
+            StartCoroutine(ScrollDown());
         }
     }
 }
