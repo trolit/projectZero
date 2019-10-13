@@ -10,27 +10,27 @@ namespace Assets.Scripts.Game.Shop
         [SerializeField]
         private GameObject _shopUI;
 
+        private bool _isInShopArea = false;
+
         private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.tag == "Player")
             {
                 _tip.SetActive(true);
+
+                _isInShopArea = true;
             }
         }
 
-        private void OnTriggerStay(Collider other)
+        private void Update()
         {
-            if (other.gameObject.tag == "Player")
+            if (_isInShopArea)
             {
                 if (Input.GetKeyDown(KeyCode.B))
                 {
-                    _shopUI.SetActive(true);
+                    _shopUI.SetActive(!_shopUI.activeInHierarchy);
                 }
-                else if (Input.GetKeyDown(KeyCode.N))
-                {
-                    _shopUI.SetActive(false);
-                }
-            }
+            }         
         }
 
         private void OnTriggerExit(Collider other)
@@ -40,6 +40,8 @@ namespace Assets.Scripts.Game.Shop
                 _tip.SetActive(false);
 
                 _shopUI.SetActive(false);
+
+                _isInShopArea = false;
             }
         }
     }
