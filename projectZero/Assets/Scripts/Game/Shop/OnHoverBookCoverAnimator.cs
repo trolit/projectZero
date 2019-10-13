@@ -13,7 +13,7 @@ namespace Assets.Scripts.Game.Shop
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            if (CheckIfAvailable.IsBookAnimated)
+            if (ItemManager.IsAnimationEnabled)
             {
                 _bookAnimator.SetBool("isHovered", true);
             }
