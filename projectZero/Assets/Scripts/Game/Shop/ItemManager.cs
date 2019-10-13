@@ -30,8 +30,13 @@ namespace Assets.Scripts.Game.Shop
         [SerializeField]
         private string _productKey;
 
+        [Header("Audio elements")]
 
+        [SerializeField]
+        private AudioSource _source;
 
+        [SerializeField]
+        private AudioClip _clip;
 
         public static bool IsAnimationEnabled = false;
 
@@ -100,6 +105,11 @@ namespace Assets.Scripts.Game.Shop
             var moneyBefore = GetCurrentMoney();
 
             var moneyAfter = moneyBefore - _productPrice;
+
+            _soldImage.SetActive(true);
+            _buyObject.SetActive(false);
+
+            _source.PlayOneShot(_clip);
 
             PlayerPrefs.SetInt(itemKey, moneyAfter);
         }
