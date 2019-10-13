@@ -22,19 +22,7 @@ namespace Assets.Scripts.Game.Shop
         [SerializeField]
         private Text _costText;
 
-        [SerializeField]
-        private RawImage _cover;
-
-        [SerializeField]
-        private Texture _productTexture;
-
-        [SerializeField]
-        private Text _title;
-
         [Header("Variables to define")]
-
-        [SerializeField]
-        private string _productTitle;
 
         [SerializeField]
         private int _productPrice;
@@ -52,8 +40,6 @@ namespace Assets.Scripts.Game.Shop
         // Start is called before the first frame update
         private void Start()
         {
-            SetProductBasics();
-
             _productStatus = IsProductAvailable();
         }
 
@@ -64,13 +50,6 @@ namespace Assets.Scripts.Game.Shop
             {
                 VerifyMoneyStatus();
             }
-        }
-
-        private void SetProductBasics()
-        {
-            _cover.texture = _productTexture;
-
-            _title.text = _productTitle;
         }
 
         private bool IsProductAvailable()
