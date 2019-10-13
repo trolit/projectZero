@@ -8,9 +8,19 @@ namespace Assets.Scripts.Game.Shop
         private GameObject _tip;
 
         [SerializeField]
-        private GameObject _shopUI;
+        private GameObject _shopUi;
+
+        [SerializeField]
+        private AudioClip _clip;
 
         private bool _isInShopArea = false;
+
+        private AudioSource _audioSource;
+
+        private void Start()
+        {
+            _audioSource = GetComponent<AudioSource>();
+        }
 
         private void OnTriggerEnter(Collider other)
         {
@@ -19,6 +29,8 @@ namespace Assets.Scripts.Game.Shop
                 _tip.SetActive(true);
 
                 _isInShopArea = true;
+
+                _audioSource.PlayOneShot(_clip);
             }
         }
 
@@ -28,7 +40,7 @@ namespace Assets.Scripts.Game.Shop
             {
                 if (Input.GetKeyDown(KeyCode.B))
                 {
-                    _shopUI.SetActive(!_shopUI.activeInHierarchy);
+                    _shopUi.SetActive(!_shopUi.activeInHierarchy);
                 }
             }         
         }
@@ -39,9 +51,11 @@ namespace Assets.Scripts.Game.Shop
             {
                 _tip.SetActive(false);
 
-                _shopUI.SetActive(false);
+                _shopUi.SetActive(false);
 
                 _isInShopArea = false;
+
+                _audioSource.PlayOneShot(_clip);
             }
         }
     }
