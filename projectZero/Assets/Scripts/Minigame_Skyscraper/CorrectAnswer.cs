@@ -21,6 +21,7 @@ namespace Assets.Scripts.Minigame_Skyscraper
             {
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
+                    // Debug.Log("Clip name => " + Clip.name);
                     Source.PlayOneShot(Clip);
 
                     foreach (var _object in _objectsToHide)
