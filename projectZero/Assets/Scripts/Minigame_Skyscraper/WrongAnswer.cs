@@ -21,6 +21,8 @@ namespace Assets.Scripts.Minigame_Skyscraper
                     _wrongAnswerObject.SetActive(true);
 
                     Source.PlayOneShot(Clip);
+
+                    SkyscraperPrizeManager.MistakesCount++;
                 }
             }
         }
