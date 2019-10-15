@@ -42,6 +42,13 @@ namespace Assets.Scripts.CharacterCreation
 
         void Start()
         {
+            var medalsAmount = PlayerPrefs.GetInt("medalsUnlocked");
+            
+            if (medalsAmount >= 3)
+            {
+                _pointsAmount = 6;
+            }
+
             _pointsLeft = _pointsAmount;
 
             
