@@ -18,8 +18,6 @@ namespace Assets.Scripts.Game.Player
 
         void Start()
         {
-            // var medals = PlayerPrefs.GetInt("medals");
-
             var pickedHelmetValue = PlayerPrefs.GetInt("knightHelmet");
 
             if (pickedHelmetValue == 1)

@@ -55,11 +55,6 @@ namespace Assets.Scripts.CharacterCreation
         {
             _medalsAmount = PlayerPrefs.GetInt("medalsUnlocked");
 
-            if (_medalsAmount < 2)
-            {
-                // _knightModelButton.interactable = false;
-            }
-
             if (_medalsAmount >= 3)
             {
                 _pointsAmount = 6;
@@ -86,8 +81,13 @@ namespace Assets.Scripts.CharacterCreation
             }
         }
 
-        void Update()
+        private void Update()
         {
+            if (_medalsAmount < 2 && KnightCharacterManager.UnderTest == false)
+            {
+                _knightModelButton.interactable = false;
+            }
+
             if (_pointsLeft == 1 || _pointsLeft == 2)
             {
                 _pointsDisplay.color = Color.yellow;
@@ -129,10 +129,17 @@ namespace Assets.Scripts.CharacterCreation
 
         public void SaveKnightPersonalization()
         {
-            // If knight was picked and personalizations were unlocked set them
-            if ((_pickedCharacterId == 4 && _medalsAmount >= 4) || KnightCharacterManager.UnderTest == true)
+            if (_pickedCharacterId == 4)
             {
-                Debug.Log("Additional knight personalization saved!");
+                PlayerPrefs.SetInt("knightHelmet", 0);
+
+                PlayerPrefs.SetInt("knightShoulders", 1);
+            }
+
+            // If knight was picked and personalizations were unlocked set them
+            if (_pickedCharacterId == 4 && _medalsAmount >= 4 || KnightCharacterManager.UnderTest == true)
+            {
+                Debug.Log("Knight personalization overwritten successfully!");
 
                 PlayerPrefs.SetInt("knightHelmet", KnightHelmetId);
 
