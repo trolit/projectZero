@@ -49,6 +49,8 @@ namespace Assets.Scripts.CharacterCreation
 
         private int _medalsAmount;
 
+        private int _pickedCharacterId;
+
         void Start()
         {
             _medalsAmount = PlayerPrefs.GetInt("medalsUnlocked");
@@ -118,17 +120,24 @@ namespace Assets.Scripts.CharacterCreation
         }
 
         public void SaveChoice(int id)
-        {           
+        {
+            _pickedCharacterId = id;
+
+            // saves id which model was picked (by default cactus is picked)
+            PlayerPrefs.SetInt("model", id);
+        }
+
+        public void SaveKnightPersonalization()
+        {
             // If knight was picked and personalizations were unlocked set them
-            if (id == 4 && _medalsAmount >= 4)
+            if ((_pickedCharacterId == 4 && _medalsAmount >= 4) || KnightCharacterManager.UnderTest == true)
             {
+                Debug.Log("Additional knight personalization saved!");
+
                 PlayerPrefs.SetInt("knightHelmet", KnightHelmetId);
 
                 PlayerPrefs.SetInt("knightShoulders", KnightShoulders);
             }
-
-            // saves id which model was picked (by default cactus is picked)
-            PlayerPrefs.SetInt("model", id);
         }
 
         public void SaveName(InputField nameField)

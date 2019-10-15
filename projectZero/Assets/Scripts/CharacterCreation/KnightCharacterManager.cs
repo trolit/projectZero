@@ -7,10 +7,7 @@ namespace Assets.Scripts.CharacterCreation
     public class KnightCharacterManager : MonoBehaviour
     {
         [SerializeField]
-        private Button _changeHelmet;
-
-        [SerializeField]
-        private Toggle _areShouldersEnabled;
+        private GameObject _knightAdditionalTools;
 
         [SerializeField]
         private GameObject _shoulders;
@@ -18,22 +15,32 @@ namespace Assets.Scripts.CharacterCreation
         [SerializeField]
         private List<GameObject> _helmets;
 
+        [SerializeField]
+        private bool _isUnderTest = false;
+
+        public static bool UnderTest;
+
         private int _index = 0;
 
-        void Start()
+        private int _medalsAmount = 0;
+
+        private void Start()
         {
-            _changeHelmet.gameObject.SetActive(false);
-            _areShouldersEnabled.gameObject.SetActive(false);
+            UnderTest = _isUnderTest;
 
-            var medals = PlayerPrefs.GetInt("medalsUnlocked");
+            _knightAdditionalTools.SetActive(false);
 
-            if (medals < 4)
-            {
-                _changeHelmet.gameObject.SetActive(false);
-                _areShouldersEnabled.gameObject.SetActive(false);
-            }
+            _medalsAmount = PlayerPrefs.GetInt("medalsUnlocked");
 
             _helmets[0].SetActive(true);
+        }
+
+        public void VerifyMedalsAmount()
+        {
+            if (_medalsAmount > 4 || _isUnderTest)
+            {
+                _knightAdditionalTools.SetActive(true);
+            }
         }
 
         public void ManageShoulders()
@@ -41,7 +48,7 @@ namespace Assets.Scripts.CharacterCreation
             _shoulders.SetActive(!_shoulders.activeInHierarchy);
 
             SetupCharacterManager.KnightShoulders = 
-                _shoulders.activeInHierarchy ? 1 : 0;
+                _shoulders.activeInHierarchy ? 0 : 1;
         }
 
         public void ManageHelmet()
@@ -56,6 +63,9 @@ namespace Assets.Scripts.CharacterCreation
             }
 
             _helmets[_index].SetActive(true);
+
+            SetupCharacterManager.KnightHelmetId =
+                _index;
         }
     }
 }

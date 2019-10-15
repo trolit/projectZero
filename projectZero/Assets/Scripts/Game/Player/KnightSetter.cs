@@ -38,7 +38,7 @@ namespace Assets.Scripts.Game.Player
 
             var shouldersValue = PlayerPrefs.GetInt("knightShoulders");
 
-            if (shouldersValue == 1)
+            if (shouldersValue == 0)
             {
                 _shoulders.SetActive(true);
             }

@@ -1599,9 +1599,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1156462580}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1156462582}
+        m_MethodName: VerifyMedalsAmount
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3724,7 +3724,7 @@ GameObject:
   - component: {fileID: 1156462581}
   - component: {fileID: 1156462582}
   m_Layer: 5
-  m_Name: KnightAdditionalElements
+  m_Name: KnightAdditionalTools
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3763,13 +3763,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6979d8072acf084fa6c6b90310fabd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _changeHelmet: {fileID: 1507985283}
-  _areShouldersEnabled: {fileID: 343352387}
+  _knightAdditionalTools: {fileID: 1156462580}
   _shoulders: {fileID: 1924607360}
   _helmets:
   - {fileID: 995038513}
   - {fileID: 831286173}
   - {fileID: 193668878}
+  _isUnderTest: 1
 --- !u!1 &1164095608
 GameObject:
   m_ObjectHideFlags: 0
@@ -7092,7 +7092,7 @@ PrefabInstance:
     - target: {fileID: 677619875906467103, guid: 58598ba971f2a8840bcc4342fa62a73a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 677619875906467103, guid: 58598ba971f2a8840bcc4342fa62a73a,
         type: 3}
@@ -7172,7 +7172,7 @@ PrefabInstance:
     - target: {fileID: 677619875906467103, guid: 58598ba971f2a8840bcc4342fa62a73a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 677619875906467103, guid: 58598ba971f2a8840bcc4342fa62a73a,
         type: 3}
@@ -7183,11 +7183,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 1968356467}
+      objectReference: {fileID: 39465119}
     - target: {fileID: 677619875906467103, guid: 58598ba971f2a8840bcc4342fa62a73a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: LoadScene
+      value: SaveKnightPersonalization
       objectReference: {fileID: 0}
     - target: {fileID: 677619875906467103, guid: 58598ba971f2a8840bcc4342fa62a73a,
         type: 3}
@@ -7202,7 +7202,7 @@ PrefabInstance:
     - target: {fileID: 677619875906467103, guid: 58598ba971f2a8840bcc4342fa62a73a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 677619875906467103, guid: 58598ba971f2a8840bcc4342fa62a73a,
         type: 3}
@@ -7213,8 +7213,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
-      objectReference: {fileID: 11500000, guid: 527b50b403edefe43baf0f7e2423288e,
+      objectReference: {fileID: 1968356467}
+    - target: {fileID: 677619875906467103, guid: 58598ba971f2a8840bcc4342fa62a73a,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: LoadSceneAsync
+      objectReference: {fileID: 0}
+    - target: {fileID: 677619875906467103, guid: 58598ba971f2a8840bcc4342fa62a73a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 677619875906467103, guid: 58598ba971f2a8840bcc4342fa62a73a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_StringArgument
+      value: Map
+      objectReference: {fileID: 0}
     - target: {fileID: 677619876258964178, guid: 58598ba971f2a8840bcc4342fa62a73a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
