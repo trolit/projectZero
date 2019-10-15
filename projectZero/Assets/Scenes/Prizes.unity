@@ -434,7 +434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &226167529
 RectTransform:
   m_ObjectHideFlags: 0
@@ -990,6 +990,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 743524864}
+  - component: {fileID: 743524865}
   m_Layer: 5
   m_Name: Prize for (4) medals
   m_TagString: Untagged
@@ -1020,6 +1021,24 @@ RectTransform:
   m_AnchoredPosition: {x: 453, y: 19}
   m_SizeDelta: {x: 463.6, y: 235}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &743524865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743524863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e8cb0113ef103043a9b58e44b581c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NotUnlockedObjects:
+  - {fileID: 31997719}
+  UnlockedObjects:
+  - {fileID: 226167528}
+  IsUnderTest: 0
+  MedalsRequired: 0
 --- !u!1 &795836434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,7 +1056,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &795836435
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1173,6 +1192,88 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994827895}
   m_CullTransparentMesh: 0
+--- !u!1 &997251202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 997251203}
+  - component: {fileID: 997251205}
+  - component: {fileID: 997251204}
+  m_Layer: 5
+  m_Name: ExtraText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &997251203
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997251202}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.01, y: 1.01, z: 1.01}
+  m_Children: []
+  m_Father: {fileID: 1988762195}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -7.1, y: -30.2}
+  m_SizeDelta: {x: 503.7, y: 181.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &997251204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997251202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 3fe86dc1c4efecc4f88ac3734f1444b7, type: 3}
+    m_FontSize: 19
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 78
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "<color=lime>Pomys\u0142y na zagadki st\u0105d (super strona do nauki)</color>\n1)
+    https://www.w3schools.com\n<color=lime>Je\u017Celi te\u017C chcesz tworzy\u0107
+    gry \nzobacz kana\u0142y tych os\xF3b na youtube :)</color>\n1) Brackeys\n2) Joey
+    The Lantern\n3) NFA78"
+--- !u!222 &997251205
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997251202}
+  m_CullTransparentMesh: 0
 --- !u!1 &1021916008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,7 +1291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1021916009
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1200,15 +1301,15 @@ RectTransform:
   m_GameObject: {fileID: 1021916008}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0911593, y: 1.0911593, z: 1.0911593}
   m_Children: []
   m_Father: {fileID: 1988762195}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21, y: 3}
-  m_SizeDelta: {x: 255.6, y: 109.1}
+  m_AnchoredPosition: {x: -95.6, y: 110.5}
+  m_SizeDelta: {x: 299.3, y: 109.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1021916010
 MonoBehaviour:
@@ -1232,7 +1333,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3fe86dc1c4efecc4f88ac3734f1444b7, type: 3}
-    m_FontSize: 22
+    m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1243,8 +1344,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Adresy kilku stron z kt\xF3rych czerpali\u015Bmy wiedz\u0119 przy projektowaniu
-    gry"
+  m_Text: "<size=25>Gratulacje</size> przej\u015Bcia ca\u0142ej gry! W nagrod\u0119
+    par\u0119 adres\xF3w poni\u017Cej"
 --- !u!222 &1021916011
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1287,7 +1388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -230, y: -67}
+  m_AnchoredPosition: {x: -301, y: -209}
   m_SizeDelta: {x: 255.6, y: 88.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1027175468
@@ -1657,6 +1758,8 @@ MonoBehaviour:
   - {fileID: 211057299}
   UnlockedObjects:
   - {fileID: 1742042974}
+  IsUnderTest: 0
+  MedalsRequired: 2
   _image: {fileID: 1515270261}
 --- !u!1 &1195424480
 GameObject:
@@ -2467,7 +2570,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1742042975
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2563,7 +2666,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: -25}
+  m_AnchoredPosition: {x: -206, y: -79}
   m_SizeDelta: {x: 26.57, y: 39.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1767217453
@@ -2626,16 +2729,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837449297}
-  m_LocalRotation: {x: -0, y: -0, z: 0.23771802, w: 0.9713342}
+  m_LocalRotation: {x: -0, y: -0, z: 0.41116035, w: 0.9115631}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1988762195}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 27.504002}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 48.555004}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -171, y: -48}
+  m_AnchoredPosition: {x: -254, y: -155}
   m_SizeDelta: {x: 78.616, y: 78.62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1837449299
@@ -2682,6 +2785,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1863610850}
+  - component: {fileID: 1863610851}
   m_Layer: 5
   m_Name: Prize for (3) medals
   m_TagString: Untagged
@@ -2712,6 +2816,24 @@ RectTransform:
   m_AnchoredPosition: {x: 238, y: -240}
   m_SizeDelta: {x: 463.6, y: 235}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1863610851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863610849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e8cb0113ef103043a9b58e44b581c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NotUnlockedObjects:
+  - {fileID: 1400428058}
+  UnlockedObjects:
+  - {fileID: 795836434}
+  IsUnderTest: 0
+  MedalsRequired: 0
 --- !u!1 &1988762194
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,6 +2843,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1988762195}
+  - component: {fileID: 1988762196}
   m_Layer: 5
   m_Name: Prize for (5) medals
   m_TagString: Untagged
@@ -2743,6 +2866,7 @@ RectTransform:
   - {fileID: 1837449298}
   - {fileID: 1021916009}
   - {fileID: 1767217452}
+  - {fileID: 997251203}
   m_Father: {fileID: 703591099}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2751,3 +2875,23 @@ RectTransform:
   m_AnchoredPosition: {x: 155, y: 11}
   m_SizeDelta: {x: 463.6, y: 235}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1988762196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988762194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e8cb0113ef103043a9b58e44b581c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NotUnlockedObjects:
+  - {fileID: 1767217451}
+  - {fileID: 1195424480}
+  UnlockedObjects:
+  - {fileID: 1021916008}
+  - {fileID: 997251202}
+  IsUnderTest: 1
+  MedalsRequired: 5

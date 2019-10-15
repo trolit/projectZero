@@ -16,9 +16,25 @@ namespace Assets.Scripts.Game
         [SerializeField]
         protected bool IsUnderTest = false;
 
+        [SerializeField]
+        protected int MedalsRequired = 0;
+
         private void Start()
         {
             MedalsAmount = PlayerPrefs.GetInt("medalsUnlocked");
+
+            Debug.Log("Current medals amount => " + MedalsAmount);
+
+            if (MedalsAmount < MedalsRequired && IsUnderTest == false)
+            {
+                MarkListOfObjects(UnlockedObjects, false);
+            }
+            else
+            {
+                MarkListOfObjects(NotUnlockedObjects, false);
+
+                MarkListOfObjects(UnlockedObjects, true);
+            }
         }
 
         // mode meaning

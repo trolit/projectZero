@@ -10,7 +10,7 @@ namespace Assets.Scripts.Game
 
         private void Start()
         {
-            if (MedalsAmount >= 2 || IsUnderTest == true)
+            if (MedalsAmount >= MedalsRequired || IsUnderTest == true)
             {
                 _image.color = new Color(255f, 255f, 255f);
 
@@ -21,6 +21,8 @@ namespace Assets.Scripts.Game
             else
             {
                 MarkListOfObjects(NotUnlockedObjects, true);
+
+                MarkListOfObjects(UnlockedObjects, false);
             }
         }
     }
