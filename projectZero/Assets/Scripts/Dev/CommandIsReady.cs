@@ -28,7 +28,7 @@ namespace Console
             if (data.Length == 1)
             {
                 var modelId = PlayerPrefs.GetInt("model");
-                int[] correctValues = {1, 2, 3};
+                int[] correctValues = {1, 2, 3, 4};
 
                 if (correctValues.Contains(modelId))
                 {

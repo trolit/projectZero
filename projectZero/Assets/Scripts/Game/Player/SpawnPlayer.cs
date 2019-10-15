@@ -10,6 +10,8 @@ namespace Assets.Scripts.Game.Player
 
         public GameObject Slime;
 
+        public GameObject Knight;
+
         [SerializeField]
         private AudioSource _sfxSource;
 
@@ -53,6 +55,16 @@ namespace Assets.Scripts.Game.Player
 
                 MovementScript movement = Robot.AddComponent<MovementScript>();
                 movement.Speed = 40f;
+
+                movement.SfxSource = _sfxSource;
+                movement.SfxSource.clip = _robotJump;
+            }
+            else if (pickedModel == 4) // Knight
+            {
+                Knight.SetActive(true);
+
+                MovementScript movement = Knight.AddComponent<MovementScript>();
+                movement.Speed = 30f;
 
                 movement.SfxSource = _sfxSource;
                 movement.SfxSource.clip = _robotJump;
