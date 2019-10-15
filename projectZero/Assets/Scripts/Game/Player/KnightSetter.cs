@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets
+namespace Assets.Scripts.Game.Player
 {
     public class KnightSetter : MonoBehaviour
     {
