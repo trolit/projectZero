@@ -40,11 +40,25 @@ namespace Assets.Scripts.CharacterCreation
         [SerializeField]
         private Text _PHPText;
 
+        [SerializeField]
+        private Button _knightModelButton;
+
+        public static int KnightHelmetId = 0;
+
+        public static int KnightShoulders = 0;
+
+        private int _medalsAmount;
+
         void Start()
         {
-            var medalsAmount = PlayerPrefs.GetInt("medalsUnlocked");
-            
-            if (medalsAmount >= 3)
+            _medalsAmount = PlayerPrefs.GetInt("medalsUnlocked");
+
+            if (_medalsAmount < 2)
+            {
+                // _knightModelButton.interactable = false;
+            }
+
+            if (_medalsAmount >= 3)
             {
                 _pointsAmount = 6;
             }
@@ -97,7 +111,6 @@ namespace Assets.Scripts.CharacterCreation
                 transformToToggle.gameObject.SetActive(shouldBeActive);
             }
         }
-
         
         public List<Transform> GetModels()
         {
@@ -105,7 +118,15 @@ namespace Assets.Scripts.CharacterCreation
         }
 
         public void SaveChoice(int id)
-        {
+        {           
+            // If knight was picked and personalizations were unlocked set them
+            if (id == 4 && _medalsAmount >= 4)
+            {
+                PlayerPrefs.SetInt("knightHelmet", KnightHelmetId);
+
+                PlayerPrefs.SetInt("knightShoulders", KnightShoulders);
+            }
+
             // saves id which model was picked (by default cactus is picked)
             PlayerPrefs.SetInt("model", id);
         }
