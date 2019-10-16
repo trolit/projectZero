@@ -5531,9 +5531,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Je\u017Celi zdarzy Ci si\u0119 poprogramowa\u0107 w j\u0119zyku <color=yellow>C#</color>
+  m_Text: "Je\u017Celi zdarzy Ci si\u0119 poprogramowa\u0107 w j\u0119zyku <color=lime>C#</color>
     to natkniesz si\u0119 zapewne na tzw. programowanie obiektowe. Jest to spos\xF3b
-    programowania nastawiony na: <color=yellow>dziedziczenie</color>, <color=yellow>hermetyzacje</color>
+    programowania nastawiony na: <color=lime>dziedziczenie</color>, <color=lime>hermetyzacje</color>
     10101011010010101011010, \n\n\n              Uwaga: wi\u0119kszo\u015B\u0107 informacji
     zosta\u0142a utracona z powodu zebrania du\u017Cej ilo\u015Bci bug\xF3w. \n                   Je\u017Celi
     chcesz dowiedzie\u0107 si\u0119 wi\u0119cej to mo\u017Cesz powt\xF3rzy\u0107 poziom
@@ -12935,13 +12935,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Je\u017Celi zdarzy Ci si\u0119 poprogramowa\u0107 w j\u0119zyku <color=yellow>C#</color>
+  m_Text: "Je\u017Celi zdarzy Ci si\u0119 poprogramowa\u0107 w j\u0119zyku <color=lime>C#</color>
     to natkniesz si\u0119 zapewne na tzw. programowanie obiektowe. Jest to spos\xF3b
-    programowania nastawiony na: <color=yellow>dziedziczenie</color>, <color=yellow>hermetyzacje</color>,
-    <color=yellow>polimorfizm</color> i <color=yellow>abstrakcje</color>. Wszystko
-    to po to aby zredukowa\u0107 nadmiarowo\u015B\u0107 kodu i u\u0142atwi\u0107 konserwacj\u0119.
-    B\u0119d\u0105c .NET Developerem przestrzega si\u0119 regu\u0142 <color=yellow>SOLID</color>
-    i stosuje si\u0119 <color=yellow>DI</color> (Dependency Injection).\n\nS - Single
+    programowania nastawiony na: <color=lime>dziedziczenie</color>, <color=lime>hermetyzacje</color>,
+    <color=lime>polimorfizm</color> i <color=lime>abstrakcje</color>. Wszystko to
+    po to aby zredukowa\u0107 nadmiarowo\u015B\u0107 kodu i u\u0142atwi\u0107 konserwacj\u0119.
+    B\u0119d\u0105c .NET Developerem przestrzega si\u0119 regu\u0142 <color=lime>SOLID</color>
+    i stosuje si\u0119 <color=lime>DI</color> (Dependency Injection).\n\nS - Single
     Responsibility Principle\nO - Open/Closed Principle\nL - Liskov Substitution Principle\nI
     - Interface Segregation Principle\nD - Dependency Inversion Principle"
 --- !u!222 &567837545
@@ -25897,10 +25897,12 @@ MonoBehaviour:
   Cactus: {fileID: 1970521195}
   Robot: {fileID: 1970521193}
   Slime: {fileID: 1970521194}
+  Knight: {fileID: 1338143682}
   _sfxSource: {fileID: 1969102246}
   _slimeJump: {fileID: 8300000, guid: b59d0a3ef70308340ac7863a4459a8bc, type: 3}
   _cactusJump: {fileID: 8300000, guid: 5db601d77c145d84399f1f1fdb2e90b8, type: 3}
   _robotJump: {fileID: 8300000, guid: f584941aebb7d8c469de7193b5e25f9d, type: 3}
+  _knightMove: {fileID: 8300000, guid: 4bd00332a8788124bbc855f4613d750d, type: 3}
 --- !u!114 &1023038088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25916,6 +25918,7 @@ MonoBehaviour:
   _slime: {fileID: 1970521199}
   _robot: {fileID: 1970521192}
   _cactus: {fileID: 1970521198}
+  _knight: {fileID: 1338143681}
   Height: 340.43
   Distance: 67.7
   Angle: 0
@@ -28395,11 +28398,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Je\u017Celi zdarzy Ci si\u0119 poprogramowa\u0107 w j\u0119zyku <color=yellow>C#</color>
+  m_Text: "Je\u017Celi zdarzy Ci si\u0119 poprogramowa\u0107 w j\u0119zyku <color=lime>C#</color>
     to natkniesz si\u0119 zapewne na tzw. programowanie obiektowe. Jest to spos\xF3b
-    programowania nastawiony na: <color=yellow>dziedziczenie</color>, <color=yellow>hermetyzacje</color>,
-    <color=yellow>polimorfizm</color> i <color=yellow>abstrakcje</color>. Wszystko
-    to po to aby zredukowa\u0107 nadmiarowo\u015B\u0107 kodu i u\u0142atwi\u0107 konserwacj\u0119.
+    programowania nastawiony na: <color=lime>dziedziczenie</color>, <color=lime>hermetyzacje</color>,
+    <color=lime>polimorfizm</color> i <color=lime>abstrakcje</color>. Wszystko to
+    po to aby zredukowa\u0107 nadmiarowo\u015B\u0107 kodu i u\u0142atwi\u0107 konserwacj\u0119.
     01010101010100101010101010101010101010101011010010110101001010101010101\n\n\n
     \                  Uwaga: po\u0142owa informacji zosta\u0142a utracona z powodu
     zebrania bug\xF3w. \n               Je\u017Celi chcesz to mo\u017Cesz powt\xF3rzy\u0107
@@ -35141,6 +35144,127 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1336906726}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1338143680
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1970521202}
+    m_Modifications:
+    - target: {fileID: 3718447328784835600, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_Name
+      value: Knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328784835600, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328784835600, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1526
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -441
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -481
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99871427
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.050693985
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 185.812
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 13.11001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 13.10999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 13.11001
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bfe23cebf7af43b49ad5e93e8ab192e0, type: 3}
+--- !u!4 &1338143681 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1338143680}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1338143682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3718447328784835600, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1338143680}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1338143683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338143682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3424953f8aa48f4439c2f66b03c41b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _source: {fileID: 1681388058}
+  _bugPickedClip: {fileID: 8300000, guid: ba68db5d115a6254e8228b11e85f2464, type: 3}
+  _codePickedClip: {fileID: 8300000, guid: c8fd24e675ec4284fa5dbf57e50f8f6d, type: 3}
 --- !u!1001 &1338948738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37238,8 +37362,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 595, y: -415}
-  m_SizeDelta: {x: 207.4, y: 72.7}
+  m_AnchoredPosition: {x: 595, y: -459.32}
+  m_SizeDelta: {x: 207.4, y: 161.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1406576423
 MonoBehaviour:
@@ -37274,7 +37398,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Zbieraj
+  m_Text: 'Zbieraj
+
+    (KOD)'
 --- !u!222 &1406576424
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -38237,8 +38363,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 350.00003, y: -415}
-  m_SizeDelta: {x: 207.4, y: 72.7}
+  m_AnchoredPosition: {x: 350.00003, y: -459.32}
+  m_SizeDelta: {x: 207.4, y: 161.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1463195297
 MonoBehaviour:
@@ -38273,7 +38399,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Unikaj
+  m_Text: 'Unikaj
+
+    (BUG)'
 --- !u!222 &1463195298
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -50377,7 +50505,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -55109,6 +55237,12 @@ MonoBehaviour:
   _source: {fileID: 1681388058}
   _bugPickedClip: {fileID: 8300000, guid: ba68db5d115a6254e8228b11e85f2464, type: 3}
   _codePickedClip: {fileID: 8300000, guid: c8fd24e675ec4284fa5dbf57e50f8f6d, type: 3}
+--- !u!4 &1970521202 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 801805781578916483, guid: 24155ed1402a670499f5a5a6f7d8ce22,
+    type: 3}
+  m_PrefabInstance: {fileID: 1970521191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &1970521205
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -60192,22 +60326,22 @@ PrefabInstance:
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -770.71454
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
@@ -60237,12 +60371,12 @@ PrefabInstance:
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -295.1706
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 364.44348
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8024199979698410972, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
@@ -60319,9 +60453,15 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "- mini-gra uznana zostaje za uko\u0144czon\u0105 je\u017Celi zostan\u0105
-        zebrane wszystkie fragmenty kodu\n- zebranie 'buga' powoduje zmniejszenie
-        wynagrodzenia oraz utrat\u0119 ciekawych informacji po uko\u0144czeniu poziomu
-        :)"
+        zebrane <color=lime>wszystkie fragmenty kodu</color>\n- zebranie 'buga' powoduje
+        zmniejszenie wynagrodzenia \n- zebranie kilku bug\xF3w skutkuje utracie ciekawych
+        informacji po uko\u0144czeniu poziomu \n- poziom w przypadku zebrania du\u017Cej
+        liczby bug\xF3w mo\u017Cna powt\xF3rzy\u0107"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 42
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083664868c7e9447bec8f0ecadbd761, type: 3}
@@ -60458,12 +60598,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8811571963000713353, guid: 694f31b33622f194ba089f46e83ebb37,
+    - target: {fileID: 8811571963505569680, guid: 694f31b33622f194ba089f46e83ebb37,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8811571963505569680, guid: 694f31b33622f194ba089f46e83ebb37,
+    - target: {fileID: 8811571963952447839, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811571963000713353, guid: 694f31b33622f194ba089f46e83ebb37,
         type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -60479,11 +60624,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8811571963790591275, guid: 694f31b33622f194ba089f46e83ebb37,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8811571963952447839, guid: 694f31b33622f194ba089f46e83ebb37,
         type: 3}
       propertyPath: m_IsActive
       value: 1
