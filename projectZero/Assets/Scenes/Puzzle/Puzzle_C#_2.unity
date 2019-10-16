@@ -28092,9 +28092,18 @@ PrefabInstance:
     - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_Text
-      value: "- mini-gra zostaje uznana za uko\u0144czon\u0105 je\u017Celi kod zostanie
-        u\u0142o\u017Cony prawid\u0142owo\n- poprawnie umieszczony fragment kodu zostaje
-        oznaczony drzewkiem i nie mo\u017Ce zosta\u0107 wi\u0119cej przesuni\u0119ty"
+      value: "- mini-gra zostaje uznana za uko\u0144czon\u0105 je\u017Celi <color=lime>kod
+        zostanie u\u0142o\u017Cony prawid\u0142owo</color>\n- blok na kt\xF3rym znajduje
+        si\u0119 drzewko jest ju\u017C prawid\u0142owo u\u0142o\u017Cony i nie mo\u017Cna
+        go przesun\u0105\u0107\n- bloki kodu nale\u017Cy rozmie\u015Bci\u0107 w wyznaczonych\n
+        do tego miejscach\n- poprawnie umieszczony fragment kodu zostaje oznaczony
+        <color=lime>drzewkiem</color> i nie mo\u017Ce zosta\u0107 wi\u0119cej przesuni\u0119ty!\n-
+        brak kar za b\u0142\u0119dne u\u0142o\u017Cenie puzzla"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083664868c7e9447bec8f0ecadbd761, type: 3}
