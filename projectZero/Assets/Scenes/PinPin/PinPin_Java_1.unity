@@ -1820,6 +1820,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 3
+--- !u!114 &48906782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48906778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1d9c16d7f32dc642b53491973066868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fireParticleSystem: {fileID: 55947298}
 --- !u!1 &49241257
 GameObject:
   m_ObjectHideFlags: 0
@@ -2024,6 +2037,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f584b4d5076829f4799f9d4dcf6de929, type: 3}
+--- !u!198 &55947298 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198703374472999380, guid: f584b4d5076829f4799f9d4dcf6de929,
+    type: 3}
+  m_PrefabInstance: {fileID: 55947297}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &56457376
 GameObject:
   m_ObjectHideFlags: 0
@@ -36318,6 +36337,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f584b4d5076829f4799f9d4dcf6de929, type: 3}
+--- !u!198 &1208853756 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198703374472999380, guid: f584b4d5076829f4799f9d4dcf6de929,
+    type: 3}
+  m_PrefabInstance: {fileID: 1208853755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1213350961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40567,6 +40592,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f584b4d5076829f4799f9d4dcf6de929, type: 3}
+--- !u!198 &1388524402 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198703374472999380, guid: f584b4d5076829f4799f9d4dcf6de929,
+    type: 3}
+  m_PrefabInstance: {fileID: 1388524401}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1388732546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54428,6 +54459,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 3
+--- !u!114 &1879138471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879138467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1d9c16d7f32dc642b53491973066868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fireParticleSystem: {fileID: 1208853756}
 --- !u!1001 &1884490060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58829,6 +58873,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _correctObjectName: Block01_sec01
   _verifyButton: {fileID: 164752642}
+--- !u!114 &2012106516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012106512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1d9c16d7f32dc642b53491973066868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fireParticleSystem: {fileID: 1388524402}
 --- !u!1 &2012245020
 GameObject:
   m_ObjectHideFlags: 0
@@ -62605,17 +62662,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -457.8
       objectReference: {fileID: 0}
-    - target: {fileID: 8024199980080300606, guid: f083664868c7e9447bec8f0ecadbd761,
-        type: 3}
-      propertyPath: m_Text
-      value: MINI-GRA PINPIN
-      objectReference: {fileID: 0}
-    - target: {fileID: 8024199980427543649, guid: f083664868c7e9447bec8f0ecadbd761,
-        type: 3}
-      propertyPath: m_Text
-      value: "W - ruch w prz\xF3d\nA - ruch w lewo\nS - ruch w ty\u0142\nD - ruch
-        w prawo\nSpacja (przytrzymaj przy pucharze) - przenoszenie pucharu"
-      objectReference: {fileID: 0}
     - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_Text
@@ -62628,6 +62674,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199980080300606, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_Text
+      value: MINI-GRA PINPIN
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199980427543649, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_Text
+      value: "W - ruch w prz\xF3d\nA - ruch w lewo\nS - ruch w ty\u0142\nD - ruch
+        w prawo\nSpacja (przytrzymaj przy pucharze) - przenoszenie pucharu"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083664868c7e9447bec8f0ecadbd761, type: 3}
