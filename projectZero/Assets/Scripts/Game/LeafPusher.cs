@@ -41,19 +41,14 @@ namespace Assets.Scripts.Game
 
 
                 _rigidbody.AddForce(-dir * _sidePower, ForceMode.Impulse);
-                _rigidbody.AddForce(transform.up * _upPower, ForceMode.Impulse);
-                _rigidbody.AddTorque(-dir * _rotationPower, ForceMode.Impulse);
-                Invoke("ForceToGround", 0.5f);
-                //var playerPos = other.gameObject.transform;
-
-                //ForceLeaf(playerPos);
+                _rigidbody.AddForce(transform.up * _upPower, ForceMode.VelocityChange);
+                _rigidbody.AddTorque(dir * _rotationPower, ForceMode.VelocityChange);
             }
         }
 
-        private void ForceToGround()
+        void FixedUpdate()
         {
-            _rigidbody.AddForce(-transform.up * _downPower, ForceMode.Impulse);
-            _rigidbody.AddTorque(-transform.up * _rotationPower, ForceMode.Impulse);
+            _rigidbody.AddForce(new Vector3(0, -2, 0) * 1f, ForceMode.VelocityChange);
         }
     }
 }
