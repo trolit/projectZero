@@ -3,6 +3,8 @@ using UnityEngine.AI;
 
 namespace Assets.Scripts.Game
 {
+    // Class designed for MoveRandomly scripts including MAX one STATE
+
     [RequireComponent(typeof(NavMeshAgent))]
     public class MoveRandomlyBase : MonoBehaviour
     {
@@ -35,6 +37,21 @@ namespace Assets.Scripts.Game
             var pos = new Vector3(transform.position.x + x, transform.position.y, transform.position.z + z);
 
             return pos;
+        }
+
+        protected int StateRandomizer()
+        {
+            // Returns 0 or 1 
+            var result = Random.Range(0, 2);
+
+            return result;
+        }
+
+        protected float TimeRandomizer(float min, float max)
+        {
+            var result = Random.Range(min, max);
+
+            return result;
         }
     }
 }

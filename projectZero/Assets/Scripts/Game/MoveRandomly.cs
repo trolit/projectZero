@@ -12,7 +12,7 @@ namespace Assets.Scripts.Game
         // Use this for initialization
         private void Start()
         {
-             NavMeshAgent = GetComponent<NavMeshAgent>();
+            NavMeshAgent = GetComponent<NavMeshAgent>();
 
             GetNewPath();
         }
