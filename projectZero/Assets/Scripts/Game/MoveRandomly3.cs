@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -28,7 +29,8 @@ namespace Assets.Scripts.Game
         public float minTime = 5f;
         public float maxTime = 20f;
 
-        public AudioClip SoundEffect;
+        [SerializeField]
+        private List<AudioClip> _soundEffect;
 
         private NavMeshAgent _navMeshAgent;
         private bool _inCoRoutine;
@@ -78,7 +80,8 @@ namespace Assets.Scripts.Game
         {
             if (other.gameObject.tag == "Player")
             {
-                _soundSource.PlayOneShot(SoundEffect);
+                var soundEffectId = Random.Range(0, _soundEffect.Count);
+                _soundSource.PlayOneShot(_soundEffect[soundEffectId]);
             }
         }
 
