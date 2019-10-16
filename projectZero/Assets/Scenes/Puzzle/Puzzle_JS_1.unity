@@ -23173,10 +23173,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_Text
-      value: 200
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -23328,22 +23328,22 @@ PrefabInstance:
       propertyPath: m_Text
       value: "1) Kod JS mo\u017Cna \"osadza\u0107\" w HTML. Robi si\u0119 to za pomoc\u0105
         znacznika script, kt\xF3ry dla JS wygl\u0105da\u0142by w nast\u0119puj\u0105cy
-        spos\xF3b: <color=yellow><script type=\"text/javascript\"></color> tutaj kod
-        <color=yellow></script></color>. Taki kod umieszcza si\u0119 w sekcji <color=yellow>head</color>,
-        w sekcji <color=yellow>body</color> lub po znaczniku <color=yellow></body></color>.
+        spos\xF3b: <color=cyan><script type=\"text/javascript\"></color> tutaj kod
+        <color=cyan></script></color>. Taki kod umieszcza si\u0119 w sekcji <color=cyan>head</color>,
+        w sekcji <color=cyan>body</color> lub po znaczniku <color=cyan></body></color>.
         Miejsce umieszczenia wp\u0142ywa na to kiedy kod zostanie wykonany.\n2) Nazwy
         funkcji w j\u0119zyku JS zaczynamy od ma\u0142ej litery\n3) Zauwa\u017C, \u017Ce
-        w np. funkcji <color=yellow>nazwa (argument_1, argument_2)</color> argumenty
+        w np. funkcji <color=cyan>nazwa (argument_1, argument_2)</color> argumenty
         nie maj\u0105 wyspecyfikowanych typ\xF3w. W j\u0119zyku JS nie podajemy typ\xF3w
         argument\xF3w. Je\u017Celi chcemy jednak poinformowa\u0107 o tym jaki zmienna
-        ma typ, mo\u017Cemy poinformowa\u0107 o tym IDE.\n4) Funkcja <color=yellow>alert()</color>
+        ma typ, mo\u017Cemy poinformowa\u0107 o tym IDE.\n4) Funkcja <color=cyan>alert()</color>
         pozwala na wy\u015Bwietlenie na ekranie notyfikacji w postaci okna, kt\xF3re
         trzeba zamkn\u0105\u0107."
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_Text
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
@@ -23478,10 +23478,19 @@ PrefabInstance:
     - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_Text
-      value: "- mini-gra zostaje uznana za uko\u0144czon\u0105 je\u017Celi kod zostanie
-        u\u0142o\u017Cony prawid\u0142owo\n- poprawnie umieszczony fragment kodu zostaje
-        oznaczony niebiesk\u0105 monet\u0105 i nie mo\u017Ce zosta\u0107 wi\u0119cej
-        przesuni\u0119ty"
+      value: "- mini-gra zostaje uznana za uko\u0144czon\u0105 je\u017Celi <color=cyan>kod
+        zostanie u\u0142o\u017Cony prawid\u0142owo</color>\r\n- blok na kt\xF3rym
+        znajduje si\u0119 moneta jest ju\u017C prawid\u0142owo u\u0142o\u017Cony i
+        nie mo\u017Cna go przesun\u0105\u0107\r\n- bloki kodu nale\u017Cy rozmie\u015Bci\u0107
+        w wyznaczonych\r\n do tego miejscach\r\n- poprawnie umieszczony fragment kodu
+        zostaje oznaczony <color=cyan>monet\u0105</color> i nie mo\u017Ce zosta\u0107
+        wi\u0119cej przesuni\u0119ty!\r\n- brak kar za b\u0142\u0119dne u\u0142o\u017Cenie
+        puzzla"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083664868c7e9447bec8f0ecadbd761, type: 3}

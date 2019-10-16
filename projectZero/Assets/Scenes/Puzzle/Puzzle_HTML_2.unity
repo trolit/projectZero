@@ -59499,10 +59499,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_Text
-      value: 125
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -59652,21 +59652,21 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "1) <color=yellow>ol</color> jest skr\xF3tem od ordered list czyli w
-        j\u0119zyku polskim od listy numerowanej\n2) Atrybut <color=yellow>start</color>
-        u\u017Cyty w znaczniku <color=yellow>ol</color> pozwala ustali\u0107 od jakiej
+      value: "1) <color=magenta>ol</color> jest skr\xF3tem od ordered list czyli w
+        j\u0119zyku polskim od listy numerowanej\n2) Atrybut <color=magenta>start</color>
+        u\u017Cyty w znaczniku <color=magenta>ol</color> pozwala ustali\u0107 od jakiej
         warto\u015Bci maj\u0105 by\u0107 numerowane elementy listy \n3) List\u0119
         nienumerowan\u0105 (np. wypunktowan\u0105) stworzymy za pomoc\u0105 znacznika
-        <color=yellow>ul</color> co jest skr\xF3tem od unordered list\n4) Wygl\u0105d
+        <color=magenta>ul</color> co jest skr\xF3tem od unordered list\n4) Wygl\u0105d
         takiej listy mo\u017Cemy urozmaici\u0107 za pomoc\u0105 kaskadowego arkusza
-        styl\xF3w - <color=yellow>CSS</color>. Mo\u017Cemy w znacznikach zagnie\u017Cdza\u0107
-        atrybut <color=yellow>style</color>, kt\xF3ry pozwoli nam uzyska\u0107 wi\u0119cej
+        styl\xF3w - <color=magenta>CSS</color>. Mo\u017Cemy w znacznikach zagnie\u017Cdza\u0107
+        atrybut <color=magenta>style</color>, kt\xF3ry pozwoli nam uzyska\u0107 wi\u0119cej
         opcji do edycji wygl\u0105du. "
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_Text
+      value: 125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
@@ -59869,9 +59869,19 @@ PrefabInstance:
     - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_Text
-      value: "- rozmie\u015B\u0107 poprawnie w wyznaczonych miejscach dost\u0119pne
-        znaczniki HTML\n- poprawnie umieszczony fragment zostaje oznaczony czerwonym
-        li\u015Bciem i nie mo\u017Ce zosta\u0107 wi\u0119cej przesuni\u0119ty"
+      value: "- mini-gra zostaje uznana za uko\u0144czon\u0105 je\u017Celi <color=magenta>kod
+        zostanie u\u0142o\u017Cony prawid\u0142owo</color>\r\n- blok na kt\xF3rym
+        znajduje si\u0119 li\u015B\u0107 jest ju\u017C prawid\u0142owo u\u0142o\u017Cony
+        i nie mo\u017Cna go przesun\u0105\u0107\r\n- bloki kodu nale\u017Cy rozmie\u015Bci\u0107
+        w wyznaczonych\r\n do tego miejscach\r\n- poprawnie umieszczony fragment kodu
+        zostaje oznaczony <color=magenta>li\u015Bciem</color> i nie mo\u017Ce zosta\u0107
+        wi\u0119cej przesuni\u0119ty!\r\n- brak kar za b\u0142\u0119dne u\u0142o\u017Cenie
+        puzzla"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8024199981016936121, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}

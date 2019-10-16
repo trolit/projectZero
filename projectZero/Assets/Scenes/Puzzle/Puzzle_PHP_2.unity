@@ -53459,10 +53459,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_Text
-      value: 200
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -53612,24 +53612,24 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "1) Funkcja <color=yellow>define(arg1, arg2, arg3)</color> pozwala na
+      value: "1) Funkcja <color=orange>define(arg1, arg2, arg3)</color> pozwala na
         zdefiniowanie sta\u0142ej. Pierwszy argument to okre\u015Blenie nazwy sta\u0142ej.
         \ Drugim argumentem jest warto\u015B\u0107, kt\xF3r\u0105 przypisujemy do
         sta\u0142ej. Argument 3 jest opcjonalny. Mo\u017Cemy przekaza\u0107 w nim
-        warto\u015B\u0107 <color=yellow>true</color> je\u017Celi chcemy aby odwo\u0142uj\u0105c
+        warto\u015B\u0107 <color=orange>true</color> je\u017Celi chcemy aby odwo\u0142uj\u0105c
         si\u0119 do sta\u0142ej nie mia\u0142a znaczenia wielko\u015B\u0107 liter.
         \n2) Je\u017Celi chcemy odnie\u015B\u0107 si\u0119 do zdefiniowanej sta\u0142ej
         (uzyska\u0107 warto\u015B\u0107, kt\xF3r\u0105 przechowuje) to zwr\xF3\u0107my
-        uwage, \u017Ce w ich przypadku nazw <color=yellow>nie poprzedzamy znakiem
-        dolara</color>.\n3)  W <color=yellow>PHP7</color> mo\u017Cemy zdefiniowa\u0107
+        uwage, \u017Ce w ich przypadku nazw <color=orange>nie poprzedzamy znakiem
+        dolara</color>.\n3)  W <color=orange>PHP7</color> mo\u017Cemy zdefiniowa\u0107
         sta\u0142\u0105, kt\xF3ra przechowuje tablic\u0119 z danymi\n4) Sta\u0142e
-        s\u0105 <color=yellow>globalne</color> - co oznacza, \u017Ce s\u0105 dost\u0119pne
+        s\u0105 <color=orange>globalne</color> - co oznacza, \u017Ce s\u0105 dost\u0119pne
         w obr\u0119bie ca\u0142ego skryptu"
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_Text
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
@@ -53760,6 +53760,23 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_Text
+      value: "- mini-gra zostaje uznana za uko\u0144czon\u0105 je\u017Celi <color=orange>kod
+        zostanie u\u0142o\u017Cony prawid\u0142owo</color>\r\n- blok na kt\xF3rym
+        znajduje si\u0119 li\u015B\u0107 jest ju\u017C prawid\u0142owo u\u0142o\u017Cony
+        i nie mo\u017Cna go przesun\u0105\u0107\r\n- bloki kodu nale\u017Cy rozmie\u015Bci\u0107
+        w wyznaczonych\r\n do tego miejscach\r\n- poprawnie umieszczony fragment kodu
+        zostaje oznaczony <color=orange>li\u015Bciem</color> i nie mo\u017Ce zosta\u0107
+        wi\u0119cej przesuni\u0119ty!\r\n- brak kar za b\u0142\u0119dne u\u0142o\u017Cenie
+        puzzla"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083664868c7e9447bec8f0ecadbd761, type: 3}

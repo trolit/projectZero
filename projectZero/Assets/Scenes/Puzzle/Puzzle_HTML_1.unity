@@ -45510,10 +45510,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_Text
-      value: 100
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -45663,24 +45663,24 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "1) HTML5 czyli j\u0119zyk znacznik\xF3w nak\u0142ada na u\u017Cytkownik\xF3w
+      value: "1) HTML czyli j\u0119zyk znacznik\xF3w nak\u0142ada na u\u017Cytkownik\xF3w
         pewn\u0105 konwencj\u0119 wedlug, kt\xF3rej powinno si\u0119 rozpocz\u0105c
         tworzenie pliku HTML. Powinni\u015Bmy zacz\u0105\u0107 j\u0105 od instrukcji,
         kt\xF3ra informuje przegl\u0105darke w jakiej wersji zosta\u0142a napisana
-        strona. W naszym przypadku fragment: <color=yellow><!DOCTYPE html></color>
-        oznacza wykorzystanie HTML5.\n2) Plik z rozszerzeniem <color=yellow>html</color>
-        powinien posiada\u0107 znaczniki: html, head, body. Ka\u017Cdy ma swoje przeznaczenie.
-        <color=yellow>Html</color> informuje o tym, \u017Ce wewn\u0105trz znajduje
-        si\u0119 j\u0119zyk znacznik\xF3w. W sekcji <color=yellow>head</color> dodajemy
-        referencje do plik\xF3w albo skrypt\xF3w a w <color=yellow>body</color> umieszczamy
-        tre\u015B\u0107 strony.\n3) Strony o rozszerzeniu <color=yellow>html</color>
-        znajdziesz, je\u017Celi b\u0119dziesz projektowa\u0107 front-end aplikacji
-        w np. Angularze. "
+        strona. W naszym przypadku fragment: <color=magenta><!DOCTYPE html></color>
+        oznacza wykorzystanie HTML5 - najnowszej wersji.\n2) Plik z rozszerzeniem
+        <color=magenta>html</color> powinien posiada\u0107 znaczniki: html, head,
+        body. Ka\u017Cdy ma swoje przeznaczenie. <color=magenta>Html</color> informuje
+        o tym, \u017Ce wewn\u0105trz znajduje si\u0119 j\u0119zyk znacznik\xF3w. W
+        sekcji <color=magenta>head</color> dodajemy referencje do plik\xF3w albo skrypt\xF3w
+        a w <color=magenta>body</color> umieszczamy tre\u015B\u0107 strony.\n3) Strony
+        o rozszerzeniu <color=magenta>html</color> znajdziesz, je\u017Celi b\u0119dziesz
+        projektowa\u0107 front-end aplikacji w np. Angularze. "
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_Text
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
@@ -45883,9 +45883,19 @@ PrefabInstance:
     - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_Text
-      value: "- rozmie\u015B\u0107 poprawnie w wyznaczonych miejscach dost\u0119pne
-        znaczniki HTML\n- poprawnie umieszczony fragment zostaje oznaczony czerwonym
-        li\u015Bciem i nie mo\u017Ce zosta\u0107 wi\u0119cej przesuni\u0119ty"
+      value: "- mini-gra zostaje uznana za uko\u0144czon\u0105 je\u017Celi <color=magenta>kod
+        zostanie u\u0142o\u017Cony prawid\u0142owo</color>\n- blok na kt\xF3rym znajduje
+        si\u0119 li\u015B\u0107 jest ju\u017C prawid\u0142owo u\u0142o\u017Cony i
+        nie mo\u017Cna go przesun\u0105\u0107\n- bloki kodu nale\u017Cy rozmie\u015Bci\u0107
+        w wyznaczonych\n do tego miejscach\n- poprawnie umieszczony fragment kodu
+        zostaje oznaczony <color=magenta>li\u015Bciem</color> i nie mo\u017Ce zosta\u0107
+        wi\u0119cej przesuni\u0119ty!\n- brak kar za b\u0142\u0119dne u\u0142o\u017Cenie
+        puzzla"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8024199981016936121, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}

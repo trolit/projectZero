@@ -24116,10 +24116,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_Text
-      value: 200
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -24269,19 +24269,19 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "1) <color=yellow>new Date()</color> to utworzenie nowego obiektu. Je\u017Celi
-        dodamy do tego <color=yellow>.getDay()</color> to tworzymy instancj\u0119
-        klasy <color=yellow>Date</color> i wywo\u0142ujemy gotow\u0105 funkcj\u0119
-        <color=yellow>getDay</color>, kt\xF3ra zwraca nam dzie\u0144 tygodnia.\n2)
-        Instrukcja switch jest instrukcj\u0105 kt\xF3r\u0105 du\u017Co os\xF3b unika
-        na rzecz instrukcji warunkowych co jest b\u0142\u0119dem. Gdy mamy du\u017Co
-        warunk\xF3w konstrukcji <color=yellow>if ... else if ... else</color> to warto
-        zastanowi\u0107 si\u0119 czy switch nie\njest wyj\u015Bciem.\n3) S\u0142\xF3wko
-        kluczowe <color=yellow>case</color> rozpoczyna blok <color=yellow>switch'a</color>.
-        Po <color=yellow>case</color> umieszczana jest warto\u015B\u0107 z kt\xF3r\u0105
-        b\u0119dzie por\xF3wnywany otrzymany rezultat funkcji <color=yellow>getDay()</color>.
-        Warto wspomnie\u0107, \u017Ce dla niedzieli funkcja zwraca 0.\n4) <color=yellow>break</color>
-        informuje switch o ko\u0144cu bloku kodu danego przypadku - <color=yellow>case</color>"
+      value: "1) <color=cyan>new Date()</color> to utworzenie nowego obiektu. Je\u017Celi
+        dodamy do tego <color=cyan>.getDay()</color> to tworzymy instancj\u0119 klasy
+        <color=cyan>Date</color> i wywo\u0142ujemy gotow\u0105 funkcj\u0119 <color=cyan>getDay</color>,
+        kt\xF3ra zwraca nam dzie\u0144 tygodnia.\n2) Instrukcja switch jest instrukcj\u0105
+        kt\xF3r\u0105 du\u017Co os\xF3b unika na rzecz instrukcji warunkowych co jest
+        b\u0142\u0119dem. Gdy mamy du\u017Co warunk\xF3w konstrukcji <color=cyan>if
+        ... else if ... else</color> to warto zastanowi\u0107 si\u0119 czy switch
+        nie\njest wyj\u015Bciem.\n3) S\u0142\xF3wko kluczowe <color=cyan>case</color>
+        rozpoczyna blok <color=cyan>switch'a</color>. Po <color=cyan>case</color>
+        umieszczana jest warto\u015B\u0107 z kt\xF3r\u0105 b\u0119dzie por\xF3wnywany
+        otrzymany rezultat funkcji <color=cyan>getDay()</color>. Warto wspomnie\u0107,
+        \u017Ce dla niedzieli funkcja zwraca 0.\n4) <color=cyan>break</color> informuje
+        switch o ko\u0144cu bloku kodu danego przypadku - <color=cyan>case</color>"
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -24298,15 +24298,15 @@ PrefabInstance:
       propertyPath: m_FontData.m_BestFit
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1892338143118689139, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -441
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_Text
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
@@ -24441,10 +24441,19 @@ PrefabInstance:
     - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_Text
-      value: "- mini-gra zostaje uznana za uko\u0144czon\u0105 je\u017Celi kod zostanie
-        u\u0142o\u017Cony prawid\u0142owo\n- poprawnie umieszczony fragment kodu zostaje
-        oznaczony niebiesk\u0105 monet\u0105 i nie mo\u017Ce zosta\u0107 wi\u0119cej
-        przesuni\u0119ty"
+      value: "- mini-gra zostaje uznana za uko\u0144czon\u0105 je\u017Celi <color=cyan>kod
+        zostanie u\u0142o\u017Cony prawid\u0142owo</color>\r\n- blok na kt\xF3rym
+        znajduje si\u0119 moneta jest ju\u017C prawid\u0142owo u\u0142o\u017Cony i
+        nie mo\u017Cna go przesun\u0105\u0107\r\n- bloki kodu nale\u017Cy rozmie\u015Bci\u0107
+        w wyznaczonych\r\n do tego miejscach\r\n- poprawnie umieszczony fragment kodu
+        zostaje oznaczony <color=cyan>monet\u0105</color> i nie mo\u017Ce zosta\u0107
+        wi\u0119cej przesuni\u0119ty!\r\n- brak kar za b\u0142\u0119dne u\u0142o\u017Cenie
+        puzzla"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083664868c7e9447bec8f0ecadbd761, type: 3}

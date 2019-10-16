@@ -30607,10 +30607,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_Text
-      value: 225
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -30760,24 +30760,24 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "1) Kod j\u0119zyka <color=yellow>PHP</color> zapisywany jest w bloku,
-        kt\xF3ry rozpoczyna si\u0119 <color=yellow><?php</color> a ko\u0144czy <color=yellow>?></color>.
-        \n2) Funkcja <color=yellow>date(\"H\")</color> zwraca godzin\u0119 z przedzia\u0142u
-        od 0 do 23. Dla przyk\u0142adu <color=yellow>date(\"l\")</color> zwr\xF3ci\u0142oby
-        dzie\u0144 tygodnia w formie napisu. Funkcja <color=yellow>date</color> pozwala
+      value: "1) Kod j\u0119zyka <color=orange>PHP</color> zapisywany jest w bloku,
+        kt\xF3ry rozpoczyna si\u0119 <color=orange><?php</color> a ko\u0144czy <color=orange>?></color>.
+        \n2) Funkcja <color=orange>date(\"H\")</color> zwraca godzin\u0119 z przedzia\u0142u
+        od 0 do 23. Dla przyk\u0142adu <color=orange>date(\"l\")</color> zwr\xF3ci\u0142oby
+        dzie\u0144 tygodnia w formie napisu. Funkcja <color=orange>date</color> pozwala
         uzyska\u0107 du\u017Co ciekawych informacji odno\u015Bnie czasu. \n3) Zmienne
-        w <color=yellow>PHP</color> poprzedzane s\u0105 znakiem dolara - <color=yellow>$</color>.
+        w <color=orange>PHP</color> poprzedzane s\u0105 znakiem dolara - <color=orange>$</color>.
         Wtedy napis znajduj\u0105cy si\u0119 obok takiego znaku jest traktowany jako
-        zmienna. \n4) Instrukcja <color=yellow>echo</color> w <color=yellow>PHP</color>
-        pozwala na wypisanie zadanego ci\u0105gu np. <color=yellow>echo \"Project\"
-        . date(\"l\") . \"Zero\"</color>\n5) <color=yellow>If</color> to instrukcja
+        zmienna. \n4) Instrukcja <color=orange>echo</color> w <color=orange>PHP</color>
+        pozwala na wypisanie zadanego ci\u0105gu np. <color=orange>echo \"Project\"
+        . date(\"l\") . \"Zero\"</color>\n5) <color=orange>If</color> to instrukcja
         warunkowa. \u017Beby wykona\u0142 si\u0119 blok kodu znajduj\u0105cy si\u0119
         wewn\u0105trz instrukcji, musi zosta\u0107 spe\u0142niony zadany warunek. "
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_Text
+      value: 225
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
@@ -30908,6 +30908,23 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_Text
+      value: "- mini-gra zostaje uznana za uko\u0144czon\u0105 je\u017Celi <color=orange>kod
+        zostanie u\u0142o\u017Cony prawid\u0142owo</color>\r\n- blok na kt\xF3rym
+        znajduje si\u0119 li\u015B\u0107 jest ju\u017C prawid\u0142owo u\u0142o\u017Cony
+        i nie mo\u017Cna go przesun\u0105\u0107\r\n- bloki kodu nale\u017Cy rozmie\u015Bci\u0107
+        w wyznaczonych\r\n do tego miejscach\r\n- poprawnie umieszczony fragment kodu
+        zostaje oznaczony <color=orange>li\u015Bciem</color> i nie mo\u017Ce zosta\u0107
+        wi\u0119cej przesuni\u0119ty!\r\n- brak kar za b\u0142\u0119dne u\u0142o\u017Cenie
+        puzzla"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083664868c7e9447bec8f0ecadbd761, type: 3}
