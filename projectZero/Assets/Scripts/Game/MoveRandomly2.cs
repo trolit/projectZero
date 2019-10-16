@@ -10,29 +10,25 @@ namespace Assets.Scripts.Game
     // Warning: Animator needs to contain Walk parameter
     // of type Integer where value 0 means Idle and value
     // 1 means Walk
-    [RequireComponent(typeof(NavMeshAgent))]
-    public class MoveRandomly2 : MonoBehaviour
+
+    public class MoveRandomly2 : MoveRandomlyBase
     {
         public float TimeForNewState;
-        public float XValue; 
-        public float ZValue;
 
         // from 5 to 20 seconds by default
         // enables/disables TimeRandomizer method
+        [Tooltip("Enable this to randomize states between min and max value.")]
         public bool _randomTimeForNewState = false;
 
         public float minTime = 5f;
         public float maxTime = 20f;
 
-        private NavMeshAgent _navMeshAgent;
-        private bool _inCoRoutine;
-        private Vector3 _target;
         private Animator _animator;
 
         // Use this for initialization
         private void Start()
         {
-            _navMeshAgent = GetComponent<NavMeshAgent>();
+            NavMeshAgent = GetComponent<NavMeshAgent>();
 
             _animator = GetComponent<Animator>();
             
@@ -50,24 +46,24 @@ namespace Assets.Scripts.Game
         private void Update()
         {
             // If reached destination - stop walk animation
-            if (!_navMeshAgent.pathPending)
+            if (!NavMeshAgent.pathPending)
             {
-                if (_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
+                if (NavMeshAgent.remainingDistance <= NavMeshAgent.stoppingDistance)
                 {
-                    if (!_navMeshAgent.hasPath || _navMeshAgent.velocity.sqrMagnitude == 0f)
+                    if (!NavMeshAgent.hasPath || NavMeshAgent.velocity.sqrMagnitude == 0f)
                     {
                         _animator.SetInteger("Walk", 0);
                     }
                 }
             }
 
-            if (!_inCoRoutine)
+            if (!InCoRoutine)
                 StartCoroutine(DoSomething());
         }
 
         private IEnumerator DoSomething()
         {
-            _inCoRoutine = true;
+            InCoRoutine = true;
             yield return new WaitForSeconds(TimeForNewState);
 
             var result = StateRandomizer();
@@ -80,22 +76,22 @@ namespace Assets.Scripts.Game
             if (result == 0)
             {
                 // Stay in place
-                _navMeshAgent.isStopped = true;
+                NavMeshAgent.isStopped = true;
                 _animator.SetInteger("Walk", 0);
             }
             else if (result == 1)
             {
                 // Move to the new path
-                _navMeshAgent.isStopped = false;
+                NavMeshAgent.isStopped = false;
                 _animator.SetInteger("Walk", 1);
 
                 GetNewPath();
 
-                while (_navMeshAgent.pathPending == false)
+                while (NavMeshAgent.pathPending == false)
                 {
                     Debug.Log("Path not reachable !");
-                    Debug.Log("Coordinates: (X - " + _navMeshAgent.destination.x + ")" +
-                              " (Z - " + _navMeshAgent.destination.z + ")");
+                    Debug.Log("Coordinates: (X - " + NavMeshAgent.destination.x + ")" +
+                              " (Z - " + NavMeshAgent.destination.z + ")");
 
                     yield return new WaitForSeconds(0.01f);
 
@@ -103,7 +99,7 @@ namespace Assets.Scripts.Game
                 }
             }
 
-            _inCoRoutine = false;
+            InCoRoutine = false;
         }
 
         private int StateRandomizer()
@@ -119,23 +115,6 @@ namespace Assets.Scripts.Game
             var result = Random.Range(min, max);
 
             return result;
-        }
-
-        private void GetNewPath()
-        {
-            _target = GetNewRandomPosition();
-            _navMeshAgent.SetDestination(_target);
-        }
-
-        private Vector3 GetNewRandomPosition()
-        {
-            var x = Random.Range(-XValue, XValue);
-
-            var z = Random.Range(-ZValue, ZValue);
-
-            var pos = new Vector3(transform.position.x + x, transform.position.y, transform.position.z + z);
-
-            return pos;
         }
     }
 }
