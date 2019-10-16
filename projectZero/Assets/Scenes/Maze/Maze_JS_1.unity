@@ -5987,9 +5987,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<color=yellow>Obiekty</color> s\u0105 zmiennymi jednak do\u015B\u0107 specyficznymi
-    poniewa\u017C pozwalaj\u0105 na <color=yellow>przechowywanie wielu warto\u015Bci</color>.
-    Wyobra\u017A sobie, \u017Ce takim obiektem mo\u017Ce by\u0107 <color=yellow>samoch\xF3d</color>.
+  m_Text: "<color=cyan>Obiekty</color> s\u0105 zmiennymi jednak do\u015B\u0107 specyficznymi
+    poniewa\u017C pozwalaj\u0105 na <color=cyan>przechowywanie wielu warto\u015Bci</color>.
+    Wyobra\u017A sobie, \u017Ce takim obiektem mo\u017Ce by\u0107 <color=cyan>samoch\xF3d</color>.
     Ka\u017Cdy samoch\xF3d posiada parametry takie jak 0101101010101010110101010100\n\n
     \             Uwaga: wi\u0119kszo\u015B\u0107 informacji zosta\u0142a utracona
     z powodu zebrania du\u017Cej ilo\u015Bci bug\xF3w. \n                   Je\u017Celi
@@ -14666,19 +14666,19 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<color=yellow>Obiekty</color> s\u0105 zmiennymi jednak do\u015B\u0107 specyficznymi
-    poniewa\u017C pozwalaj\u0105 na <color=yellow>przechowywanie wielu warto\u015Bci</color>.
-    Wyobra\u017A sobie, \u017Ce takim obiektem mo\u017Ce by\u0107 <color=yellow>samoch\xF3d</color>.
+  m_Text: "<color=cyan>Obiekty</color> s\u0105 zmiennymi jednak do\u015B\u0107 specyficznymi
+    poniewa\u017C pozwalaj\u0105 na <color=cyan>przechowywanie wielu warto\u015Bci</color>.
+    Wyobra\u017A sobie, \u017Ce takim obiektem mo\u017Ce by\u0107 <color=cyan>samoch\xF3d</color>.
     Ka\u017Cdy samoch\xF3d posiada parametry takie jak marka, model, pojemno\u015B\u0107
     silnika, rok produkcji, cena detaliczna. Gdyby nie by\u0142o mo\u017Cliwo\u015Bci
     tworzenia obiekt\xF3w to wszystkie te informacje trzeba by by\u0142o przechowywa\u0107
     w osobnych zmiennych co by by\u0142o trudne do dalszego wykorzystania. Takie obiekty
-    mo\u017Cemy p\xF3\u017Aniej np. przechowywa\u0107 w <color=yellow>tablicach</color>.
+    mo\u017Cemy p\xF3\u017Aniej np. przechowywa\u0107 w <color=cyan>tablicach</color>.
     Pakowanie informacji w obiekty kt\xF3re potem s\u0105 w tablicy mog\u0105 na pierwszy
-    rzut oka wydawa\u0107 Ci si\u0119 problematyczne <color=yellow>ale w rzeczywisto\u015Bci
+    rzut oka wydawa\u0107 Ci si\u0119 problematyczne <color=cyan>ale w rzeczywisto\u015Bci
     tak nie jest</color>. Im dane s\u0105 lepiej spakowane tym \u0142atwiej si\u0119
     na nich wykonuje r\xF3\u017Cne operacje (np. filtrowania).\n\nPrzyk\u0142adowe
-    utworzenie obiektu w JavaScript\n<color=yellow>var apple = { type:\"Fruit\", weight:\"0.33
+    utworzenie obiektu w JavaScript\n<color=cyan>var apple = { type:\"Fruit\", weight:\"0.33
     pound\" };</color>\n"
 --- !u!222 &567837545
 CanvasRenderer:
@@ -31868,9 +31868,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<color=yellow>Obiekty</color> s\u0105 zmiennymi jednak do\u015B\u0107 specyficznymi
-    poniewa\u017C pozwalaj\u0105 na <color=yellow>przechowywanie wielu warto\u015Bci</color>.
-    Wyobra\u017A sobie, \u017Ce takim obiektem mo\u017Ce by\u0107 <color=yellow>samoch\xF3d</color>.
+  m_Text: "<color=cyan>Obiekty</color> s\u0105 zmiennymi jednak do\u015B\u0107 specyficznymi
+    poniewa\u017C pozwalaj\u0105 na <color=cyan>przechowywanie wielu warto\u015Bci</color>.
+    Wyobra\u017A sobie, \u017Ce takim obiektem mo\u017Ce by\u0107 <color=cyan>samoch\xF3d</color>.
     Ka\u017Cdy samoch\xF3d posiada parametry takie jak marka, model, pojemno\u015B\u0107
     silnika, rok produkcji, cena detaliczna. Gdyby nie by\u0142o mo\u017Cliwo\u015Bci
     tworzenia obiekt\xF3w to wszystkie te informacje trzeba by 010101101010101010010
@@ -41573,8 +41573,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 595, y: -415}
-  m_SizeDelta: {x: 207.4, y: 72.7}
+  m_AnchoredPosition: {x: 595, y: -459.32}
+  m_SizeDelta: {x: 207.4, y: 161.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1406576423
 MonoBehaviour:
@@ -41609,7 +41609,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Zbieraj
+  m_Text: '<color=cyan>Zbieraj
+
+    (KOD)</color>'
 --- !u!222 &1406576424
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -43418,8 +43420,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 350.00003, y: -415}
-  m_SizeDelta: {x: 207.4, y: 72.7}
+  m_AnchoredPosition: {x: 350.00003, y: -459.32}
+  m_SizeDelta: {x: 207.4, y: 161.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1463195297
 MonoBehaviour:
@@ -43454,7 +43456,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Unikaj
+  m_Text: 'Unikaj
+
+    (BUG)'
 --- !u!222 &1463195298
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -64577,8 +64581,15 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "- mini-gra uznana zostaje za uko\u0144czon\u0105 je\u017Celi zostan\u0105
-        zebrane wszystkie fragmenty kodu\n- zebranie 'buga' powoduje zmniejszenie
-        wynagrodzenia a po pewnej ilo\u015Bci nawet utrat\u0119 informacji"
+        zebrane <color=cyan>wszystkie fragmenty kodu</color>\r\n- zebranie 'buga'
+        powoduje zmniejszenie wynagrodzenia \r\n- zebranie kilku bug\xF3w skutkuje
+        utracie ciekawych informacji po uko\u0144czeniu poziomu \r\n- poziom w przypadku
+        zebrania du\u017Cej liczby bug\xF3w mo\u017Cna powt\xF3rzy\u0107"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 42
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083664868c7e9447bec8f0ecadbd761, type: 3}
@@ -64715,17 +64726,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8811571963505569680, guid: 694f31b33622f194ba089f46e83ebb37,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8811571963952447839, guid: 694f31b33622f194ba089f46e83ebb37,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8811571963000713353, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811571963505569680, guid: 694f31b33622f194ba089f46e83ebb37,
         type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -64741,6 +64747,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8811571963790591275, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811571963952447839, guid: 694f31b33622f194ba089f46e83ebb37,
         type: 3}
       propertyPath: m_IsActive
       value: 1

@@ -8324,8 +8324,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<color=yellow>Operatory logiczne</color> w programowaniu pe\u0142ni\u0105
-    bardzo wa\u017Cn\u0105 funkcj\u0119. Pozwalaj\u0105 przede wszystkim na <color=yellow>tworzenie
+  m_Text: "<color=cyan>Operatory logiczne</color> w programowaniu pe\u0142ni\u0105
+    bardzo wa\u017Cn\u0105 funkcj\u0119. Pozwalaj\u0105 przede wszystkim na <color=cyan>tworzenie
     bardziej z\u0142o\u017Conych warunk\xF3w</color>. Najcz\u0119\u015Bciej korzystamy
     z AND(i), OR(lub) i NOT(negacja). 01010110101010101010\n\n\n              Uwaga:
     wi\u0119kszo\u015B\u0107 informacji zosta\u0142a utracona z powodu zebrania du\u017Cej
@@ -23068,31 +23068,30 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<color=yellow>Operatory logiczne</color> w programowaniu pe\u0142ni\u0105
-    bardzo wa\u017Cn\u0105 funkcj\u0119. Pozwalaj\u0105 przede wszystkim na <color=yellow>tworzenie
+  m_Text: "<color=cyan>Operatory logiczne</color> w programowaniu pe\u0142ni\u0105
+    bardzo wa\u017Cn\u0105 funkcj\u0119. Pozwalaj\u0105 przede wszystkim na <color=cyan>tworzenie
     bardziej z\u0142o\u017Conych warunk\xF3w</color>. Najcz\u0119\u015Bciej korzystamy
     z AND(i), OR(lub) i NOT(negacja). Te operatory zwracaj\u0105 jedn\u0105 z dw\xF3ch
-    warto\u015Bci: <color=yellow>true</color> lub <color=yellow>false</color>. W <color=yellow>JavaScript</color>
+    warto\u015Bci: <color=cyan>true</color> lub <color=cyan>false</color>. W <color=cyan>JavaScript</color>
     zapisujemy je symbolicznie w spos\xF3b nast\u0119puj\u0105cy:\n\nAND zapiszemy
-    jako <color=yellow>&&</color>    np. <color=yellow>if ( zmA == zmB && zmB > 3
-    ) { ... }</color> \nOR zapiszemy jako <color=yellow>||</color>         np. <color=yellow>if
-    ( zmA > 2 || zmB < 5 ) { ... }</color>\nNOT zapiszemy jako  <color=yellow>!</color>
-    \      np. <color=yellow>if ( ! zmA > 2 ) { ... }</color>\n\nAND zwraca warto\u015B\u0107
-    <color=yellow>true</color> tylko wtedy gdy wyra\u017Cenia, kt\xF3re \"otacza\"
-    maj\u0105 warto\u015B\u0107 <color=yellow>true</color>.\nOR zwraca warto\u015B\u0107
-    <color=yellow>true</color> gdy przynajmniej jedno z wyra\u017Ce\u0144, kt\xF3re
-    \"otacza\" ma warto\u015B\u0107 <color=yellow>true</color>.\nNOT powoduje odwr\xF3cenie
-    warunku. Warto\u015B\u0107 <color=yellow>true</color> trakowana jest jako warto\u015B\u0107
-    <color=yellow>false</color> a <color=yellow>false</color> jako warto\u015B\u0107
-    <color=yellow>true</color>.\n\nDodatkow\u0105 rzecz\u0105 kt\xF3r\u0105 warto
-    wiedzie\u0107 o j\u0119zyku <color=yellow>JavaScript</color> to r\xF3\u017Cnica
-    mi\u0119dzy <color=yellow>===</color> a <color=yellow>==</color> je\u017Celi chcemy
-    przyr\xF3wna\u0107 dwie warto\u015Bci. Ot\xF3\u017C je\u017Celi skorzystamy z
-    trzech znak\xF3w r\xF3wno\u015Bci to sprawdzana jest zgodno\u015B\u0107 nie tylko
-    warto\u015Bci ale te\u017C typ\xF3w. W przypadku dw\xF3ch znak\xF3w r\xF3wno\u015Bci
-    por\xF3wnywana jest tylko zawarto\u015B\u0107. Czyli np. wyra\u017Cenie <color=yellow>2
-    == \"2\"</color> zwr\xF3ci <color=yellow>true</color> podczas gdy <color=yellow>2
-    === \"2\"</color> zwr\xF3ci <color=yellow>false</color>. \n\n"
+    jako <color=cyan>&&</color>    np. <color=cyan>if ( zmA == zmB && zmB > 3 ) {
+    ... }</color> \nOR zapiszemy jako <color=cyan>||</color>         np. <color=cyan>if
+    ( zmA > 2 || zmB < 5 ) { ... }</color>\nNOT zapiszemy jako  <color=cyan>!</color>
+    \      np. <color=cyan>if ( ! zmA > 2 ) { ... }</color>\n\nAND zwraca warto\u015B\u0107
+    <color=cyan>true</color> tylko wtedy gdy wyra\u017Cenia, kt\xF3re \"otacza\" maj\u0105
+    warto\u015B\u0107 <color=cyan>true</color>.\nOR zwraca warto\u015B\u0107 <color=cyan>true</color>
+    gdy przynajmniej jedno z wyra\u017Ce\u0144, kt\xF3re \"otacza\" ma warto\u015B\u0107
+    <color=cyan>true</color>.\nNOT powoduje odwr\xF3cenie warunku. Warto\u015B\u0107
+    <color=cyan>true</color> trakowana jest jako warto\u015B\u0107 <color=cyan>false</color>
+    a <color=cyan>false</color> jako warto\u015B\u0107 <color=cyan>true</color>.\n\nDodatkow\u0105
+    rzecz\u0105 kt\xF3r\u0105 warto wiedzie\u0107 o j\u0119zyku <color=cyan>JavaScript</color>
+    to r\xF3\u017Cnica mi\u0119dzy <color=cyan>===</color> a <color=cyan>==</color>
+    je\u017Celi chcemy przyr\xF3wna\u0107 dwie warto\u015Bci. Ot\xF3\u017C je\u017Celi
+    skorzystamy z trzech znak\xF3w r\xF3wno\u015Bci to sprawdzana jest zgodno\u015B\u0107
+    nie tylko warto\u015Bci ale te\u017C typ\xF3w. W przypadku dw\xF3ch znak\xF3w
+    r\xF3wno\u015Bci por\xF3wnywana jest tylko zawarto\u015B\u0107. Czyli np. wyra\u017Cenie
+    <color=cyan>2 == \"2\"</color> zwr\xF3ci <color=cyan>true</color> podczas gdy
+    <color=cyan>2 === \"2\"</color> zwr\xF3ci <color=cyan>false</color>. \n\n"
 --- !u!222 &567837545
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -43768,16 +43767,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<color=yellow>Operatory logiczne</color> w programowaniu pe\u0142ni\u0105
-    bardzo wa\u017Cn\u0105 funkcj\u0119. Pozwalaj\u0105 przede wszystkim na <color=yellow>tworzenie
+  m_Text: "<color=cyan>Operatory logiczne</color> w programowaniu pe\u0142ni\u0105
+    bardzo wa\u017Cn\u0105 funkcj\u0119. Pozwalaj\u0105 przede wszystkim na <color=cyan>tworzenie
     bardziej z\u0142o\u017Conych warunk\xF3w</color>. Najcz\u0119\u015Bciej korzystamy
     z AND(i), OR(lub) i NOT(negacja). Te operatory zwracaj\u0105 jedn\u0105 z dw\xF3ch
-    warto\u015Bci: <color=yellow>true</color> lub <color=yellow>false</color>. W <color=yellow>JavaScript</color>
+    warto\u015Bci: <color=cyan>true</color> lub <color=cyan>false</color>. W <color=cyan>JavaScript</color>
     zapisujemy je symbolicznie w spos\xF3b nast\u0119puj\u0105cy:\n\nAND zapiszemy
-    jako <color=yellow>&&</color>    np. <color=yellow>if ( zmA == zmB && zmB > 3
-    ) { ... }</color> \nOR zapiszemy jako <color=yellow>||</color>         np. <color=yellow>if
-    ( zmA > 2 || zmB < 5 ) { ... }</color>\nNOT zapiszemy jako  <color=yellow>!</color>
-    \      np. <color=yellow>if ( ! zmA > 2 ) { ... }</color>\n\nAND zwraca warto\u015B\u0107
+    jako <color=cyan>&&</color>    np. <color=cyan>if ( zmA == zmB && zmB > 3 ) {
+    ... }</color> \nOR zapiszemy jako <color=cyan>||</color>         np. <color=cyan>if
+    ( zmA > 2 || zmB < 5 ) { ... }</color>\nNOT zapiszemy jako  <color=cyan>!</color>
+    \      np. <color=cyan>if ( ! zmA > 2 ) { ... }</color>\n\nAND zwraca warto\u015B\u0107
     010101101010101010010101010101001\n\n\n\n                                         Uwaga:
     po\u0142owa informacji zosta\u0142a utracona z powodu zebrania bug\xF3w. \n                                    Je\u017Celi
     chcesz to mo\u017Cesz powt\xF3rzy\u0107 poziom klikaj\u0105c na odpowiedni przycisk
@@ -54863,8 +54862,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 595, y: -415}
-  m_SizeDelta: {x: 207.4, y: 72.7}
+  m_AnchoredPosition: {x: 595, y: -459.32}
+  m_SizeDelta: {x: 207.4, y: 161.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1406576423
 MonoBehaviour:
@@ -54899,7 +54898,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Zbieraj
+  m_Text: '<color=cyan>Zbieraj
+
+    (KOD)</color>'
 --- !u!222 &1406576424
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -57392,8 +57393,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 350.00003, y: -415}
-  m_SizeDelta: {x: 207.4, y: 72.7}
+  m_AnchoredPosition: {x: 350.00003, y: -459.32}
+  m_SizeDelta: {x: 207.4, y: 161.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1463195297
 MonoBehaviour:
@@ -57428,7 +57429,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Unikaj
+  m_Text: 'Unikaj
+
+    (BUG)'
 --- !u!222 &1463195298
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -85916,8 +85919,15 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "- mini-gra uznana zostaje za uko\u0144czon\u0105 je\u017Celi zostan\u0105
-        zebrane wszystkie fragmenty kodu\n- zebranie 'buga' powoduje zmniejszenie
-        wynagrodzenia a po pewnej ilo\u015Bci nawet utrat\u0119 informacji"
+        zebrane <color=cyan>wszystkie fragmenty kodu</color>\r\n- zebranie 'buga'
+        powoduje zmniejszenie wynagrodzenia \r\n- zebranie kilku bug\xF3w skutkuje
+        utracie ciekawych informacji po uko\u0144czeniu poziomu \r\n- poziom w przypadku
+        zebrania du\u017Cej liczby bug\xF3w mo\u017Cna powt\xF3rzy\u0107"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 42
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083664868c7e9447bec8f0ecadbd761, type: 3}
@@ -86054,17 +86064,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8811571963505569680, guid: 694f31b33622f194ba089f46e83ebb37,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8811571963952447839, guid: 694f31b33622f194ba089f46e83ebb37,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8811571963000713353, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811571963505569680, guid: 694f31b33622f194ba089f46e83ebb37,
         type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -86080,6 +86085,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8811571963790591275, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811571963952447839, guid: 694f31b33622f194ba089f46e83ebb37,
         type: 3}
       propertyPath: m_IsActive
       value: 1
