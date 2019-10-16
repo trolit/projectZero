@@ -65,6 +65,11 @@ namespace Assets.Scripts.Minigame_Maze
 
                 _moneyAmount = (250 - (BugsPicked * 20));
 
+                if (_moneyAmount < 0)
+                {
+                    _moneyAmount = 0;
+                }
+
                 _moneyText.text = _moneyAmount.ToString();
 
                 // Launch script
