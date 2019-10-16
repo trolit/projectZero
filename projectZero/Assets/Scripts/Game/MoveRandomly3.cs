@@ -22,7 +22,7 @@ namespace Assets.Scripts.Game
         private AudioSource _soundSource;
 
         // Use this for initialization
-        private void Start()
+        private new void Start()
         {
             base.Start();
 
