@@ -24,6 +24,9 @@ namespace Assets.Scripts.Game.Player
         [SerializeField]
         private AudioClip _robotJump;
 
+        [SerializeField]
+        private AudioClip _knightMove;
+
         void Start()
         {
             var pickedModel = PlayerPrefs.GetInt("model");
@@ -67,7 +70,7 @@ namespace Assets.Scripts.Game.Player
                 movement.Speed = 30f;
 
                 movement.SfxSource = _sfxSource;
-                movement.SfxSource.clip = _robotJump;
+                movement.SfxSource.clip = _knightMove;
             }
             else
             {
