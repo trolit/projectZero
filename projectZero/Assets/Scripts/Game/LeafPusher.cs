@@ -36,7 +36,7 @@ namespace Assets.Scripts.Game
         {
             if (other.gameObject.tag == "Player")
             {
-                Vector3 dir = other.transform.position - transform.position;
+                var dir = other.transform.position - transform.position;
 
                 dir.Normalize();
 
