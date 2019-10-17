@@ -14,6 +14,8 @@ namespace Assets.Scripts.Game
 
         public void LoadSceneAsync(string sceneName)
         {
+            Time.timeScale = 1f;
+
             SceneManager.LoadSceneAsync(sceneName);
         }
     }

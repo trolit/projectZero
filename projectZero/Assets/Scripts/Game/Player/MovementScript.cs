@@ -14,6 +14,7 @@ namespace Assets.Scripts.Game.Player
         [SerializeField]
         public float Speed;
 
+        // For RoboLightScript 
         public static bool IsMoving = false;
 
         // Start is called before the first frame update
@@ -44,7 +45,7 @@ namespace Assets.Scripts.Game.Player
 
                 IsMoving = true;
 
-                if(SfxSource.isPlaying == false)
+                if(SfxSource.isPlaying == false && IsMoving)
                     SfxSource.Play();
             }
         }
