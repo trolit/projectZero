@@ -28,7 +28,10 @@ namespace Assets.Scripts.CharacterCreation
         {
             UnderTest = _isUnderTest;
 
-            _knightAdditionalTools.SetActive(false);
+            if (UnderTest == false)
+            {
+                _knightAdditionalTools.SetActive(false);
+            }
 
             _medalsAmount = PlayerPrefs.GetInt("medalsUnlocked");
 
