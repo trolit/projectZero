@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.49285108, g: 0.21388903, b: 0.37817547, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19957,7 +19957,7 @@ MonoBehaviour:
   _robot: {fileID: 1970521192}
   _cactus: {fileID: 1970521198}
   _knight: {fileID: 503986627}
-  Height: 2987.31
+  Height: 2575
   Distance: 23.4
   Angle: 0
   SmoothSpeed: 0.5
@@ -45804,6 +45804,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -457.8
       objectReference: {fileID: 0}
+    - target: {fileID: 8024199980080300606, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_Text
+      value: MINI-GRA PINPIN
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199980427543649, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_Text
+      value: "W - ruch w prz\xF3d\nA - ruch w lewo\nS - ruch w ty\u0142\nD - ruch
+        w prawo\nSpacja (przytrzymaj przy pucharze) - przenoszenie pucharu"
+      objectReference: {fileID: 0}
     - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_Text
@@ -45816,17 +45827,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 8024199980080300606, guid: f083664868c7e9447bec8f0ecadbd761,
-        type: 3}
-      propertyPath: m_Text
-      value: MINI-GRA PINPIN
-      objectReference: {fileID: 0}
-    - target: {fileID: 8024199980427543649, guid: f083664868c7e9447bec8f0ecadbd761,
-        type: 3}
-      propertyPath: m_Text
-      value: "W - ruch w prz\xF3d\nA - ruch w lewo\nS - ruch w ty\u0142\nD - ruch
-        w prawo\nSpacja (przytrzymaj przy pucharze) - przenoszenie pucharu"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083664868c7e9447bec8f0ecadbd761, type: 3}

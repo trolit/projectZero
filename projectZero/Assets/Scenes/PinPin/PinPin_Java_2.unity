@@ -35214,7 +35214,7 @@ MonoBehaviour:
   _robot: {fileID: 1970521192}
   _cactus: {fileID: 1970521198}
   _knight: {fileID: 1892259856}
-  Height: 2987.31
+  Height: 2575
   Distance: 23.4
   Angle: 0
   SmoothSpeed: 0.5
@@ -77451,11 +77451,6 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338143118689139, guid: 126f51190d27ec5469d88838e3497290,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -454
-      objectReference: {fileID: 0}
     - target: {fileID: 1892338142315868344, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -77495,6 +77490,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "W j\u0119zyku <color=yellow>Java</color> zapiszesz"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892338143118689139, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -454
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
@@ -77631,6 +77631,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -457.8
       objectReference: {fileID: 0}
+    - target: {fileID: 8024199980080300606, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_Text
+      value: MINI-GRA PINPIN
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199980427543649, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_Text
+      value: "W - ruch w prz\xF3d\nA - ruch w lewo\nS - ruch w ty\u0142\nD - ruch
+        w prawo\nSpacja (przytrzymaj przy pucharze) - przenoszenie pucharu"
+      objectReference: {fileID: 0}
     - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_Text
@@ -77643,17 +77654,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 8024199980080300606, guid: f083664868c7e9447bec8f0ecadbd761,
-        type: 3}
-      propertyPath: m_Text
-      value: MINI-GRA PINPIN
-      objectReference: {fileID: 0}
-    - target: {fileID: 8024199980427543649, guid: f083664868c7e9447bec8f0ecadbd761,
-        type: 3}
-      propertyPath: m_Text
-      value: "W - ruch w prz\xF3d\nA - ruch w lewo\nS - ruch w ty\u0142\nD - ruch
-        w prawo\nSpacja (przytrzymaj przy pucharze) - przenoszenie pucharu"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083664868c7e9447bec8f0ecadbd761, type: 3}

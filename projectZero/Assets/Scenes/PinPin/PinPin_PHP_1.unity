@@ -1685,12 +1685,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c5178fca9aad143b0fba7a7c0ad880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeForNewState: 3
+  TimeForNewPath: 0
   XValue: 70
   ZValue: 70
-  _randomTimeForNewState: 1
-  minTime: 4
-  maxTime: 8
+  TimeForNewState: 3
+  RandomTimeForNewState: 0
+  MinTime: 5
+  MaxTime: 20
 --- !u!1001 &47384448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6974,12 +6975,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c5178fca9aad143b0fba7a7c0ad880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeForNewState: 2
+  TimeForNewPath: 0
   XValue: 130
   ZValue: 130
-  _randomTimeForNewState: 1
-  minTime: 4
-  maxTime: 10
+  TimeForNewState: 2
+  RandomTimeForNewState: 0
+  MinTime: 5
+  MaxTime: 20
 --- !u!195 &141574911
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9807,12 +9809,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c5178fca9aad143b0fba7a7c0ad880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeForNewState: 4
+  TimeForNewPath: 0
   XValue: 150
   ZValue: 150
-  _randomTimeForNewState: 1
-  minTime: 5
-  maxTime: 13
+  TimeForNewState: 4
+  RandomTimeForNewState: 0
+  MinTime: 5
+  MaxTime: 20
 --- !u!1001 &212397826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19306,12 +19309,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c5178fca9aad143b0fba7a7c0ad880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeForNewState: 2
+  TimeForNewPath: 0
   XValue: 50
   ZValue: 50
-  _randomTimeForNewState: 1
-  minTime: 5
-  maxTime: 14
+  TimeForNewState: 2
+  RandomTimeForNewState: 0
+  MinTime: 5
+  MaxTime: 20
 --- !u!1001 &475974502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22074,12 +22078,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c5178fca9aad143b0fba7a7c0ad880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeForNewState: 3
+  TimeForNewPath: 0
   XValue: 80
   ZValue: 80
-  _randomTimeForNewState: 1
-  minTime: 4
-  maxTime: 9
+  TimeForNewState: 3
+  RandomTimeForNewState: 0
+  MinTime: 5
+  MaxTime: 20
 --- !u!195 &551268850
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37580,7 +37585,7 @@ MonoBehaviour:
   _robot: {fileID: 1970521192}
   _cactus: {fileID: 1970521198}
   _knight: {fileID: 570060961}
-  Height: 2987.31
+  Height: 2575
   Distance: 23.4
   Angle: 0
   SmoothSpeed: 0.5
@@ -42146,12 +42151,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c5178fca9aad143b0fba7a7c0ad880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeForNewState: 2
+  TimeForNewPath: 0
   XValue: 100
   ZValue: 100
-  _randomTimeForNewState: 1
-  minTime: 5
-  maxTime: 9
+  TimeForNewState: 2
+  RandomTimeForNewState: 0
+  MinTime: 5
+  MaxTime: 20
 --- !u!1001 &1123663518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42888,12 +42894,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c5178fca9aad143b0fba7a7c0ad880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeForNewState: 2
+  TimeForNewPath: 0
   XValue: 200
   ZValue: 200
-  _randomTimeForNewState: 1
-  minTime: 4
-  maxTime: 10
+  TimeForNewState: 2
+  RandomTimeForNewState: 0
+  MinTime: 5
+  MaxTime: 20
 --- !u!195 &1148043315
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -53812,12 +53819,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c5178fca9aad143b0fba7a7c0ad880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeForNewState: 4
+  TimeForNewPath: 0
   XValue: 100
   ZValue: 100
-  _randomTimeForNewState: 1
-  minTime: 3
-  maxTime: 8
+  TimeForNewState: 4
+  RandomTimeForNewState: 0
+  MinTime: 5
+  MaxTime: 20
 --- !u!1001 &1411432311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84069,6 +84077,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -455
       objectReference: {fileID: 0}
+    - target: {fileID: 8024199980080300606, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_Text
+      value: MINI-GRA PINPIN
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199980427543649, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_Text
+      value: "W - ruch w prz\xF3d\nA - ruch w lewo\nS - ruch w ty\u0142\nD - ruch
+        w prawo\nSpacja (przytrzymaj przy pucharze) - przenoszenie pucharu"
+      objectReference: {fileID: 0}
     - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_Text
@@ -84081,17 +84100,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 8024199980080300606, guid: f083664868c7e9447bec8f0ecadbd761,
-        type: 3}
-      propertyPath: m_Text
-      value: MINI-GRA PINPIN
-      objectReference: {fileID: 0}
-    - target: {fileID: 8024199980427543649, guid: f083664868c7e9447bec8f0ecadbd761,
-        type: 3}
-      propertyPath: m_Text
-      value: "W - ruch w prz\xF3d\nA - ruch w lewo\nS - ruch w ty\u0142\nD - ruch
-        w prawo\nSpacja (przytrzymaj przy pucharze) - przenoszenie pucharu"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083664868c7e9447bec8f0ecadbd761, type: 3}
