@@ -4,7 +4,7 @@ namespace Assets.Scripts.Game
 {
     public class PlayMenuMusic : MonoBehaviour
     {
-        void Start()
+        private void Start()
         {
             GameObject.FindGameObjectWithTag("Music")
                 .GetComponent<MusicThroughScenes>()

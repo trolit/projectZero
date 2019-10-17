@@ -26824,7 +26824,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -26936,7 +26936,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 4372b4b981ffafa46a6261231b97dbff, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.462
+  m_Volume: 0.12
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -50036,7 +50036,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.059
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -56870,11 +56870,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
@@ -57041,6 +57036,11 @@ PrefabInstance:
         sta\u0142\u0105, kt\xF3ra przechowuje tablic\u0119 z danymi\n4) Sta\u0142e
         s\u0105 <color=orange>globalne</color> - co oznacza, \u017Ce s\u0105 dost\u0119pne
         w obr\u0119bie ca\u0142ego skryptu"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}

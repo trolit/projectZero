@@ -32778,7 +32778,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -32875,7 +32875,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 9eb7a8456cf012d4887226ae3700fb12, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.357
+  m_Volume: 0.12
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -55197,7 +55197,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.369
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -65286,7 +65286,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.358
+  m_Volume: 0.059
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -72862,17 +72862,12 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8811571963505569680, guid: 694f31b33622f194ba089f46e83ebb37,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8811571963952447839, guid: 694f31b33622f194ba089f46e83ebb37,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8811571963000713353, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811571963505569680, guid: 694f31b33622f194ba089f46e83ebb37,
         type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -72888,6 +72883,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8811571963790591275, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811571963952447839, guid: 694f31b33622f194ba089f46e83ebb37,
         type: 3}
       propertyPath: m_IsActive
       value: 1

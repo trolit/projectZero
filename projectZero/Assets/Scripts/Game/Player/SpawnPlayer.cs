@@ -67,7 +67,7 @@ namespace Assets.Scripts.Game.Player
                 Knight.SetActive(true);
 
                 MovementScript movement = Knight.AddComponent<MovementScript>();
-                movement.Speed = 30f;
+                movement.Speed = 40f;
 
                 movement.SfxSource = _sfxSource;
                 movement.SfxSource.clip = _knightMove;
