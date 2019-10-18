@@ -15,6 +15,8 @@ namespace Assets.Scripts.Game.Player
 
         public Texture SlimeAvatar;
 
+        public Texture KnightAvatar;
+
         public RawImage Avatar;
 
         public Text MoneyText;
@@ -57,6 +59,15 @@ namespace Assets.Scripts.Game.Player
             else if (modelId == 3) // 3 means Robot model
             {
                 Avatar.texture = RobotAvatar;
+            }
+            else if (modelId == 4) // 4 means Knight model
+            {
+                Avatar.texture = KnightAvatar;
+            }
+            else
+            {
+                Debug.Log("Avatar not loaded!");
+                Debug.Break();
             }
         }
 
