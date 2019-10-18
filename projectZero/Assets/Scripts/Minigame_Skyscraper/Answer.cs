@@ -2,6 +2,7 @@
 
 namespace Assets.Scripts.Minigame_Skyscraper
 {
+    [RequireComponent(typeof(BoxCollider))]
     public class Answer : MonoBehaviour
     {
         [SerializeField]
@@ -12,7 +13,7 @@ namespace Assets.Scripts.Minigame_Skyscraper
 
         protected bool IsOnQuestion = false;
 
-        void OnCollisionEnter(Collision col)
+        private void OnCollisionEnter(Collision col)
         {
             if (col.gameObject.tag == "Player")
             {
@@ -20,7 +21,7 @@ namespace Assets.Scripts.Minigame_Skyscraper
             }
         }
 
-        void OnCollisionStay(Collision col)
+        private void OnCollisionStay(Collision col)
         {
             if (col.gameObject.tag == "Player")
             {
@@ -28,7 +29,7 @@ namespace Assets.Scripts.Minigame_Skyscraper
             }
         }
 
-        void OnCollisionExit(Collision col)
+        private void OnCollisionExit(Collision col)
         {
             if (col.gameObject.tag == "Player")
             {
