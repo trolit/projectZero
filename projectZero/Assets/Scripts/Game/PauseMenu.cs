@@ -14,6 +14,11 @@ namespace Assets.Scripts.Game
 
         public Text AudioText;
 
+        void Start()
+        {
+            AudioMenu.SetActive(false);
+        }
+
         // Update is called once per frame
         void Update()
         {
@@ -25,7 +30,7 @@ namespace Assets.Scripts.Game
                 }
                 else if (AudioMenu.activeInHierarchy)
                 {
-                    AudioText.text = "Aby wrócić do poprzedniego ekranu wciśnij przycisk powrotu.";
+                    AudioText.text = "Aby wrócić do poprzedniego ekranu <color=yellow>naciśnij przycisk powrotu</color>.";
 
                     Invoke("TextClearer", 2f);
                 }
