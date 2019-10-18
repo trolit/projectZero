@@ -4643,6 +4643,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22c6be2d08e70c442ae5d2f82dbe3f2d, type: 3}
+--- !u!1 &247326001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9076089453899101539, guid: 694f31b33622f194ba089f46e83ebb37,
+    type: 3}
+  m_PrefabInstance: {fileID: 8811571964065442096}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &248977378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14746,6 +14752,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: cfe4d127c4da3a042886b3b39a9d69dc, type: 3}
+--- !u!114 &766074197 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2933443426501624946, guid: 694f31b33622f194ba089f46e83ebb37,
+    type: 3}
+  m_PrefabInstance: {fileID: 8811571964065442096}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &769326417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32241,6 +32259,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4484256e7ebbe4a4eab77924649bab61, type: 2}
+    - target: {fileID: 1769355802952226, guid: 43739d3c57ae2ba4cbe919f44dba1d09, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4670754590690618, guid: 43739d3c57ae2ba4cbe919f44dba1d09, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.041530784
@@ -32284,10 +32306,6 @@ PrefabInstance:
     - target: {fileID: 1528351437569502, guid: 43739d3c57ae2ba4cbe919f44dba1d09, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1769355802952226, guid: 43739d3c57ae2ba4cbe919f44dba1d09, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 135677541693518864, guid: 43739d3c57ae2ba4cbe919f44dba1d09, type: 3}
@@ -41856,6 +41874,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -42016,11 +42039,6 @@ PrefabInstance:
         <color=lime>zm</color>. Skrajny przyk\u0142ad: <color=lime>for(;;)</color>
         jest te\u017C prawid\u0142owy. Musimy pami\u0119ta\u0107 o tym aby liczba
         \u015Brednik\xF3w (2) si\u0119 zgadza\u0142a."
-      objectReference: {fileID: 0}
-    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
@@ -42366,6 +42384,66 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811571963904838047, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811571963205313615, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: AudioMenu
+      value: 
+      objectReference: {fileID: 247326001}
+    - target: {fileID: 8811571963205313615, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: AudioText
+      value: 
+      objectReference: {fileID: 766074197}
+    - target: {fileID: 8240568168783596642, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933443426501624946, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553325757197955591, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1553325756290397556, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523377449886738566, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523377449113366517, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022230659835596554, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3022230659399895161, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637786476861686424, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 694f31b33622f194ba089f46e83ebb37, type: 3}
