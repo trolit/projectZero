@@ -23,8 +23,6 @@ namespace Assets.Scripts.Game
         {
             MedalsAmount = PlayerPrefs.GetInt("medalsUnlocked");
 
-            Debug.Log("Current medals amount => " + MedalsAmount);
-
             if (MedalsAmount < MedalsRequired && IsUnderTest == false)
             {
                 MarkListOfObjects(UnlockedObjects, false);

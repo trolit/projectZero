@@ -40,7 +40,7 @@ namespace Assets.Scripts.CharacterCreation
 
         public void VerifyMedalsAmount()
         {
-            if (_medalsAmount > 4 || _isUnderTest)
+            if (_medalsAmount >= 4 || _isUnderTest)
             {
                 _knightAdditionalTools.SetActive(true);
             }

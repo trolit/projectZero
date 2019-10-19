@@ -8,8 +8,6 @@ namespace Assets.Scripts.Game
 
         private void Start()
         {
-            Debug.Log("Kappa1");
-
             // GET DATA
             var csharpLevels = PlayerPrefs.GetInt("c#timesUnique");
 

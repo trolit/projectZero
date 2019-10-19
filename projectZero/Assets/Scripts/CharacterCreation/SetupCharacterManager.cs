@@ -51,22 +51,6 @@ namespace Assets.Scripts.CharacterCreation
 
         private int _pickedCharacterId;
 
-        void Start()
-        {
-            _medalsAmount = PlayerPrefs.GetInt("medalsUnlocked");
-
-            if (_medalsAmount >= 3)
-            {
-                _pointsAmount = 6;
-            }
-
-            _pointsLeft = _pointsAmount;
-
-            
-            // Default model is 1 (cactus)
-            PlayerPrefs.SetInt("model", 1);
-        }
-
         private void Awake()
         {
             _models = new List<Transform>();
@@ -79,15 +63,32 @@ namespace Assets.Scripts.CharacterCreation
 
                 model.gameObject.SetActive(i == 0);
             }
-        }
 
-        private void Update()
-        {
+            _medalsAmount = PlayerPrefs.GetInt("medalsUnlocked");
+
+            if (_medalsAmount >= 3)
+            {
+                _pointsAmount = 6;
+            }
+
+            _pointsLeft = _pointsAmount;
+
+            _pointsDisplay.text = _pointsAmount.ToString();
+
             if (_medalsAmount < 2 && KnightCharacterManager.UnderTest == false)
             {
                 _knightModelButton.interactable = false;
             }
+        }
 
+        private void Start()
+        {            
+            // Default model is 1 (cactus)
+            PlayerPrefs.SetInt("model", 1);
+        }
+
+        private void Update()
+        {
             if (_pointsLeft == 1 || _pointsLeft == 2)
             {
                 _pointsDisplay.color = Color.yellow;
