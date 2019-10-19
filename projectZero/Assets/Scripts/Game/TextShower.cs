@@ -18,22 +18,28 @@ namespace Assets.Scripts.Game
         {
             if (string.IsNullOrEmpty(_description))
             {
-                Debug.Log("Żaden tekst nie został wprowadzony do obiektu => " + _text);
+                Debug.Log("The text was empty or null => " + _text);
             }
 
             _text.text = _description;
 
             _image.SetActive(true);
 
+            Time.timeScale = 1f;
+
             // run HideText function after 1.5 seconds
-            Invoke("HideText", 1.5f);
+            Invoke("Hide", 1.5f);
         }
 
-        public void HideText()
+        public void Hide()
         {
             _text.text = "";
 
             _image.SetActive(false);
+
+            Debug.Log("kappa");
+
+            Time.timeScale = 0f;
         }
     }
 }

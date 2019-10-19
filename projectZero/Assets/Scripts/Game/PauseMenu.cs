@@ -31,8 +31,6 @@ namespace Assets.Scripts.Game
                 else if (AudioMenu.activeInHierarchy)
                 {
                     AudioText.text = "Aby wrócić do poprzedniego ekranu <color=yellow>naciśnij przycisk powrotu</color>.";
-
-                    Invoke("TextClearer", 2f);
                 }
                 else
                 {
@@ -64,11 +62,6 @@ namespace Assets.Scripts.Game
             Time.timeScale = 0f;
 
             GameIsPaused = true;
-        }
-
-        private void TextClearer()
-        {
-            AudioText.text = "";
         }
     }
 }
