@@ -49,6 +49,8 @@ namespace Console
 
         public InputField ConsoleInput;
 
+        private int _consoleState;
+
         // *********************************************************
         // LIST OF USED COLORS 
         public static string RequiredColor = "#FA8072";
@@ -125,7 +127,9 @@ namespace Console
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.BackQuote))
+            _consoleState = PlayerPrefs.GetInt("devConsole");
+
+            if (Input.GetKeyDown(KeyCode.BackQuote) && _consoleState == 1)
             {
                 ConsoleCanvas.gameObject.SetActive
                     (!ConsoleCanvas.gameObject.activeInHierarchy);

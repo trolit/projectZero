@@ -9,6 +9,9 @@ namespace Assets.Scripts.Game
         private Text _text;
 
         [SerializeField]
+        private GameObject _image;
+
+        [SerializeField]
         private string _description;
 
         public void DisplayText()
@@ -20,6 +23,8 @@ namespace Assets.Scripts.Game
 
             _text.text = _description;
 
+            _image.SetActive(true);
+
             // run HideText function after 1.5 seconds
             Invoke("HideText", 1.5f);
         }
@@ -27,6 +32,8 @@ namespace Assets.Scripts.Game
         public void HideText()
         {
             _text.text = "";
+
+            _image.SetActive(false);
         }
     }
 }
