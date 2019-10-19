@@ -94,7 +94,7 @@ namespace Console
             ConsoleCanvas.gameObject.SetActive(false);
             ConsoleText.text = "------------------------------------------------------------------\n" +
                                "<size=30><color=#FE1862>Project Zero</color></size> dev Console <color=#FE1862><b><size=18>v0.5</size></b></color> \n" +
-                               "<size=15>Last update: 9.10.2019</size> \n" +
+                               "<size=15>Last update: 19.10.2019</size> \n" +
                                "------------------------------------------------------------------\n" + 
                                "Type <color=orange>help</color> for list of available commands. \n" +
                                "Type <color=orange>help <command></color> for command details. \n \n \n";
@@ -117,6 +117,8 @@ namespace Console
             var commandTestLoader = CommandTestLoader.CreateCommand();
 
             var commandSceneList = CommandSceneList.CreateCommand();
+
+            var commandLoadById = CommandLoadById.CreateCommand();
         }
 
         public static void AddCommandsToConsole(string name, ConsoleCommand command)

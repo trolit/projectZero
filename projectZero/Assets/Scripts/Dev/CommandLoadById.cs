@@ -1,10 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using static Console.DevConsole;
 
 namespace Console
 {
-    public class CommandLoadByName : ConsoleCommand
+    public class CommandLoadById : ConsoleCommand
     {
         public sealed override string Name { get; protected set; }
         public sealed override string Command { get; protected set; }
@@ -12,16 +13,18 @@ namespace Console
         public sealed override string Help { get; protected set; }
         public sealed override string Example { get; protected set; }
 
-        public CommandLoadByName()
+        public CommandLoadById()
         {
-            Name = "Load scene by name";
-            Command = "loadByName";
-            Description = "Loads specified level (scene). Scene name is case sensitive.\n" +
+            Name = "Load scene by Id";
+            Command = "loadById";
+            Description = "Loads specified level (scene). Scene Id must be valid.\n" +
                           $"<color={WarningColor}>BEFORE</color> running this command on minigame levels make sure\n" +
-                          $"that you PICKED character by using <color={WarningColor}>isReady</color> command.";
-            Help = "Syntax: loadByName <scene name> \n" +
-                   $"<color={RequiredColor}><scene name></color> is required!";
-            Example = "loadByName Menu";
+                          $"that you PICKED character by using <color={WarningColor}>isReady</color> command and\n" +
+                          $"that Id of scene is correct (you can use <color={WarningColor}>sceneList</color> to get\n" +
+                          "names of available scenes and their corresponding Id's).";
+            Help = "Syntax: loadById <scene Id> \n" +
+                   $"<color={RequiredColor}><scene Id></color> is required!";
+            Example = "loadById 3";
 
             AddCommandToConsole();
         }
@@ -30,9 +33,9 @@ namespace Console
         {
             if (data.Length == 2)
             {
-                var sceneName = data[1];
+                var sceneId = Convert.ToInt32(data[1]);
 
-                if (Application.CanStreamedLevelBeLoaded(sceneName) == false)
+                if (Application.CanStreamedLevelBeLoaded(sceneId) == false)
                 {
                     AddStaticMessageToConsole(SceneNotFound);
                 }
@@ -40,7 +43,7 @@ namespace Console
                 {
                     AddStaticMessageToConsole($"<color={ExecutedColor}>Executing</color> command..");
 
-                    SceneManager.LoadSceneAsync(sceneName);
+                    SceneManager.LoadSceneAsync(sceneId);
                 }              
             }
             else
@@ -49,9 +52,9 @@ namespace Console
             }
         }
 
-        public static CommandLoadByName CreateCommand()
+        public static CommandLoadById CreateCommand()
         {
-            return new CommandLoadByName();
+            return new CommandLoadById();
         }
     }
 }
