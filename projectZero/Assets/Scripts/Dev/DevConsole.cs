@@ -115,6 +115,8 @@ namespace Console
             var commandGetKeyValue = CommandGetKeyValue.CreateCommand();
 
             var commandTestLoader = CommandTestLoader.CreateCommand();
+
+            var commandSceneList = CommandSceneList.CreateCommand();
         }
 
         public static void AddCommandsToConsole(string name, ConsoleCommand command)
