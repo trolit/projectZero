@@ -30,6 +30,7 @@ namespace Assets.Scripts.Game.Player
 
             _startingSpeed = Speed;
 
+            // Carry speed 65% of basic speed
             _carrySpeed = 0.65f * _startingSpeed;
         }
 
