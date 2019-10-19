@@ -37,8 +37,6 @@ namespace Assets.Scripts.Game
 
             _image.SetActive(false);
 
-            Debug.Log("kappa");
-
             Time.timeScale = 0f;
         }
     }
