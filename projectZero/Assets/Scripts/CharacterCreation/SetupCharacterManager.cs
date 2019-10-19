@@ -318,7 +318,14 @@ namespace Assets.Scripts.CharacterCreation
 
             for (int i = 0; i < buttons.Length; i++)
             {
-                buttons[i].interactable = true;
+                if (i == 3 && _medalsAmount < 2 && KnightCharacterManager.UnderTest == false)
+                {
+                    buttons[i].interactable = false;
+                }
+                else
+                {
+                    buttons[i].interactable = true;
+                }
 
                 if (i == choice)
                 {
