@@ -36,7 +36,7 @@ namespace Console
                         (UnityEngine.SceneManagement.SceneUtility.GetScenePathByBuildIndex(i));
                 }
 
-                AddStaticMessageToConsole($"\n <color={ExecutedColor}>List of available scenes</color>");
+                AddStaticMessageToConsole($"\n<color={ExecutedColor}>List of available scenes</color>");
 
                 var value = 0;
 
