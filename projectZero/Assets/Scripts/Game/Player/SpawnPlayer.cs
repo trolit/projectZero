@@ -47,7 +47,7 @@ namespace Assets.Scripts.Game.Player
                 Slime.SetActive(true);
 
                 MovementScript movement = Slime.AddComponent<MovementScript>();
-                movement.Speed = 70f;
+                movement.Speed = 50f;
 
                 movement.SfxSource = _sfxSource;
                 movement.SfxSource.clip = _slimeJump;
