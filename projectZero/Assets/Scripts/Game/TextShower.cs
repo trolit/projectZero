@@ -25,8 +25,6 @@ namespace Assets.Scripts.Game
 
             _image.SetActive(true);
 
-            Time.timeScale = 1f;
-
             // run HideText function after 1.5 seconds
             Invoke("Hide", 1.5f);
         }
@@ -36,8 +34,6 @@ namespace Assets.Scripts.Game
             _text.text = "";
 
             _image.SetActive(false);
-
-            Time.timeScale = 0f;
         }
     }
 }
