@@ -111,7 +111,9 @@ namespace Assets.Scripts.Game.Shop
 
             _source.PlayOneShot(_clip);
 
-            PlayerPrefs.SetInt(itemKey, moneyAfter);
+            PlayerPrefs.SetInt(itemKey, 1);
+
+            PlayerPrefs.SetInt("money", moneyAfter);
         }
     }
 }
