@@ -10,6 +10,9 @@ namespace Assets.Scripts.Minigame_Maze
         private Text _currentlyPickedText;
 
         [SerializeField]
+        private Text _bugsPickedText;
+
+        [SerializeField]
         private Text _maxToPickText;
 
         [SerializeField]
@@ -45,6 +48,8 @@ namespace Assets.Scripts.Minigame_Maze
         void Update()
         {
             _currentlyPickedText.text = CurrentlyPicked.ToString();
+
+            _bugsPickedText.text = BugsPicked.ToString();
 
             if (CurrentlyPicked == _maxToPick)
             {
