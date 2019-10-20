@@ -40,6 +40,7 @@ namespace Assets.Scripts.Game.Player
 
                 movement.SfxSource = _sfxSource;
                 movement.SfxSource.clip = _cactusJump;
+                movement.SfxSource.volume = 0.2f;
 
             }
             else if (pickedModel == 2) // Slime
@@ -61,6 +62,7 @@ namespace Assets.Scripts.Game.Player
 
                 movement.SfxSource = _sfxSource;
                 movement.SfxSource.clip = _robotJump;
+                movement.SfxSource.volume = 0.2f;
             }
             else if (pickedModel == 4) // Knight
             {
@@ -71,6 +73,7 @@ namespace Assets.Scripts.Game.Player
 
                 movement.SfxSource = _sfxSource;
                 movement.SfxSource.clip = _knightMove;
+                movement.SfxSource.volume = 0.2f;
             }
             else
             {
