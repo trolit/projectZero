@@ -13,15 +13,20 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private GameObject _lockImage;
 
+        [SerializeField]
+        private Text _buttonText;
+
         private void Awake()
         {
-            int value = PlayerPrefs.GetInt("newgame");
+            var value = PlayerPrefs.GetInt("newgame");
 
             if (value == 1)
             {
                 _continueButton.gameObject.SetActive(true);
 
                 _lockImage.SetActive(false);
+
+                _buttonText.color = new Color32(255, 255, 255, 255);
             }
             else
             {
@@ -32,6 +37,8 @@ namespace Assets.Scripts.Game
                 GetComponent<OnHoverTextChanger>().enabled = false;
 
                 GetComponent<StrapColorChanger>().enabled = false;
+
+                _buttonText.color = new Color32(255,255,255, 82);
             }
         }
     }
