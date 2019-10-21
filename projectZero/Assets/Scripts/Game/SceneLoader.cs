@@ -6,6 +6,8 @@ namespace Assets.Scripts.Game
 {
     public class SceneLoader : MonoBehaviour
     {
+        public static bool IsContinue = false;
+
         [Obsolete("Use LoadSceneAsync to prevent forcing all resources to load scene")]
         public void LoadScene(string sceneName)
         {
@@ -14,7 +16,15 @@ namespace Assets.Scripts.Game
 
         public void LoadSceneAsync(string sceneName)
         {
+            // Because this method is used in minigames 
             Time.timeScale = 1f;
+
+            SceneManager.LoadSceneAsync(sceneName);
+        }
+
+        public void LoadSceneAsyncWithLastState(string sceneName)
+        {
+            IsContinue = true;
 
             SceneManager.LoadSceneAsync(sceneName);
         }

@@ -8,7 +8,7 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private Button _continueButton;
 
-        void Awake()
+        private void Awake()
         {
             int value = PlayerPrefs.GetInt("newgame");
 
@@ -18,7 +18,7 @@ namespace Assets.Scripts.Game
             }
             else
             {
-                _continueButton.gameObject.SetActive(false);
+                _continueButton.interactable = false;
             }
         }
     }
