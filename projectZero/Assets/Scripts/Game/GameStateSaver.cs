@@ -9,14 +9,13 @@ namespace Assets.Scripts.Game
 
         public void SaveGameState()
         {
+            // PLAYER POSITION X,Z SAVING
             var i = 0;
 
             var modelsAmount = _playerTransform.childCount;
 
             while (i < modelsAmount)
             {
-                Debug.Log("Pracuje -> " + i);
-
                 if (_playerTransform.GetChild(i).gameObject.activeInHierarchy)
                 {
                     PlayerPrefs.SetFloat("playerX", _playerTransform.GetChild(i).position.x);
@@ -28,7 +27,6 @@ namespace Assets.Scripts.Game
                     break;
                 }
 
-
                 i++;
 
                 if (i >= _playerTransform.childCount)
@@ -36,6 +34,9 @@ namespace Assets.Scripts.Game
                     break;
                 }
             }
+
+            // Save 
+            PlayerPrefs.Save();
         }
     }
 }

@@ -27,7 +27,8 @@ namespace Assets.Scripts.Game
                 }
 
                 // SET CAMERA POSITION
-                _cameraTransform.position = new Vector3(playerPosX, _cameraTransform.position.y, playerPosZ);
+                _cameraTransform.position = 
+                    new Vector3(playerPosX, _cameraTransform.position.y, playerPosZ);
 
                 // Reset IsContinue value
                 SceneLoader.IsContinue = false;
