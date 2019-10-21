@@ -27,7 +27,7 @@ namespace Assets.Scripts.Game.Player
         [SerializeField]
         private AudioClip _knightMove;
 
-        void Start()
+        private void Start()
         {
             var pickedModel = PlayerPrefs.GetInt("model");
 
