@@ -22,6 +22,14 @@ namespace Assets.Scripts.Game
         // Update is called once per frame
         void Update()
         {
+            if (GameStateSaver.IsSaveButtonUsed == true)
+            {
+                Resume();
+
+                // reset value
+                GameStateSaver.IsSaveButtonUsed = false;
+            }
+
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 if (GameIsPaused && AudioMenu.activeInHierarchy == false)

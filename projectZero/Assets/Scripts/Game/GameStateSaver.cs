@@ -7,6 +7,11 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private Transform _playerTransform;
 
+        [SerializeField]
+        private GameObject _saveGameObject;
+
+        public static bool IsSaveButtonUsed = false;
+
         public void SaveGameState()
         {
             // PLAYER POSITION X,Z SAVING
@@ -37,6 +42,17 @@ namespace Assets.Scripts.Game
 
             // Save 
             PlayerPrefs.Save();
+
+            IsSaveButtonUsed = true;
+
+            _saveGameObject.SetActive(true);
+
+            Invoke("HideStatus", 3f);
+        }
+
+        private void HideStatus()
+        {
+            _saveGameObject.SetActive(false);
         }
     }
 }
