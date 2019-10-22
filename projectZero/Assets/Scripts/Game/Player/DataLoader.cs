@@ -43,7 +43,7 @@ namespace Assets.Scripts.Game.Player
         public Text JavascriptText;
 
         // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
             // Load avatar
             var modelId = PlayerPrefs.GetInt("model");
@@ -71,9 +71,9 @@ namespace Assets.Scripts.Game.Player
             }
         }
 
-        void Update()
+        private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.I))
+            if (Input.GetKeyDown(KeyCode.I) && PauseMenu.GameIsPaused == false)
             {
                 if (GameIsPaused)
                 {
@@ -101,7 +101,7 @@ namespace Assets.Scripts.Game.Player
             GameIsPaused = false;
         }
 
-        void Pause()
+        private void Pause()
         {
             DetailsMenuUI.SetActive(true);
 
@@ -110,14 +110,14 @@ namespace Assets.Scripts.Game.Player
             GameIsPaused = true;
         }
 
-        void LoadMoney()
+        private void LoadMoney()
         {
             var money = PlayerPrefs.GetInt("money");
 
             MoneyText.text = money.ToString();
         }
 
-        void SetLanguage(Slider slider, Text text, string property)
+        private void SetLanguage(Slider slider, Text text, string property)
         {
             var value = PlayerPrefs.GetInt(property);
 
