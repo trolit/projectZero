@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Scripts.Game
 {
@@ -9,6 +10,15 @@ namespace Assets.Scripts.Game
 
         [SerializeField]
         private GameObject _saveGameObject;
+
+        [SerializeField]
+        private GameObject _bubbleGameObject;
+
+        [SerializeField]
+        private RawImage _pandaImage;
+
+        [SerializeField]
+        private Animator _pandaAnimator;
 
         public static bool IsSaveButtonUsed = false;
 
@@ -43,16 +53,32 @@ namespace Assets.Scripts.Game
             // Save 
             PlayerPrefs.Save();
 
+            _pandaAnimator.Play("SaveGameStateAnim");
+
             IsSaveButtonUsed = true;
 
             _saveGameObject.SetActive(true);
 
+            Invoke("ShowBubble", 1.9f);
+
             Invoke("HideStatus", 3f);
+
+            Invoke("HidePanda", 3.1f);
+        }
+
+        private void ShowBubble()
+        {
+            _bubbleGameObject.SetActive(true);
         }
 
         private void HideStatus()
         {
-            _saveGameObject.SetActive(false);
+            _bubbleGameObject.SetActive(false);          
+        }
+
+        private void HidePanda()
+        {
+            _pandaAnimator.Play("HidePandaAnim");
         }
     }
 }
