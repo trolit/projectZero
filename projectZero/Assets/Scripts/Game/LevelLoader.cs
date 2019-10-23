@@ -33,14 +33,6 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private bool _isUnderTest = false;
 
-        [SerializeField]
-        private string _crossInformationForTesting = "Scene name";
-
-        private void Awake()
-        {
-            CrossSceneInformation = _crossInformationForTesting;
-        }
-
         private void Start()
         {
             if (_isUnderTest == false && _isAutomated)
