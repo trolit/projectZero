@@ -9,7 +9,7 @@ namespace Assets.Scripts.Game
 
     public class LevelLoader : MonoBehaviour
     {
-        public static string CrossSceneInformation { get; set; }
+        public static string CrossSceneInformation = "";
 
         [SerializeField]
         private Slider _slider;
@@ -17,27 +17,39 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private GameObject _loadingScreen;
 
+        // Leave this field empty if you want the game to load mini-game loader first
         [SerializeField]
         private string _sceneName;
 
         [SerializeField]
         private Text _progressText;
 
+        // if marked as true - LevelLoader will start loading scene by itself
         [SerializeField]
-        private bool _isAutomated = false;  // if marked as true - LevelLoader will start loading scene by itself
+        private bool _isAutomated = false;
+
+        [Header("VARIABLES TO TEST")]
 
         [SerializeField]
         private bool _isUnderTest = false;
 
-        void Start()
+        [SerializeField]
+        private string _crossInformationForTesting = "Scene name";
+
+        private void Awake()
         {
-            if (_isUnderTest != true)
+            CrossSceneInformation = _crossInformationForTesting;
+        }
+
+        private void Start()
+        {
+            if (_isUnderTest == false && _isAutomated)
             {
-                if (_isAutomated && string.IsNullOrWhiteSpace(_sceneName) == false)
+                if (string.IsNullOrWhiteSpace(_sceneName) == false)
                 {
                     LoadLevel();
                 }
-                else if (_isAutomated && string.IsNullOrWhiteSpace(CrossSceneInformation) == false)
+                else if (string.IsNullOrWhiteSpace(CrossSceneInformation) == false)
                 {
                     LoadMinigameLoader();
                 }

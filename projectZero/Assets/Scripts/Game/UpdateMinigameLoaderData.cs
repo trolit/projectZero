@@ -31,7 +31,7 @@ namespace Assets.Scripts.Game
         private int _textsCount;
 
         // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
             var baseText = "Wczytywanie poziomu krainy";
 
@@ -42,10 +42,13 @@ namespace Assets.Scripts.Game
                 Debug.Break();
             }
 
-            RandomizeText();
-
             _textsCount = Texts.Count;
 
+            if (_textsCount != 0)
+            {
+                RandomizeText();
+            }
+            
             StartCoroutine(CallForTextChange());
 
             _languageText.text = baseText;
@@ -230,7 +233,7 @@ namespace Assets.Scripts.Game
             }
         }
 
-        void RandomizeText()
+        private void RandomizeText()
         {
             var value = Random.Range(0, _textsCount);
 
