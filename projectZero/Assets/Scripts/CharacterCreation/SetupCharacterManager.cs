@@ -40,14 +40,16 @@ namespace Assets.Scripts.CharacterCreation
         [SerializeField]
         private Text _PHPText;
 
-        void Start()
-        {
-            _pointsLeft = _pointsAmount;
+        [SerializeField]
+        private Button _knightModelButton;
 
-            
-            // Default model is 1 (cactus)
-            PlayerPrefs.SetInt("model", 1);
-        }
+        public static int KnightHelmetId = 0;
+
+        public static int KnightShoulders = 0;
+
+        private int _medalsAmount;
+
+        private int _pickedCharacterId;
 
         private void Awake()
         {
@@ -61,9 +63,31 @@ namespace Assets.Scripts.CharacterCreation
 
                 model.gameObject.SetActive(i == 0);
             }
+
+            _medalsAmount = PlayerPrefs.GetInt("medalsUnlocked");
+
+            if (_medalsAmount >= 3)
+            {
+                _pointsAmount = 6;
+            }
+
+            _pointsLeft = _pointsAmount;
+
+            _pointsDisplay.text = _pointsAmount.ToString();
+
+            if (_medalsAmount < 2 && KnightCharacterManager.UnderTest == false)
+            {
+                _knightModelButton.interactable = false;
+            }
         }
 
-        void Update()
+        private void Start()
+        {            
+            // Default model is 1 (cactus)
+            PlayerPrefs.SetInt("model", 1);
+        }
+
+        private void Update()
         {
             if (_pointsLeft == 1 || _pointsLeft == 2)
             {
@@ -90,7 +114,6 @@ namespace Assets.Scripts.CharacterCreation
                 transformToToggle.gameObject.SetActive(shouldBeActive);
             }
         }
-
         
         public List<Transform> GetModels()
         {
@@ -99,8 +122,30 @@ namespace Assets.Scripts.CharacterCreation
 
         public void SaveChoice(int id)
         {
+            _pickedCharacterId = id;
+
             // saves id which model was picked (by default cactus is picked)
             PlayerPrefs.SetInt("model", id);
+        }
+
+        public void SaveKnightPersonalization()
+        {
+            if (_pickedCharacterId == 4)
+            {
+                PlayerPrefs.SetInt("knightHelmet", 0);
+
+                PlayerPrefs.SetInt("knightShoulders", 1);
+            }
+
+            // If knight was picked and personalizations were unlocked set them
+            if (_pickedCharacterId == 4 && _medalsAmount >= 4 || KnightCharacterManager.UnderTest == true)
+            {
+                Debug.Log("Knight personalization overwritten successfully!");
+
+                PlayerPrefs.SetInt("knightHelmet", KnightHelmetId);
+
+                PlayerPrefs.SetInt("knightShoulders", KnightShoulders);
+            }
         }
 
         public void SaveName(InputField nameField)
@@ -273,7 +318,14 @@ namespace Assets.Scripts.CharacterCreation
 
             for (int i = 0; i < buttons.Length; i++)
             {
-                buttons[i].interactable = true;
+                if (i == 3 && _medalsAmount < 2 && KnightCharacterManager.UnderTest == false)
+                {
+                    buttons[i].interactable = false;
+                }
+                else
+                {
+                    buttons[i].interactable = true;
+                }
 
                 if (i == choice)
                 {

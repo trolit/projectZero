@@ -7412,15 +7412,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1103
+      value: 1103.3
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 224
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -517
+      value: -518.04
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7456,15 +7456,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalScale.x
-      value: 39.733788
+      value: 24.57058
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalScale.y
-      value: 39.733795
+      value: 24.570585
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalScale.z
-      value: 39.733788
+      value: 24.57058
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
@@ -10831,15 +10831,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1332
+      value: 1332.4
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 203.17563
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -393
+      value: -393.33
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalRotation.x
@@ -10875,15 +10875,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalScale.x
-      value: 42.914387
+      value: 35.085514
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalScale.y
-      value: 42.9144
+      value: 35.08552
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalScale.z
-      value: 42.914387
+      value: 35.085514
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
@@ -11714,10 +11714,12 @@ MonoBehaviour:
   Cactus: {fileID: 1970521195}
   Robot: {fileID: 1970521193}
   Slime: {fileID: 1970521194}
+  Knight: {fileID: 1357928812}
   _sfxSource: {fileID: 1969102246}
   _slimeJump: {fileID: 8300000, guid: b59d0a3ef70308340ac7863a4459a8bc, type: 3}
   _cactusJump: {fileID: 8300000, guid: 5db601d77c145d84399f1f1fdb2e90b8, type: 3}
   _robotJump: {fileID: 8300000, guid: f584941aebb7d8c469de7193b5e25f9d, type: 3}
+  _knightMove: {fileID: 8300000, guid: 4bd00332a8788124bbc855f4613d750d, type: 3}
 --- !u!114 &1023038088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11733,6 +11735,7 @@ MonoBehaviour:
   _slime: {fileID: 1970521199}
   _robot: {fileID: 1970521192}
   _cactus: {fileID: 1970521198}
+  _knight: {fileID: 1357928814}
   Height: 326.6
   Distance: 182.4
   Angle: 0
@@ -11759,11 +11762,11 @@ AudioSource:
   m_GameObject: {fileID: 1023038083}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 1cd3d7e4a2e9b2649b66a1fd13fd96f5,
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 839e32bc15b912741906125afe67a5e7,
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.358
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11862,6 +11865,7 @@ MonoBehaviour:
   _source: {fileID: 1023038090}
   _winSound: {fileID: 8300000, guid: ae3910d79eccbb441b185f1bf2db0111, type: 3}
   _winWindow: {fileID: 1862399370}
+  _testWinSound: 0
 --- !u!82 &1023038092
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11875,7 +11879,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: bccd7f6fe30e1554188f0bde8bd7811f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.405
+  m_Volume: 0.12
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -15354,6 +15358,132 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1338898629}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1357928811
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1970521202}
+    m_Modifications:
+    - target: {fileID: 3718447328784835600, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_Name
+      value: Knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328784835600, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328784835600, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1251
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -441
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -615
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99871427
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.050693985
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 185.812
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 13.110328
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 13.10999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 13.110328
+      objectReference: {fileID: 0}
+    - target: {fileID: 527570986, guid: bfe23cebf7af43b49ad5e93e8ab192e0, type: 3}
+      propertyPath: m_Constraints
+      value: 116
+      objectReference: {fileID: 0}
+    - target: {fileID: 527570986, guid: bfe23cebf7af43b49ad5e93e8ab192e0, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bfe23cebf7af43b49ad5e93e8ab192e0, type: 3}
+--- !u!1 &1357928812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3718447328784835600, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1357928811}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1357928813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357928812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e73e46a6ef1a044a49cc6e30b26984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1357928814 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1357928811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1358142786
 GameObject:
   m_ObjectHideFlags: 0
@@ -16329,15 +16459,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 578.9243
+      value: 579.1
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 203.17563
+      value: 192
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -593.2667
+      value: -593.92
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalRotation.x
@@ -16373,15 +16503,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalScale.x
-      value: 39.733788
+      value: 30.26602
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalScale.y
-      value: 39.733795
+      value: 30.266027
       objectReference: {fileID: 0}
     - target: {fileID: 4000012197449570, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
       propertyPath: m_LocalScale.z
-      value: 39.733788
+      value: 30.26602
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01d2dd5255c308a4db25dbb77d9f65ea, type: 3}
@@ -21106,7 +21236,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.495
+  m_Volume: 0.02
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -21911,6 +22041,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32e73e46a6ef1a044a49cc6e30b26984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1970521202 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 801805781578916483, guid: 24155ed1402a670499f5a5a6f7d8ce22,
+    type: 3}
+  m_PrefabInstance: {fileID: 1970521191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &1970521205
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -23981,10 +24117,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_Text
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -24134,19 +24270,19 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "1) <color=yellow>new Date()</color> to utworzenie nowego obiektu. Je\u017Celi
-        dodamy do tego <color=yellow>.getDay()</color> to tworzymy instancj\u0119
-        klasy <color=yellow>Date</color> i wywo\u0142ujemy gotow\u0105 funkcj\u0119
-        <color=yellow>getDay</color>, kt\xF3ra zwraca nam dzie\u0144 tygodnia.\n2)
-        Instrukcja switch jest instrukcj\u0105 kt\xF3r\u0105 du\u017Co os\xF3b unika
-        na rzecz instrukcji warunkowych co jest b\u0142\u0119dem. Gdy mamy du\u017Co
-        warunk\xF3w konstrukcji <color=yellow>if ... else if ... else</color> to warto
-        zastanowi\u0107 si\u0119 czy switch nie\njest wyj\u015Bciem.\n3) S\u0142\xF3wko
-        kluczowe <color=yellow>case</color> rozpoczyna blok <color=yellow>switch'a</color>.
-        Po <color=yellow>case</color> umieszczana jest warto\u015B\u0107 z kt\xF3r\u0105
-        b\u0119dzie por\xF3wnywany otrzymany rezultat funkcji <color=yellow>getDay()</color>.
-        Warto wspomnie\u0107, \u017Ce dla niedzieli funkcja zwraca 0.\n4) <color=yellow>break</color>
-        informuje switch o ko\u0144cu bloku kodu danego przypadku - <color=yellow>case</color>"
+      value: "1) <color=cyan>new Date()</color> to utworzenie nowego obiektu. Je\u017Celi
+        dodamy do tego <color=cyan>.getDay()</color> to tworzymy instancj\u0119 klasy
+        <color=cyan>Date</color> i wywo\u0142ujemy gotow\u0105 funkcj\u0119 <color=cyan>getDay</color>,
+        kt\xF3ra zwraca nam dzie\u0144 tygodnia.\n2) Instrukcja switch jest instrukcj\u0105
+        kt\xF3r\u0105 du\u017Co os\xF3b unika na rzecz instrukcji warunkowych co jest
+        b\u0142\u0119dem. Gdy mamy du\u017Co warunk\xF3w konstrukcji <color=cyan>if
+        ... else if ... else</color> to warto zastanowi\u0107 si\u0119 czy switch
+        nie\njest wyj\u015Bciem.\n3) S\u0142\xF3wko kluczowe <color=cyan>case</color>
+        rozpoczyna blok <color=cyan>switch'a</color>. Po <color=cyan>case</color>
+        umieszczana jest warto\u015B\u0107 z kt\xF3r\u0105 b\u0119dzie por\xF3wnywany
+        otrzymany rezultat funkcji <color=cyan>getDay()</color>. Warto wspomnie\u0107,
+        \u017Ce dla niedzieli funkcja zwraca 0.\n4) <color=cyan>break</color> informuje
+        switch o ko\u0144cu bloku kodu danego przypadku - <color=cyan>case</color>"
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -24163,10 +24299,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_BestFit
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_Text
-      value: 200
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1892338143118689139, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -24306,10 +24442,19 @@ PrefabInstance:
     - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_Text
-      value: "- mini-gra zostaje uznana za uko\u0144czon\u0105 je\u017Celi kod zostanie
-        u\u0142o\u017Cony prawid\u0142owo\n- poprawnie umieszczony fragment kodu zostaje
-        oznaczony niebiesk\u0105 monet\u0105 i nie mo\u017Ce zosta\u0107 wi\u0119cej
-        przesuni\u0119ty"
+      value: "- mini-gra zostaje uznana za uko\u0144czon\u0105 je\u017Celi <color=cyan>kod
+        zostanie u\u0142o\u017Cony prawid\u0142owo</color>\r\n- blok na kt\xF3rym
+        znajduje si\u0119 moneta jest ju\u017C prawid\u0142owo u\u0142o\u017Cony i
+        nie mo\u017Cna go przesun\u0105\u0107\r\n- bloki kodu nale\u017Cy rozmie\u015Bci\u0107
+        w wyznaczonych\r\n do tego miejscach\r\n- poprawnie umieszczony fragment kodu
+        zostaje oznaczony <color=cyan>monet\u0105</color> i nie mo\u017Ce zosta\u0107
+        wi\u0119cej przesuni\u0119ty!\r\n- brak kar za b\u0142\u0119dne u\u0142o\u017Cenie
+        puzzla"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083664868c7e9447bec8f0ecadbd761, type: 3}

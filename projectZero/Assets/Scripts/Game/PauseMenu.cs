@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace Assets.Scripts.Game
 {
@@ -9,14 +10,35 @@ namespace Assets.Scripts.Game
 
         public GameObject PauseMenuUi;
 
+        public GameObject AudioMenu;
+
+        public Text AudioText;
+
+        void Start()
+        {
+            AudioMenu.SetActive(false);
+        }
+
         // Update is called once per frame
         void Update()
         {
+            if (GameStateSaver.IsSaveButtonUsed == true)
+            {
+                Resume();
+
+                // reset value
+                GameStateSaver.IsSaveButtonUsed = false;
+            }
+
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                if (GameIsPaused)
+                if (GameIsPaused && AudioMenu.activeInHierarchy == false)
                 {
                     Resume();
+                }
+                else if (AudioMenu.activeInHierarchy)
+                {
+                    AudioText.text = "Aby wrócić do poprzedniego ekranu <color=yellow>naciśnij przycisk powrotu</color>.";
                 }
                 else
                 {
@@ -41,7 +63,7 @@ namespace Assets.Scripts.Game
             SceneManager.LoadSceneAsync(scene.name);
         }
 
-        void Pause()
+        private void Pause()
         {
             PauseMenuUi.SetActive(true);
 

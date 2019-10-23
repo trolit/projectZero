@@ -14,7 +14,12 @@ namespace Assets.Scripts.Game.Player
         [SerializeField]
         public float Speed;
 
+        // For RoboLightScript 
         public static bool IsMoving = false;
+
+        private float _startingSpeed;
+
+        private float _carrySpeed;
 
         // Start is called before the first frame update
         void Start()
@@ -22,6 +27,11 @@ namespace Assets.Scripts.Game.Player
             _animator = GetComponent<Animator>();
 
             _transform = GetComponent<Rigidbody>();
+
+            _startingSpeed = Speed;
+
+            // Carry speed 65% of basic speed
+            _carrySpeed = 0.65f * _startingSpeed;
         }
 
         // Update is called once per frame
@@ -44,19 +54,29 @@ namespace Assets.Scripts.Game.Player
 
                 IsMoving = true;
 
-                if(SfxSource.isPlaying == false)
+                if(SfxSource.isPlaying == false && IsMoving)
                     SfxSource.Play();
             }
         }
 
         void FixedUpdate()
         {
+            if (Pickup.IsHolding)
+            {
+                Speed = _carrySpeed;
+            }
+            else
+            {
+                Speed = _startingSpeed;
+            }
+
             // Move forward
             if (Input.GetKey(KeyCode.W))
             {
                 _transform.AddForce(new Vector3(0, 0, 5) * Speed, ForceMode.VelocityChange);
-                
-                _transform.rotation = Quaternion.LookRotation(Vector3.forward);
+
+                if (Pickup.IsHolding == false)
+                    _transform.rotation = Quaternion.LookRotation(Vector3.forward);
             }
 
             // Move left
@@ -64,7 +84,8 @@ namespace Assets.Scripts.Game.Player
             {
                 _transform.AddForce(new Vector3(-5, 0, 0) * Speed, ForceMode.VelocityChange);
 
-                _transform.rotation = Quaternion.LookRotation(Vector3.left);
+                if (Pickup.IsHolding == false)
+                    _transform.rotation = Quaternion.LookRotation(Vector3.left);
             }
 
             // Move back
@@ -72,7 +93,8 @@ namespace Assets.Scripts.Game.Player
             {
                 _transform.AddForce(new Vector3(0, 0, -5) * Speed, ForceMode.VelocityChange);
 
-                _transform.rotation = Quaternion.LookRotation(Vector3.back);
+                if(Pickup.IsHolding == false)
+                    _transform.rotation = Quaternion.LookRotation(Vector3.back);
             }
 
             // Move right
@@ -80,7 +102,8 @@ namespace Assets.Scripts.Game.Player
             {
                 _transform.AddForce(new Vector3(5, 0, 0) * Speed, ForceMode.VelocityChange);
 
-                _transform.rotation = Quaternion.LookRotation(Vector3.right);
+                if (Pickup.IsHolding == false)
+                    _transform.rotation = Quaternion.LookRotation(Vector3.right);
             }
 
             // Falling force

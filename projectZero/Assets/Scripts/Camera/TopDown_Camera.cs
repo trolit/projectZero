@@ -13,6 +13,9 @@ namespace Assets.Scripts.Camera
         [SerializeField]
         private Transform _cactus;
 
+        [SerializeField]
+        private Transform _knight;
+
         private Transform Target;
 
         [SerializeField]
@@ -46,6 +49,10 @@ namespace Assets.Scripts.Camera
             else if (characterId == 3)
             {
                 Target = _robot;
+            }
+            else if (characterId == 4)
+            {
+                Target = _knight;
             }
             else
             {

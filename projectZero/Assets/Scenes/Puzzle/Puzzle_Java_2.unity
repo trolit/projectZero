@@ -2321,6 +2321,132 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 3
+--- !u!1001 &259285258
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1970521202}
+    m_Modifications:
+    - target: {fileID: 3718447328784835600, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_Name
+      value: Knight
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328784835600, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328784835600, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -764
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -441
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -630
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99871427
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.050693985
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 185.812
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 13.110308
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 13.10999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 13.110308
+      objectReference: {fileID: 0}
+    - target: {fileID: 527570986, guid: bfe23cebf7af43b49ad5e93e8ab192e0, type: 3}
+      propertyPath: m_Constraints
+      value: 116
+      objectReference: {fileID: 0}
+    - target: {fileID: 527570986, guid: bfe23cebf7af43b49ad5e93e8ab192e0, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bfe23cebf7af43b49ad5e93e8ab192e0, type: 3}
+--- !u!1 &259285259 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3718447328784835600, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 259285258}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &259285260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259285259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e73e46a6ef1a044a49cc6e30b26984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &259285261 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3718447328785332336, guid: bfe23cebf7af43b49ad5e93e8ab192e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 259285258}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &279163295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7865,10 +7991,12 @@ MonoBehaviour:
   Cactus: {fileID: 1970521195}
   Robot: {fileID: 1970521193}
   Slime: {fileID: 1970521194}
+  Knight: {fileID: 259285259}
   _sfxSource: {fileID: 1969102246}
   _slimeJump: {fileID: 8300000, guid: b59d0a3ef70308340ac7863a4459a8bc, type: 3}
   _cactusJump: {fileID: 8300000, guid: 5db601d77c145d84399f1f1fdb2e90b8, type: 3}
   _robotJump: {fileID: 8300000, guid: f584941aebb7d8c469de7193b5e25f9d, type: 3}
+  _knightMove: {fileID: 8300000, guid: 4bd00332a8788124bbc855f4613d750d, type: 3}
 --- !u!114 &1023038088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7884,6 +8012,7 @@ MonoBehaviour:
   _slime: {fileID: 1970521199}
   _robot: {fileID: 1970521192}
   _cactus: {fileID: 1970521198}
+  _knight: {fileID: 259285261}
   Height: 326.6
   Distance: 182.4
   Angle: 0
@@ -7910,11 +8039,11 @@ AudioSource:
   m_GameObject: {fileID: 1023038083}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 1cd3d7e4a2e9b2649b66a1fd13fd96f5,
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 839e32bc15b912741906125afe67a5e7,
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.358
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8013,6 +8142,7 @@ MonoBehaviour:
   _source: {fileID: 1023038090}
   _winSound: {fileID: 8300000, guid: ae3910d79eccbb441b185f1bf2db0111, type: 3}
   _winWindow: {fileID: 1862399370}
+  _testWinSound: 0
 --- !u!82 &1023038092
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8026,7 +8156,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: f3e81d18ac9817b458d147529c1d8cf8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.462
+  m_Volume: 0.12
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -15863,7 +15993,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.495
+  m_Volume: 0.02
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -16668,6 +16798,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32e73e46a6ef1a044a49cc6e30b26984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1970521202 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 801805781578916483, guid: 24155ed1402a670499f5a5a6f7d8ce22,
+    type: 3}
+  m_PrefabInstance: {fileID: 1970521191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!136 &1970521205
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18143,10 +18279,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_Text
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -18319,10 +18455,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_BestFit
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338142254280928, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_Text
-      value: 215
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
@@ -18457,10 +18593,19 @@ PrefabInstance:
     - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
       propertyPath: m_Text
-      value: "- mini-gra zostaje uznana za uko\u0144czon\u0105 je\u017Celi kod z otrzymanych
-        puzzli zostanie u\u0142o\u017Cony prawid\u0142owo\n- poprawnie umieszczony
-        fragment kodu zostaje oznaczony ro\u015Blin\u0105 i nie mo\u017Ce zosta\u0107
-        wi\u0119cej przesuni\u0119ty"
+      value: "- mini-gra zostaje uznana za uko\u0144czon\u0105 je\u017Celi <color=yellow>kod
+        zostanie u\u0142o\u017Cony prawid\u0142owo</color>\r\n- blok na kt\xF3rym
+        znajduje si\u0119 kaktus jest ju\u017C prawid\u0142owo u\u0142o\u017Cony i
+        nie mo\u017Cna go przesun\u0105\u0107\r\n- bloki kodu nale\u017Cy rozmie\u015Bci\u0107
+        w wyznaczonych\r\n do tego miejscach\r\n- poprawnie umieszczony fragment kodu
+        zostaje oznaczony <color=yellow>kaktusem</color> i nie mo\u017Ce zosta\u0107
+        wi\u0119cej przesuni\u0119ty!\r\n- brak kar za b\u0142\u0119dne u\u0142o\u017Cenie
+        puzzla"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8024199981016936120, guid: f083664868c7e9447bec8f0ecadbd761,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083664868c7e9447bec8f0ecadbd761, type: 3}

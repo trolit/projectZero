@@ -6,54 +6,49 @@ namespace Assets.Scripts.Game.Player
     {
         private GameObject _player;
 
-        private GameObject _collidedObject;
+        private GameObject _draggableObject;
 
-        private int _carryFlag = 0;
+        public static bool IsHolding = false;
 
-        void Start()
+        private void Start()
         {
             _player = GameObject.FindWithTag("Player");
         }
 
-        void Update()
+        private void FixedUpdate()
         {
-            if (Input.GetKeyUp(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space))
             {
-                if (_carryFlag == 1)
+                if (_draggableObject != null)
                 {
-                    var objCollider = _collidedObject.GetComponent<BoxCollider>();
+                    _draggableObject.GetComponent<BoxCollider>().enabled = false;
 
-                    if (objCollider != null)
-                    {
-                        objCollider.enabled = true;
-                    }
-                    _carryFlag = 0;
-                }
-            }
-        }
+                    _draggableObject.transform.parent = _player.transform;
 
-        void OnCollisionStay(Collision block)
-        {
-            if (block.gameObject.tag == "Draggable"
-                && Input.GetKey(KeyCode.Space))
-            {
-                if (_carryFlag == 0)
-                {
-                    _collidedObject = block.gameObject;
-                    block.collider.enabled = false;
-                    block.transform.parent = _player.transform;
-                    _carryFlag = 1;
+                    IsHolding = true;
                 }
             }
             else
             {
-                block.transform.parent = null;
+                if (_draggableObject != null)
+                {
+                    _draggableObject.GetComponent<BoxCollider>().enabled = true;
+
+                    _draggableObject.transform.parent = null;
+
+                    _draggableObject = null;
+                }
+
+                IsHolding = false;
             }
         }
 
-        void OnCollisionExit(Collision block)
+        private void OnCollisionStay(Collision block)
         {
-            block.transform.parent = null;
+            if (block.gameObject.tag == "Draggable" & IsHolding == false)
+            {
+                _draggableObject = block.gameObject;
+            }
         }
     }
 }

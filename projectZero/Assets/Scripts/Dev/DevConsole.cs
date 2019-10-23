@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -48,6 +49,8 @@ namespace Console
 
         public InputField ConsoleInput;
 
+        private int _consoleState;
+
         // *********************************************************
         // LIST OF USED COLORS 
         public static string RequiredColor = "#FA8072";
@@ -91,7 +94,7 @@ namespace Console
             ConsoleCanvas.gameObject.SetActive(false);
             ConsoleText.text = "------------------------------------------------------------------\n" +
                                "<size=30><color=#FE1862>Project Zero</color></size> dev Console <color=#FE1862><b><size=18>v0.5</size></b></color> \n" +
-                               "<size=15>Last update: 9.10.2019</size> \n" +
+                               "<size=15>Last update: 19.10.2019</size> \n" +
                                "------------------------------------------------------------------\n" + 
                                "Type <color=orange>help</color> for list of available commands. \n" +
                                "Type <color=orange>help <command></color> for command details. \n \n \n";
@@ -112,6 +115,10 @@ namespace Console
             var commandGetKeyValue = CommandGetKeyValue.CreateCommand();
 
             var commandTestLoader = CommandTestLoader.CreateCommand();
+
+            var commandSceneList = CommandSceneList.CreateCommand();
+
+            var commandLoadById = CommandLoadById.CreateCommand();
         }
 
         public static void AddCommandsToConsole(string name, ConsoleCommand command)
@@ -124,7 +131,9 @@ namespace Console
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.BackQuote))
+            _consoleState = PlayerPrefs.GetInt("devConsole");
+
+            if (Input.GetKeyDown(KeyCode.BackQuote) && _consoleState == 1)
             {
                 ConsoleCanvas.gameObject.SetActive
                     (!ConsoleCanvas.gameObject.activeInHierarchy);
@@ -159,6 +168,12 @@ namespace Console
                 
         }
 
+        private IEnumerator ScrollDown()
+        {
+            yield return new WaitForSeconds(0.1f);
+            ScrollRect.verticalNormalizedPosition = 0f;
+        }
+
         private void AddMessageToConsole(string msg)
         {
             ConsoleText.text += msg + "\n";
@@ -190,9 +205,7 @@ namespace Console
                 Commands[splitInput[0]].RunCommand(splitInput);
             }
 
-            Canvas.ForceUpdateCanvases();
-            ScrollRect.verticalScrollbar.value = 0f;
-            Canvas.ForceUpdateCanvases();
+            StartCoroutine(ScrollDown());
         }
     }
 }

@@ -10,6 +10,9 @@ namespace Assets.Scripts.Minigame_Maze
         private Text _currentlyPickedText;
 
         [SerializeField]
+        private Text _bugsPickedText;
+
+        [SerializeField]
         private Text _maxToPickText;
 
         [SerializeField]
@@ -46,6 +49,8 @@ namespace Assets.Scripts.Minigame_Maze
         {
             _currentlyPickedText.text = CurrentlyPicked.ToString();
 
+            _bugsPickedText.text = BugsPicked.ToString();
+
             if (CurrentlyPicked == _maxToPick)
             {
                 var script = GetComponent<WinScript>();
@@ -64,6 +69,11 @@ namespace Assets.Scripts.Minigame_Maze
                 }
 
                 _moneyAmount = (250 - (BugsPicked * 20));
+
+                if (_moneyAmount < 0)
+                {
+                    _moneyAmount = 0;
+                }
 
                 _moneyText.text = _moneyAmount.ToString();
 

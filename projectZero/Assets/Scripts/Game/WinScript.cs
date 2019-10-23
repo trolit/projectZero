@@ -13,18 +13,32 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private GameObject _winWindow;
 
-        void Awake()
+        [SerializeField]
+        private bool _testWinSound = false;
+
+        private void Awake()
         {
             _winWindow.SetActive(false);
 
             enabled = false;
         }
 
-        void Start()
+        private void Start()
         {
             _winWindow.SetActive(true);
 
             _source.PlayOneShot(_winSound);
+        }
+
+        private void Update()
+        {
+            if (_testWinSound == true)
+            {
+                if (_source.isPlaying == false)
+                {
+                    _source.PlayOneShot(_winSound);
+                }
+            }
         }
     }
 }

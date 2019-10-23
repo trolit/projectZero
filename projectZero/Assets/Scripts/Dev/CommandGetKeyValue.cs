@@ -18,7 +18,7 @@ namespace Console
             Description = "Returns value that is being held by specified key.";
             Help = "Syntax: get <type> <key> \n" +
                    $"<color={RequiredColor}>All parameters are required!</color>"; ;
-            Example = "get money int";
+            Example = "get int money";
 
             AddCommandToConsole();
         }

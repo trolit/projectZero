@@ -17,6 +17,11 @@ namespace Assets.Scripts.Minigame_PinPin
         {
             _prize = _startingPrize - PinCheck.MistakesAmount * 20;
 
+            if (_prize < 0)
+            {
+                _prize = 0;
+            }
+
             _prizeText.text = _prize.ToString();
         }
 

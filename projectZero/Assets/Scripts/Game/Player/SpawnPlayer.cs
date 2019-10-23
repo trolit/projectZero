@@ -10,6 +10,8 @@ namespace Assets.Scripts.Game.Player
 
         public GameObject Slime;
 
+        public GameObject Knight;
+
         [SerializeField]
         private AudioSource _sfxSource;
 
@@ -22,7 +24,10 @@ namespace Assets.Scripts.Game.Player
         [SerializeField]
         private AudioClip _robotJump;
 
-        void Start()
+        [SerializeField]
+        private AudioClip _knightMove;
+
+        private void Start()
         {
             var pickedModel = PlayerPrefs.GetInt("model");
 
@@ -35,6 +40,7 @@ namespace Assets.Scripts.Game.Player
 
                 movement.SfxSource = _sfxSource;
                 movement.SfxSource.clip = _cactusJump;
+                movement.SfxSource.volume = 0.2f;
 
             }
             else if (pickedModel == 2) // Slime
@@ -42,7 +48,7 @@ namespace Assets.Scripts.Game.Player
                 Slime.SetActive(true);
 
                 MovementScript movement = Slime.AddComponent<MovementScript>();
-                movement.Speed = 70f;
+                movement.Speed = 50f;
 
                 movement.SfxSource = _sfxSource;
                 movement.SfxSource.clip = _slimeJump;
@@ -56,6 +62,18 @@ namespace Assets.Scripts.Game.Player
 
                 movement.SfxSource = _sfxSource;
                 movement.SfxSource.clip = _robotJump;
+                movement.SfxSource.volume = 0.2f;
+            }
+            else if (pickedModel == 4) // Knight
+            {
+                Knight.SetActive(true);
+
+                MovementScript movement = Knight.AddComponent<MovementScript>();
+                movement.Speed = 40f;
+
+                movement.SfxSource = _sfxSource;
+                movement.SfxSource.clip = _knightMove;
+                movement.SfxSource.volume = 0.2f;
             }
             else
             {
