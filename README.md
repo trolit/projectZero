@@ -7,12 +7,12 @@
  
 <p align="center">
 <a href="https://en.wikipedia.org/wiki/List_of_video_game_genres"><img src="https://img.shields.io/badge/Gatunek-Sandbox%20RPG,%20Edukacyjna-blue?color=66a103&style=for-the-badge" style="max-height: 300px;"></a>
-<a><img src="https://img.shields.io/badge/Obs%C5%82ugiwany%20j%C4%99zyk-polski-blue?color=FF2800&style=for-the-badge" style="max-height: 300px;"></a>
+<a><img src="https://img.shields.io/badge/Obs%C5%82ugiwany%20j%C4%99zyk-polski-blue?color=66a103&style=for-the-badge" style="max-height: 300px;"></a>
 <a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Inicjacja%20projektu-16%20czerwca%202019-blue?color=5B5EA6&style=for-the-badge" style="max-height: 300px;"></a>
-<a href="https://www.techopedia.com/definition/32207/target-platform"><img src="https://img.shields.io/badge/Platforma-Win32/Win64-green?style=for-the-badge&color=C48F65" style="max-height: 300px;"></a> <br/>
+<a href="https://www.techopedia.com/definition/32207/target-platform"><img src="https://img.shields.io/badge/Platforma-Win32/Win64-green?style=for-the-badge&color=5B5EA6" style="max-height: 300px;"></a> <br/>
 <a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Framework-4.7.1-blueviolet.svg?style=for-the-badge&logo=.NET" style="max-height: 300px;"></a>
-<a href="https://unity3d.com/get-unity/download/archive"><img src="https://img.shields.io/badge/Wersja-2018.3.12f1-orange?color=577284&style=for-the-badge&logo=unity" style="max-height: 300px;"></a>
-<a href="https://en.wikipedia.org/wiki/MIT_License"><img src="https://img.shields.io/badge/Licencja-MIT-blue?style=for-the-badge" style="max-height: 300px;"></a>
+<a href="https://unity3d.com/get-unity/download/archive"><img src="https://img.shields.io/badge/Wersja-2018.3.12f1-orange?color=blueviolet&style=for-the-badge&logo=unity" style="max-height: 300px;"></a>
+<a href="https://en.wikipedia.org/wiki/MIT_License"><img src="https://img.shields.io/badge/Licencja-MIT-blueviolet?style=for-the-badge" style="max-height: 300px;"></a>
 </p>
 
 ## O projekcie
