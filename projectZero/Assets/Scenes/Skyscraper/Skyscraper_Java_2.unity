@@ -121,7 +121,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
-      value: Answer3_correct
+      value: Answer3
       objectReference: {fileID: 0}
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_TagString
@@ -206,21 +206,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 996893}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 875713f1bff95784582832f00af090bc, type: 3}
+  m_Script: {fileID: 11500000, guid: 99dfabc2cf4fcab4c9fd71f9183a093d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Source: {fileID: 1626838055}
-  Clip: {fileID: 8300000, guid: 7bdaf1e6869c3364192cfe10af19d3db, type: 3}
-  _objectsToHide:
-  - {fileID: 1832901370}
-  - {fileID: 9346497}
-  - {fileID: 1253868945}
-  - {fileID: 1312483195}
-  - {fileID: 996893}
-  - {fileID: 2132664174}
-  - {fileID: 788814112}
-  _cameraCurrentPosition: {fileID: 1023038086}
-  _cameraNewPosition: 2860.85
+  Clip: {fileID: 8300000, guid: b6dcf5f63420e824e8ff23822a50d47e, type: 3}
+  _wrongAnswerObject: {fileID: 2075653664}
 --- !u!65 &996896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2013,7 +2004,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
-      value: Answer1_correct
+      value: Answer1
       objectReference: {fileID: 0}
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_TagString
@@ -2098,21 +2089,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 49167279}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 875713f1bff95784582832f00af090bc, type: 3}
+  m_Script: {fileID: 11500000, guid: 99dfabc2cf4fcab4c9fd71f9183a093d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Source: {fileID: 1626838055}
-  Clip: {fileID: 8300000, guid: 7bdaf1e6869c3364192cfe10af19d3db, type: 3}
-  _objectsToHide:
-  - {fileID: 1511572627}
-  - {fileID: 49167279}
-  - {fileID: 1630902254}
-  - {fileID: 737264135}
-  - {fileID: 28002532}
-  - {fileID: 519612823}
-  - {fileID: 1253912776}
-  _cameraCurrentPosition: {fileID: 1023038086}
-  _cameraNewPosition: 2628.58
+  Clip: {fileID: 8300000, guid: b6dcf5f63420e824e8ff23822a50d47e, type: 3}
+  _wrongAnswerObject: {fileID: 1194568959}
 --- !u!65 &49167283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2307,15 +2289,15 @@ Transform:
   - {fileID: 739601455}
   - {fileID: 1604182912}
   - {fileID: 1167802639}
-  - {fileID: 1465477394}
-  - {fileID: 1970975083}
   - {fileID: 1614457188}
+  - {fileID: 1465477394}
   - {fileID: 60893354}
-  - {fileID: 864527543}
+  - {fileID: 1970975083}
   - {fileID: 1818842512}
   - {fileID: 152677211}
   - {fileID: 2099478698}
   - {fileID: 1559750201}
+  - {fileID: 864527543}
   m_Father: {fileID: 1026670512}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4296,7 +4278,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 658291775}
+    m_TransformParent: {fileID: 995554770}
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
@@ -12413,7 +12395,7 @@ RectTransform:
   m_LocalScale: {x: 0.7716052, y: 1.2500012, z: 1.2500008}
   m_Children: []
   m_Father: {fileID: 995554770}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14189,7 +14171,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
-      value: Answer4
+      value: Answer4_correct
       objectReference: {fileID: 0}
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_TagString
@@ -14274,12 +14256,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 519612823}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99dfabc2cf4fcab4c9fd71f9183a093d, type: 3}
+  m_Script: {fileID: 11500000, guid: 875713f1bff95784582832f00af090bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Source: {fileID: 1626838055}
-  Clip: {fileID: 8300000, guid: b6dcf5f63420e824e8ff23822a50d47e, type: 3}
-  _wrongAnswerObject: {fileID: 1194568959}
+  Clip: {fileID: 8300000, guid: 7bdaf1e6869c3364192cfe10af19d3db, type: 3}
+  _objectsToHide:
+  - {fileID: 1511572627}
+  - {fileID: 49167279}
+  - {fileID: 1630902254}
+  - {fileID: 737264135}
+  - {fileID: 28002532}
+  - {fileID: 519612823}
+  - {fileID: 1253912776}
+  _cameraCurrentPosition: {fileID: 1023038086}
+  _cameraNewPosition: 2628.58
 --- !u!65 &519612825
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16108,7 +16099,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2086467110}
+    m_TransformParent: {fileID: 1740931801}
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
@@ -17566,7 +17557,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
-      value: Answer2
+      value: Answer2_correct
       objectReference: {fileID: 0}
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_TagString
@@ -17651,12 +17642,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 658291774}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99dfabc2cf4fcab4c9fd71f9183a093d, type: 3}
+  m_Script: {fileID: 11500000, guid: 875713f1bff95784582832f00af090bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Source: {fileID: 1626838055}
-  Clip: {fileID: 8300000, guid: b6dcf5f63420e824e8ff23822a50d47e, type: 3}
-  _wrongAnswerObject: {fileID: 146661738}
+  Clip: {fileID: 8300000, guid: 7bdaf1e6869c3364192cfe10af19d3db, type: 3}
+  _objectsToHide:
+  - {fileID: 150306719}
+  - {fileID: 658291774}
+  - {fileID: 995554771}
+  - {fileID: 1527054903}
+  - {fileID: 10241313}
+  - {fileID: 1418199182}
+  - {fileID: 1026670511}
+  _cameraCurrentPosition: {fileID: 1023038086}
+  _cameraNewPosition: 2206.4
 --- !u!65 &658291778
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19742,7 +19742,7 @@ RectTransform:
   m_LocalScale: {x: 0.7716052, y: 1.2500012, z: 1.2500008}
   m_Children: []
   m_Father: {fileID: 519612822}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -25720,7 +25720,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
-      value: Answer1_correct
+      value: Answer1
       objectReference: {fileID: 0}
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_TagString
@@ -25805,21 +25805,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 995554771}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 875713f1bff95784582832f00af090bc, type: 3}
+  m_Script: {fileID: 11500000, guid: 99dfabc2cf4fcab4c9fd71f9183a093d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Source: {fileID: 1626838055}
-  Clip: {fileID: 8300000, guid: 7bdaf1e6869c3364192cfe10af19d3db, type: 3}
-  _objectsToHide:
-  - {fileID: 150306719}
-  - {fileID: 658291774}
-  - {fileID: 995554771}
-  - {fileID: 1527054903}
-  - {fileID: 10241313}
-  - {fileID: 1418199182}
-  - {fileID: 1026670511}
-  _cameraCurrentPosition: {fileID: 1023038086}
-  _cameraNewPosition: 2206.4
+  Clip: {fileID: 8300000, guid: b6dcf5f63420e824e8ff23822a50d47e, type: 3}
+  _wrongAnswerObject: {fileID: 146661738}
 --- !u!65 &995554773
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29047,8 +29038,8 @@ Transform:
   - {fileID: 902080957}
   - {fileID: 1847459015}
   - {fileID: 298653989}
-  - {fileID: 1980537072}
   - {fileID: 603729089}
+  - {fileID: 1980537072}
   - {fileID: 354176316}
   - {fileID: 501840396}
   - {fileID: 1884571478}
@@ -30266,7 +30257,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
-      value: Answer2
+      value: Answer2_correct
       objectReference: {fileID: 0}
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_TagString
@@ -30351,12 +30342,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1192019621}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99dfabc2cf4fcab4c9fd71f9183a093d, type: 3}
+  m_Script: {fileID: 11500000, guid: 875713f1bff95784582832f00af090bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Source: {fileID: 1626838055}
-  Clip: {fileID: 8300000, guid: b6dcf5f63420e824e8ff23822a50d47e, type: 3}
-  _wrongAnswerObject: {fileID: 1788748544}
+  Clip: {fileID: 8300000, guid: 7bdaf1e6869c3364192cfe10af19d3db, type: 3}
+  _objectsToHide:
+  - {fileID: 999135122}
+  - {fileID: 290548196}
+  - {fileID: 2084321170}
+  - {fileID: 2034366229}
+  - {fileID: 1192019621}
+  - {fileID: 1960259557}
+  - {fileID: 381946731}
+  _cameraCurrentPosition: {fileID: 1023038086}
+  _cameraNewPosition: 1764.9
 --- !u!65 &1192019623
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30375,7 +30375,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 519612822}
+    m_TransformParent: {fileID: 49167280}
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
@@ -31768,7 +31768,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
-      value: Answer2
+      value: Answer2_correct
       objectReference: {fileID: 0}
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_TagString
@@ -31853,12 +31853,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1253868945}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99dfabc2cf4fcab4c9fd71f9183a093d, type: 3}
+  m_Script: {fileID: 11500000, guid: 875713f1bff95784582832f00af090bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Source: {fileID: 1626838055}
-  Clip: {fileID: 8300000, guid: b6dcf5f63420e824e8ff23822a50d47e, type: 3}
-  _wrongAnswerObject: {fileID: 2075653664}
+  Clip: {fileID: 8300000, guid: 7bdaf1e6869c3364192cfe10af19d3db, type: 3}
+  _objectsToHide:
+  - {fileID: 1832901370}
+  - {fileID: 9346497}
+  - {fileID: 1253868945}
+  - {fileID: 1312483195}
+  - {fileID: 996893}
+  - {fileID: 2132664174}
+  - {fileID: 788814112}
+  _cameraCurrentPosition: {fileID: 1023038086}
+  _cameraNewPosition: 2860.85
 --- !u!65 &1253868948
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36588,7 +36597,7 @@ RectTransform:
   m_LocalScale: {x: 0.7716052, y: 1.2500012, z: 1.2500008}
   m_Children: []
   m_Father: {fileID: 1740931801}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -39495,7 +39504,7 @@ RectTransform:
   m_LocalScale: {x: 0.7716052, y: 1.2500012, z: 1.2500008}
   m_Children: []
   m_Father: {fileID: 1960259556}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -43446,7 +43455,7 @@ RectTransform:
   m_LocalScale: {x: 0.7716052, y: 1.2500012, z: 1.2500008}
   m_Children: []
   m_Father: {fileID: 996892}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -44490,7 +44499,7 @@ RectTransform:
   m_LocalScale: {x: 0.7716052, y: 1.2500012, z: 1.2500008}
   m_Children: []
   m_Father: {fileID: 1192019620}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -46193,7 +46202,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
-      value: Answer2_correct
+      value: Answer2
       objectReference: {fileID: 0}
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_TagString
@@ -46278,21 +46287,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1740931802}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 875713f1bff95784582832f00af090bc, type: 3}
+  m_Script: {fileID: 11500000, guid: 99dfabc2cf4fcab4c9fd71f9183a093d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Source: {fileID: 1626838055}
-  Clip: {fileID: 8300000, guid: 7bdaf1e6869c3364192cfe10af19d3db, type: 3}
-  _objectsToHide:
-  - {fileID: 1732758187}
-  - {fileID: 2115067254}
-  - {fileID: 1536556389}
-  - {fileID: 1859028187}
-  - {fileID: 2086467111}
-  - {fileID: 1740931802}
-  - {fileID: 1369522657}
-  _cameraCurrentPosition: {fileID: 1023038086}
-  _cameraNewPosition: 1764.9
+  Clip: {fileID: 8300000, guid: b6dcf5f63420e824e8ff23822a50d47e, type: 3}
+  _wrongAnswerObject: {fileID: 593565324}
 --- !u!65 &1740931804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47275,7 +47275,7 @@ RectTransform:
   m_LocalScale: {x: 0.7716052, y: 1.2500012, z: 1.2500008}
   m_Children: []
   m_Father: {fileID: 2086467110}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -47623,7 +47623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1781714644
 Transform:
   m_ObjectHideFlags: 0
@@ -47646,7 +47646,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1192019620}
+    m_TransformParent: {fileID: 1960259556}
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
@@ -51349,7 +51349,7 @@ RectTransform:
   m_LocalScale: {x: 0.7716052, y: 1.2500012, z: 1.2500008}
   m_Children: []
   m_Father: {fileID: 658291775}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -51683,7 +51683,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
-      value: Answer4_correct
+      value: Answer4
       objectReference: {fileID: 0}
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_TagString
@@ -51768,21 +51768,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1960259557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 875713f1bff95784582832f00af090bc, type: 3}
+  m_Script: {fileID: 11500000, guid: 99dfabc2cf4fcab4c9fd71f9183a093d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Source: {fileID: 1626838055}
-  Clip: {fileID: 8300000, guid: 7bdaf1e6869c3364192cfe10af19d3db, type: 3}
-  _objectsToHide:
-  - {fileID: 999135122}
-  - {fileID: 290548196}
-  - {fileID: 2084321170}
-  - {fileID: 2034366229}
-  - {fileID: 1192019621}
-  - {fileID: 1960259557}
-  - {fileID: 381946731}
-  _cameraCurrentPosition: {fileID: 1023038086}
-  _cameraNewPosition: 1764.9
+  Clip: {fileID: 8300000, guid: b6dcf5f63420e824e8ff23822a50d47e, type: 3}
+  _wrongAnswerObject: {fileID: 1788748544}
 --- !u!65 &1960259559
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54175,7 +54166,7 @@ RectTransform:
   m_LocalScale: {x: 0.7716052, y: 1.2500012, z: 1.2500008}
   m_Children: []
   m_Father: {fileID: 1253868944}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -54740,7 +54731,7 @@ RectTransform:
   m_LocalScale: {x: 0.7716052, y: 1.2500012, z: 1.2500008}
   m_Children: []
   m_Father: {fileID: 49167280}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -55228,7 +55219,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1253868944}
+    m_TransformParent: {fileID: 996892}
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
@@ -55433,7 +55424,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_Name
-      value: Answer3
+      value: Answer3_correct
       objectReference: {fileID: 0}
     - target: {fileID: 1262887121042734, guid: 89843090f5c38c24c9500fe9490ba5c4, type: 3}
       propertyPath: m_TagString
@@ -55518,12 +55509,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 2086467111}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99dfabc2cf4fcab4c9fd71f9183a093d, type: 3}
+  m_Script: {fileID: 11500000, guid: 875713f1bff95784582832f00af090bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Source: {fileID: 1626838055}
-  Clip: {fileID: 8300000, guid: b6dcf5f63420e824e8ff23822a50d47e, type: 3}
-  _wrongAnswerObject: {fileID: 593565324}
+  Clip: {fileID: 8300000, guid: 7bdaf1e6869c3364192cfe10af19d3db, type: 3}
+  _objectsToHide:
+  - {fileID: 1732758187}
+  - {fileID: 2115067254}
+  - {fileID: 1536556389}
+  - {fileID: 1859028187}
+  - {fileID: 2086467111}
+  - {fileID: 1740931802}
+  - {fileID: 1369522657}
+  _cameraCurrentPosition: {fileID: 1023038086}
+  _cameraNewPosition: 1764.9
 --- !u!65 &2086467113
 BoxCollider:
   m_ObjectHideFlags: 0
