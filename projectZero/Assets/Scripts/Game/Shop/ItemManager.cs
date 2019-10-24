@@ -109,6 +109,8 @@ namespace Assets.Scripts.Game.Shop
             _soldImage.SetActive(true);
             _buyObject.SetActive(false);
 
+            IsAnimationEnabled = false;
+
             _source.PlayOneShot(_clip);
 
             PlayerPrefs.SetInt(itemKey, 1);
