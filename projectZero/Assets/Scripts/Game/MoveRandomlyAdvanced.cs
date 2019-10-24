@@ -38,6 +38,8 @@ namespace Assets.Scripts.Game
             }
 
             GetNewPath();
+
+            Animator.SetInteger("Walk", 1);
         }
 
         protected void Update()
