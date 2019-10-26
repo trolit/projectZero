@@ -58,7 +58,7 @@ namespace Assets.Scripts.Game
 
         private void FixedUpdate()
         {
-            _rigidbody.AddForce(new Vector3(0, -2, 0) * 1.1f, ForceMode.VelocityChange);
+            _rigidbody.AddForce(new Vector3(0, -1, 0) * 2f, ForceMode.VelocityChange);
         }
     }
 }
