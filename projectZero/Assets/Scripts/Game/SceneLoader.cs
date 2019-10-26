@@ -26,6 +26,11 @@ namespace Assets.Scripts.Game
         {
             IsContinue = true;
 
+            if (string.IsNullOrWhiteSpace(sceneName))
+            {
+                sceneName = "Map";
+            }
+
             SceneManager.LoadSceneAsync(sceneName);
         }
     }
