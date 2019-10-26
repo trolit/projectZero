@@ -71,5 +71,10 @@ namespace Assets.Scripts.Game
 
             GameIsPaused = true;
         }
+
+        public void ResetGameIsPausedState()
+        {
+            GameIsPaused = false;
+        }
     }
 }

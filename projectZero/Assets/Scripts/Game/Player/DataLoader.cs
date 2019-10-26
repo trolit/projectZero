@@ -5,7 +5,7 @@ namespace Assets.Scripts.Game.Player
 {
     public class DataLoader : MonoBehaviour
     {
-        public static bool GameIsPaused = false;
+        private bool _gameIsPaused = false;
 
         public GameObject DetailsMenuUI;
 
@@ -21,7 +21,8 @@ namespace Assets.Scripts.Game.Player
 
         public Text MoneyText;
 
-        
+        public Text NameText;
+
         public Slider HtmlSlider;
 
         public Text HtmlText;
@@ -73,9 +74,11 @@ namespace Assets.Scripts.Game.Player
 
         private void Update()
         {
+            Debug.Log("Paused? => " + PauseMenu.GameIsPaused);
+
             if (Input.GetKeyDown(KeyCode.I) && PauseMenu.GameIsPaused == false)
             {
-                if (GameIsPaused)
+                if (_gameIsPaused)
                 {
                     Resume();
                 }
@@ -87,6 +90,7 @@ namespace Assets.Scripts.Game.Player
                     SetLanguage(PhpSlider, PhpText, "php");
                     SetLanguage(CSharpSlider, CSharpText, "csharp");
                     LoadMoney();
+                    LoadName();
                     Pause();
                 }
             }
@@ -98,7 +102,7 @@ namespace Assets.Scripts.Game.Player
 
             Time.timeScale = 1f;
 
-            GameIsPaused = false;
+            _gameIsPaused = false;
         }
 
         private void Pause()
@@ -107,7 +111,7 @@ namespace Assets.Scripts.Game.Player
 
             Time.timeScale = 0f;
 
-            GameIsPaused = true;
+            _gameIsPaused = true;
         }
 
         private void LoadMoney()
@@ -115,6 +119,13 @@ namespace Assets.Scripts.Game.Player
             var money = PlayerPrefs.GetInt("money");
 
             MoneyText.text = money.ToString();
+        }
+
+        private void LoadName()
+        {
+            var characterName = PlayerPrefs.GetString("name");
+
+            NameText.text = characterName;
         }
 
         private void SetLanguage(Slider slider, Text text, string property)
