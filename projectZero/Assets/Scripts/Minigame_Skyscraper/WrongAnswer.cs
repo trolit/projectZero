@@ -19,10 +19,13 @@ namespace Assets.Scripts.Minigame_Skyscraper
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
                     _wrongAnswerObject.SetActive(true);
+                
+                    if (Source.isPlaying == false)
+                    {
+                        Source.PlayOneShot(Clip);
 
-                    Source.PlayOneShot(Clip);
-
-                    SkyscraperPrizeManager.MistakesCount++;
+                        SkyscraperPrizeManager.MistakesCount++;
+                    }
                 }
             }
         }
