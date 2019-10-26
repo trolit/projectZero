@@ -28,6 +28,8 @@ namespace Assets.Scripts.Game
                 var accordingUniqueKeyValue = PlayerPrefs.GetInt(accordingUniqueKey);
 
                 PlayerPrefs.SetInt(accordingUniqueKey, accordingUniqueKeyValue + 1);
+
+                Debug.Log("Saved information in " + accordingUniqueKey + " key.");
             }
 
             PlayerPrefs.Save();
