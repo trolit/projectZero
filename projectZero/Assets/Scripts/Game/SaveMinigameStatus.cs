@@ -29,6 +29,8 @@ namespace Assets.Scripts.Game
 
                 PlayerPrefs.SetInt(accordingUniqueKey, accordingUniqueKeyValue + 1);
             }
+
+            PlayerPrefs.Save();
         }
 
         public string GetAccordingUniqueKey(string key)
