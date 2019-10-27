@@ -108,19 +108,25 @@ Spacja [przytrzymanie] - złapanie i przesuwanie puzzla/pinezki <br/>
 LPM (lewy przycisk myszy) - klikanie w sklepie -> kupowanie książek, otwieranie książek z inventory(plecaka) etc 
 
 ### Wykorzystane materiały
-W pliku Wykorzystane.txt umieszczone są odnośniki do rzeczy, które zostały wykorzystane w projekcie - głównie są to assety, muzyka i grafiki. Będą one uwiecznione w sekcji "Uznania" w grze oraz prawdopodobnie w README (w późniejszym czasie). 
+W pliku Wykorzystane.txt umieszczone są odnośniki do rzeczy, które zostały wykorzystane w projekcie - głównie są to assety, muzyka i grafiki. Będą one uwiecznione w sekcji "Uznania" w grze. Dokument można znaleźć <a href="https://github.com/trolit/projectZero/blob/master/Wykorzystane.txt">pod tym adresem</a>. 
 
 ### Wersja narzędzia Unity
 2018.3.12f1 
 
-### Wersja .NET Framework:
+### Wersja .NET Framework
 v 4.7.1 
 
+### Zdjęcia z projektowania
+Zdjęcia z etapu projektowania gry znaleźć można w <a href="https://github.com/trolit/projectZero/issues/33">tym</a> wątku. A <a href="https://github.com/trolit/projectZero/issues/29">pod tym</a> adresem dostępne są urywkowe zdjęcia ze scen mini-gier typu labirynt, puzzle i pinpin(przypinka).
+
+### Wideo z projektowania
+Adresy do klipów wideo umieszczonych w serwisie youtube z etapu projektowania gry dostępne są <a href="https://github.com/trolit/projectZero/issues/35">tutaj</a>.
+
 ### Klucze 
-<do późniejszej publikacji>
+Wszystkie użyte klucze w projekcie wraz z opisem dostępne są w <a href="https://github.com/trolit/projectZero/issues/4" target="_blank">tym</a> wątku.
 
 ### Zawartość podsumowań
-<do późniejszej publikacji>
+Zawartość podsumowań dla mini-gier typu labirynt/pinpin/puzzle znajdziesz <a href="https://github.com/trolit/projectZero/issues/7">tu</a>.
 
 ### Zrealizowane zadania
-<do późniejszej publikacji>
+Zadania jakie zostały zrealizowane w ramach projektu dostępne są <a href="https://github.com/trolit/projectZero/issues/2">tutaj</a>.
