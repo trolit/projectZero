@@ -37,53 +37,15 @@ Gra została przygotowana w taki sposób, aby przy jednym podejściu nie dało s
 Pewnie interesuje Was informacja, dlaczego nazwa projektu brzmi Project Zero? Można to interpretować na wiele sposobów. Dla przykładu: zero, bo gra oferuje treści dla osób, które zaczynają programowanie i chciałyby zdobyć jakiś pogląd na temat uwzględnionych języków. Inna interpretacja: jest to większe przedsiewzięcie autorów w środowisku Unity3D. Można też tytułowe "zero" potraktować jako projekt wyjściowy w ramach pierwszego stopnia naukowego. Jest sporo pomysłów na interpretację tego tytułu :)   
 </p>
 
-### Mechanika
-<p align="justify">
-:small_orange_diamond:Gracz tworzy swoją postać nadając jej pseudonim, wybierając model spośród dostępnych oraz przyznając punkty umiejętności z podstawowej puli. Nie jest obowiązkowym nadanie pseudonimu, wybranie modelu i rozdanie wszystkich dostępnych punktów do rozdysponowania. Gracz ma pełną dowolność. <br/>
-:small_orange_diamond: Rozgrywka toczy się na mapie w której rozlokowane są krainy, które gracz ma możliwość zwiedzać. Każda kraina jest reprezentowana przez specyficzny język i teren. W jej obszarach znajdują się postaci, z którymi gracz może wejść w interakcje (NPC). <br/>
-:small_orange_diamond:NPC posiadają zadania, które gracz może wykonać. Podejście do zadania, to rozegranie minigry pod warunkiem, że poziom umiejętności gracza jest przynajmniej równy wymaganemu poziomowi. Szczegółowe informacje dotyczące mechaniki poszczególnych minigier zostały przedstawione w dziale odnośnie minigier.  <br/>
-:small_orange_diamond:Ukończenie minigry wiąże się z otrzymaniem wynagrodzenia i informacji. O ile, w grze typu puzzle uzyskuje się stałą wartość pieniędzy, to w pozostałych trzech wpływ na wysokość kwoty ma liczba pomyłek. Przekazywana treść także zależy od typu minigry o czym wspomniane jest w sekcji - walory edukacyjne. <br/>
-:small_orange_diamond: Pieniądze mogą być wydane w sklepach. <br/>
-:small_orange_diamond: Podstawowym asortymentem sklepów są książki. <br/>
-:small_orange_diamond: Na każdą krainę przypada jeden sklep. <br/>
-:small_orange_diamond: Książka zawiera informacje na temat wybranego języka. Odczytanie jej rozwija umiejętności gracza w języku, którego dotyczy pozwalając uzyskać dostęp do kolejnych minigier. <br/>
-:small_orange_diamond: Celem gry jest poznanie/przypomnienie elementów, które gra porusza. <br/>
-:small_orange_diamond: Grę można uznać za "ukończoną" w 100%, jeżeli gracz przejdzie wszystkie dostępne minigry (nie jednym podejściem!). <br/>
-:small_orange_diamond: Nie jest możliwe przegranie rozgrywki z koniecznością rozpoczęcia nowej. <br/>
-:small_orange_diamond: Jedyną grą jaką można powtórzyć ponownie jest gra typu labirynt. 
-</p>
-
-### Rodzaje krain i ich tereny
-| Język | Rodzaj terenu |
-| :---:  | :---: |
-| C# | teren zalesiony (styl wiosenny) |
-| Java | teren pustynny | 
-| HTML | teren górzysty |
-| JavaScript | teren zimowy |
-| PHP | teren zalesiony (styl jesienny) | 
-
-### Minigry
-W tej sekcji poznasz szczegóły zaimplementowanych minigier.
-
-#### Minigra wieżowiec (quiz)
-<p align="justify">
-W tej minigrze postać pojawia się na szczycie "metaforycznego wieżowca", który zbudowany jest z kilku poziomów. Każdy poziom to pytanie i cztery odpowiedzi do wyboru. Wybranie błędnej odpowiedzi nie wpływa na konstrukcje wieżowca. Gracz znajduje się na danym poziomie do momentu, aż nie wybierze prawidłowej odpowiedzi. Po wybraniu poprawnej, trafia na niższy poziom, w którym jest kolejne pytanie i kolejne odpowiedzi. Minigra trwa dopóki gracz nie dojdzie do podstawy wieżowca. Zazwyczaj jest to po 4-5 odbytych poziomach.
-</p>
-
-#### Minigra pinpin (podpięcie) 
-<p align="justify">
-Minigra pinpin(nazwa projektowa) jest podobna do wieżowca, jednak tutaj do wyboru dostajemy fragmenty kodu i musimy wybrać te, które odpowiadają terenowi, na którym się znajdujemy i w dodatku są poprawne (przykładowo: jeżeli uruchomiliśmy mini-grę na terenie C#, to musimy wybrać poprawny kod, który jest zapisany we wspomnianym języku). Do wyboru kodu służy nam "pinezka" ukazana w postaci "pucharu", który przesuwamy na wybrany kod. Jeżeli jesteśmy pewni to stajemy na przycisku służącym do weryfikacji naszej decyzji. Prawidłowe umieszczenie pinezki oznacza przejście do kolejnego etapu, natomiast błędnej, konieczność wybrania innej opcji z pozostałych i ponownej weryfikacji swojego wyboru. Błędne decyzje są podliczane i wpływają na wysokość wynagrodzenia za przejście poziomu. 
-</p>
-
-#### Minigra puzzle
-<p align="justify">
-Minigra, w której układamy puzzle z podanego kodu. Celem jest poprawne rozmieszczenie kodu. Aby ułatwić rozgrywkę dla osób początkujących, umieszczenie puzzla w odpowiednim miejscu powoduje jego oznaczenie i zablokowanie przed dalszym przesunięciem. W nagrodę uzyskujemy pieniądze i informacje na temat kodu, który był układany.  
-</p>
-
-#### Minigra labirynt
-<p align="justify">
-Minigra labirynt to gra, w której zadaniem gracza jest unikanie bloków będących "bugami" programu i zbieranie fragmentów kodu. Osiągnięcie pewnej ilości bugów powoduje obniżenie jakości informacji, które otrzymamy po ukończeniu gry i pomniejsza ostateczną kwotę uzyskaną za przejście minigry. Jeżeli chcemy poznać te informację i uzyskać większą wygraną to możemy poprawić wynik powtarzając poziom. W przypadku zakończenia rozgrywki zadanie zostaje oznaczene jako wykonane, gracz otrzymuje kwotę, która została mu pokazana na ekranie i nie będzie mógł już powtórzyć tego poziomu. Labirynt jest jedynym typem minigry, który można powtórzyć.
-</p>
+### Charakterystyka
+⚙️ **Otwarty świat podzielony na krainy:** Zwiedź każdą z pięciu krain i poznaj mieszkańców. <br/><br/>
+⚙️ **Tworzenie postaci:** Przygotuj postać zgodnie ze swoimi upodobaniami. <br/><br/>
+⚙️ **Języki:** Dowiedz się więcej w trakcie gry o C#, PHP, HTML, Java, JavaScript poprzez podsumowania, książki i ekrany wczytywania. <br/><br/>
+⚙️ **Muzyka:** Wsłuchaj się w zróżnicowaną oprawę dźwiękową, która umili wykonywanie poszczególnych zadań. <br/><br/>
+⚙️ **Zawartość:** Odkryj i przejdź wszystkie przygotowane zadania.  <br/><br/>
+⚙️ **Ekonomia:** Zdobyte pieniądze wydawaj w sklepach. <br/><br/>
+⚙️ **Medale i nagrody:** Pomagaj mieszkańcom krain, zdobywaj medale i w zamian za nie cenne nagrody. <br/><br/>
+⚙️ **Rozwój postaci:** Czytaj książki i zwiększaj swoje umiejętności. Poznaj więcej informacji na temat danego języka. <br/><br/>
 
 ### Walory edukacyjne
 <p align="justify">
@@ -104,12 +66,12 @@ Przedstawione informacje są skondensowane w taki sposób aby
 
 ### Od autora (Paweł Idzikowski)
 <p align="justify">
-Ze względu na zakres wykonanych zadań Project Zero traktuję jako pełnoprawny tytuł. Projekt nie obejmuje wszystkich aspektów każdego z uwzględnionych języków i nie definiuje każdego z pojęć w sposób wyczerpujący. Dałoby się to co prawda zrobić, jednak postawmy sobie pytanie - Czy taka gra nie stałaby się nudna po X jednostek czasu? Moim zdaniem - tak. Czy pomógłby najwyższy budżet? Nie. Na chwilę obecną gry uczące programowania idą bardziej w kierunku podstaw, czyli myślenia, jak ułożyć kod z prostych komend typu idź do przodu, obróć się w prawo aby dotrzeć z punktu A do B aniżeli konkretów z danego języka. Przykładem takiej produkcji jest Rabbids Coding, która - na marginesie - swoją premierę ma wyzaczoną na 8 października 2019 roku i będzie dostępna dla każdego... także.. warto zerknąć. Ćwiczenie znajomości konkretnego języka jest bardziej widoczne w aplikacjach (np. na platformę Androida). Sam z ciekawości taką aplikację sprawdziłem jednak nie utrzymała się długo na moim urządzeniu ale to już inna kwestia. Wracając do tematu sensu takich gier.. Skupienie się na jakimś języku np. C# to już na starcie ograniczenie liczby odbiorców - nie każdy musi go lubić. W czasach obecnych nieodłącznym elementem większości topowych gier jest tryb wieloosobowy. Przy analizie produktu czynnikiem kluczowym jest też wiek odbiorców. Problematyczne w grach edukacyjnych tego typu są też technologie. Stale się rozwijają więc gra, która nie byłaby modernizowana pod względem treści to gra martwa. Jedyny sposób, w jaki widzę takie gry, to produkcje z gatunku indie - nieduży budżet, masa fajnych rozwiązań i przemycona w jakimś stopniu liczba istotnych informacji. Z rywalizacją online? Czemu nie. W zwartym zespole posiadającym animatorów, designerów modeli, programistów i level designerów myślę, że produkt miałby szansę zyskać niemałe zainteresowanie nie tylko graczy ale i osób z obszaru edukacji w tematyce IT. W Project Zero wiedza przekazywana jest w sposób, aby zachęcać odbiorce do zgłębiania omawianych treści poza grą. Oprócz tworzenia czegoś, co miałoby mieć "użyteczne podłoże", zależało mi też na tym, aby był to projekt, którym warto się pochwalić i zapisać jako udany projekt do kolekcji :) 
+Ze względu na zakres wykonanych zadań Project Zero traktuję jako pełnoprawny tytuł. Projekt nie obejmuje wszystkich aspektów każdego z uwzględnionych języków i nie definiuje każdego z pojęć w sposób wyczerpujący. Dałoby się to co prawda zrobić, jednak postawmy sobie pytanie - Czy taka gra nie stałaby się nudna po X jednostek czasu? Moim zdaniem - tak. Czy pomógłby najwyższy budżet? Nie. Na chwilę obecną gry uczące programowania idą bardziej w kierunku podstaw, czyli myślenia, jak ułożyć kod z prostych komend typu idź do przodu, obróć się w prawo aby dotrzeć z punktu A do B aniżeli konkretów z danego języka. Przykładem takiej produkcji jest Rabbids Coding, która - na marginesie - swoją premierę ma wyzaczoną na 8 października 2019 roku i będzie dostępna dla każdego. Ćwiczenie znajomości konkretnego języka jest bardziej widoczne w aplikacjach (np. na platformę Androida). Sam z ciekawości taką aplikację sprawdziłem jednak nie utrzymała się długo na moim urządzeniu ale to już inna kwestia. Wracając do tematu sensu takich gier.. Skupienie się na jakimś języku np. C# to już na starcie ograniczenie liczby odbiorców - nie każdy musi go lubić. W czasach obecnych nieodłącznym elementem większości topowych gier jest tryb wieloosobowy. Przy analizie produktu czynnikiem kluczowym jest też wiek odbiorców. Problematyczne w grach edukacyjnych tego typu są technologie. Stale się rozwijają więc gra, która nie byłaby modernizowana pod względem treści to gra martwa. Jedyny sposób, w jaki widzę takie gry, to produkcje z gatunku indie - nieduży budżet, masa fajnych rozwiązań i przemycona w jakimś stopniu liczba istotnych informacji. Z rywalizacją online? Czemu nie. W zwartym zespole posiadającym animatorów, designerów modeli, programistów i level designerów myślę, że produkt miałby szansę zyskać niemałe zainteresowanie nie tylko graczy ale i osób z obszaru edukacji w tematyce IT. W Project Zero wiedzę staramy się przekazywać tak aby zachęcać odbiorce do zgłębiania omawianych treści poza grą. Oprócz tworzenia czegoś, co miałoby mieć "użyteczne podłoże", zależało mi też na tym, aby był to projekt, którym warto się pochwalić i zapisać jako udany projekt do kolekcji. 
 </p>
 
 ### Od autora (Adam Grabowski)
 <p align="justify">
-oczekiwanie na publikacje
+oczekiwanie na publikacje. oczekiwanie na publikacje. oczekiwanie na publikacje. oczekiwanie na publikacje.
 </p>
 
 ### Zrzuty ekranu z gry
