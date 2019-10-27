@@ -85,8 +85,14 @@ namespace Assets.Scripts.Game
                     case "Maze_JS_2":
                         _sceneImage.texture = _imagesList[6];
                         break;
+                    case "Skyscraper_JS_1":
+                        _sceneImage.texture = _imagesList[36];
+                        break;
+                    case "Skyscraper_JS_2":
+                        _sceneImage.texture = _imagesList[37];
+                        break;
                     default:
-                        Debug.LogError("No image according to source!");
+                        Debug.LogError("No image according to source! (scene name is case sensitive)");
                         Debug.Break();
                         break;
                 }
@@ -117,8 +123,14 @@ namespace Assets.Scripts.Game
                     case "Maze_C#_2":
                         _sceneImage.texture = _imagesList[1];
                         break;
+                    case "Skyscraper_C#_1":
+                        _sceneImage.texture = _imagesList[30];
+                        break;
+                    case "Skyscraper_C#_2":
+                        _sceneImage.texture = _imagesList[31];
+                        break;
                     default:
-                        Debug.LogError("No image according to source!");
+                        Debug.LogError("No image according to source! (scene name is case sensitive)");
                         Debug.Break();
                         break;
                 }
@@ -149,8 +161,14 @@ namespace Assets.Scripts.Game
                     case "Maze_Java_2":
                         _sceneImage.texture = _imagesList[5];
                         break;
+                    case "Skyscraper_Java_1":
+                        _sceneImage.texture = _imagesList[34];
+                        break;
+                    case "Skyscraper_Java_2":
+                        _sceneImage.texture = _imagesList[35];
+                        break;
                     default:
-                        Debug.LogError("No image according to source!");
+                        Debug.LogError("No image according to source! (scene name is case sensitive)");
                         Debug.Break();
                         break;
                 }
@@ -181,8 +199,14 @@ namespace Assets.Scripts.Game
                     case "Maze_HTML_2":
                         _sceneImage.texture = _imagesList[3];
                         break;
+                    case "Skyscraper_HTML_1":
+                        _sceneImage.texture = _imagesList[32];
+                        break;
+                    case "Skyscraper_HTML_2":
+                        _sceneImage.texture = _imagesList[33];
+                        break;
                     default:
-                        Debug.LogError("No image according to source!");
+                        Debug.LogError("No image according to source! (scene name is case sensitive)");
                         Debug.Break();
                         break;
                 }
@@ -213,8 +237,14 @@ namespace Assets.Scripts.Game
                     case "Maze_PHP_2":
                         _sceneImage.texture = _imagesList[9];
                         break;
+                    case "Skyscraper_PHP_1":
+                        _sceneImage.texture = _imagesList[38];
+                        break;
+                    case "Skyscraper_PHP_2":
+                        _sceneImage.texture = _imagesList[39];
+                        break;
                     default:
-                        Debug.LogError("No image according to source!");
+                        Debug.LogError("No image according to source! (scene name is case sensitive)");
                         Debug.Break();
                         break;
                 }
