@@ -11,8 +11,10 @@ namespace Assets.Scripts.Game
 
         public void ClearGameState()
         {
+            #region Keys data
+
             string[] bookKeys =
-            {
+{
                 "C#01",
                 "C#02",
                 "C#03",
@@ -93,6 +95,8 @@ namespace Assets.Scripts.Game
                 "medalsUnlocked"
             };
 
+            #endregion
+
             ClearIntTypedKeys(bookKeys);
 
             ClearIntTypedKeys(levelKeys);
@@ -102,6 +106,8 @@ namespace Assets.Scripts.Game
             ClearUniquePassedKeys(levelKeys);
 
             PlayerPrefs.Save();
+
+            Debug.Log("Game status cleared!");
         }
 
         private void ClearIntTypedKeys(string[] array)
