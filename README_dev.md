@@ -1,8 +1,56 @@
 <p align="center">
- <a href="https://github.com/trolit/projectZero"><img src="https://img.shields.io/badge/DOKUMENTACJA DLA UŻYTKOWNIKA-KLIKNIJ TUTAJ ABY PRZEŁĄCZYĆ-blue?color=FFA100&style=for-the-badge" style="max-height: 550px;"></a>
+<a href="https://github.com/trolit/projectZero"><img src="https://img.shields.io/badge/DOKUMENTACJA%20DLA%20UŻYTKOWNIKA%20(KLIKNIJ%20ABY%20PRZEJ%C5%9A%C4%86)-gray?color=986F8E&style=for-the-badge&logo=Atom" style="max-height: 550px;"></a>
 </p>
 
 ## Dokumentacja developera
+
+### Mechanika
+<p align="justify">
+:small_orange_diamond:Gracz tworzy swoją postać nadając jej pseudonim, wybierając model spośród dostępnych oraz przyznając punkty umiejętności z podstawowej puli. Nie jest obowiązkowym nadanie pseudonimu, wybranie modelu i rozdanie wszystkich dostępnych punktów do rozdysponowania. Gracz ma pełną dowolność. <br/>
+:small_orange_diamond: Rozgrywka toczy się na mapie w której rozlokowane są krainy, które gracz ma możliwość zwiedzać. Każda kraina jest reprezentowana przez specyficzny język i teren. W jej obszarach znajdują się postaci, z którymi gracz może wejść w interakcje (NPC). <br/>
+:small_orange_diamond:NPC posiadają zadania, które gracz może wykonać. Podejście do zadania, to rozegranie minigry pod warunkiem, że poziom umiejętności gracza jest przynajmniej równy wymaganemu poziomowi. Szczegółowe informacje dotyczące mechaniki poszczególnych minigier zostały przedstawione w dziale odnośnie minigier.  <br/>
+:small_orange_diamond:Ukończenie minigry wiąże się z otrzymaniem wynagrodzenia i informacji. O ile, w grze typu puzzle uzyskuje się stałą wartość pieniędzy, to w pozostałych trzech wpływ na wysokość kwoty ma liczba pomyłek. Przekazywana treść także zależy od typu minigry o czym wspomniane jest w sekcji - walory edukacyjne. <br/>
+:small_orange_diamond: Pieniądze mogą być wydane w sklepach. <br/>
+:small_orange_diamond: Podstawowym asortymentem sklepów są książki. <br/>
+:small_orange_diamond: Na każdą krainę przypada jeden sklep. <br/>
+:small_orange_diamond: Książka zawiera informacje na temat wybranego języka. Odczytanie jej rozwija umiejętności gracza w języku, którego dotyczy pozwalając uzyskać dostęp do kolejnych minigier. <br/>
+:small_orange_diamond: Celem gry jest poznanie/przypomnienie elementów, które gra porusza. <br/>
+:small_orange_diamond: Grę można uznać za "ukończoną" w 100%, jeżeli gracz przejdzie wszystkie dostępne minigry (nie jednym podejściem!). <br/>
+:small_orange_diamond: Nie jest możliwe przegranie rozgrywki z koniecznością rozpoczęcia nowej. <br/>
+:small_orange_diamond: Jedyną grą jaką można powtórzyć ponownie jest gra typu labirynt. 
+</p>
+
+### Rodzaje krain i ich tereny
+| Język | Rodzaj terenu |
+| :---:  | :---: |
+| C# | teren zalesiony (styl wiosenny) |
+| Java | teren pustynny | 
+| HTML | teren górzysty |
+| JavaScript | teren zimowy |
+| PHP | teren zalesiony (styl jesienny) | 
+
+### Minigry
+W tej sekcji poznasz szczegóły zaimplementowanych minigier.
+
+#### Minigra wieżowiec (quiz)
+<p align="justify">
+W tej minigrze postać pojawia się na szczycie "metaforycznego wieżowca", który zbudowany jest z kilku poziomów. Każdy poziom to pytanie i cztery odpowiedzi do wyboru. Wybranie błędnej odpowiedzi nie wpływa na konstrukcje wieżowca. Gracz znajduje się na danym poziomie do momentu, aż nie wybierze prawidłowej odpowiedzi. Po wybraniu poprawnej, trafia na niższy poziom, w którym jest kolejne pytanie i kolejne odpowiedzi. Minigra trwa dopóki gracz nie dojdzie do podstawy wieżowca. Zazwyczaj jest to po 4-5 odbytych poziomach.
+</p>
+
+#### Minigra pinpin (podpięcie) 
+<p align="justify">
+Minigra pinpin(nazwa projektowa) jest podobna do wieżowca, jednak tutaj do wyboru dostajemy fragmenty kodu i musimy wybrać te, które odpowiadają terenowi, na którym się znajdujemy i w dodatku są poprawne (przykładowo: jeżeli uruchomiliśmy mini-grę na terenie C#, to musimy wybrać poprawny kod, który jest zapisany we wspomnianym języku). Do wyboru kodu służy nam "pinezka" ukazana w postaci "pucharu", który przesuwamy na wybrany kod. Jeżeli jesteśmy pewni to stajemy na przycisku służącym do weryfikacji naszej decyzji. Prawidłowe umieszczenie pinezki oznacza przejście do kolejnego etapu, natomiast błędnej, konieczność wybrania innej opcji z pozostałych i ponownej weryfikacji swojego wyboru. Błędne decyzje są podliczane i wpływają na wysokość wynagrodzenia za przejście poziomu. 
+</p>
+
+#### Minigra puzzle
+<p align="justify">
+Minigra, w której układamy puzzle z podanego kodu. Celem jest poprawne rozmieszczenie kodu. Aby ułatwić rozgrywkę dla osób początkujących, umieszczenie puzzla w odpowiednim miejscu powoduje jego oznaczenie i zablokowanie przed dalszym przesunięciem. W nagrodę uzyskujemy pieniądze i informacje na temat kodu, który był układany.  
+</p>
+
+#### Minigra labirynt
+<p align="justify">
+Minigra labirynt to gra, w której zadaniem gracza jest unikanie bloków będących "bugami" programu i zbieranie fragmentów kodu. Osiągnięcie pewnej ilości bugów powoduje obniżenie jakości informacji, które otrzymamy po ukończeniu gry i pomniejsza ostateczną kwotę uzyskaną za przejście minigry. Jeżeli chcemy poznać te informację i uzyskać większą wygraną to możemy poprawić wynik powtarzając poziom. W przypadku zakończenia rozgrywki zadanie zostaje oznaczene jako wykonane, gracz otrzymuje kwotę, która została mu pokazana na ekranie i nie będzie mógł już powtórzyć tego poziomu. Labirynt jest jedynym typem minigry, który można powtórzyć.
+</p>
 
 ### Grafiki koncepcyjne
 | Zarys krain | Przykład mapy | Zarys z przejściami |
