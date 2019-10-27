@@ -1,6 +1,6 @@
 <p align="center">
  <img src="https://github.com/trolit/projectZero/blob/storage/photos/front.jpg?raw=true" height="450">
- <a href="https://github.com/trolit/projectZero/blob/master/README_dev.md"><img src="https://img.shields.io/badge/DOKUMENTACJA%20DLA%20DEVELOPERA%20(KLIKNIJ%20ABY%20PRZEJ%C5%9A%C4%86)-gray?color=9d3647&style=for-the-badge&logo=Markdown" style="max-height: 550px;"></a>
+ <a href="https://github.com/trolit/projectZero/blob/master/README_dev.md"><img src="https://img.shields.io/badge/DOKUMENTACJA%20DLA%20DEVELOPERA%20(KLIKNIJ%20ABY%20PRZEJ%C5%9A%C4%86)-gray?color=9d3647&style=for-the-badge&logo=dev.to" style="max-height: 550px;"></a>
 </p>
 
  ## Tagi
