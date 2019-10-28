@@ -9,6 +9,8 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private string _colorName;
 
+        [Header("RGB value")]
+
         [SerializeField]
         private byte _r;
 

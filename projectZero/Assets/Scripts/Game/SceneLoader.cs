@@ -8,7 +8,7 @@ namespace Assets.Scripts.Game
     {
         public static bool IsContinue = false;
 
-        [Obsolete("Use LoadSceneAsync to prevent forcing all resources to load scene")]
+        [Obsolete("Use LoadSceneAsync instead to prevent forcing all resources to load scene!")]
         public void LoadScene(string sceneName)
         {
             SceneManager.LoadScene(sceneName);

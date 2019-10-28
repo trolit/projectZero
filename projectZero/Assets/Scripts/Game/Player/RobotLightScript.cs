@@ -8,7 +8,7 @@ namespace Assets.Scripts.Game.Player
         private GameObject _lightObject;
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
             if (MovementScript.IsMoving)
             {

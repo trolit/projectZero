@@ -6,12 +6,14 @@ namespace Assets.Scripts.Game
     // Put this on NPC that has quest for player
     // to pass data which level needs to be loaded
 
+    // Activate script on button press
+
     public class MinigameDataTransferer : MonoBehaviour
     {
         [SerializeField]
         private string _sceneName;
 
-        void Start()
+        private void Start()
         {
             if (string.IsNullOrWhiteSpace(_sceneName) == false)
             {

@@ -7,7 +7,7 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private GameObject _infoWindow;
 
-        void Start()
+        private void Start()
         {
             _infoWindow.SetActive(true);
         }

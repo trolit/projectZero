@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Assets.Scripts.CharacterCreation
 {
@@ -16,6 +15,7 @@ namespace Assets.Scripts.CharacterCreation
         private List<GameObject> _helmets;
 
         [SerializeField]
+        [Tooltip("If set on true, additional personalization will be shown nevertheless medals amount.")]
         private bool _isUnderTest = false;
 
         public static bool UnderTest;

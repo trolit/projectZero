@@ -37,7 +37,7 @@ namespace Assets.Scripts.Game
 
         private int _maxValue;
 
-        void Start()
+        private void Start()
         {
             _panelRectTransform = GetComponent<RectTransform>();
 

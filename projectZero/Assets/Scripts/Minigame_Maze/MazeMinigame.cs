@@ -36,7 +36,7 @@ namespace Assets.Scripts.Minigame_Maze
         [SerializeField]
         private int _maxToPick = 6;
 
-        void Start()
+        private void Start()
         {
             CurrentlyPicked = 0;
             BugsPicked = 0;
@@ -45,7 +45,7 @@ namespace Assets.Scripts.Minigame_Maze
             _maxToPickText.text = _maxToPick.ToString();
         }
 
-        void Update()
+        private void Update()
         {
             _currentlyPickedText.text = CurrentlyPicked.ToString();
 

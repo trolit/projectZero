@@ -13,7 +13,7 @@ namespace Assets.Scripts.Minigame_Maze
         [SerializeField]
         private AudioClip _codePickedClip;
 
-        void OnTriggerEnter(Collider other)
+        private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.tag == "Pickable")
             {

@@ -5,7 +5,7 @@ namespace Assets.Scripts.Minigame_PinPin
 {
     public class WinPad : MonoBehaviour
     {
-        void OnCollisionEnter(Collision player)
+        private void OnCollisionEnter(Collision player)
         {
             if (player.gameObject.tag == "Player")
             {

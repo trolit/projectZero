@@ -54,7 +54,7 @@ namespace Assets.Scripts.Minigame_PinPin
 
         private bool _isActivated;
 
-        void OnCollisionEnter(Collision player)
+        private void OnCollisionEnter(Collision player)
         {
             if (player.gameObject.tag == "Player"
                 && _isActivated == false)
@@ -92,7 +92,7 @@ namespace Assets.Scripts.Minigame_PinPin
             }
         }
 
-        void ResetButton()
+        private void ResetButton()
         {
             _isActivated = false;
         }

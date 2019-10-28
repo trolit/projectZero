@@ -14,13 +14,13 @@ namespace Assets.Scripts.Game
 
         public Text AudioText;
 
-        void Start()
+        private void Start()
         {
             AudioMenu.SetActive(false);
         }
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
             if (GameStateSaver.IsSaveButtonUsed == true)
             {

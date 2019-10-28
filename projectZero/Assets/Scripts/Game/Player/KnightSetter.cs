@@ -16,7 +16,7 @@ namespace Assets.Scripts.Game.Player
         [SerializeField]
         private GameObject _shoulders;
 
-        void Start()
+        private void Start()
         {
             var pickedHelmetValue = PlayerPrefs.GetInt("knightHelmet");
 

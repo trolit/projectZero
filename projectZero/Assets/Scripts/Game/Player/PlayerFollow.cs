@@ -12,13 +12,13 @@ namespace Assets.Scripts.Game.Player
         public float SmoothFactor = 0.5f;
 
         // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
             _cameraOffset = transform.position - PlayerTransform.position;
         }
 
         // LateUpdate is called after Update methods
-        void LateUpdate()
+        private void LateUpdate()
         {
             Vector3 newPos = PlayerTransform.position + _cameraOffset;
 

@@ -22,7 +22,7 @@ namespace Assets.Scripts.Game.Player
         private float _carrySpeed;
 
         // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
             _animator = GetComponent<Animator>();
 
@@ -35,7 +35,7 @@ namespace Assets.Scripts.Game.Player
         }
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
             // Stop walk animation
             if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.S) ||
@@ -59,7 +59,7 @@ namespace Assets.Scripts.Game.Player
             }
         }
 
-        void FixedUpdate()
+        private void FixedUpdate()
         {
             if (Pickup.IsHolding)
             {
@@ -106,7 +106,7 @@ namespace Assets.Scripts.Game.Player
                     _transform.rotation = Quaternion.LookRotation(Vector3.right);
             }
 
-            // Falling force
+            // Apply little falling force
             _transform.AddForce(new Vector3(0, -2, 0) * Speed, ForceMode.VelocityChange);
         }
     }

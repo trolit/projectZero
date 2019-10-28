@@ -18,7 +18,7 @@ namespace Assets.Scripts.Game
 
         public Slider MusicSlider;
 
-        void Start()
+        private void Start()
         {
             // load Master Slider
             float volume = PlayerPrefs.GetFloat("master");

@@ -7,7 +7,7 @@ namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
         [SerializeField]
         private GameObject _leaf;
 
-        void OnCollisionEnter(Collision block)
+        private void OnCollisionEnter(Collision block)
         {
             if (block.gameObject.name == "Block02")
             {
@@ -27,7 +27,7 @@ namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
             }
         }
 
-        void OnCollisionExit(Collision block)
+        private void OnCollisionExit(Collision block)
         {
             // If leaf is active and by mistake
             // block will go outside the puzzle

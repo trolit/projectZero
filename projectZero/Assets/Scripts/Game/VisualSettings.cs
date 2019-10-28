@@ -23,7 +23,7 @@ namespace Assets.Scripts.Game
         // arrays here
         Resolution[] _resolutions;
 
-        void Start()
+        private void Start()
         {
             // fix?
             useGUILayout = false;

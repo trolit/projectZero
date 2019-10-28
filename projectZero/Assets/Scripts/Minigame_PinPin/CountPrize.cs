@@ -13,7 +13,7 @@ namespace Assets.Scripts.Minigame_PinPin
 
         private int _prize = 0;
 
-        void Awake()
+        private void Awake()
         {
             _prize = _startingPrize - PinCheck.MistakesAmount * 20;
 

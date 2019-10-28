@@ -12,11 +12,15 @@ namespace Assets.Scripts.Game
         private float _timeUntilNewManipulation = 5f;
 
         // Starting speed
+        [Header("Speed range")]
+
         [SerializeField]
         private float _minSpeed = 1f;
 
         [SerializeField]
         private float _maxSpeed = 3f;
+
+        [Header("Emission range")]
 
         // Emission rate
         [SerializeField]
@@ -25,10 +29,8 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private float _maxEmissionRate = 100f;
 
-        // Set this value to tree if you want 
-        // Independent randomization for particle
-        // parameters 
         [SerializeField]
+        [Tooltip("Set this on true if you want independent randomization for particle parameters.")]
         private bool _independentRandomization = false;
 
         private bool _inCoRoutine = false;
@@ -40,7 +42,7 @@ namespace Assets.Scripts.Game
         private ParticleSystem.EmissionModule _emissionModule;
 
         // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
             if (_snowParticleSystem == null)
             {
@@ -56,7 +58,7 @@ namespace Assets.Scripts.Game
         }
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
             if (!_inCoRoutine)
                 StartCoroutine(ManipulateSnow());

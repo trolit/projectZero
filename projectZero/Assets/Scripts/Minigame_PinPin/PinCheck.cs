@@ -14,12 +14,12 @@ namespace Assets.Scripts.Minigame_PinPin
         [SerializeField]
         private GameObject _verifyButton;
 
-        void Start()
+        private void Start()
         {
             _verifyButton.SetActive(false);
         }
 
-        void OnCollisionEnter(Collision block)
+        private void OnCollisionEnter(Collision block)
         {
             Debug.Log("Checking => " + block.gameObject.name);
 

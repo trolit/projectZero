@@ -10,7 +10,7 @@ namespace Assets.Scripts.Game
     {
         public static List<string> Texts { get; set; }
 
-        void Awake()
+        private void Awake()
         {
             Texts = new List<string>();
 

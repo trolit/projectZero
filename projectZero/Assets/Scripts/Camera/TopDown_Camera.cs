@@ -30,13 +30,13 @@ namespace Assets.Scripts.Camera
         [SerializeField]
         private float SmoothSpeed = 0.5f;
 
-        private Vector3 refVelocity;  // to make camera work smooth
+        private Vector3 _refVelocity;  // to make camera work smooth
 
         // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
             // Load which character was picked
-            int characterId = PlayerPrefs.GetInt("model");
+            var characterId = PlayerPrefs.GetInt("model");
 
             if (characterId == 1)
             {
@@ -62,7 +62,7 @@ namespace Assets.Scripts.Camera
             HandleCamera();
         }
 
-        void Update()
+        private void Update()
         {
             HandleCamera();
         }
@@ -89,7 +89,7 @@ namespace Assets.Scripts.Camera
             Vector3 finalPosition = flatTargetPosition + rotatedVector;
 
             transform.position = Vector3.SmoothDamp
-                (transform.position, finalPosition, ref refVelocity, SmoothSpeed);
+                (transform.position, finalPosition, ref _refVelocity, SmoothSpeed);
 
             transform.rotation = Quaternion.LookRotation(-rotatedVector);
         }

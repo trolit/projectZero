@@ -12,7 +12,7 @@ namespace Assets.Scripts.Game
         public AudioMixer MusicMixer;
 
         // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
             // load Master Volume
             float volume = PlayerPrefs.GetFloat("master");

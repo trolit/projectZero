@@ -6,12 +6,12 @@ namespace Assets.Scripts.Fix
     {
         Quaternion _rotation;
 
-        void Awake()
+        private void Awake()
         {
             _rotation = transform.rotation;
         }
 
-        void LateUpdate()
+        private void LateUpdate()
         {
             transform.rotation = _rotation;
         }

@@ -13,7 +13,7 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private string _followingSceneName;
 
-        IEnumerator Start()
+        private IEnumerator Start()
         {
             _source.canvasRenderer.SetAlpha(0.0f);
 
@@ -28,12 +28,12 @@ namespace Assets.Scripts.Game
             SceneManager.LoadSceneAsync(_followingSceneName);
         }
 
-        void FadeIn()
+        private void FadeIn()
         {
             _source.CrossFadeAlpha(1.0f, 1.5f, false);
         }
 
-        void FadeOut()
+        private void FadeOut()
         {
             _source.CrossFadeAlpha(0.0f, 2.5f, false);
         }
