@@ -9,12 +9,15 @@ namespace Assets.Scripts.Game
     public class MoveRandomlyBase : MonoBehaviour
     {
         [SerializeField]
+        [Tooltip("Specifies time when another path should be set.")]
         protected float TimeForNewPath;
 
         [SerializeField]
+        [Tooltip("Specifies X axis range for path randomization.")]
         protected float XValue;
 
         [SerializeField]
+        [Tooltip("Specifies Z axis range for path randomization.")]
         protected float ZValue;
 
         protected NavMeshAgent NavMeshAgent;

@@ -9,6 +9,7 @@ namespace Assets.Scripts.Game
     public class MoveRandomlyAdvanced : MoveRandomlyBase
     {
         [SerializeField]
+        [Tooltip("Specifies time when another state should be randomized.")]
         protected float TimeForNewState;
 
         // enables/disables TimeRandomizer method
@@ -19,9 +20,11 @@ namespace Assets.Scripts.Game
         protected Animator Animator;
 
         [SerializeField]
+        [Tooltip("Overwrite this only when random time for new state is set on true.")]
         protected float MinTime = 5f;
 
         [SerializeField]
+        [Tooltip("Overwrite this only when random time for new state is set on true.")]
         protected float MaxTime = 20f;
 
         protected void Start()
@@ -60,7 +63,7 @@ namespace Assets.Scripts.Game
                 StartCoroutine(DoSomething());
         }
 
-        private IEnumerator DoSomething()
+        protected IEnumerator DoSomething()
         {
             InCoRoutine = true;
             yield return new WaitForSeconds(TimeForNewState);
