@@ -6,6 +6,10 @@ namespace Assets.Scripts.Game
 {
     // Class designed for MoveRandomly scripts including AT LEAST two STATES
 
+    // Warning: Animator needs to contain Walk parameter
+    // of type Integer where value 0 means for example
+    // Idle and value 1 means Walk
+
     public class MoveRandomlyAdvanced : MoveRandomlyBase
     {
         [SerializeField]

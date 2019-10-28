@@ -34,7 +34,7 @@ namespace Assets.Scripts.Game
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.tag == "Player")
+            if (other.gameObject.tag == "Player" || other.gameObject.tag == "Animal")
             {
                 var dir = other.transform.position - transform.position;
 
