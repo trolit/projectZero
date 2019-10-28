@@ -1,4 +1,6 @@
-﻿namespace Assets.Scripts.Game
+﻿using System;
+
+namespace Assets.Scripts.Game
 {
     // SCRIPT ALLOWS TO CREATE RANDOM MOVEMENT FOR
     // OBJECT THAT CONTAINS 2 ANIMATIONS 
@@ -7,7 +9,8 @@
     // of type Integer where value 0 means Idle and value
     // 1 means Walk
 
-    public class MoveRandomly2 : MoveRandomlyAdvanced
+    [Obsolete("Redundant class after refactorization, use MoveRandomlyAdvanced instead to perform the same actions.")]
+    public sealed class MoveRandomly2 : MoveRandomlyAdvanced
     {
         // Use this for initialization
         private void Start()
