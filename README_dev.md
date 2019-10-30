@@ -21,12 +21,12 @@
 </p>
 
 ### Rodzaje krain, teren i istoty
-| Język | Rodzaj terenu | Typ istoty |
+| Język | Rodzaj terenu | Imperium |
 | :---:  | :---: | :---: |
-| C# | teren zalesiony (styl wiosenny) | ludzie |
-| Java | teren pustynny | koty |
-| HTML | teren górzysty | króliki |
-| JavaScript | teren zimowy | pingwiny |
+| C# | teren zalesiony (styl wiosenny) | psów |
+| Java | teren pustynny | kotów |
+| HTML | teren górzysty | królików |
+| JavaScript | teren zimowy | pingwinów |
 | PHP | teren zalesiony (styl jesienny) | myszy | 
 
 ### Minigry
