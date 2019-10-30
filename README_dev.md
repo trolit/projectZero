@@ -20,14 +20,14 @@
 :small_orange_diamond: Jedyną grą jaką można powtórzyć ponownie jest gra typu labirynt. 
 </p>
 
-### Rodzaje krain i ich tereny
-| Język | Rodzaj terenu |
-| :---:  | :---: |
-| C# | teren zalesiony (styl wiosenny) |
-| Java | teren pustynny | 
-| HTML | teren górzysty |
-| JavaScript | teren zimowy |
-| PHP | teren zalesiony (styl jesienny) | 
+### Rodzaje krain, teren i istoty
+| Język | Rodzaj terenu | Typ istoty |
+| :---:  | :---: | :---: |
+| C# | teren zalesiony (styl wiosenny) | ludzie |
+| Java | teren pustynny | koty |
+| HTML | teren górzysty | króliki |
+| JavaScript | teren zimowy | pingwiny |
+| PHP | teren zalesiony (styl jesienny) | myszy | 
 
 ### Minigry
 W tej sekcji poznasz szczegóły zaimplementowanych minigier.
