@@ -74,7 +74,7 @@ namespace Assets.Scripts.Game.Player
 
         private void Update()
         {
-            Debug.Log("Paused? => " + PauseMenu.GameIsPaused);
+            // Debug.Log("Paused? => " + PauseMenu.GameIsPaused);
 
             if (Input.GetKeyDown(KeyCode.I) && PauseMenu.GameIsPaused == false)
             {

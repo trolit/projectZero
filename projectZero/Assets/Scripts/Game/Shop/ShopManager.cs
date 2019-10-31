@@ -38,7 +38,7 @@ namespace Assets.Scripts.Game.Shop
         {
             if (_isInShopArea)
             {
-                if (Input.GetKeyDown(KeyCode.B))
+                if (Input.GetKeyDown(KeyCode.K))
                 {
                     _shopUi.SetActive(!_shopUi.activeInHierarchy);
                 }
