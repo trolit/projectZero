@@ -12,16 +12,26 @@ namespace Assets.Scripts.Game
 
         public static bool IsDuringConveration = false;
 
+        private Vector3 _playerVector3;
+
         private new void Update()
         {
             base.Update();
 
-            if (Input.GetKeyDown(KeyCode.F) && IsPlayerInDialogueArea)
+            if (Input.GetKeyDown(KeyCode.F) && IsPlayerInDialogueArea == true && IsDuringConveration == false)
             {
                 FindObjectOfType<DialogueManager>().StartDialogue(Dialogue);
 
                 IsDuringConveration = true;
+
+                NavMeshAgent.isStopped = true;
+
+                Animator.SetInteger("Walk", 0);
+
+                FaceTarget(_playerVector3);
             }
+
+            Debug.Log(IsDuringConveration + " is during conv");
         }
 
         protected new IEnumerator DoSomething()
@@ -72,11 +82,21 @@ namespace Assets.Scripts.Game
             InCoRoutine = false;
         }
 
+        private void FaceTarget(Vector3 destination)
+        {
+            Vector3 lookPos = destination - transform.position;
+            lookPos.y = 0;
+            Quaternion rotation = Quaternion.LookRotation(lookPos);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 3f);
+        }
+
         private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.tag == "Player")
             {
                 IsPlayerInDialogueArea = true;
+
+                _playerVector3 = other.transform.position;
 
                 Debug.Log("Player went in area of conversation!");
             }

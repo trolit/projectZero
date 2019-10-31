@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -51,6 +52,12 @@ namespace Assets.Scripts.Game
 
         public void DisplayNextSentence()
         {
+            if (sentences.Count == 1)
+            {
+                // Display buttons accept(play mini-game) or decline
+                Debug.Log("Akceptujesz wyzwanie?");
+            }
+
             if (sentences.Count == 0)
             {
                 EndDialogue();
@@ -61,7 +68,7 @@ namespace Assets.Scripts.Game
 
             if (sentence.Contains("{PLAYERNAME}"))
             {
-                sentence.Replace("{PLAYERNAME}", _playerName);
+                sentence = sentence.Replace("{PLAYERNAME}", _playerName);
             }
 
             StopAllCoroutines();
