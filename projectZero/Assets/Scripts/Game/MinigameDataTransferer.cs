@@ -13,7 +13,8 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private string _sceneName;
 
-        private void Start()
+        // Use this on button
+        public void LaunchMiniGame()
         {
             if (string.IsNullOrWhiteSpace(_sceneName) == false)
             {
