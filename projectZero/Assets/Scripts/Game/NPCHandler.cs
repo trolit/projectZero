@@ -21,12 +21,16 @@ namespace Assets.Scripts.Game
         private GameObject QuestionSign;
 
         [SerializeField]
-        [Tooltip("Pass language key to access player's level.")]
+        [Tooltip("Type language key to access player's level.")]
         private string _languageKey = "csharp";
 
         [SerializeField]
-        [Tooltip("Pass level key in order to check whether it was already done.")]
-        private string _levelKey = "Puzzle_C#_1";
+        [Tooltip("Type mini-game scene name to load.")]
+        private string _sceneToLoadName = "Puzzle_C#_1";
+
+        [SerializeField]
+        [Tooltip("Type mini-game scene key.")]
+        private string _sceneKey = "PU_C#1";
 
         [SerializeField]
         private Dialogue Dialogue;
@@ -35,14 +39,20 @@ namespace Assets.Scripts.Game
 
         public static bool IsDuringConveration = false;
 
+        public static string SceneToLoadName;
+
         private Vector3 _playerVector3;
 
         private bool _isLevelPlayable = false;
 
+        private bool _isLevelCompleted = false;
+
         private new void Start()
         {
             base.Start();
-            
+
+            SceneToLoadName = _sceneToLoadName;
+
             VerifyPlayerSkill();
             
             CheckIfLevelWasCompleted();
@@ -64,6 +74,13 @@ namespace Assets.Scripts.Game
                 Animator.SetInteger("Walk", 0);
 
                 FaceTarget(_playerVector3);
+            }
+
+            // If level is not currently playable and level is not completed
+            // verify player skill
+            if (_isLevelPlayable == false && _isLevelCompleted == false)
+            {
+                VerifyPlayerSkill();
             }
         }
 
@@ -166,17 +183,13 @@ namespace Assets.Scripts.Game
 
         private void CheckIfLevelWasCompleted()
         {
-            var levelStatus = PlayerPrefs.GetInt(_levelKey + "passed");
+            var levelStatus = PlayerPrefs.GetInt(_sceneKey + "passed");
 
             if (levelStatus == 1)
             {
                 QuestionSign.SetActive(false);
 
-                _isLevelPlayable = false;
-            }
-            else
-            {
-                _isLevelPlayable = true;
+                _isLevelCompleted = true;
             }
         }
     }

@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +14,9 @@ namespace Assets.Scripts.Game
         public Animator Animator;
 
         private string _playerName;
+
+        [SerializeField]
+        private GameObject _functionalButtons;
 
         // FIFO (First in First out)
         private Queue<string> sentences;
@@ -55,7 +57,8 @@ namespace Assets.Scripts.Game
             if (sentences.Count == 1)
             {
                 // Display buttons accept(play mini-game) or decline
-                Debug.Log("Akceptujesz wyzwanie?");
+
+                _functionalButtons.SetActive(true);
             }
 
             if (sentences.Count == 0)
@@ -88,9 +91,11 @@ namespace Assets.Scripts.Game
             }
         }
 
-        private void EndDialogue()
+        public void EndDialogue()
         {
             Animator.SetBool("isOpen", false);
+
+            _functionalButtons.SetActive(false);
 
             NPCHandler.IsDuringConveration = false;
         }     

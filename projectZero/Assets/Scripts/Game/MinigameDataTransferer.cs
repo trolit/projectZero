@@ -8,11 +8,13 @@ namespace Assets.Scripts.Game
     public class MinigameDataTransferer : MonoBehaviour
     {
         // Use this on button
-        public void LaunchMiniGame(string _sceneName)
+        public void LaunchMiniGame()
         {
-            if (string.IsNullOrWhiteSpace(_sceneName) == false)
+            var sceneName = NPCHandler.SceneToLoadName;
+
+            if (string.IsNullOrWhiteSpace(sceneName) == false)
             {
-                LevelLoader.CrossSceneInformation = _sceneName;
+                LevelLoader.CrossSceneInformation = sceneName;
 
                 SceneManager.LoadSceneAsync("MinigameLoader");
             }
