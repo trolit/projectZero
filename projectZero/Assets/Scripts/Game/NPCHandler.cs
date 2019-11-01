@@ -22,6 +22,9 @@ namespace Assets.Scripts.Game
         private GameObject QuestionSign;
 
         [SerializeField]
+        private GameObject _miniMapSign;
+
+        [SerializeField]
         [Tooltip("Type language key to access player's level.")]
         private string _languageKey = "csharp";
 
@@ -217,6 +220,8 @@ namespace Assets.Scripts.Game
             {
                 QuestionSign.SetActive(false);
 
+                _miniMapSign.SetActive(false);
+
                 _isLevelPlayable = false;
             }
             else
@@ -232,6 +237,8 @@ namespace Assets.Scripts.Game
             if (levelStatus == 1)
             {
                 QuestionSign.SetActive(false);
+
+                _miniMapSign.SetActive(false);
 
                 _isLevelCompleted = true;
             }
