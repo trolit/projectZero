@@ -67,7 +67,7 @@ namespace Assets.Scripts.Game
                 StartCoroutine(DoSomething());
         }
 
-        protected IEnumerator DoSomething()
+        protected virtual IEnumerator DoSomething()
         {
             InCoRoutine = true;
             yield return new WaitForSeconds(TimeForNewState);

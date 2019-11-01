@@ -76,6 +76,8 @@ namespace Assets.Scripts.Game
                 FaceTarget(_playerVector3);
             }
 
+            Debug.Log("Is During Conv => " + IsDuringConveration);
+
             // If level is not currently playable and level is not completed
             // verify player skill
             if (_isLevelPlayable == false && _isLevelCompleted == false)
@@ -84,7 +86,7 @@ namespace Assets.Scripts.Game
             }
         }
 
-        protected new IEnumerator DoSomething()
+        protected override IEnumerator DoSomething()
         {
             InCoRoutine = true;
             yield return new WaitForSeconds(TimeForNewState);
