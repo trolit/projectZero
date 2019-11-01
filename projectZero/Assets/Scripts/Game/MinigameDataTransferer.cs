@@ -3,18 +3,12 @@ using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Game
 {
-    // Put this on NPC that has quest for player
-    // to pass data which level needs to be loaded
-
     // Activate script on button press
 
     public class MinigameDataTransferer : MonoBehaviour
     {
-        [SerializeField]
-        private string _sceneName;
-
         // Use this on button
-        public void LaunchMiniGame()
+        public void LaunchMiniGame(string _sceneName)
         {
             if (string.IsNullOrWhiteSpace(_sceneName) == false)
             {
