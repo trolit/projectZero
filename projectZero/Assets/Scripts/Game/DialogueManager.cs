@@ -97,6 +97,30 @@ namespace Assets.Scripts.Game
 
                 yield return null;
             }
+
+            string colorName = "red";
+
+            switch (NPCHandler.Language)
+            {
+                case "csharp":
+                    colorName = "lime";
+                    break;
+                case "java":
+                    colorName = "yellow";
+                    break;
+                case "javascript":
+                    colorName = "cyan";
+                    break;
+                case "php":
+                    colorName = "orange";
+                    break;
+                case "html":
+                    colorName = "magenta";
+                    break;
+            }
+
+            DialogueText.text = DialogueText.text.Replace(_playerName,
+                $"<color={colorName}>{_playerName}</color>");
         }
 
         public void EndDialogue()
