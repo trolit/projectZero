@@ -105,7 +105,7 @@ namespace Assets.Scripts.Game
 
             _functionalButtons.SetActive(false);
 
-            NPCHandler.IsDuringConveration = false;
+            NPCHandler.IsDuringConversation = false;
         }     
     }
 }

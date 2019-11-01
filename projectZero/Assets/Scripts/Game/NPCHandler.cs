@@ -50,11 +50,11 @@ namespace Assets.Scripts.Game
         private RawImage _empirePlaceHolder;
 
         [SerializeField]
-        private Dialogue Dialogue;
+        private Dialogue _dialogue;
 
         public static bool IsPlayerInDialogueArea = false;
 
-        public static bool IsDuringConveration = false;
+        public static bool IsDuringConversation = false;
 
         public static string SceneToLoadName;
 
@@ -68,7 +68,10 @@ namespace Assets.Scripts.Game
 
         private bool _isLevelCompleted = false;
 
-        private new void Start()
+        // Solution for always talking with the same NPC
+        private bool _privateObjectState = false;
+
+        protected override void Start()
         {
             base.Start();
 
@@ -79,24 +82,30 @@ namespace Assets.Scripts.Game
             CheckIfLevelWasCompleted();
         }
 
-        private new void Update()
+        protected override void Update()
         {
             base.Update();
 
             if (Input.GetKeyDown(KeyCode.F) && IsPlayerInDialogueArea == true &&
-                IsDuringConveration == false && _isLevelPlayable == true)
+                IsDuringConversation == false && _isLevelPlayable == true && _privateObjectState)
             {
                 Language = _languageKey;
+
+                //Debug.Log("Name => " + _dialogue.Name);
+                //Debug.Log("First sentence => " + _dialogue.Sentences[0]);
+                //Debug.Log("Photo => " + _npcAvatar.name);
+
+                Debug.Log("Launching from " + gameObject.name);
 
                 _npcAvatarPlaceHolder.texture = _npcAvatar;
 
                 _empirePlaceHolder.texture = _empireAvatar;
 
-                FindObjectOfType<DialogueManager>().StartDialogue(Dialogue);
+                FindObjectOfType<DialogueManager>().StartDialogue(_dialogue);
 
                 TalkSoundHandler.PlayClipOnConversationStart();
 
-                IsDuringConveration = true;
+                IsDuringConversation = true;
 
                 NavMeshAgent.isStopped = true;
 
@@ -105,7 +114,7 @@ namespace Assets.Scripts.Game
                 FaceTarget(_playerVector3);
             }
 
-            Debug.Log("Is During Conv => " + IsDuringConveration);
+            // Debug.Log("Is During Conv => " + IsDuringConversation);
 
             // If level is not currently playable and level is not completed
             // verify player skill
@@ -120,7 +129,7 @@ namespace Assets.Scripts.Game
             InCoRoutine = true;
             yield return new WaitForSeconds(TimeForNewState);
 
-            if (IsDuringConveration == false)
+            if (IsDuringConversation == false)
             {
                 var result = StateRandomizer();
 
@@ -155,7 +164,7 @@ namespace Assets.Scripts.Game
                     }
                 }
             }
-            else if (IsDuringConveration == true)
+            else if (IsDuringConversation == true)
             {
                 Animator.SetInteger("Walk", 0);
             }
@@ -180,6 +189,8 @@ namespace Assets.Scripts.Game
             {
                 IsPlayerInDialogueArea = true;
 
+                _privateObjectState = true;
+
                 _playerVector3 = other.transform.position;
 
                 Debug.Log("Player went in area of conversation!");
@@ -191,6 +202,8 @@ namespace Assets.Scripts.Game
             if (other.gameObject.tag == "Player")
             {
                 IsPlayerInDialogueArea = false;
+
+                _privateObjectState = false;
 
                 Debug.Log("Player went out of conversation area!");
             }

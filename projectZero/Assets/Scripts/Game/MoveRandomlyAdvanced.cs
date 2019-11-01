@@ -31,7 +31,7 @@ namespace Assets.Scripts.Game
         [Tooltip("Overwrite this only when random time for new state is set on true.")]
         protected float MaxTime = 20f;
 
-        protected void Start()
+        protected virtual void Start()
         {
             NavMeshAgent = GetComponent<NavMeshAgent>();
 
@@ -49,7 +49,7 @@ namespace Assets.Scripts.Game
             Animator.SetInteger("Walk", 1);
         }
 
-        protected void Update()
+        protected virtual void Update()
         {
             // If reached destination - stop walk animation
             if (!NavMeshAgent.pathPending)
