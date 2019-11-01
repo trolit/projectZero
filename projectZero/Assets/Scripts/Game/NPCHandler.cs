@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 namespace Assets.Scripts.Game
 {
@@ -33,6 +34,22 @@ namespace Assets.Scripts.Game
         private string _sceneKey = "PU_C#1";
 
         [SerializeField]
+        [Tooltip("Stores avatar that will appear in dialogue placeholder.")]
+        private Texture _npcAvatar;
+
+        [SerializeField]
+        [Tooltip("Stores reference to avatar placeholder in dialogue.")]
+        private RawImage _npcAvatarPlaceHolder;
+
+        [SerializeField]
+        [Tooltip("Stores empire avatar that will appear in dialogue placeholder.")]
+        private Texture _empireAvatar;
+
+        [SerializeField]
+        [Tooltip("Include empire image (example: csharp icon).")]
+        private RawImage _empirePlaceHolder;
+
+        [SerializeField]
         private Dialogue Dialogue;
 
         public static bool IsPlayerInDialogueArea = false;
@@ -61,10 +78,14 @@ namespace Assets.Scripts.Game
         private new void Update()
         {
             base.Update();
-           
+
             if (Input.GetKeyDown(KeyCode.F) && IsPlayerInDialogueArea == true &&
                 IsDuringConveration == false && _isLevelPlayable == true)
             {
+                _npcAvatarPlaceHolder.texture = _npcAvatar;
+
+                _empirePlaceHolder.texture = _empireAvatar;
+
                 FindObjectOfType<DialogueManager>().StartDialogue(Dialogue);
 
                 IsDuringConveration = true;
