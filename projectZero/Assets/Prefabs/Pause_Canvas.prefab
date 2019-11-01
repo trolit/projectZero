@@ -75,8 +75,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -74.54906, y: 160.00006}
-  m_SizeDelta: {x: 160, y: 88.899994}
+  m_AnchoredPosition: {x: -67, y: 151}
+  m_SizeDelta: {x: 160, y: 93.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8226352408070070526
 CanvasRenderer:
@@ -843,8 +843,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 194, y: 160}
-  m_SizeDelta: {x: 117.4, y: 76.5}
+  m_AnchoredPosition: {x: 234.99995, y: 154.40002}
+  m_SizeDelta: {x: 117.4, y: 86.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3684223477636236383
 CanvasRenderer:
@@ -1918,7 +1918,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -289, y: -182}
+  m_AnchoredPosition: {x: -289, y: -142}
   m_SizeDelta: {x: 162.8, y: 162.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4178630095175095929
@@ -2220,10 +2220,10 @@ RectTransform:
   m_Father: {fileID: 8240568168783596642}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -595, y: -192}
-  m_SizeDelta: {x: 538.6, y: 51.1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 276, y: -117}
+  m_SizeDelta: {x: 451.41, y: 51.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1473339212765294805
 CanvasRenderer:
@@ -2255,10 +2255,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3fe86dc1c4efecc4f88ac3734f1444b7, type: 3}
-    m_FontSize: 19
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 3
     m_AlignByGeometry: 0
@@ -2345,7 +2345,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Zapisz konfiguracj\u0119"
+  m_Text: 'Zapisz
+
+    ustawienia'
 --- !u!1 &7111513970800638864
 GameObject:
   m_ObjectHideFlags: 0
