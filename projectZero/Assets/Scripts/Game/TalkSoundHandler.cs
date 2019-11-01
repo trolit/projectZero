@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.WSA.WebCam;
 
 namespace Assets.Scripts.Game
 {
@@ -28,6 +27,8 @@ namespace Assets.Scripts.Game
 
         private int _clipsAmount;
 
+        private static bool _soundTrigger = false;
+
         public void PlayOneClip()
         {
             if (string.IsNullOrWhiteSpace(NPCHandler.Language))
@@ -43,7 +44,38 @@ namespace Assets.Scripts.Game
                     var value = Random.Range(0, _csharpClips.Count);
                     _audioSource.PlayOneShot(_csharpClips[value]);
                     break;
+                case "html":
+                    value = Random.Range(0, _htmlClips.Count);
+                    _audioSource.PlayOneShot(_htmlClips[value]);
+                    break;
+                case "php":
+                    value = Random.Range(0, _phpClips.Count);
+                    _audioSource.PlayOneShot(_phpClips[value]);
+                    break;
+                case "java":
+                    value = Random.Range(0, _javaClips.Count);
+                    _audioSource.PlayOneShot(_javaClips[value]);
+                    break;
+                case "javascript":
+                    value = Random.Range(0, _javaScriptClips.Count);
+                    _audioSource.PlayOneShot(_javaScriptClips[value]);
+                    break;
             }
+        }
+
+        private void Update()
+        {
+            if (_soundTrigger == true)
+            {
+                PlayOneClip();
+
+                _soundTrigger = false;
+            }
+        }
+
+        public static void PlayClipOnConversationStart()
+        {
+            _soundTrigger = true;
         }
     }
 }

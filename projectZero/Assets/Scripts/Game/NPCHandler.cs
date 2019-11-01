@@ -94,6 +94,8 @@ namespace Assets.Scripts.Game
 
                 FindObjectOfType<DialogueManager>().StartDialogue(Dialogue);
 
+                TalkSoundHandler.PlayClipOnConversationStart();
+
                 IsDuringConveration = true;
 
                 NavMeshAgent.isStopped = true;
