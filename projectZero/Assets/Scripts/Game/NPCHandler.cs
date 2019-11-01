@@ -58,6 +58,10 @@ namespace Assets.Scripts.Game
 
         public static string SceneToLoadName;
 
+        // Used in script TalkSoundHandler to manage
+        // from which clip list should be sound played
+        public static string Language;
+
         private Vector3 _playerVector3;
 
         private bool _isLevelPlayable = false;
@@ -82,6 +86,8 @@ namespace Assets.Scripts.Game
             if (Input.GetKeyDown(KeyCode.F) && IsPlayerInDialogueArea == true &&
                 IsDuringConveration == false && _isLevelPlayable == true)
             {
+                Language = _languageKey;
+
                 _npcAvatarPlaceHolder.texture = _npcAvatar;
 
                 _empirePlaceHolder.texture = _empireAvatar;
