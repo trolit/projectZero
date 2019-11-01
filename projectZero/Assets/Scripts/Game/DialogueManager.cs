@@ -18,6 +18,9 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private GameObject _functionalButtons;
 
+        [SerializeField]
+        private GameObject _continueButton;
+
         // FIFO (First in First out)
         private Queue<string> sentences;
 
@@ -38,6 +41,8 @@ namespace Assets.Scripts.Game
 
         public void StartDialogue(Dialogue dialogue)
         {
+            _continueButton.SetActive(true);
+
             Animator.SetBool("isOpen", true);
 
             sentences.Clear();
@@ -59,6 +64,9 @@ namespace Assets.Scripts.Game
                 // Display buttons accept(play mini-game) or decline
 
                 _functionalButtons.SetActive(true);
+
+                // Hide Continue button
+                _continueButton.SetActive(false);
             }
 
             if (sentences.Count == 0)
