@@ -97,8 +97,7 @@ namespace Assets.Scripts.Game
                 //Debug.Log("Name => " + _dialogue.Name);
                 //Debug.Log("First sentence => " + _dialogue.Sentences[0]);
                 //Debug.Log("Photo => " + _npcAvatar.name);
-
-                Debug.Log("Launching from " + gameObject.name);
+                // Debug.Log("Launching from " + gameObject.name);
 
                 _npcAvatarPlaceHolder.texture = _npcAvatar;
 
@@ -196,7 +195,7 @@ namespace Assets.Scripts.Game
 
                 _playerVector3 = other.transform.position;
 
-                Debug.Log("Player went in area of conversation!");
+                // Debug.Log("Player went in area of conversation!");
             }
         }
 
@@ -208,7 +207,7 @@ namespace Assets.Scripts.Game
 
                 _privateObjectState = false;
 
-                Debug.Log("Player went out of conversation area!");
+                // Debug.Log("Player went out of conversation area!");
             }
         }
 
