@@ -9,19 +9,18 @@ namespace Assets.Scripts.Game.Inventory
     public class BookHandler : MonoBehaviour
     {
         [SerializeField]
-        private string productKey;
+        private string _bookKey;
 
         [SerializeField]
         private Button _button;
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
-            var bookStatus = PlayerPrefs.GetInt(productKey);
+            var bookStatus = PlayerPrefs.GetInt(_bookKey);
            
-            if (bookStatus != 1)
+            if (bookStatus != 1) // if the book has not been bought yet
             {
-                // przycisk interactable na false
                 _button.interactable = false;
             }
             else
