@@ -5,16 +5,16 @@ namespace Assets.Scripts.Game.Inventory
     public class PageCurlManager : MonoBehaviour
     {
         [SerializeField]
-        private GameObject _pageCurlUi;
+        private GameObject _pageCurlBooks;
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
-            if (_pageCurlUi.activeInHierarchy)
+            if (_pageCurlBooks.activeInHierarchy)
             {
                 if (Input.GetKeyDown(KeyCode.K))
                 {
-                    _pageCurlUi.SetActive(false);
+                    _pageCurlBooks.SetActive(false);
                 }
             }
             
