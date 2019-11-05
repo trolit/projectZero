@@ -90,7 +90,8 @@ namespace Assets.Scripts.Game
             base.Update();
 
             if (Input.GetKeyDown(KeyCode.F) && IsPlayerInDialogueArea == true &&
-                IsDuringConversation == false && _isLevelPlayable == true && _privateObjectState)
+                IsDuringConversation == false && _isLevelPlayable == true &&
+                _privateObjectState && _isLevelCompleted == false)
             {
                 Language = _languageKey;
 
@@ -116,10 +117,8 @@ namespace Assets.Scripts.Game
                 FaceTarget(_playerVector3);
             }
 
-            // Debug.Log("Is During Conv => " + IsDuringConversation);
-
             // If level is not currently playable and level is not completed
-            // verify player skill
+            // verify player skill each frame
             if (_isLevelPlayable == false && _isLevelCompleted == false)
             {
                 VerifyPlayerSkill();
@@ -233,6 +232,7 @@ namespace Assets.Scripts.Game
         {
             var levelStatus = PlayerPrefs.GetInt(_sceneKey + "passed");
 
+            // 1 means level is completed
             if (levelStatus == 1)
             {
                 QuestionSign.SetActive(false);
@@ -240,6 +240,10 @@ namespace Assets.Scripts.Game
                 _miniMapSign.SetActive(false);
 
                 _isLevelCompleted = true;
+            }
+            else
+            {
+                _isLevelCompleted = false;
             }
         }
     }
