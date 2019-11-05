@@ -83,6 +83,8 @@ namespace Assets.Scripts.Game
             VerifyPlayerSkill();
             
             CheckIfLevelWasCompleted();
+
+            RunLevelCounter();
         }
 
         protected override void Update()
@@ -244,6 +246,47 @@ namespace Assets.Scripts.Game
             else
             {
                 _isLevelCompleted = false;
+            }
+        }
+
+        private void RunLevelCounter()
+        {
+            switch (_languageKey)
+            {
+                case "csharp":
+                    if (_isLevelPlayable && !_isLevelCompleted)
+                        LevelCounter.instance.CsharpActive++;
+                    else if (!_isLevelPlayable && !_isLevelCompleted)
+                        LevelCounter.instance.CsharpInActive++;
+                    break;
+                case "java":
+                    if (_isLevelPlayable && !_isLevelCompleted)
+                        LevelCounter.instance.JavaActive++;
+                    else if (!_isLevelPlayable && !_isLevelCompleted)
+                        LevelCounter.instance.JavaInActive++;
+                    break;
+                case "html":
+                    if (_isLevelPlayable && !_isLevelCompleted)
+                        LevelCounter.instance.HtmlActive++;
+                    else if (!_isLevelPlayable && !_isLevelCompleted)
+                        LevelCounter.instance.HtmlInActive++;
+                    break;
+                case "php":
+                    if (_isLevelPlayable && !_isLevelCompleted)
+                        LevelCounter.instance.PhpActive++;
+                    else if (!_isLevelPlayable && !_isLevelCompleted)
+                        LevelCounter.instance.PhpInActive++;
+                    break;
+                case "javascript":
+                    if (_isLevelPlayable && !_isLevelCompleted)
+                        LevelCounter.instance.JsActive++;
+                    else if (!_isLevelPlayable && !_isLevelCompleted)
+                        LevelCounter.instance.JsInActive++;
+                    break;
+                default:
+                    Debug.LogError($"Unknown language key on {gameObject.name}, FIX IT!");
+                    Debug.Break();
+                    break;
             }
         }
     }
