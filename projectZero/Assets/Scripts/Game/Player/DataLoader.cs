@@ -132,7 +132,7 @@ namespace Assets.Scripts.Game.Player
         {
             var value = PlayerPrefs.GetInt(property);
 
-            text.text = value.ToString() + "/9";
+            text.text = value.ToString();
 
             slider.value = value;
         }
