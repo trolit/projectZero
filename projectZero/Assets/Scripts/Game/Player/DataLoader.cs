@@ -84,6 +84,8 @@ namespace Assets.Scripts.Game.Player
                 }
                 else
                 {
+                    LevelCounter.instance.UpdateTextValues();
+
                     SetLanguage(HtmlSlider, HtmlText, "html");
                     SetLanguage(JavascriptSlider, JavascriptText, "javascript");
                     SetLanguage(JavaSlider, JavaText, "java");

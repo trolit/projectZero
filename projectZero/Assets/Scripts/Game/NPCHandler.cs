@@ -258,30 +258,40 @@ namespace Assets.Scripts.Game
                         LevelCounter.instance.CsharpActive++;
                     else if (!_isLevelPlayable && !_isLevelCompleted)
                         LevelCounter.instance.CsharpInActive++;
+                    else if (_isLevelCompleted)
+                        LevelCounter.instance.CsharpFinished++;
                     break;
                 case "java":
                     if (_isLevelPlayable && !_isLevelCompleted)
                         LevelCounter.instance.JavaActive++;
                     else if (!_isLevelPlayable && !_isLevelCompleted)
                         LevelCounter.instance.JavaInActive++;
+                    else if (_isLevelCompleted)
+                        LevelCounter.instance.JavaFinished++;
                     break;
                 case "html":
                     if (_isLevelPlayable && !_isLevelCompleted)
                         LevelCounter.instance.HtmlActive++;
                     else if (!_isLevelPlayable && !_isLevelCompleted)
                         LevelCounter.instance.HtmlInActive++;
+                    else if (_isLevelCompleted)
+                        LevelCounter.instance.HtmlFinished++;
                     break;
                 case "php":
                     if (_isLevelPlayable && !_isLevelCompleted)
                         LevelCounter.instance.PhpActive++;
                     else if (!_isLevelPlayable && !_isLevelCompleted)
                         LevelCounter.instance.PhpInActive++;
+                    else if (_isLevelCompleted)
+                        LevelCounter.instance.PhpFinished++;
                     break;
                 case "javascript":
                     if (_isLevelPlayable && !_isLevelCompleted)
                         LevelCounter.instance.JsActive++;
                     else if (!_isLevelPlayable && !_isLevelCompleted)
                         LevelCounter.instance.JsInActive++;
+                    else if (_isLevelCompleted)
+                        LevelCounter.instance.JsFinished++;
                     break;
                 default:
                     Debug.LogError($"Unknown language key on {gameObject.name}, FIX IT!");
