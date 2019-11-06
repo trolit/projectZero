@@ -84,6 +84,8 @@ namespace Assets.Scripts.Game.Inventory
 
         private void IncreaseSkillLevel()
         {
+            Debug.Log("Language key is -> " + _languageKey);
+
             switch (_languageKey)
             {
                 case "csharp":
@@ -107,7 +109,7 @@ namespace Assets.Scripts.Game.Inventory
                     PlayerPrefs.SetInt("javascript", currentSkill + 1);
                     break;
                 default:
-                    Debug.LogError($"{_languageKey} is not correct on {gameObject.name}");
+                    Debug.LogError($"Language key - {_languageKey} is not correct on {gameObject.name}");
                     Debug.Break();
                     break;
             }
