@@ -8,11 +8,20 @@ namespace Assets.Scripts.Game.Inventory
         private GameObject _inventoryUi;
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
             if (Input.GetKeyDown(KeyCode.B))
             {
                 _inventoryUi.SetActive(!_inventoryUi.activeInHierarchy);
+
+                if (_inventoryUi.activeInHierarchy)
+                {
+                    Time.timeScale = 0f;
+                }
+                else
+                {
+                    Time.timeScale = 1f;
+                }
             }
         }
     }
