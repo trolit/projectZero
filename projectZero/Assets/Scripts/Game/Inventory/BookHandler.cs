@@ -12,7 +12,13 @@ namespace Assets.Scripts.Game.Inventory
         private Button _button;
 
         [SerializeField]
+        private string _languageKey;
+
+        [SerializeField]
         private GameObject _bookObject;
+
+        [SerializeField]
+        private bool _isUnderTest = false;
 
         private bool _isInteractable = false;
 
@@ -30,6 +36,24 @@ namespace Assets.Scripts.Game.Inventory
         public void OpenBook()
         {
             _bookObject.SetActive(true);
+
+            var isBookOpenedFirstTime = PlayerPrefs.GetInt(_bookKey + "_isReadFirstTime");
+
+            if (isBookOpenedFirstTime == 0)
+            {
+                if (_isUnderTest == false)
+                {
+                    PlayerPrefs.SetInt(_bookKey + "_isReadFirstTime", 1);
+                }
+
+                IncreaseSkillLevel();
+
+                // PlayerPrefs.Save();
+            }
+            else
+            {
+                Debug.Log("This book is opened not the first time!");
+            }
         }
 
         private void CloseBookOnKey()
@@ -55,6 +79,37 @@ namespace Assets.Scripts.Game.Inventory
                 _button.interactable = true;
 
                 _isInteractable = true;
+            }
+        }
+
+        private void IncreaseSkillLevel()
+        {
+            switch (_languageKey)
+            {
+                case "csharp":
+                    var currentSkill = PlayerPrefs.GetInt("csharp");
+                    PlayerPrefs.SetInt("csharp", currentSkill + 1);
+                    break;
+                case "html":
+                    currentSkill = PlayerPrefs.GetInt("html");
+                    PlayerPrefs.SetInt("html", currentSkill + 1);
+                    break;
+                case "php":
+                    currentSkill = PlayerPrefs.GetInt("php");
+                    PlayerPrefs.SetInt("php", currentSkill + 1);
+                    break;
+                case "java":
+                    currentSkill = PlayerPrefs.GetInt("java");
+                    PlayerPrefs.SetInt("java", currentSkill + 1);
+                    break;
+                case "javascript":
+                    currentSkill = PlayerPrefs.GetInt("javascript");
+                    PlayerPrefs.SetInt("javascript", currentSkill + 1);
+                    break;
+                default:
+                    Debug.LogError($"{_languageKey} is not correct on {gameObject.name}");
+                    Debug.Break();
+                    break;
             }
         }
     }
