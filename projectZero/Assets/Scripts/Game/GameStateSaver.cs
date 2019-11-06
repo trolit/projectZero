@@ -20,10 +20,15 @@ namespace Assets.Scripts.Game
         [SerializeField]
         private Animator _pandaAnimator;
 
+        [SerializeField]
+        private GameObject _savingGameObject;
+
         public static bool IsSaveButtonUsed = false;
 
         public void SaveGameState()
         {
+            _savingGameObject.SetActive(true);
+
             // PLAYER POSITION X,Z SAVING
             var i = 0;
 
@@ -51,13 +56,18 @@ namespace Assets.Scripts.Game
             }
 
             // Save 
-            PlayerPrefs.Save();
+            _saveGameObject.SetActive(true);
 
-            _pandaAnimator.Play("SaveGameStateAnim");
+            PlayerPrefs.Save();
 
             IsSaveButtonUsed = true;
 
-            _saveGameObject.SetActive(true);
+            Invoke("FunctionsInvoker", 2f);
+        }
+
+        private void FunctionsInvoker()
+        {
+            _pandaAnimator.Play("SaveGameStateAnim");
 
             Invoke("ShowBubble", 1.9f);
 
@@ -79,6 +89,8 @@ namespace Assets.Scripts.Game
         private void HidePanda()
         {
             _pandaAnimator.Play("HidePandaAnim");
+
+            _savingGameObject.SetActive(false);
         }
     }
 }
