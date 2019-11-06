@@ -20,7 +20,22 @@ namespace Assets.Scripts.Game.Inventory
         [SerializeField]
         private bool _isUnderTest = false;
 
+        [SerializeField]
+        private Animator _notifierAnimator;
+
+        [SerializeField]
+        private Texture _logoTexture;
+
         private bool _isInteractable = false;
+
+        private void Awake()
+        {
+            if (_logoTexture == null)
+            {
+                Debug.LogError($"BookHandler: No texture assigned on -> {gameObject.name}");
+                Debug.Break();
+            }
+        }
 
         // Update is called once per frame
         private void Update()
@@ -47,6 +62,10 @@ namespace Assets.Scripts.Game.Inventory
                 }
 
                 IncreaseSkillLevel();
+
+                _notifierAnimator.SetBool("isNotifierInvoked", true);
+
+                Invoke("HideNotifier", 7f);
 
                 // PlayerPrefs.Save();
             }
@@ -86,33 +105,75 @@ namespace Assets.Scripts.Game.Inventory
         {
             Debug.Log("Language key is -> " + _languageKey);
 
+            var presentSkill = 0;
+
             switch (_languageKey)
             {
                 case "csharp":
-                    var currentSkill = PlayerPrefs.GetInt("csharp");
-                    PlayerPrefs.SetInt("csharp", currentSkill + 1);
+                    var pastSkill = PlayerPrefs.GetInt("csharp");
+                    presentSkill = pastSkill + 1;
+
+                    if (_isUnderTest == false)
+                    {
+                        PlayerPrefs.SetInt("csharp", presentSkill);
+                    }
+
                     break;
                 case "html":
-                    currentSkill = PlayerPrefs.GetInt("html");
-                    PlayerPrefs.SetInt("html", currentSkill + 1);
+                    pastSkill = PlayerPrefs.GetInt("html");
+                    presentSkill = pastSkill + 1;
+
+                    if (_isUnderTest == false)
+                    {
+                        PlayerPrefs.SetInt("html", presentSkill);
+                    }
+
                     break;
                 case "php":
-                    currentSkill = PlayerPrefs.GetInt("php");
-                    PlayerPrefs.SetInt("php", currentSkill + 1);
+                    pastSkill = PlayerPrefs.GetInt("php");
+                    presentSkill = pastSkill + 1;
+
+                    if (_isUnderTest == false)
+                    {
+                        PlayerPrefs.SetInt("php", presentSkill);
+                    }
+
                     break;
                 case "java":
-                    currentSkill = PlayerPrefs.GetInt("java");
-                    PlayerPrefs.SetInt("java", currentSkill + 1);
+                    pastSkill = PlayerPrefs.GetInt("java");
+                    presentSkill = pastSkill + 1;
+
+                    if (_isUnderTest == false)
+                    {
+                        PlayerPrefs.SetInt("java", presentSkill);
+                    }
+
                     break;
                 case "javascript":
-                    currentSkill = PlayerPrefs.GetInt("javascript");
-                    PlayerPrefs.SetInt("javascript", currentSkill + 1);
+                    pastSkill = PlayerPrefs.GetInt("javascript");
+                    presentSkill = pastSkill + 1;
+
+                    if (_isUnderTest == false)
+                    {
+                        PlayerPrefs.SetInt("javascript", presentSkill);
+                    }
+
                     break;
                 default:
                     Debug.LogError($"Language key - {_languageKey} is not correct on {gameObject.name}");
                     Debug.Break();
                     break;
             }
+
+            NotifierHandler.instance.LevelValue = presentSkill;
+            NotifierHandler.instance.LogoTexture = _logoTexture;
+
+            NotifierHandler.instance.SetupNotifier();
+        }
+
+        private void HideNotifier()
+        {
+            _notifierAnimator.SetBool("isNotifierInvoked", false);
         }
     }
 }
