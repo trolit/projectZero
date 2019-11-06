@@ -56,18 +56,19 @@ namespace Assets.Scripts.Game.Inventory
 
             if (isBookOpenedFirstTime == 0)
             {
-                if (_isUnderTest == false)
-                {
-                    PlayerPrefs.SetInt(_bookKey + "_isReadFirstTime", 1);
-                }
-
                 IncreaseSkillLevel();
 
                 _notifierAnimator.SetBool("isNotifierInvoked", true);
 
                 Invoke("HideNotifier", 7f);
 
-                // PlayerPrefs.Save();
+                if (_isUnderTest == false)
+                {
+                    PlayerPrefs.SetInt(_bookKey + "_isReadFirstTime", 1);
+                    
+                    // In case of lag during the game, remove this line
+                    PlayerPrefs.Save();
+                }
             }
             else
             {
