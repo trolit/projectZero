@@ -14,14 +14,14 @@ namespace Assets.Scripts.Game.Inventory
             {
                 _inventoryUi.SetActive(!_inventoryUi.activeInHierarchy);
 
-                if (_inventoryUi.activeInHierarchy)
-                {
-                    Time.timeScale = 0f;
-                }
-                else
-                {
-                    Time.timeScale = 1f;
-                }
+                //if (_inventoryUi.activeInHierarchy)       --> Pausing game makes book pages stuttering :( 
+                //{
+                //    Time.timeScale = 0f;
+                //}
+                //else
+                //{
+                //    Time.timeScale = 1f;
+                //}
             }
         }
     }
