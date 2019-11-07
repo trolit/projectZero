@@ -26,6 +26,8 @@ namespace Assets.Scripts.Game
 
         private void Start()
         {
+            _functionalButtons.SetActive(false);
+
             sentences = new Queue<string>();
 
             _playerName = PlayerPrefs.GetString("name");

@@ -41,7 +41,7 @@ namespace Assets.Scripts.Game
 
                     npc.transform.position = new Vector3(npcPosX, npc.transform.position.y, npcPosZ);
 
-                    Debug.Log($"Positioning {npc.gameObject.name} on X-{npcPosX}, Z-{npcPosZ}");
+                    // Debug.Log($"Positioning {npc.gameObject.name} on X-{npcPosX}, Z-{npcPosZ}");
 
                     i++;
                 }

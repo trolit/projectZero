@@ -78,7 +78,7 @@ namespace Assets.Scripts.Game
         {
             base.Start();
 
-            SceneToLoadName = _sceneToLoadName;
+            IsDuringConversation = false;
 
             VerifyPlayerSkill();
             
@@ -95,6 +95,8 @@ namespace Assets.Scripts.Game
                 IsDuringConversation == false && _isLevelPlayable == true &&
                 _privateObjectState && _isLevelCompleted == false)
             {
+                SceneToLoadName = _sceneToLoadName;
+
                 Language = _languageKey;
 
                 //Debug.Log("Name => " + _dialogue.Name);

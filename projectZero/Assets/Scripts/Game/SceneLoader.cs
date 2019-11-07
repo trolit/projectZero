@@ -24,6 +24,9 @@ namespace Assets.Scripts.Game
 
         public void LoadSceneAsyncWithLastState(string sceneName)
         {
+            // Because this method is used in minigames 
+            Time.timeScale = 1f;
+
             IsContinue = true;
 
             if (string.IsNullOrWhiteSpace(sceneName))
