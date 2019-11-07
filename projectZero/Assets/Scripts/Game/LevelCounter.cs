@@ -111,25 +111,25 @@ namespace Assets.Scripts.Game
 
         public void UpdateTextValues()
         {
-            _csharpActiveText.text = CsharpActive.ToString();
-            _csharpInActiveText.text = CsharpInActive.ToString();
-            _csharpFinishedText.text = CsharpFinished.ToString();
+            _csharpActiveText.text = "<color=lime>" + CsharpActive + "</color>";
+            _csharpInActiveText.text = "<color=lime>" + CsharpInActive + "</color>";
+            _csharpFinishedText.text = "<color=lime>" + CsharpFinished + "</color>";
 
-            _htmlActiveText.text = HtmlActive.ToString();
-            _htmlInActiveText.text = HtmlInActive.ToString();
-            _htmlFinishedText.text = HtmlFinished.ToString();
+            _htmlActiveText.text = "<color=magenta>" + HtmlActive + "</color>"; ;
+            _htmlInActiveText.text = "<color=magenta>" + HtmlInActive + "</color>"; ;
+            _htmlFinishedText.text = "<color=magenta>" + HtmlFinished + "</color>"; ;
 
-            _phpActiveText.text = PhpActive.ToString();
-            _phpInActiveText.text = PhpInActive.ToString();
-            _phpFinishedText.text = PhpFinished.ToString();
+            _phpActiveText.text = "<color=orange>" + PhpActive + "</color>"; ;
+            _phpInActiveText.text = "<color=orange>" + PhpInActive + "</color>"; ;
+            _phpFinishedText.text = "<color=orange>" + PhpFinished + "</color>"; ;
 
-            _javaActiveText.text = JavaActive.ToString();
-            _javaInActiveText.text = JavaInActive.ToString();
-            _javaFinishedText.text = JavaFinished.ToString();
+            _javaActiveText.text = "<color=yellow>" + JavaActive + "</color>"; ;
+            _javaInActiveText.text = "<color=yellow>" + JavaInActive + "</color>"; ;
+            _javaFinishedText.text = "<color=yellow>" + JavaFinished + "</color>"; ;
 
-            _jsActiveText.text = JsActive.ToString();
-            _jsInActiveText.text = JsInActive.ToString();
-            _jsFinishedText.text = JsFinished.ToString();
+            _jsActiveText.text = "<color=cyan>" + JsActive + "</color>"; ;
+            _jsInActiveText.text = "<color=cyan>" + JsInActive + "</color>"; ;
+            _jsFinishedText.text = "<color=cyan>" + JsFinished + "</color>"; ;
         }
     }
 }
