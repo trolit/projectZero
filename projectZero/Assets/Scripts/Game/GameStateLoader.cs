@@ -30,6 +30,22 @@ namespace Assets.Scripts.Game
                 _cameraTransform.position = 
                     new Vector3(playerPosX, _cameraTransform.position.y, playerPosZ);
 
+                // SET NPC POSITIONS
+                var npcs = NPCCollector.instance.NpcGameObjects;
+                var i = 0;
+
+                foreach (var npc in npcs)
+                {
+                    var npcPosX = PlayerPrefs.GetFloat($"{i}npcX");
+                    var npcPosZ = PlayerPrefs.GetFloat($"{i}npcZ");
+
+                    npc.transform.position = new Vector3(npcPosX, npc.transform.position.y, npcPosZ);
+
+                    Debug.Log($"Positioning {npc.gameObject.name} on X-{npcPosX}, Z-{npcPosZ}");
+
+                    i++;
+                }
+
                 // Reset IsContinue value
                 SceneLoader.IsContinue = false;
             }

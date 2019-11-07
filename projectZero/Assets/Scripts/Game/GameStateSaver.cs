@@ -55,6 +55,19 @@ namespace Assets.Scripts.Game
                 }
             }
 
+            // NPC POSITION X,Z SAVING
+            var npcs = NPCCollector.instance.NpcGameObjects;
+            i = 0;
+
+            foreach (var npc in npcs)
+            {
+                PlayerPrefs.SetFloat($"{i}npcX", npc.transform.position.x);
+
+                PlayerPrefs.SetFloat($"{i}npcZ", npc.transform.position.z);
+
+                i++;
+            }
+
             // Save 
             _saveGameObject.SetActive(true);
 
