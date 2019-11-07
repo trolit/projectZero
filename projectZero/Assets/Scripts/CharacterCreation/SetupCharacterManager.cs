@@ -124,8 +124,7 @@ namespace Assets.Scripts.CharacterCreation
         {
             _pickedCharacterId = id;
 
-            // saves id which model was picked (by default cactus is picked)
-            PlayerPrefs.SetInt("model", id);
+            PlayerPrefs.SetInt("model", _pickedCharacterId);
         }
 
         public void SaveKnightPersonalization()
@@ -305,6 +304,12 @@ namespace Assets.Scripts.CharacterCreation
             PlayerPrefs.SetInt("php", _PHP);
             PlayerPrefs.SetInt("java", _Java);
             PlayerPrefs.SetInt("javascript", _Javascript);
+        }
+
+        public void SaveCharacter()
+        {
+            // saves id which model was picked (by default cactus is picked)
+            PlayerPrefs.SetInt("model", _pickedCharacterId);
         }
 
         public void SaveThatGameStarted()
