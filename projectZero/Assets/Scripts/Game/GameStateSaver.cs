@@ -25,7 +25,7 @@ namespace Assets.Scripts.Game
 
         public static bool IsSaveButtonUsed = false;
 
-        public void SaveGameState()
+        public void SaveGameState(bool isAnimationDisabled = false)
         {
             _savingGameObject.SetActive(true);
 
@@ -75,7 +75,19 @@ namespace Assets.Scripts.Game
 
             IsSaveButtonUsed = true;
 
-            Invoke("FunctionsInvoker", 2f);
+            if (isAnimationDisabled == false)
+            {
+                Invoke("FunctionsInvoker", 2f);
+            }
+            else
+            {
+                Invoke("HideSavingGameObject", 2f);
+            }
+        }
+
+        private void HideSavingGameObject()
+        {
+            _savingGameObject.SetActive(false);
         }
 
         private void FunctionsInvoker()
