@@ -121,6 +121,8 @@ namespace Console
             var commandLoadById = CommandLoadById.CreateCommand();
 
             var commandMgStatus = CommandMgStatus.CreateCommand();
+
+            var commandBookStatus = CommandBookStatus.CreateCommand();
         }
 
         public static void AddCommandsToConsole(string name, ConsoleCommand command)
