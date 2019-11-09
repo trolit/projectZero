@@ -3,7 +3,7 @@ using static Console.DevConsole;
 
 namespace Console
 {
-    public class CommandBookStatus : ConsoleCommand
+    public class CommandSetBooksState : ConsoleCommand
     {
         public sealed override string Name { get; protected set; }
         public sealed override string Command { get; protected set; }
@@ -11,20 +11,21 @@ namespace Console
         public sealed override string Help { get; protected set; }
         public sealed override string Example { get; protected set; }
 
-        public CommandBookStatus()
+        public CommandSetBooksState()
         {
-            Name = "Command book status";
-            Command = "getStateOfAllBooks";
-            Description = "Returns state of each book whether it was read first time or not and bought or not.";
-            Help = "Syntax: getStateOfAllBooks";
-            Example = "getStateOfAllBooks";
+            Name = "Set State of all books";
+            Command = "setStateOfBooks";
+            Description = "Sets state of all books in game.";
+            Help = "Syntax: setStateOfBooks <value> \n" +
+                   $"<color={RequiredColor}>Value parameter is required and must be equal 0 or 1!</color>";
+            Example = "setStateOfBooks 1";
 
             AddCommandToConsole();
         }
 
         public override void RunCommand(string[] data)
         {
-            if (data.Length == 1)
+            if (data.Length == 2)
             {
                 string[] bookKeys =
                 {
@@ -50,19 +51,22 @@ namespace Console
                     "PHP04"
                 };
 
-                AddStaticMessageToConsole($"\n<color={ExecutedColor}>List of books and their states</color>");
+                var value = int.Parse(data[1]);
 
-                foreach (var bookKey in bookKeys)
+                if (value == 0 || value == 1)
                 {
-                    var buyStatus = PlayerPrefs.GetInt(bookKey);
-                    var readStatus = PlayerPrefs.GetInt(bookKey + "_isReadFirstTime");
-                    
-                    var buyResult = buyStatus == 1 ? "<color=lime>YES</color>" : $"<color={RequiredColor}>NO</color>";
+                    foreach (var bookKey in bookKeys)
+                    {
+                        PlayerPrefs.SetInt(bookKey, value);
+                    }
 
-                    var readResult = readStatus == 1 ? "<color=lime>YES</color>" : $"<color={RequiredColor}>NO</color>";
+                    PlayerPrefs.Save();
 
-                    AddStaticMessageToConsole($"Book {bookKey}: (was read first time? {readResult})," +
-                                              $" (was bought? {buyResult})");
+                    AddStaticMessageToConsole(ExecutedSuccessfully);
+                }
+                else
+                {
+                    AddStaticMessageToConsole($"Passed value is <color={RequiredColor}>not allowed</color>");
                 }
             }
             else
@@ -71,9 +75,9 @@ namespace Console
             }
         }
 
-        public static CommandBookStatus CreateCommand()
+        public static CommandSetBooksState CreateCommand()
         {
-            return new CommandBookStatus();
+            return new CommandSetBooksState();
         }
     }
 }
