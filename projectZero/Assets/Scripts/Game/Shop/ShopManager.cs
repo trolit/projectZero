@@ -26,6 +26,13 @@ namespace Assets.Scripts.Game.Shop
         {
             if (other.gameObject.tag == "Player")
             {
+                var shopTipStatus = PlayerPrefs.GetInt("bookStoreTip");
+
+                if (shopTipStatus == 0)
+                {
+                    TipManager.instance.InvokeShopTip();
+                }
+
                 _tip.SetActive(true);
 
                 _isInShopArea = true;

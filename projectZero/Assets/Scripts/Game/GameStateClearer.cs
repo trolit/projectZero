@@ -196,7 +196,8 @@ namespace Assets.Scripts.Game
                 "java",
                 "javascript",
                 "interactNpcTip",
-                "startGameTip"
+                "startGameTip",
+                "bookStoreTip"
             };
 
             #endregion

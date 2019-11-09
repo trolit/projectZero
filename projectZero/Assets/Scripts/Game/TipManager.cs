@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace Assets.Scripts.Game
 {
@@ -11,13 +12,7 @@ namespace Assets.Scripts.Game
         private bool _isUnderTest = false;
 
         [SerializeField]
-        private GameObject _tipBody;
-
-        [SerializeField]
-        private GameObject _newGameTip;
-
-        [SerializeField]
-        private GameObject _interactWithNPCTip;
+        private List<GameObject> _tipList;
 
         private void Awake()
         {
@@ -39,22 +34,36 @@ namespace Assets.Scripts.Game
             Time.timeScale = value;
         }
 
+        private void ActivateTipBody()
+        {
+            _tipList[0].SetActive(true);
+        }
+        
         public void InvokeInteractionWithNpcTip()
         {
             SetTimeScale(0f);
 
-            _tipBody.SetActive(true);
+            ActivateTipBody();
 
-            _interactWithNPCTip.SetActive(true);
+            _tipList[2].SetActive(true);
         }
 
         public void InvokeNewGameTip()
         {
             SetTimeScale(0f);
 
-            _tipBody.SetActive(true);
+            ActivateTipBody();
 
-            _newGameTip.SetActive(true);
+            _tipList[1].SetActive(true);
+        }
+
+        public void InvokeShopTip()
+        {
+            SetTimeScale(0f);
+
+            ActivateTipBody();
+
+            _tipList[3].SetActive(true);
         }
 
         public void CloseAndSave(string key)
@@ -70,11 +79,10 @@ namespace Assets.Scripts.Game
                 Debug.Log($"Information about tip NOT SAVED as\n TESTING variable ON {gameObject.name} is TRUE.");
             }
 
-            _tipBody.SetActive(false);
-
-            _interactWithNPCTip.SetActive(false);
-
-            _newGameTip.SetActive(false);
+            foreach (var tipBody in _tipList)
+            {
+                tipBody.SetActive(false);
+            }
         }
     }
 }
