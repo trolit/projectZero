@@ -132,9 +132,27 @@ namespace Assets.Scripts.Game
             _jsFinishedText.text = "<color=cyan>" + JsFinished + "</color>";
 
             // If no active tasks - activate tip
-            if (CsharpActive == 0 && HtmlActive == 0 && PhpActive == 0 && JavaActive == 0 && JsActive == 0)
+            if (CsharpActive == 0 && HtmlActive == 0 && PhpActive == 0
+                && JavaActive == 0 && JsActive == 0)
             {
-                TipManager.instance.InvokeNoActiveTasksTip();
+                var noActiveTasksTipState = PlayerPrefs.GetInt("noActiveTasksTip");
+
+                if (noActiveTasksTipState == 0)
+                {
+                    TipManager.instance.InvokeNoActiveTasksTip();
+                }
+            }
+
+            // If one land fully finished - activate tip
+            if (CsharpFinished == 8 || HtmlFinished == 8 || PhpFinished == 8
+                || JavaFinished == 8 || JsFinished == 8)
+            {
+                var oneLandFinishedState = PlayerPrefs.GetInt("finishOneLandTip");
+
+                if (oneLandFinishedState == 0)
+                {
+                    TipManager.instance.InvokeOneLandFinishedTip();
+                }
             }
         }
     }

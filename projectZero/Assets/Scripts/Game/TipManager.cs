@@ -75,6 +75,15 @@ namespace Assets.Scripts.Game
             _tipList[4].SetActive(true);
         }
 
+        public void InvokeOneLandFinishedTip()
+        {
+            SetTimeScale(0f);
+
+            ActivateTipBody();
+
+            _tipList[5].SetActive(true);
+        }
+
         public void CloseAndSave(string key)
         {
             SetTimeScale(1f);
