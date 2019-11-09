@@ -9,6 +9,8 @@ namespace Assets.Scripts.Game.Player
 
         public GameObject DetailsMenuUI;
 
+        public GameObject PauseMenuUI;
+
         public Texture CactusAvatar;
 
         public Texture RobotAvatar;
@@ -95,6 +97,19 @@ namespace Assets.Scripts.Game.Player
                     LoadName();
                     Pause();
                 }
+            }
+
+            // If details menu UI is still active in hierarchy - keep pausing
+            // and prevent from launching escape panel
+            if (DetailsMenuUI.activeInHierarchy)
+            {
+                PauseMenuUI.GetComponent<PauseMenu>().enabled = false;
+
+                Pause();
+            }
+            else if (DetailsMenuUI.activeInHierarchy == false)
+            {
+                PauseMenuUI.GetComponent<PauseMenu>().enabled = true;
             }
         }
 
