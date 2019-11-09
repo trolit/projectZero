@@ -33,5 +33,48 @@ namespace Assets.Scripts.Game
                                  $" instance on {gameObject.name} was destroyed.");
             }
         }
+
+        private void SetTimeScale(float value)
+        {
+            Time.timeScale = value;
+        }
+
+        public void InvokeInteractionWithNpcTip()
+        {
+            SetTimeScale(0f);
+
+            _tipBody.SetActive(true);
+
+            _interactWithNPCTip.SetActive(true);
+        }
+
+        public void InvokeNewGameTip()
+        {
+            SetTimeScale(0f);
+
+            _tipBody.SetActive(true);
+
+            _newGameTip.SetActive(true);
+        }
+
+        public void CloseAndSave(string key)
+        {
+            SetTimeScale(1f);
+
+            if (_isUnderTest == false)
+            {
+                PlayerPrefs.SetInt(key, 1);
+            }
+            else if (_isUnderTest == true)
+            {
+                Debug.Log($"Information about tip NOT SAVED as\n TESTING variable ON {gameObject.name} is TRUE.");
+            }
+
+            _tipBody.SetActive(false);
+
+            _interactWithNPCTip.SetActive(false);
+
+            _newGameTip.SetActive(false);
+        }
     }
 }
