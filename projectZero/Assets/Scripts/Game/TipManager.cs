@@ -66,6 +66,15 @@ namespace Assets.Scripts.Game
             _tipList[3].SetActive(true);
         }
 
+        public void InvokeNoActiveTasksTip()
+        {
+            SetTimeScale(0f);
+
+            ActivateTipBody();
+
+            _tipList[4].SetActive(true);
+        }
+
         public void CloseAndSave(string key)
         {
             SetTimeScale(1f);

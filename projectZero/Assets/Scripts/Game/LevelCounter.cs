@@ -115,21 +115,27 @@ namespace Assets.Scripts.Game
             _csharpInActiveText.text = "<color=lime>" + CsharpInActive + "</color>";
             _csharpFinishedText.text = "<color=lime>" + CsharpFinished + "</color>";
 
-            _htmlActiveText.text = "<color=magenta>" + HtmlActive + "</color>"; ;
-            _htmlInActiveText.text = "<color=magenta>" + HtmlInActive + "</color>"; ;
-            _htmlFinishedText.text = "<color=magenta>" + HtmlFinished + "</color>"; ;
+            _htmlActiveText.text = "<color=magenta>" + HtmlActive + "</color>";
+            _htmlInActiveText.text = "<color=magenta>" + HtmlInActive + "</color>";
+            _htmlFinishedText.text = "<color=magenta>" + HtmlFinished + "</color>";
 
-            _phpActiveText.text = "<color=orange>" + PhpActive + "</color>"; ;
-            _phpInActiveText.text = "<color=orange>" + PhpInActive + "</color>"; ;
-            _phpFinishedText.text = "<color=orange>" + PhpFinished + "</color>"; ;
+            _phpActiveText.text = "<color=orange>" + PhpActive + "</color>";
+            _phpInActiveText.text = "<color=orange>" + PhpInActive + "</color>";
+            _phpFinishedText.text = "<color=orange>" + PhpFinished + "</color>";
 
-            _javaActiveText.text = "<color=yellow>" + JavaActive + "</color>"; ;
-            _javaInActiveText.text = "<color=yellow>" + JavaInActive + "</color>"; ;
-            _javaFinishedText.text = "<color=yellow>" + JavaFinished + "</color>"; ;
+            _javaActiveText.text = "<color=yellow>" + JavaActive + "</color>";
+            _javaInActiveText.text = "<color=yellow>" + JavaInActive + "</color>";
+            _javaFinishedText.text = "<color=yellow>" + JavaFinished + "</color>";
 
-            _jsActiveText.text = "<color=cyan>" + JsActive + "</color>"; ;
-            _jsInActiveText.text = "<color=cyan>" + JsInActive + "</color>"; ;
-            _jsFinishedText.text = "<color=cyan>" + JsFinished + "</color>"; ;
+            _jsActiveText.text = "<color=cyan>" + JsActive + "</color>";
+            _jsInActiveText.text = "<color=cyan>" + JsInActive + "</color>";
+            _jsFinishedText.text = "<color=cyan>" + JsFinished + "</color>";
+
+            // If no active tasks - activate tip
+            if (CsharpActive == 0 && HtmlActive == 0 && PhpActive == 0 && JavaActive == 0 && JsActive == 0)
+            {
+                TipManager.instance.InvokeNoActiveTasksTip();
+            }
         }
     }
 }
