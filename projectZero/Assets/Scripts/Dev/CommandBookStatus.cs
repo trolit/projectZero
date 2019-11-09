@@ -14,10 +14,10 @@ namespace Console
         public CommandBookStatus()
         {
             Name = "Command book status";
-            Command = "getStateOfAllBooks";
+            Command = "getStateOfBooks";
             Description = "Returns state of each book whether it was read first time or not and bought or not.";
-            Help = "Syntax: getStateOfAllBooks";
-            Example = "getStateOfAllBooks";
+            Help = "Syntax: getStateOfBooks";
+            Example = "getStateOfBooks";
 
             AddCommandToConsole();
         }
