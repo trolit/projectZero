@@ -54,7 +54,7 @@ namespace Assets.Scripts.Game.Player
 
                 IsMoving = true;
 
-                if(SfxSource.isPlaying == false && IsMoving)
+                if(SfxSource.isPlaying == false && IsMoving && Time.timeScale == 1f)
                     SfxSource.Play();
             }
         }
