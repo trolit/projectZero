@@ -207,6 +207,8 @@ namespace Assets.Scripts.Game
 
             ClearIntTypedKeys(otherKeys);
 
+            ClearBookReadFirstTimeKeys(bookKeys);
+
             PlayerPrefs.Save();
         }
 
@@ -223,6 +225,14 @@ namespace Assets.Scripts.Game
             foreach (var key in array)
             {
                 PlayerPrefs.SetInt(key + "passed", 0);
+            }
+        }
+
+        private void ClearBookReadFirstTimeKeys(string[] array)
+        {
+            foreach (var key in array)
+            {
+                PlayerPrefs.SetInt(key + "_isReadFirstTime", 0);
             }
         }
     }
