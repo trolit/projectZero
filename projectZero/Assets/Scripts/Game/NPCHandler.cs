@@ -198,6 +198,13 @@ namespace Assets.Scripts.Game
 
                 _playerVector3 = other.transform.position;
 
+                var interactWithNpcTipState = PlayerPrefs.GetInt("interactNpcTip");
+
+                if (interactWithNpcTipState == 0)
+                {
+                    TipManager.instance.InvokeInteractionWithNpcTip();
+                }
+
                 // Debug.Log("Player went in area of conversation!");
             }
         }

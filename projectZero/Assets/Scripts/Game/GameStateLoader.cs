@@ -49,6 +49,15 @@ namespace Assets.Scripts.Game
                 // Reset IsContinue value
                 SceneLoader.IsContinue = false;
             }
+            else
+            {
+                var newGameTipState = PlayerPrefs.GetInt("startGameTip");
+
+                if (newGameTipState == 0)
+                {
+                    TipManager.instance.InvokeNewGameTip();
+                }
+            }
         }
     }
 }
