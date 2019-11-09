@@ -194,7 +194,9 @@ namespace Assets.Scripts.Game
                 "html",
                 "php",
                 "java",
-                "javascript"
+                "javascript",
+                "interactNpcTip",
+                "startGameTip"
             };
 
             #endregion
