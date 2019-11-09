@@ -8,7 +8,7 @@ namespace Assets.Scripts.Game
         public static TipManager instance = null;
 
         [SerializeField]
-        [Tooltip("Setting this on true will cause the tips to appear every time the action is performed.")]
+        [Tooltip("Setting this on true will cause the tips to be NOT SAVED WHEN CLOSED.")]
         private bool _isUnderTest = false;
 
         [SerializeField]
