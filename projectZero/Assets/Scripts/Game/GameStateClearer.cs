@@ -205,8 +205,6 @@ namespace Assets.Scripts.Game
 
             ClearIntTypedKeys(otherKeys);
 
-            ClearUniquePassedKeys(levelKeys);
-
             PlayerPrefs.Save();
         }
 
