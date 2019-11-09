@@ -198,7 +198,8 @@ namespace Assets.Scripts.Game
                 "interactNpcTip",
                 "startGameTip",
                 "bookStoreTip",
-                "noActiveTasksTip"
+                "noActiveTasksTip",
+                "finishOneLandTip"
             };
 
             #endregion
