@@ -77,5 +77,10 @@ Ze względu na zakres wykonanych zadań Project Zero traktuję jako pełnoprawny
 oczekiwanie na publikacje. oczekiwanie na publikacje. oczekiwanie na publikacje. oczekiwanie na publikacje.
 </p>
 
-### Zrzuty ekranu z gry
-<do późniejszej publikacji>
+### Zrzuty ekranu
+|  |  |  |
+| :---:  | :---:  | :---:  |
+| <img src="https://github.com/trolit/projectZero/blob/storage/photos/readme/1.PNG" alt="Wczytywanie menu" width="350px" height="140px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/readme/2.PNG" alt="Panel z medalami" width="350px" height="140px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/readme/3.PNG" alt="Tworzenie postaci" width="350px" height="140px"></img> |
+| <img src="https://github.com/trolit/projectZero/blob/storage/photos/readme/4.PNG" alt="Widok z menu" width="350px" height="140px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/readme/5.PNG" alt="Ustawienia grafiki" width="350px" height="140px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/readme/6.PNG" alt="Panel z nagrodami" width="350px" height="140px"></img> | 
+| <img src="https://github.com/trolit/projectZero/blob/storage/photos/readme/7.PNG" alt="Wygląd z konsoli" width="350px" height="140px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/readme/8.PNG" alt="Wczytywanie poziomu PHP" width="350px" height="140px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/readme/9.PNG" alt="Wczytywanie poziomu JavaScript" width="350px" height="140px"></img> |
+| <img src="https://github.com/trolit/projectZero/blob/storage/photos/readme/10.PNG" alt="Widok ze świata Project Zero" width="350px" height="140px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/readme/11.PNG" alt="Menu pod przyciskiem Escape w trakcie gry" width="350px" height="140px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/readme/12.PNG" alt="Rozmowa z NPC" width="350px" height="140px"></img> |
