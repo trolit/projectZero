@@ -13,7 +13,10 @@
 <a href="https://www.techopedia.com/definition/32207/target-platform"><img src="https://img.shields.io/badge/Platforma-Win32/Win64-green?style=for-the-badge&color=blueviolet" style="max-height: 300px;"></a> 
 <a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Framework-4.7.1-blueviolet.svg?style=for-the-badge&logo=.NET" style="max-height: 300px;"></a>
 <a href="https://unity3d.com/get-unity/download/archive"><img src="https://img.shields.io/badge/Wersja-2018.3.12f1-orange?color=blueviolet&style=for-the-badge&logo=unity" style="max-height: 300px;"></a>
-<a href="https://en.wikipedia.org/wiki/MIT_License"><img src="https://img.shields.io/badge/Licencja-MIT-blueviolet?style=for-the-badge" style="max-height: 300px;"></a>
+<a href="https://en.wikipedia.org/wiki/MIT_License"><img src="https://img.shields.io/badge/Licencja-MIT-blueviolet?style=for-the-badge" style="max-height: 300px;"></a> <br/>
+<a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Waga%20repozytorium (master)-X MB-blue?color=CD5C5C&style=for-the-badge" style="max-height: 300px;"></a>
+<a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Waga%20projektu-XYZ MB-blue?color=CD5C5C&style=for-the-badge" style="max-height: 300px;"></a>
+ <a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Waga%20gry-XYZ MB-blue?color=CD5C5C&style=for-the-badge" style="max-height: 300px;"></a>
 </p>
 
 ## O projekcie
