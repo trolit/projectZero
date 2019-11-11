@@ -28,6 +28,8 @@ namespace Assets.Scripts.Game.Inventory
 
         private bool _isInteractable = false;
 
+        public static bool IsBookOpen = false;
+
         private void Awake()
         {
             if (_logoTexture == null)
@@ -52,6 +54,8 @@ namespace Assets.Scripts.Game.Inventory
         {
             _bookObject.SetActive(true);
 
+            IsBookOpen = true;
+
             var isBookOpenedFirstTime = PlayerPrefs.GetInt(_bookKey + "_isReadFirstTime");
 
             if (isBookOpenedFirstTime == 0)
@@ -60,7 +64,7 @@ namespace Assets.Scripts.Game.Inventory
 
                 _notifierAnimator.SetBool("isNotifierInvoked", true);
 
-                Invoke("HideNotifier", 7f);
+                Invoke("HideNotifier", 8f);
 
                 if (_isUnderTest == false)
                 {
@@ -80,6 +84,8 @@ namespace Assets.Scripts.Game.Inventory
         {
             if (gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.K))
             {
+                IsBookOpen = false;
+
                 _bookObject.SetActive(false);
             }
         }

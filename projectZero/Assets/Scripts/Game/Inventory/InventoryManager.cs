@@ -10,18 +10,9 @@ namespace Assets.Scripts.Game.Inventory
         // Update is called once per frame
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.B))
+            if (Input.GetKeyDown(KeyCode.B) && BookHandler.IsBookOpen == false)
             {
                 _inventoryUi.SetActive(!_inventoryUi.activeInHierarchy);
-
-                //if (_inventoryUi.activeInHierarchy)       --> Pausing game makes book pages stuttering :( 
-                //{
-                //    Time.timeScale = 0f;
-                //}
-                //else
-                //{
-                //    Time.timeScale = 1f;
-                //}
             }
         }
     }
