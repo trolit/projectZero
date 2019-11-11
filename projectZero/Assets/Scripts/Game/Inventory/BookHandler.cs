@@ -86,6 +86,8 @@ namespace Assets.Scripts.Game.Inventory
             {
                 IsBookOpen = false;
 
+                HideNotifier();
+
                 _bookObject.SetActive(false);
             }
         }
@@ -110,8 +112,6 @@ namespace Assets.Scripts.Game.Inventory
 
         private void IncreaseSkillLevel()
         {
-            Debug.Log("Language key is -> " + _languageKey);
-
             var presentSkill = 0;
 
             switch (_languageKey)
