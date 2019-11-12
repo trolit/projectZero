@@ -122,6 +122,9 @@ Zdjęcia z etapu projektowania gry znaleźć można w <a href="https://github.co
 ### Wideo z projektowania
 Adresy do klipów wideo umieszczonych w serwisie youtube z etapu projektowania gry dostępne są <a href="https://github.com/trolit/projectZero/issues/35">tutaj</a>.
 
+### Analiza  
+Analizę odblokowań poziomów, prezentacji wynagrodzeń, kar można znaleźć <a href="https://github.com/trolit/projectZero/issues/5">w tym</a> poście natomiast wycenę książek <a href="https://github.com/trolit/projectZero/issues/38">tutaj</a>.
+
 ### Klucze 
 Wszystkie użyte klucze w projekcie wraz z opisem dostępne są w <a href="https://github.com/trolit/projectZero/issues/4" target="_blank">tym</a> wątku.
 
