@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -70,7 +71,9 @@ namespace Assets.Scripts.Game
 
                 _slider.value = progress;
 
-                _progressText.text = progress * 100f + "%";
+                var calculatedProgress = progress * 100f;
+
+                _progressText.text = $"{calculatedProgress:0.00} %";
 
                 yield return null;
             }
