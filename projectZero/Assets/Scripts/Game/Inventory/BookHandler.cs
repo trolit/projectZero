@@ -44,7 +44,7 @@ namespace Assets.Scripts.Game.Inventory
         {
             if (_isInteractable == false)
             {
-                SetButtonInteractibility();
+                SetButton();
             }
 
             CloseBookOnKey();
@@ -92,12 +92,14 @@ namespace Assets.Scripts.Game.Inventory
             }
         }
 
-        private void SetButtonInteractibility()
+        private void SetButton()
         {
             var bookStatus = PlayerPrefs.GetInt(_bookKey);
 
             if (bookStatus != 1) // if the book has not been bought yet
             {
+                _button.GetComponentInChildren<Text>().text = "Niedostępna";
+
                 _button.interactable = false;
 
                 _isInteractable = false;
