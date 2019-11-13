@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Game.Inventory;
+using UnityEngine;
 
 namespace Assets.Scripts.Game.Player
 {
@@ -54,7 +55,8 @@ namespace Assets.Scripts.Game.Player
 
                 IsMoving = true;
 
-                if(SfxSource.isPlaying == false && IsMoving && Time.timeScale >= 1f)
+                if(SfxSource.isPlaying == false && IsMoving &&
+                   Time.timeScale >= 1f && InventoryManager.IsInventoryOpened == false)
                     SfxSource.Play();
             }
         }
@@ -70,42 +72,45 @@ namespace Assets.Scripts.Game.Player
                 Speed = _startingSpeed;
             }
 
-            // Move forward
-            if (Input.GetKey(KeyCode.W))
+            if (InventoryManager.IsInventoryOpened == false)
             {
-                _transform.AddForce(new Vector3(0, 0, 5) * Speed, ForceMode.VelocityChange);
+                // Move forward
+                if (Input.GetKey(KeyCode.W))
+                {
+                    _transform.AddForce(new Vector3(0, 0, 5) * Speed, ForceMode.VelocityChange);
 
-                if (Pickup.IsHolding == false)
-                    _transform.rotation = Quaternion.LookRotation(Vector3.forward);
+                    if (Pickup.IsHolding == false)
+                        _transform.rotation = Quaternion.LookRotation(Vector3.forward);
+                }
+
+                // Move left
+                if (Input.GetKey(KeyCode.A))
+                {
+                    _transform.AddForce(new Vector3(-5, 0, 0) * Speed, ForceMode.VelocityChange);
+
+                    if (Pickup.IsHolding == false)
+                        _transform.rotation = Quaternion.LookRotation(Vector3.left);
+                }
+
+                // Move back
+                if (Input.GetKey(KeyCode.S))
+                {
+                    _transform.AddForce(new Vector3(0, 0, -5) * Speed, ForceMode.VelocityChange);
+
+                    if (Pickup.IsHolding == false)
+                        _transform.rotation = Quaternion.LookRotation(Vector3.back);
+                }
+
+                // Move right
+                if (Input.GetKey(KeyCode.D))
+                {
+                    _transform.AddForce(new Vector3(5, 0, 0) * Speed, ForceMode.VelocityChange);
+
+                    if (Pickup.IsHolding == false)
+                        _transform.rotation = Quaternion.LookRotation(Vector3.right);
+                }
             }
-
-            // Move left
-            if (Input.GetKey(KeyCode.A))
-            {
-                _transform.AddForce(new Vector3(-5, 0, 0) * Speed, ForceMode.VelocityChange);
-
-                if (Pickup.IsHolding == false)
-                    _transform.rotation = Quaternion.LookRotation(Vector3.left);
-            }
-
-            // Move back
-            if (Input.GetKey(KeyCode.S))
-            {
-                _transform.AddForce(new Vector3(0, 0, -5) * Speed, ForceMode.VelocityChange);
-
-                if(Pickup.IsHolding == false)
-                    _transform.rotation = Quaternion.LookRotation(Vector3.back);
-            }
-
-            // Move right
-            if (Input.GetKey(KeyCode.D))
-            {
-                _transform.AddForce(new Vector3(5, 0, 0) * Speed, ForceMode.VelocityChange);
-
-                if (Pickup.IsHolding == false)
-                    _transform.rotation = Quaternion.LookRotation(Vector3.right);
-            }
-
+           
             // Apply little falling force
             _transform.AddForce(new Vector3(0, -2, 0) * Speed, ForceMode.VelocityChange);
         }
