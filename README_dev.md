@@ -4,6 +4,9 @@
 
 ## Dokumentacja developera
 
+### Ciekawostki
+- liczba linii kodu katalogu Scripts na 13.11.19 - **5 435** (nie liczą się puste linie, tylko z jednego skryptu "Pad<numer>Check" zliczono linie)
+
 ### Mechanika
 <p align="justify">
 :small_orange_diamond:Gracz tworzy swoją postać nadając jej pseudonim, wybierając model spośród dostępnych oraz przyznając punkty umiejętności z podstawowej puli. Nie jest obowiązkowym nadanie pseudonimu, wybranie modelu i rozdanie wszystkich dostępnych punktów do rozdysponowania. Gracz ma pełną dowolność. <br/>
