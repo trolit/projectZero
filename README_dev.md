@@ -6,6 +6,20 @@
 
 ### Ciekawostki
 - liczba linii kodu katalogu Scripts na 13.11.19 - **5 435** (nie liczą się puste linie, tylko z jednego skryptu "Pad<numer>Check" zliczono linie)
+- liczba skryptów katalogu Scripts - ok. **92** (skrypty typu PadCheck które są od 2 do 9 zliczony tylko raz)
+- 40 podkładów muzycznych (po 1 na dany poziom) to łącznie **2 godziny 17 minut**
+- najdłużej trwającą czynnością było projektowanie (design) otoczenia mini-gier aby był zróżnicowany
+- najbardziej męczącą czynnością było projektowanie mini-gier z otoczeniem drzew (szczególnie dla języka PHP)
+- najlepszym pomysłem było wdrożenie konsoli deweloperskiej z racji skali projektu (okazała się dużą pomocą w testowaniu)
+- projekt na dzień dzisiejszy (16.11.19) waży **2,15GB**
+- początkowo nie było planu aby umieszczać coś w ksiażkach ale to się zmieniło po odkryciu fajnej biblioteki do animacji książek. Generalnie jak był coraz większy postęp w projekcie - zaczęły przychodzić kolejne pomysły na jej rozwój.
+- nagrody za medale, medale oraz dodatkowa postać nie były planowane
+- na terenie krainy C# mieli być ludzie ale nie było dostępnego ciekawego assetu
+- jako najbardziej złożony skrypt zakwalifikowac można NPCHandler 
+- najwięcej problemów było z przygotowaniem skryptu Pickup na minigrze typu Puzzle (efekt nie był taki jaki oczekiwano) ale został przerobiony i teraz wygląda lepiej 
+- gdyby nie (powolne) rozpoczęcie projektu już w czerwcu to na 100% nie zostałby ukończony
+- projekt osiągnął 41 dyskusji na github z czego 3 opatrzono znaczkiem 'bug'
+- plecak miał być początkowo faktycznym plecakiem w którym są puste miejsca i jak się zakupi książki to do tych pustych miejsc zostają wrzucone. Z racji ograniczenia czasu wybrano wariant lżejszy czyli "panel z wszystkimi książkami" jednak aby je przeczytać należy je wykupić.
 
 ### Mechanika
 <p align="justify">
