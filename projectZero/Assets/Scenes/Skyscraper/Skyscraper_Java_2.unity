@@ -57332,18 +57332,21 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "<color=yellow>Zagadka 1) </color>W pierwszym pytaniu poprawn\u0105 odpowiedzi\u0105
-        by\u0142o <color=yellow>lubie C#</color> bo tak sobie wyobra\u017Ai\u0142em
-        i je\u017Celi masz z tym problem to zg\u0142o\u015B si\u0119 do promotora.
-        Testowe uzasadnienie. \n<color=yellow>Zagadka 2) </color>Lorem ipsum bo lorem
-        ipsum Lorem ipsum bo lorem ipsumLorem ipsum bo lorem ipsumLorem ipsum bo lorem
-        ipsumLorem ipsum bo lorem ipsumLorem ipsum bo lorem ipsum\n<color=yellow>Zagadka
-        3) </color> Lorem ipsum bo lorem ipsum Lorem ipsum bo lorem ipsumLorem ipsum
-        bo lorem ipsumLorem ipsum bo lorem ipsumLorem ipsum bo lorem ipsum\n<color=yellow>Zagadka
-        4) </color> Lorem ipsum bo lorem ipsum Lorem ipsum bo lorem ipsumLorem ipsum
-        bo lorem ipsumLorem ipsum bo lorem ipsumLorem ipsum bo lorem ipsum\n<color=yellow>Zagadka
-        5) </color> Lorem ipsum bo lorem ipsum Lorem ipsum bo lorem ipsumLorem ipsum
-        bo lorem ipsumLorem ipsum bo lorem ipsumLorem ipsum bo lorem ipsum"
+      value: "<color=yellow>Zagadka 1) </color>Je\u015Bli chcemy zmienn\u0105 typu
+        mniejszego (np. int) przekaza\u0107 do zmiennej typu wi\u0119kszego (np. double),
+        kompilator sam wykona rzutowanie typ\xF3w. B\u0119dzie wi\u0119c to rzutowanie
+        automatyczne. \n<color=yellow>Zagadka 2) </color>Metoda length() mo\u017Ce
+        s\u0142u\u017Cy\u0107 do zliczania znak\xF3w danej zmiennej typu string (
+        nazwaZmiennej.length(); ).\n<color=yellow>Zagadka 3) </color> Metoda concat()
+        s\u0142u\u017Cy do konkatenacji, czyli \u0142\u0105czenia w jeden \u0142a\u0144cuch
+        znak\xF3w, zmiennych typu string (  System.out.println(nazwaZmiennej_1.concat(nazwaZmiennej_2));
+        \ ).\n<color=yellow>Zagadka 4) </color> Je\u015Bli przed znakiem specjalnym
+        (tzn. np. cudzys\u0142\xF3w, backslash), zamieszczonym wewn\u0105trz zmiennej
+        typu string, nie postawi si\u0119 znaku backslash, np. String txt = \"Powiedzial
+        \"Juz ide.\" \", wyst\u0105pi b\u0142\u0105d.\n<color=yellow>Zagadka 5) </color>
+        Je\u015Bli zmienna typu boolean b\u0119dzie argumentem funkcji println, na
+        ekranie zostanie wypisane true lub false, w zale\u017Cno\u015Bci od tego,
+        jak\u0105 warto\u015B\u0107 ma ta zmienna."
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}

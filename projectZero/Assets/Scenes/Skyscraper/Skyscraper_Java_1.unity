@@ -62568,18 +62568,22 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "<color=yellow>Zagadka 1) </color>W pierwszym pytaniu poprawn\u0105 odpowiedzi\u0105
-        by\u0142o <color=yellow>lubie C#</color> bo tak sobie wyobra\u017Ai\u0142em
-        i je\u017Celi masz z tym problem to zg\u0142o\u015B si\u0119 do promotora.
-        Testowe uzasadnienie. \n<color=yellow>Zagadka 2) </color>Lorem ipsum bo lorem
-        ipsum Lorem ipsum bo lorem ipsumLorem ipsum bo lorem ipsumLorem ipsum bo lorem
-        ipsumLorem ipsum bo lorem ipsumLorem ipsum bo lorem ipsum\n<color=yellow>Zagadka
-        3) </color> Lorem ipsum bo lorem ipsum Lorem ipsum bo lorem ipsumLorem ipsum
-        bo lorem ipsumLorem ipsum bo lorem ipsumLorem ipsum bo lorem ipsum\n<color=yellow>Zagadka
-        4) </color> Lorem ipsum bo lorem ipsum Lorem ipsum bo lorem ipsumLorem ipsum
-        bo lorem ipsumLorem ipsum bo lorem ipsumLorem ipsum bo lorem ipsum\n<color=yellow>Zagadka
-        5) </color> Lorem ipsum bo lorem ipsum Lorem ipsum bo lorem ipsumLorem ipsum
-        bo lorem ipsumLorem ipsum bo lorem ipsumLorem ipsum bo lorem ipsum"
+      value: "<color=yellow>Zagadka 1) </color>Poleceniem s\u0142u\u017Cacym do tego,
+        \u017Ceby na ekranie zosta\u0142o co\u015B wypisane, jest System.out.println(toCoMaBy\u0107Wypisane).
+        println pochodzi od s\u0142\xF3w print line.\n<color=yellow>Zagadka 2) </color>Je\u015Bli
+        chcemy zmienn\u0105 typu wi\u0119kszego (np. double) przekaza\u0107 do zmiennej
+        typu mniejszego (np. int), kompilator sam nie wykona rzutowania typ\xF3w.
+        Trzeba wi\u0119c wykona\u0107 rzutowanie r\u0119cznie, np. double x = 9.75;
+        int y = (int) x;\n<color=yellow>Zagadka 3) </color> Operator + mo\u017Ce s\u0142u\u017Cy\u0107
+        do wykonywania matematycznego dzia\u0142ania dodawania, inkrementacji warto\u015Bci
+        zmiennych liczbowych, a tak\u017Ce do konkatenacji (\u0142\u0105czenia w jeden
+        \u0142a\u0144cuch znak\xF3w) zmiennych typu string.\n<color=yellow>Zagadka
+        4) </color> Do wypisania znak\xF3w specjalnych (np. cudzys\u0142\xF3w, backslash),
+        zamieszczonych wewn\u0105trz zmiennej typu string, s\u0142u\u017Cy znak backslash
+        umieszczony bezpo\u015Brednio przed takim znakiem, np. String txt = \"Powiedzial
+        \\\"Juz ide.\\\".\";\n<color=yellow>Zagadka 5) </color> Warto\u015Bci\u0105
+        zmiennej typu boolean jest zawsze tylko true lub false, niezale\u017Cnie od
+        tego, jak\u0105 nadamy jej nazw\u0119."
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
