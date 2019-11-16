@@ -85250,11 +85250,6 @@ PrefabInstance:
     - target: {fileID: 1892338142909531974, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
@@ -85496,20 +85491,19 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "<color=orange>Zagadka 1) </color>Sygna\u0142em, \u017Ce w dokumencie
-        <color=magenta>HTML</color> rozpoczyna si\u0119 cz\u0119\u015B\u0107 b\u0119d\u0105ca
-        programem w j\u0119zyku <color=orange>PHP</color>, mo\u017Ce by\u0107 <?php.
-        \n<color=orange>Zagadka 2) </color>Polecenie echo s\u0142u\u017Cy do wypisania
-        na ekranie tekstu uj\u0119tego w cudzys\u0142\xF3w, np: echo \"Pisz\u0119
-        o poleceniu echo\".\n<color=orange>Zagadka 3) </color> Komentarze w <color=orange>PHP</color>
-        mo\u017Cna zaznacza\u0107 u\u017Cywaj\u0105c znaku # (hash), np.\r\n# To jest
-        komentarz\n<color=orange>Zagadka 4) </color> Konkatenacji dw\xF3ch zmiennych
-        typu string w j\u0119zyku <color=orange>PHP</color> mo\u017Cna dokona\u0107
-        przy pomocy znaku . (kropki), np. $a = 'Czesc';   $b = 'Zenek';   $c = $a.$b;
-        \  echo \"$c\";    #Wynikiem b\u0119dzie napis: Czesc Zenek \n<color=orange>Zagadka
-        5) </color> Je\u015Bli chcemy rozszerzy\u0107 warto\u015B\u0107 zmiennej typu
-        string o nowe znaki, mo\u017Cna dokona\u0107 tego stosuj\u0105c operator konkatenacji
-        .= (np. $kto = \"Adam\"; $kto .= \"Maslowski\"; - teraz warto\u015Bci\u0105
-        zmiennej kto b\u0119dzie Adam Maslowski)."
+        HTML rozpoczyna si\u0119 cz\u0119\u015B\u0107 b\u0119d\u0105ca programem w
+        j\u0119zyku <color=orange>PHP</color>, mo\u017Ce by\u0107 <?php. \n<color=orange>Zagadka
+        2) </color>Polecenie echo s\u0142u\u017Cy do wypisania na ekranie tekstu uj\u0119tego
+        w cudzys\u0142\xF3w, np: echo \"Pisz\u0119 o poleceniu echo\".\n<color=orange>Zagadka
+        3) </color> Komentarze w <color=orange>PHP</color> mo\u017Cna zaznacza\u0107
+        u\u017Cywaj\u0105c znaku # (hash), np.\r\n# To jest komentarz\n<color=orange>Zagadka
+        4) </color> Konkatenacji dw\xF3ch zmiennych typu string w j\u0119zyku <color=orange>PHP</color>
+        mo\u017Cna dokona\u0107 przy pomocy znaku . (kropki), np. $a = 'Czesc';   $b
+        = 'Zenek';   $c = $a.$b;   echo \"$c\";    #Wynikiem b\u0119dzie napis: Czesc
+        Zenek \n<color=orange>Zagadka 5) </color> Je\u015Bli chcemy rozszerzy\u0107
+        warto\u015B\u0107 zmiennej typu string o nowe znaki, mo\u017Cna dokona\u0107
+        tego stosuj\u0105c operator konkatenacji .= (np. $kto = \"Adam\"; $kto .=
+        \"Maslowski\"; - teraz warto\u015Bci\u0105 zmiennej kto b\u0119dzie Adam Maslowski)."
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -85570,6 +85564,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "Dowiedz si\u0119 wi\u0119cej o <color=orange>PHP</color>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
