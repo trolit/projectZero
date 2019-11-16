@@ -75385,18 +75385,19 @@ PrefabInstance:
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_Text
-      value: "<color=orange>Zagadka 1) </color>W pierwszym pytaniu poprawn\u0105 odpowiedzi\u0105
-        by\u0142o <color=orange>lubie PHP</color> bo tak sobie wyobra\u017Ai\u0142em
-        i je\u017Celi masz z tym problem to zg\u0142o\u015B si\u0119 do promotora.
-        Testowe uzasadnienie. \r\n<color=orange>Zagadka 2) </color>Lorem ipsum bo
-        lorem ipsum Lorem ipsum bo lorem ipsumLorem ipsum bo lorem ipsumLorem ipsum
-        bo lorem ipsumLorem ipsum bo lorem ipsumLorem ipsum bo lorem ipsum\r\n<color=orange>Zagadka
-        3) </color> Lorem ipsum bo lorem ipsum Lorem ipsum bo lorem ipsumLorem ipsum
-        bo lorem ipsumLorem ipsum bo lorem ipsumLorem ipsum bo lorem ipsum\r\n<color=orange>Zagadka
-        4) </color> Lorem ipsum bo lorem ipsum Lorem ipsum bo lorem ipsumLorem ipsum
-        bo lorem ipsumLorem ipsum bo lorem ipsumLorem ipsum bo lorem ipsum\r\n<color=orange>Zagadka
-        5) </color> Lorem ipsum bo lorem ipsum Lorem ipsum bo lorem ipsumLorem ipsum
-        bo lorem ipsumLorem ipsum bo lorem ipsumLorem ipsum bo lorem ipsum"
+      value: "<color=orange>Zagadka 1) </color>Sygna\u0142em, \u017Ce w dokumencie
+        <color=magenta>HTML</color> ko\u0144czy si\u0119 cz\u0119\u015B\u0107 b\u0119d\u0105ca
+        programem w j\u0119zyku <color=orange>PHP</color>, mo\u017Ce by\u0107 ?>.
+        \r\n<color=orange>Zagadka 2) </color>W j\u0119zyku <color=orange>PHP</color>
+        \u015Brednika, podobnie jak w innych j\u0119zykach programowania, u\u017Cywa
+        si\u0119 do  tego, by wskaza\u0107, gdzie ko\u0144czy si\u0119 polecenie.\r\n<color=orange>Zagadka
+        3) </color> Znak \\ (backslash) jest stosowany do tego, by wskaza\u0107, kt\xF3re
+        znaki specjalne (np. cudzys\u0142\xF3w) powinny by\u0107 zacytowane, a nie
+        traktowane jak cz\u0119\u015B\u0107 polecenia.\n<color=orange>Zagadka 4) </color>
+        Znak $ stosowany jest w j\u0119zyku <color=orange>PHP</color> do tego, by
+        zadeklarowa\u0107 zmienn\u0105 i odwo\u0142ywa\u0107 si\u0119 do niej, np.
+        $imie = \"Adam\"; echo $imie;\r\n<color=orange>Zagadka 5) </color> Funkcj\u0119
+        w programie wywo\u0142ujemy poprzez jej nazw\u0119, np. zmierzCisnienie();"
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631204, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -75408,10 +75409,20 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 35
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338142016631210, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338143118689139, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_Name
-      value: Description
+      propertyPath: m_AnchoredPosition.y
+      value: -478
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892338142315868344, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892338141756605053, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -100.125
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142016631211, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
@@ -75433,20 +75444,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 438.28
       objectReference: {fileID: 0}
-    - target: {fileID: 1892338143118689139, guid: 126f51190d27ec5469d88838e3497290,
+    - target: {fileID: 1892338142016631210, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -478
-      objectReference: {fileID: 0}
-    - target: {fileID: 1892338142315868344, guid: 126f51190d27ec5469d88838e3497290,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -59
-      objectReference: {fileID: 0}
-    - target: {fileID: 1892338141756605053, guid: 126f51190d27ec5469d88838e3497290,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -100.125
+      propertyPath: m_Name
+      value: Description
       objectReference: {fileID: 0}
     - target: {fileID: 1892338142315868351, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
