@@ -106,6 +106,8 @@ namespace Assets.Scripts.Game.Inventory
             }
             else
             {
+                _button.GetComponentInChildren<Text>().text = "Przeczytaj";
+
                 _button.interactable = true;
 
                 _isInteractable = true;
