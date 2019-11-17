@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Game.Player;
+using UnityEngine;
 
 namespace Assets.Scripts.Game.Shop
 {
@@ -16,6 +17,8 @@ namespace Assets.Scripts.Game.Shop
         private bool _isInShopArea = false;
 
         private AudioSource _audioSource;
+
+        public static bool IsShopOpened = false;
 
         private void Start()
         {
@@ -48,6 +51,8 @@ namespace Assets.Scripts.Game.Shop
                 if (Input.GetKeyDown(KeyCode.K))
                 {
                     _shopUi.SetActive(!_shopUi.activeInHierarchy);
+
+                    IsShopOpened = _shopUi.activeInHierarchy;
                 }
             }         
         }

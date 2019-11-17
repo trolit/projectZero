@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Game.Inventory;
+using Assets.Scripts.Game.Shop;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -80,7 +81,8 @@ namespace Assets.Scripts.Game.Player
             // Debug.Log("Paused? => " + PauseMenu.GameIsPaused);
 
             if (Input.GetKeyDown(KeyCode.I) && PauseMenu.GameIsPaused == false
-                                            && BookHandler.IsBookOpen == false)
+                                            && BookHandler.IsBookOpen == false
+                                            && ShopManager.IsShopOpened == false)
             {
                 if (_gameIsPaused)
                 {
