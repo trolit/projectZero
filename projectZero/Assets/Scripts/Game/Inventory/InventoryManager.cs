@@ -14,7 +14,8 @@ namespace Assets.Scripts.Game.Inventory
         {
             if (Input.GetKeyDown(KeyCode.B) 
                 && BookHandler.IsBookOpen == false
-                && MapToggler.IsMapOpened == false)
+                && MapToggler.IsMapOpened == false
+                && NPCHandler.IsDuringConversation == false)
             {
                 _inventoryUi.SetActive(!_inventoryUi.activeInHierarchy);
 

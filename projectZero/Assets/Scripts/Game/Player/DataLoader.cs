@@ -85,7 +85,8 @@ namespace Assets.Scripts.Game.Player
             if (Input.GetKeyDown(KeyCode.I) && PauseMenu.GameIsPaused == false
                                             && BookHandler.IsBookOpen == false
                                             && ShopManager.IsShopOpened == false
-                                            && MapToggler.IsMapOpened == false)
+                                            && MapToggler.IsMapOpened == false
+                                            && NPCHandler.IsDuringConversation == false)
             {
                 if (_gameIsPaused)
                 {

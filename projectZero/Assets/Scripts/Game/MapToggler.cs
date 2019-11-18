@@ -16,7 +16,8 @@ namespace Assets.Scripts.Game
             if (Input.GetKeyDown(KeyCode.M)
                 && PauseMenu.GameIsPaused == false 
                 && DataLoader.IsDataLoaderActivated == false
-                && InventoryManager.IsInventoryOpened == false)
+                && InventoryManager.IsInventoryOpened == false
+                && NPCHandler.IsDuringConversation == false)
             {
                 _mapGameObject.SetActive(!_mapGameObject.activeInHierarchy);
 
