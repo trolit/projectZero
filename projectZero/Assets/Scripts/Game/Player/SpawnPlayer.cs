@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Game.Player
 {
@@ -29,6 +30,10 @@ namespace Assets.Scripts.Game.Player
 
         private void Start()
         {
+            var activeScene = SceneManager.GetActiveScene().name;
+
+            bool isActiveSceneMenu = activeScene == "Menu" ? true : false;
+
             var pickedModel = PlayerPrefs.GetInt("model");
 
             if (pickedModel == 1) // Cactus
@@ -42,9 +47,10 @@ namespace Assets.Scripts.Game.Player
                 movement.SfxSource.clip = _cactusJump;
                 movement.SfxSource.volume = 0.2f;
 
-
-                SetYouAreHere.instance.Character = Cactus;
-
+                if (isActiveSceneMenu)
+                {
+                    SetYouAreHere.instance.Character = Cactus;
+                }
             }
             else if (pickedModel == 2) // Slime
             {
@@ -56,8 +62,10 @@ namespace Assets.Scripts.Game.Player
                 movement.SfxSource = _sfxSource;
                 movement.SfxSource.clip = _slimeJump;
 
-
-                SetYouAreHere.instance.Character = Slime;
+                if (isActiveSceneMenu)
+                {
+                    SetYouAreHere.instance.Character = Slime;
+                }
             }
             else if (pickedModel == 3) // Robot
             {
@@ -70,8 +78,10 @@ namespace Assets.Scripts.Game.Player
                 movement.SfxSource.clip = _robotJump;
                 movement.SfxSource.volume = 0.2f;
 
-
-                SetYouAreHere.instance.Character = Robot;
+                if (isActiveSceneMenu)
+                {
+                    SetYouAreHere.instance.Character = Robot;
+                }
             }
             else if (pickedModel == 4) // Knight
             {
@@ -84,8 +94,10 @@ namespace Assets.Scripts.Game.Player
                 movement.SfxSource.clip = _knightMove;
                 movement.SfxSource.volume = 0.2f;
 
-
-                SetYouAreHere.instance.Character = Knight;
+                if (isActiveSceneMenu)
+                {
+                    SetYouAreHere.instance.Character = Knight;
+                }
             }
             else
             {

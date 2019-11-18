@@ -32403,6 +32403,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4484256e7ebbe4a4eab77924649bab61, type: 2}
+    - target: {fileID: 1769355802952226, guid: 43739d3c57ae2ba4cbe919f44dba1d09, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4670754590690618, guid: 43739d3c57ae2ba4cbe919f44dba1d09, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.041530784
@@ -32446,10 +32450,6 @@ PrefabInstance:
     - target: {fileID: 1528351437569502, guid: 43739d3c57ae2ba4cbe919f44dba1d09, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1769355802952226, guid: 43739d3c57ae2ba4cbe919f44dba1d09, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 135677541693518864, guid: 43739d3c57ae2ba4cbe919f44dba1d09, type: 3}
@@ -42018,6 +42018,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1892338142909531970, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -42278,11 +42283,6 @@ PrefabInstance:
         <color=lime>zm</color>. Skrajny przyk\u0142ad: <color=lime>for(;;)</color>
         jest te\u017C prawid\u0142owy. Musimy pami\u0119ta\u0107 o tym aby liczba
         \u015Brednik\xF3w (2) si\u0119 zgadza\u0142a."
-      objectReference: {fileID: 0}
-    - target: {fileID: 1892338143094095031, guid: 126f51190d27ec5469d88838e3497290,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
@@ -42678,11 +42678,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6637786476861686424, guid: 694f31b33622f194ba089f46e83ebb37,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1553325756290397556, guid: 694f31b33622f194ba089f46e83ebb37,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -42717,16 +42712,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8811571963505569682, guid: 694f31b33622f194ba089f46e83ebb37,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8811571963505569682, guid: 694f31b33622f194ba089f46e83ebb37,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 694f31b33622f194ba089f46e83ebb37, type: 3}
