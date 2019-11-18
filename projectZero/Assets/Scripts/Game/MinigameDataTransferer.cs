@@ -10,6 +10,9 @@ namespace Assets.Scripts.Game
         // Use this on button
         public void LaunchMiniGame()
         {
+            // Reset bool value IsDuringConversation
+            NPCHandler.IsDuringConversation = false;
+
             var sceneName = NPCHandler.SceneToLoadName;
 
             if (string.IsNullOrWhiteSpace(sceneName) == false)
