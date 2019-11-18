@@ -95,9 +95,9 @@ namespace Assets.Scripts.Game
 
                 while (NavMeshAgent.pathPending == false)
                 {
-                    Debug.Log("Path not reachable !");
-                    Debug.Log("Coordinates: (X - " + NavMeshAgent.destination.x + ")" +
-                              " (Z - " + NavMeshAgent.destination.z + ")");
+                    //Debug.Log("Path not reachable !");
+                    //Debug.Log("Coordinates: (X - " + NavMeshAgent.destination.x + ")" +
+                    //          " (Z - " + NavMeshAgent.destination.z + ")");
 
                     yield return new WaitForSeconds(0.01f);
 
