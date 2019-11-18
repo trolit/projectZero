@@ -32,8 +32,6 @@ namespace Assets.Scripts.Game
 
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                var activeSceneName = SceneManager.GetActiveScene().name;
-
                 if (GameIsPaused && AudioMenu.activeInHierarchy == false)
                 {
                     Resume();
@@ -42,8 +40,7 @@ namespace Assets.Scripts.Game
                 {
                     AudioText.text = "Aby wrócić do poprzedniego ekranu <color=yellow>naciśnij przycisk powrotu</color>.";
                 }
-                else if ((MapToggler.IsMapOpened == true && activeSceneName == "Map") ||
-                         NPCHandler.IsDuringConversation == true)
+                else if (MapToggler.IsMapOpened == true || NPCHandler.IsDuringConversation == true)
                 {
                     // Do nothing
                 }
