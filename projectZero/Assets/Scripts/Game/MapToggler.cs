@@ -19,6 +19,8 @@ namespace Assets.Scripts.Game
                 && InventoryManager.IsInventoryOpened == false
                 && NPCHandler.IsDuringConversation == false)
             {
+                SetYouAreHere.instance.UpdateCharacterLocation();
+
                 _mapGameObject.SetActive(!_mapGameObject.activeInHierarchy);
 
                 IsMapOpened = _mapGameObject.activeInHierarchy;
