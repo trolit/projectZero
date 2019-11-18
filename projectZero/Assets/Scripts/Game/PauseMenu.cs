@@ -40,6 +40,10 @@ namespace Assets.Scripts.Game
                 {
                     AudioText.text = "Aby wrócić do poprzedniego ekranu <color=yellow>naciśnij przycisk powrotu</color>.";
                 }
+                else if (MapToggler.IsMapOpened == true)
+                {
+                    // Do nothing
+                }
                 else
                 {
                     Pause();

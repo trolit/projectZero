@@ -47,6 +47,8 @@ namespace Assets.Scripts.Game.Player
 
         public Text JavascriptText;
 
+        public static bool IsDataLoaderActivated = false;
+
         // Start is called before the first frame update
         private void Start()
         {
@@ -82,11 +84,14 @@ namespace Assets.Scripts.Game.Player
 
             if (Input.GetKeyDown(KeyCode.I) && PauseMenu.GameIsPaused == false
                                             && BookHandler.IsBookOpen == false
-                                            && ShopManager.IsShopOpened == false)
+                                            && ShopManager.IsShopOpened == false
+                                            && MapToggler.IsMapOpened == false)
             {
                 if (_gameIsPaused)
                 {
                     Resume();
+
+                    IsDataLoaderActivated = false;
                 }
                 else
                 {
@@ -99,6 +104,9 @@ namespace Assets.Scripts.Game.Player
                     SetLanguage(CSharpSlider, CSharpText, "csharp");
                     LoadMoney();
                     LoadName();
+
+                    IsDataLoaderActivated = true;
+
                     Pause();
                 }
             }

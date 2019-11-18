@@ -56,7 +56,8 @@ namespace Assets.Scripts.Game.Player
                 IsMoving = true;
 
                 if(SfxSource.isPlaying == false && IsMoving &&
-                   Time.timeScale >= 1f && InventoryManager.IsInventoryOpened == false)
+                   Time.timeScale >= 1f && InventoryManager.IsInventoryOpened == false
+                   && MapToggler.IsMapOpened == false)
                     SfxSource.Play();
             }
         }
@@ -72,7 +73,7 @@ namespace Assets.Scripts.Game.Player
                 Speed = _startingSpeed;
             }
 
-            if (InventoryManager.IsInventoryOpened == false)
+            if (InventoryManager.IsInventoryOpened == false && MapToggler.IsMapOpened == false)
             {
                 // Move forward
                 if (Input.GetKey(KeyCode.W))
