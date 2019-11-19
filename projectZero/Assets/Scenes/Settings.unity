@@ -7619,7 +7619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.96229744, b: 0, a: 1}
+  m_Color: {r: 0.9372549, g: 0.7529412, b: 0.3137255, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8244,7 +8244,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3fe86dc1c4efecc4f88ac3734f1444b7, type: 3}
-    m_FontSize: 22
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -8256,8 +8256,9 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\n\n\n\n(nale\u017Cy by\u0107 w wyznaczonym obszarze sklepu)\n\n(dzia\u0142a
-    tylko b\u0119d\u0105c na \u015Bwiecie)\n(dzia\u0142a tylko b\u0119d\u0105c na
-    \u015Bwiecie)\n(istota musi posiada\u0107 zadanie)"
+    tylko b\u0119d\u0105c w \u015Bwiecie Project Zero)\n(dzia\u0142a tylko b\u0119d\u0105c
+    w \u015Bwiecie Project Zero)\n(istota musi posiada\u0107 zadanie)\n(dzia\u0142a
+    tylko b\u0119d\u0105c w \u015Bwiecie Project Zero)"
 --- !u!222 &1844269498
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9418,7 +9419,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3fe86dc1c4efecc4f88ac3734f1444b7, type: 3}
-    m_FontSize: 22
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -9429,12 +9430,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<color=#FF8E00>W</color> - ruch do przodu\n<color=#FF8E00>A</color> - ruch
-    w lewo\n<color=#FF8E00>S</color> - ruch do ty\u0142u\n<color=#FF8E00>D</color>
-    - ruch w prawo\n<color=#FF8E00>K</color> - wej\u015Bcie/wyj\u015Bcie do/z sklepu
-    \n<color=#FF8E00>Escape</color> - menu \n<color=#FF8E00>I</color> - informacje
-    o bohaterze\n<color=#FF8E00>B</color> - plecak z ksi\u0105\u017Ckami\n<color=#FF8E00>F</color>
-    - wej\u015Bcie w interakcje z istot\u0105\n"
+  m_Text: "<color=#FFCB4C>W</color> - ruch do przodu\n<color=#FFCB4C>A</color> - ruch
+    w lewo\n<color=#FFCB4C>S</color> - ruch do ty\u0142u\n<color=#FFCB4C>D</color>
+    - ruch w prawo\n<color=#FFCB4C>K</color> - wej\u015Bcie/wyj\u015Bcie do/z sklepu
+    \n<color=#FFCB4C>Escape</color> - menu \n<color=#FFCB4C>I</color> - informacje
+    o bohaterze, zadaniach\n<color=#FFCB4C>B</color> - panel z ksi\u0105\u017Ckami\n<color=#FFCB4C>F</color>
+    - wej\u015Bcie w interakcje z istot\u0105\n<color=#FFCB4C>M</color> - podgl\u0105d
+    mapy"
 --- !u!222 &2000655174
 CanvasRenderer:
   m_ObjectHideFlags: 0

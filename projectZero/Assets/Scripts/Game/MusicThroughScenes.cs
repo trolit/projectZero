@@ -38,8 +38,7 @@ namespace Assets.Scripts.Game
                 currentScene != "Settings" &&
                 currentScene != "Prizes" &&
                 currentScene != "Medals" &&
-                currentScene != "CharacterCreation" &&
-                currentScene != "Credits")
+                currentScene != "CharacterCreation")
             {
                 Destroy(gameObject);
 

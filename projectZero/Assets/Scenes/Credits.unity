@@ -121,6 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 167009361}
+  - component: {fileID: 167009362}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -141,15 +142,33 @@ RectTransform:
   m_Children:
   - {fileID: 848166573}
   - {fileID: 738519795}
-  - {fileID: 250334951}
   m_Father: {fileID: 1719842244}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 3, y: -426}
+  m_AnchoredPosition: {x: 3, y: -432}
   m_SizeDelta: {x: 961.7, y: 520.6}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &167009362
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167009360}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0dd04a049ea3ec94a90aa66aa683099c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &216727885
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,8 +203,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -214, y: -443}
-  m_SizeDelta: {x: 373.3, y: 428}
+  m_AnchoredPosition: {x: -214, y: -3729.2}
+  m_SizeDelta: {x: 373, y: 7000.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &216727887
 MonoBehaviour:
@@ -220,8 +239,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\n<b>Promotor</b>\n\n<b>Tw\xF3rcy gry Project Zero</b>\n\n<b>Tw\xF3rcy
-    muzyki</b>\n\n<b>Tw\xF3rcy grafik</b>\n\n<b>Tw\xF3rcy model\xF3w</b>\n\n"
+  m_Text: "\n<b>Promotor / opiekun</b>\n\n<b>Tw\xF3rcy gry Project Zero</b>\n\n\n<b>Muzyka</b>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<b>Grafiki</b>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<b>Efekty
+    d\u017Awi\u0119kowe</b>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<b>Modele / assety
+    </b>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<b>Czcionki</b>\n\n\n\n\n\n\n\n\n\n\n<b>Podzi\u0119kowania</b>\n\n\n\n"
 --- !u!222 &216727888
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -259,13 +279,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 167009361}
+  m_Father: {fileID: 738519795}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -847}
-  m_SizeDelta: {x: 702.8, y: 196.4}
+  m_AnchoredPosition: {x: 74.74997, y: -7420.6}
+  m_SizeDelta: {x: 950.5, y: 382.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &250334952
 MonoBehaviour:
@@ -300,7 +320,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "<color=#000080>WMiI</color> \n\n"
+  m_Text: "Project Zero\n<color=#8888FF>WMiI</color> \nRok akademicki 2019/2020\nIn\u017Cynieria
+    System\xF3w Informatycznych\n\nDowiedz si\u0119 wi\u0119cej na\n<color=\"#EFC050\">https://github.com/trolit/projectZero</color>\n\n\n\n\n"
 --- !u!222 &250334953
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -559,6 +580,7 @@ RectTransform:
   m_Children:
   - {fileID: 216727886}
   - {fileID: 1963306194}
+  - {fileID: 250334951}
   m_Father: {fileID: 167009361}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -637,7 +659,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Gra edukacyjna - Project Zero\nzrealizowana w ramach pracy in\u017Cynierskiej\n\n<color=#000080>Wydzia\u0142
+  m_Text: "Gra edukacyjna - Project Zero\nzrealizowana w ramach pracy in\u017Cynierskiej\n\n<color=#8888FF>Wydzia\u0142
     Matematyki i Informatyki</color> \nUniwersytetu Warmi\u0144sko-Mazurskiego\n"
 --- !u!222 &848166575
 CanvasRenderer:
@@ -727,6 +749,7 @@ GameObject:
   - component: {fileID: 907133824}
   - component: {fileID: 907133823}
   - component: {fileID: 907133822}
+  - component: {fileID: 907133825}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -798,6 +821,103 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &907133825
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907133821}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 028211aee7075324cbd8798d737b3be2,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: b1213e9e8bccb554bae02df746262af5, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1043810293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,8 +1378,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 137.4, y: -443.02002}
-  m_SizeDelta: {x: 329.5, y: 428}
+  m_AnchoredPosition: {x: 274.88, y: -3729.2}
+  m_SizeDelta: {x: 550, y: 7000.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1963306195
 MonoBehaviour:
@@ -1288,13 +1408,82 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 184
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\ndr Piotr Jastrz\u0119bski\n\nPawe\u0142 Idzikowski\nAdam Grabowski"
+  m_Text: "\ndr Piotr Jastrz\u0119bski\n\n\nPawe\u0142 Idzikowski\nAdam Grabowski\n\nScott
+    Holmes - Story Book\nBenjamin Tissot - Dreams\nBenjamin Tissot - Downtown\nBenjamin
+    Tissot - Psychedelic\nKevin MacLeod - Impact prelude\nBenjamin Tissot - Birth
+    of a hero\nKevin MacLeod - DD Groove\nKetsa - Dusty Hills\nScott Holmes - Upbeat
+    Party\nKevin MacLeod - Clean Soul\nYung Kartz - Wise guy\nKai Engel - Moonlight
+    Reprise\neddy - Through the tunnels\nScott Holmes - Happy ukulele\nScott Holmes
+    - Follow your dreams\nGillicuddy - Springish\nBlue Dot Sessions - We collect shiny
+    things\nDavid Renda - Elven forest\nDavid Fesliyan - Beautiful Memories\nKevin
+    MacLeod - Pippin The Hunchback\nKevin MacLeod - Carefree\nBenjamin Tissot - Photo
+    album\nBenjamin Tissot - Groovy hip hop\nBenjamin Tissot - ERF\nBlue Dot Sessions
+    - Slow rollout\nBenjamin Tissot - Inspire\nBenjamin Tissot - Perception\nKevin
+    MacLeod - Unity\nKevin MacLeod - Return of the mummy\nBenjamin Tissot - A day
+    to remember\nBenjamin Tissot - Ukulele\nKevin MacLeod - Autumn day\nAndrea Carri
+    - Frammenti\nange - Snowfall\nBenjamin Tissot - A new beginning\nKevin MacLeod
+    - Mountain Emperor\nkrackatoa - Pretend and walk outside\nBenjamin Tissot - Cute\nPodington
+    Bear - Starling\nLost European - Robot Coupe\n\nFreepik - Html 5 (flaticon.com)\r\nPiotr
+    Felszy\u0144ski - logo UWM\r\nicons8 - C Sharp logo 2\r\nFreepik - Backpack (flaticon.com)\r\nSmashicons
+    - Menu (flaticon.com)\r\nFreepik - Java (flaticon.com)\r\nPezibear - glitzrig
+    (pixabay.com)\r\nWichai.wi - Success (flaticon.com)\r\nGood Ware - Award (flaticon.com)\r\nFreepik
+    - Award (flaticon.com)\r\nSmashicons - Speaker (flaticon.com)\r\nFreepik - Crusader
+    (flaticon.com)\r\nSmashicons - Banner (flaticon.com)\r\nPixel perfect - Lock free
+    (flaticon.com)\r\nRoundicons - Gold medal (flaticon.com)\r\nSmashicons - Id card
+    (flaticon.com)\r\nWissawa Khamsriwath - Sun (flaticon.com)\r\nlillaby - wood (pixabay.com)\r\njeonsango
+    - wood texture (pixabay.com)\r\nPexels - gold design color (pixabay.com)\r\nVintageSnips
+    - q. mark. (pixabay.com)\r\njeonsango - brick texture (pixabay.com)\r\nOpenClipArt
+    - dialog cloud (pixabay.com)\r\nClker-Free - arrow (pixabay.com)\r\nsurang - helmet
+    (flaticon.com)\r\nFreepik - helmet (flaticon.com)\r\nGood Ware - dog (flaticon.com)\r\nFreepik
+    - dog (flaticon.com)\r\nDarius Dan - dog (flaticon.com)\r\nFreepik - penguin (flaticon.com)\r\nVectors
+    Market - Settings (flaticon.com)\r\nFreepik - cat (flaticon.com)\r\nFreepik -
+    mouse (flaticon.com)\r\nFreepik - rabbit (flaticon.com)\r\nFreepik - information
+    (flaticon.com)\r\nFreepik - books (flaticon.com)\r\nPettycon - money (pixabay.com)\r\nFreepik
+    - notes (flaticon.com)\r\nGood Ware - agenda (flaticon.com)\r\nFreepik - school
+    material (flaticon.com)\r\nFreepik - reader (flaticon.com)\r\nFreepik - comic
+    book (flaticon.com)\r\nSmashicons - Quran (flaticon.com)\r\nSmashicons - Investment
+    (flaticon.com)\r\nFreepik - back arrow (flaticon.com)\r\nFreepik - planet earth
+    (flaticon.com)\r\nFreepik - side menu (flaticon.com)\r\nFreepik - update arrow
+    (flaticon.com)\r\nGregor Cresnar - bug (flaticon.com)\r\nFreepik - cactus (flaticon.com)\r\nSmashicons
+    - settings (flaticon.com)\r\nFreepick - robot (flaticon.com)\r\nSmashicons - notebook
+    (flaticon.com)\r\nSmashicons - agenda (flaticon.com)\r\nAlfredo Hernandez - sold
+    (flaticon.com)\r\nSmashicons - coins (flaticon.com)\r\nTrinh Ho - hexagon (flaticon.com)\r\nFreepik
+    - book shop (flaticon.com)\r\nFlat icons - help (flaticon.com)\r\nSmashicons -
+    bell (flaticon.com)\r\nVectors Market - checklist (flaticon.com)\r\nFreepik -
+    placeholder (flaticon.com)\r\nSmashicons - map (flaticon.com)\r\ngeralt - AI,
+    brain (pixabay.com)\r\nFreepik - Gears in Bald Head (flaticon.com)\r\nFreepik
+    - JS (flaticon.com)\r\nFreepik - Php (flaticon.com)\r\nFreepik - Panda (flaticon.com)\r\nstux
+    - blackboard, school (pixabay.com)\n\nChickens clucking - ALexander (CC 4.0)\nDog
+    barking - Felix Blume (CC 0)\nCat Meow - SoundEffectsFactory \nMeowingSound -
+    SoundEffectsKing (CC 3.0)\nPenguin Call - Sound Design/Tools\nSound Effects Of
+    Mouse - nBeat \nRabbit Sound Effect - Audio Raptor\nWinning sound - Alexander
+    (CC BY-NC 4.0)\nBoing Sound - Alexander (CC BY-NC 4.0)\nBroken flower pot - SoundEffectsHD
+    (CC)\nRobot movement - Fenek Studio (CC)\nError Sound - Mike Koenig (CC 3.0)\nCoin
+    Pick Up - Alexander (CC BY-NC 4.0)\nWrong Answer - Alexander (CC 4.0)\nCorrect
+    Answer - Alexander (CC BY-NC 4.0)\nCat Meow - Alexander (Public domain)\nCash
+    Register - Alexander (CC BY-NC 4.0)\nShopkeepers Bell - Alexander (CC BY-NC 4.0)\nSoldier
+    Walking - SoundEffectsFactory (Medartimus)\n\nMaksim Bugrimov - Cactus\r\nAmusedart
+    - Slime Rabbit\r\nViuletti - Low poly city\r\nPolygon Land - Simple City\r\nDungeon
+    Mason - Mosue knight\r\nWhite Rabbit - Niwashi Games\r\nElcanetay - Low Poly Nature\r\nAurynsky
+    - Desert low poly pack\r\nAurynsky - Winter forest low pack\r\nAurynsky - Forest
+    low poly pack\r\nIronWarrior - ToonWaterShader\r\nKeith - Modular Village pack\r\nJannie
+    - Medieval buildings pack\r\nVoxelguy - 5 animated animals\r\nTryall - winter
+    forest pack\r\nFalse wisp studios - snowy low poly trees\r\nEmaceart - raft on
+    desert\r\nrunemarkstudio - poly desert\r\nJhan Gutierrez - low poly nature pack\r\nDavid
+    Stenfors - low poly forest pack\r\nKenney - nature pack\r\nKorveen - Lowpoly environment\r\nfree3d
+    - mummy hand\r\nfree3d - wood picket\r\nquaternius - knight\r\nRunemark Studio
+    - polydesert\r\nJaks - low poly forest pack\r\naornbringer - low poly nature\n\nCandra
+    Hamdani - The Bredan \r\nK-Type - Keep Calm\r\n212 fonts - 212 Keyboard\r\nDJB
+    Fonts - DJB Chalk It Up\r\n7NTypes - Gobold\r\nAugust Calligraphy - August\r\nLuce
+    Averous - TrashHand\r\nTypodermic Fonts - Dealerplate California\r\n50 Fox - Imperfecta
+    Rough\r\nGaldino Otten - Sketch 3D\r\n\nBrackeys (youtube)\r\nSpeedTutor (youtube)\r\nJoe
+    The Lantern (youtube)\r\nNFA78 (youtube)\r\n\n\r\n\r\n\r\n\r\n\r\n \n\n\n\n\n\n"
 --- !u!222 &1963306196
 CanvasRenderer:
   m_ObjectHideFlags: 0
