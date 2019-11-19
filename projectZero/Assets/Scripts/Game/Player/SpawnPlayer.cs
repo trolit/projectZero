@@ -32,7 +32,7 @@ namespace Assets.Scripts.Game.Player
         {
             var activeScene = SceneManager.GetActiveScene().name;
 
-            bool isActiveSceneMenu = activeScene == "Menu" ? true : false;
+            bool isActiveSceneMenu = activeScene == "Map" ? true : false;
 
             var pickedModel = PlayerPrefs.GetInt("model");
 
