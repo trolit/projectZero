@@ -109,6 +109,46 @@ namespace Assets.Scripts.Game
             }
         }
 
+        // Used in BookHandler script
+        // When someone buys book while on map
+        // - it updates details panel values 
+        public void HandleValueManually(string key)
+        {
+            switch (key)
+            {
+                case "C#":
+                    if (CsharpInActive > 0)
+                        CsharpInActive--;
+
+                    CsharpActive++;
+                    break;
+                case "HTML":
+                    if (HtmlInActive > 0)
+                        HtmlInActive--;
+
+                    HtmlActive++;
+                    break;
+                case "PHP":
+                    if (PhpInActive > 0)
+                        PhpInActive--;
+
+                    PhpActive++;
+                    break;
+                case "JAVASCRIPT":
+                    if (JsInActive > 0)
+                        JsInActive--;
+
+                    JsActive++;
+                    break;
+                case "JAVA":
+                    if (JavaInActive > 0)
+                        JavaInActive--;
+
+                    JavaActive++;
+                    break;
+            }
+        }
+
         public void UpdateTextValues()
         {
             _csharpActiveText.text = "<color=lime>" + CsharpActive + "</color>";

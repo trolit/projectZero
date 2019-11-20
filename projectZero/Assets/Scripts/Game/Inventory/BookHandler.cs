@@ -124,6 +124,8 @@ namespace Assets.Scripts.Game.Inventory
                     var pastSkill = PlayerPrefs.GetInt("csharp");
                     presentSkill = pastSkill + 1;
 
+                    LevelCounter.instance.HandleValueManually("C#");
+
                     if (_isUnderTest == false)
                     {
                         PlayerPrefs.SetInt("csharp", presentSkill);
@@ -133,6 +135,8 @@ namespace Assets.Scripts.Game.Inventory
                 case "html":
                     pastSkill = PlayerPrefs.GetInt("html");
                     presentSkill = pastSkill + 1;
+
+                    LevelCounter.instance.HandleValueManually("HTML");
 
                     if (_isUnderTest == false)
                     {
@@ -144,6 +148,8 @@ namespace Assets.Scripts.Game.Inventory
                     pastSkill = PlayerPrefs.GetInt("php");
                     presentSkill = pastSkill + 1;
 
+                    LevelCounter.instance.HandleValueManually("PHP");
+
                     if (_isUnderTest == false)
                     {
                         PlayerPrefs.SetInt("php", presentSkill);
@@ -154,6 +160,8 @@ namespace Assets.Scripts.Game.Inventory
                     pastSkill = PlayerPrefs.GetInt("java");
                     presentSkill = pastSkill + 1;
 
+                    LevelCounter.instance.HandleValueManually("JAVA");
+
                     if (_isUnderTest == false)
                     {
                         PlayerPrefs.SetInt("java", presentSkill);
@@ -163,6 +171,8 @@ namespace Assets.Scripts.Game.Inventory
                 case "javascript":
                     pastSkill = PlayerPrefs.GetInt("javascript");
                     presentSkill = pastSkill + 1;
+
+                    LevelCounter.instance.HandleValueManually("JAVASCRIPT");
 
                     if (_isUnderTest == false)
                     {
