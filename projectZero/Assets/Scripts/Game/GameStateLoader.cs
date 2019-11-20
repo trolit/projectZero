@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using Assets.Scripts.Game.Inventory;
+using Assets.Scripts.Game.Shop;
 using UnityEngine;
 
 namespace Assets.Scripts.Game
@@ -48,6 +50,12 @@ namespace Assets.Scripts.Game
 
                 // Reset IsContinue value
                 SceneLoader.IsContinue = false;
+
+                // Reset other values 
+                ResetFlags();
+
+                // Set to normal time (in case)
+                Time.timeScale = 1f;
             }
             else
             {
@@ -58,6 +66,15 @@ namespace Assets.Scripts.Game
                     TipManager.instance.InvokeNewGameTip();
                 }
             }
+        }
+
+        private void ResetFlags()
+        {
+            BookHandler.IsBookOpen = false;
+            MapToggler.IsMapOpened = false;
+            NPCHandler.IsDuringConversation = false;
+            PauseMenu.GameIsPaused = false;
+            ShopManager.IsShopOpened = false;
         }
     }
 }
