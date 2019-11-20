@@ -238,6 +238,10 @@ namespace Assets.Scripts.Game
             }
             else
             {
+                QuestionSign.SetActive(true);
+
+                _miniMapSign.SetActive(true);
+
                 _isLevelPlayable = true;
             }
         }
