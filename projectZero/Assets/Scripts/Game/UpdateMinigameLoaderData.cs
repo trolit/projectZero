@@ -83,7 +83,7 @@ namespace Assets.Scripts.Game
                         _sceneImage.texture = _imagesList[6];
                         break;
                     case "Maze_JS_2":
-                        _sceneImage.texture = _imagesList[6];
+                        _sceneImage.texture = _imagesList[7];
                         break;
                     case "Skyscraper_JS_1":
                         _sceneImage.texture = _imagesList[36];
