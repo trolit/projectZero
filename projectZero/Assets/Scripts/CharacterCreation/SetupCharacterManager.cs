@@ -82,9 +82,18 @@ namespace Assets.Scripts.CharacterCreation
         }
 
         private void Start()
-        {            
-            // Default model is 1 (cactus)
-            PlayerPrefs.SetInt("model", 1);
+        {
+            var previousModel = PlayerPrefs.GetInt("model");
+
+            if (previousModel != 0)
+            {
+                PlayerPrefs.SetInt("model", previousModel);
+            }
+            else
+            {
+                // Default model is 1 (cactus)
+                PlayerPrefs.SetInt("model", 1);
+            }
         }
 
         private void Update()
