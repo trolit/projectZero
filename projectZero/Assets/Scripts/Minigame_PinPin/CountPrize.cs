@@ -27,9 +27,9 @@ namespace Assets.Scripts.Minigame_PinPin
 
         public void SendMoney()
         {
-            var res = Time.realtimeSinceStartup;
+            var currentMoney = PlayerPrefs.GetInt("money");
 
-            PlayerPrefs.SetInt("money", _prize);
+            PlayerPrefs.SetInt("money", currentMoney + _prize);
         }
     }
 }

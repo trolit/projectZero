@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Minigame_Skyscraper;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Game
 {
@@ -25,7 +27,7 @@ namespace Assets.Scripts.Game
 
         private void Start()
         {
-            _winWindow.SetActive(true);
+            _winWindow.SetActive(true);    
 
             _source.PlayOneShot(_winSound);
         }

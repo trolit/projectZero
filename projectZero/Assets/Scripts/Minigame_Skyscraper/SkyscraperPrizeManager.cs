@@ -14,11 +14,6 @@ namespace Assets.Scripts.Minigame_Skyscraper
 
         public void TransferMoney()
         {
-            if (_prize < 0)
-            {
-                _prize = 0;
-            }
-
             var currentMoney = PlayerPrefs.GetInt("money");
 
             var newMoney = currentMoney + _prize;
@@ -34,6 +29,11 @@ namespace Assets.Scripts.Minigame_Skyscraper
         private void Awake()
         {
             _prize = CountSkyscraperPrize();
+
+            if (_prize < 0)
+            {
+                _prize = 0;
+            }
 
             _prizeText.text = _prize.ToString();
         }
