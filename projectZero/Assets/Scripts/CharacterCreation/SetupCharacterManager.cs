@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -84,10 +85,13 @@ namespace Assets.Scripts.CharacterCreation
         private void Start()
         {
             var previousModel = PlayerPrefs.GetInt("model");
+            int[] arr = {1, 2, 3, 4};
 
-            if (previousModel != 0)
+            if (arr.Contains(previousModel))
             {
                 PlayerPrefs.SetInt("model", previousModel);
+
+                _pickedCharacterId = previousModel;
             }
             else
             {
