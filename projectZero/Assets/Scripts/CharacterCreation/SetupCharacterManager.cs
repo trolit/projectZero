@@ -93,6 +93,8 @@ namespace Assets.Scripts.CharacterCreation
             {
                 // Default model is 1 (cactus)
                 PlayerPrefs.SetInt("model", 1);
+
+                _pickedCharacterId = 1;
             }
         }
 
