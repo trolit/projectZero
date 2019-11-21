@@ -1,10 +1,24 @@
 ﻿using Assets.Scripts.Game;
+using EasyButtons;
 using UnityEngine;
 
 namespace Assets.Scripts.Minigame_Puzzle
 {
     public class Verify_3X3 : MonoBehaviour
     {
+        [Button]
+        public void CheckPadsStates()
+        {
+            Debug.Log("Pad2 => " + Pad2Result);
+            Debug.Log("Pad3 => " + Pad3Result);
+            Debug.Log("Pad4 => " + Pad4Result);
+            Debug.Log("Pad5 => " + Pad5Result);
+            Debug.Log("Pad6 => " + Pad6Result);
+            Debug.Log("Pad7 => " + Pad7Result);
+            Debug.Log("Pad8 => " + Pad8Result);
+            Debug.Log("Pad9 => " + Pad9Result);
+        }
+
         protected static bool Pad2Result;
 
         protected static bool Pad3Result;
@@ -60,20 +74,10 @@ namespace Assets.Scripts.Minigame_Puzzle
 
         private void Update()
         {
-            //Debug.Log("Pad2 => " + Pad2Result);
-            //Debug.Log("Pad3 => " + Pad3Result);
-            //Debug.Log("Pad4 => " + Pad4Result);
-            //Debug.Log("Pad5 => " + Pad5Result);
-            //Debug.Log("Pad6 => " + Pad6Result);
-            //Debug.Log("Pad7 => " + Pad7Result);
-            //Debug.Log("Pad8 => " + Pad8Result);
-            //Debug.Log("Pad9 => " + Pad9Result);
-
             if (Pad2Result && Pad3Result && Pad4Result
                 && Pad5Result && Pad6Result && Pad7Result
                 && Pad8Result && Pad9Result)
             {
-                Debug.Log("I am actually on => " + gameObject.name);
                 var script = GetComponent<WinScript>();
 
                 script.enabled = true;
