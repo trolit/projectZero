@@ -21,10 +21,6 @@ namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
 
                 enabled = false;
             }
-            else
-            {
-                Pad3Result = false;
-            }
         }
     }
 }
