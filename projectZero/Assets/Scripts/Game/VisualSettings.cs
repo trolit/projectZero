@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using EasyButtons;
 
 namespace Assets.Scripts.Game
 {
@@ -22,6 +23,17 @@ namespace Assets.Scripts.Game
 
         // arrays here
         Resolution[] _resolutions;
+
+        [Button]
+        public void ViewActualSettings()
+        {
+            Debug.Log("Quality index => " + PlayerPrefs.GetInt("quality"));
+            Debug.Log("Screen width => " + PlayerPrefs.GetInt("width"));
+            Debug.Log("Screen height => " + PlayerPrefs.GetInt("height"));
+            Debug.Log("Texture quality => " + PlayerPrefs.GetInt("text_q"));
+            Debug.Log("VSync status  => " + PlayerPrefs.GetInt("vsync"));
+            Debug.Log("Fullscreen status => " + PlayerPrefs.GetInt("fullscreen"));
+        }
 
         private void Start()
         {
