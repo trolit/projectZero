@@ -99,11 +99,6 @@ namespace Assets.Scripts.Game
 
                 Language = _languageKey;
 
-                //Debug.Log("Name => " + _dialogue.Name);
-                //Debug.Log("First sentence => " + _dialogue.Sentences[0]);
-                //Debug.Log("Photo => " + _npcAvatar.name);
-                // Debug.Log("Launching from " + gameObject.name);
-
                 _npcAvatarPlaceHolder.texture = _npcAvatar;
 
                 _empirePlaceHolder.texture = _empireAvatar;
@@ -159,9 +154,12 @@ namespace Assets.Scripts.Game
 
                     while (NavMeshAgent.pathPending == false)
                     {
-                        Debug.Log("Path not reachable !");
-                        Debug.Log("Coordinates: (X - " + NavMeshAgent.destination.x + ")" +
-                                  " (Z - " + NavMeshAgent.destination.z + ")");
+                        if (Debug.isDebugBuild)
+                        {
+                            Debug.Log("Path not reachable !");
+                            Debug.Log("Coordinates: (X - " + NavMeshAgent.destination.x + ")" +
+                                      " (Z - " + NavMeshAgent.destination.z + ")");
+                        }
 
                         yield return new WaitForSeconds(0.01f);
 
