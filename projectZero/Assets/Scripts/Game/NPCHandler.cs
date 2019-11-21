@@ -248,7 +248,7 @@ namespace Assets.Scripts.Game
 
         private void CheckIfLevelWasCompleted()
         {
-            var levelStatus = PlayerPrefs.GetInt(_sceneKey + "passed");
+            var levelStatus = PlayerPrefs.GetInt(_sceneKey);
 
             // 1 means level is completed
             if (levelStatus == 1)
