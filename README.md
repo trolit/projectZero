@@ -1,9 +1,15 @@
 <p align="center">
  <img src="https://github.com/trolit/projectZero/blob/storage/photos/front.jpg?raw=true" height="450">
- <a href="https://github.com/trolit/projectZero/blob/master/README_dev.md"><img src="https://img.shields.io/badge/DOKUMENTACJA%20DLA%20DEVELOPERA%20(KLIKNIJ%20ABY%20PRZEJ%C5%9A%C4%86)-gray?color=9d3647&style=for-the-badge&logo=dev.to" style="max-height: 550px;"></a>
 </p>
 
- ## Tagi
+## Menu
+<p align="left">
+ <a href="https://github.com/trolit/projectZero"><img src="https://img.shields.io/badge/Dokumentacja%20dla%20u%C5%BCytkownika (tu jesteś)-gray?color=6B5B95&style=for-the-badge&logo=lgtm"></a> </br>
+ <a href="https://github.com/trolit/projectZero/blob/master/README_dev.md"><img src="https://img.shields.io/badge/DOKUMENTACJA%20DLA%20DEVELOPERA-gray?color=009B77&style=for-the-badge&logo=dev.to" style="max-height: 550px;"></a> <br/>
+ <a href="https://github.com/trolit/projectZero/blob/master/CREDITS.md"><img src="https://img.shields.io/badge/UZNANIA-gray?color=5B5EA6&style=for-the-badge&logo=showpad" style="max-height: 550px;"></a>
+</p>
+
+## Tagi
  
 <p align="center">
 <a href="https://en.wikipedia.org/wiki/List_of_video_game_genres"><img src="https://img.shields.io/badge/Gatunek-Sandbox%20RPG,%20Edukacyjna-blue?color=66a103&style=for-the-badge" style="max-height: 300px;"></a>
