@@ -562,6 +562,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 14097486}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &16391890 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 744152071347772504, guid: e4493422f2ee2274c886b783b4364538,
+    type: 3}
+  m_PrefabInstance: {fileID: 1231899425}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &16391891
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16391890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 8f4df8118466c81408568d777ac8f055, type: 3}
 --- !u!1001 &22307141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86467,15 +86487,16 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 42
       objectReference: {fileID: 0}
-    - target: {fileID: 8024199981459156011, guid: f083664868c7e9447bec8f0ecadbd761,
+    - target: {fileID: 8024199980080300606, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -478.7
+      propertyPath: m_Text
+      value: MINI-GRA LABIRYNT
       objectReference: {fileID: 0}
-    - target: {fileID: 8024199981459156011, guid: f083664868c7e9447bec8f0ecadbd761,
+    - target: {fileID: 8024199980427543649, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -415
+      propertyPath: m_Text
+      value: "W - ruch w prz\xF3d\nA - ruch w lewo\nS - ruch w ty\u0142\nD - ruch
+        w prawo"
       objectReference: {fileID: 0}
     - target: {fileID: 8024199979698410973, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
@@ -86487,16 +86508,15 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 8024199980080300606, guid: f083664868c7e9447bec8f0ecadbd761,
+    - target: {fileID: 8024199981459156011, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
-      propertyPath: m_Text
-      value: MINI-GRA LABIRYNT
+      propertyPath: m_AnchoredPosition.x
+      value: -478.7
       objectReference: {fileID: 0}
-    - target: {fileID: 8024199980427543649, guid: f083664868c7e9447bec8f0ecadbd761,
+    - target: {fileID: 8024199981459156011, guid: f083664868c7e9447bec8f0ecadbd761,
         type: 3}
-      propertyPath: m_Text
-      value: "W - ruch w prz\xF3d\nA - ruch w lewo\nS - ruch w ty\u0142\nD - ruch
-        w prawo"
+      propertyPath: m_AnchoredPosition.y
+      value: -415
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f083664868c7e9447bec8f0ecadbd761, type: 3}
@@ -86628,15 +86648,15 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8811571963904838047, guid: 694f31b33622f194ba089f46e83ebb37,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8811571963205313613, guid: 694f31b33622f194ba089f46e83ebb37,
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811571963904838047, guid: 694f31b33622f194ba089f46e83ebb37,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8811571963000713353, guid: 694f31b33622f194ba089f46e83ebb37,
         type: 3}
