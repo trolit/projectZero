@@ -1,7 +1,7 @@
 <p align="left">
  <a href="https://github.com/trolit/projectZero"><img src="https://img.shields.io/badge/Dokumentacja%20dla%20u%C5%BCytkownika-gray?color=6B5B95&style=for-the-badge&logo=lgtm"></a> </br>
  <a href="https://github.com/trolit/projectZero/blob/master/README_dev.md"><img src="https://img.shields.io/badge/DOKUMENTACJA%20DLA%20DEVELOPERA-gray?color=009B77&style=for-the-badge&logo=dev.to" style="max-height: 550px;"></a> <br/>
- <a href="bb"><img src="https://img.shields.io/badge/UZNANIA-gray?color=5B5EA6&style=for-the-badge&logo=showpad" style="max-height: 550px;"></a>
+<img src="https://img.shields.io/badge/UZNANIA (tu jesteś)-gray?color=5B5EA6&style=for-the-badge&logo=showpad" style="max-height: 550px;">
 </p>
 
 
