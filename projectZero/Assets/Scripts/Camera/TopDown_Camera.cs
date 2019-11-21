@@ -62,7 +62,7 @@ namespace Assets.Scripts.Camera
             HandleCamera();
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             HandleCamera();
         }
