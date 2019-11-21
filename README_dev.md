@@ -1,8 +1,11 @@
-<p align="center">
-<a href="https://github.com/trolit/projectZero"><img src="https://img.shields.io/badge/DOKUMENTACJA%20DLA%20UŻYTKOWNIKA%20(KLIKNIJ%20ABY%20PRZEJ%C5%9A%C4%86)-gray?color=986F8E&style=for-the-badge&logo=Atom" style="max-height: 550px;"></a>
+## Menu
+<p align="left">
+ <a href="https://github.com/trolit/projectZero"><img src="https://img.shields.io/badge/Dokumentacja%20dla%20u%C5%BCytkownika-gray?color=6B5B95&style=for-the-badge&logo=lgtm"></a> </br>
+<img src="https://img.shields.io/badge/DOKUMENTACJA%20DLA%20DEVELOPERA (tu jesteś)-gray?color=009B77&style=for-the-badge&logo=dev.to" style="max-height: 550px;"> <br/>
+ <a href="https://github.com/trolit/projectZero/blob/master/CREDITS.md"><img src="https://img.shields.io/badge/UZNANIA-gray?color=5B5EA6&style=for-the-badge&logo=showpad" style="max-height: 550px;"></a>
 </p>
 
-## Dokumentacja developera
+## Dokumentacja
 
 ### Ciekawostki
 - liczba linii kodu (tzw. sloc) katalogu Scripts na 13.11.19 - **6 136** (wartość bez uwzględnienia pustych linii),
