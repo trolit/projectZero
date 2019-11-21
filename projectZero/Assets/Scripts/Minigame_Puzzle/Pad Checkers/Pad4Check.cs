@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
 {
@@ -8,29 +7,21 @@ namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
         [SerializeField]
         private GameObject _leaf;
 
-        private void OnCollisionEnter(Collision block)
+        private void OnTriggerEnter(Collider other)
         {
-            if (block.gameObject.name == "Block04")
+            if (other.gameObject.name == "Block04")
             {
                 Debug.Log("Setting Pad4 on true!");
 
                 _leaf.SetActive(true);
 
-                block.gameObject.tag = "UnDraggable";
+                other.gameObject.tag = "UnDraggable";
 
                 Pad4Result = true;
 
                 enabled = false;
             }
             else
-            {
-                Pad4Result = false;
-            }
-        }
-
-        private void OnCollisionExit(Collision block)
-        {
-            if (!_leaf.activeInHierarchy)
             {
                 Pad4Result = false;
             }

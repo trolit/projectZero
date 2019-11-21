@@ -15,7 +15,7 @@ namespace Assets.Scripts.Game.Player
             _player = GameObject.FindWithTag("Player");
         }
 
-        private void FixedUpdate()
+        private void Update()
         {
             if (Input.GetKey(KeyCode.Space))
             {

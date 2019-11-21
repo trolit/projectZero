@@ -7,33 +7,21 @@ namespace Assets.Scripts.Minigame_Puzzle.Pad_Checkers
         [SerializeField]
         private GameObject _leaf;
 
-        private void OnCollisionEnter(Collision block)
+        private void OnTriggerEnter(Collider other)
         {
-            if (block.gameObject.name == "Block02")
+            if (other.gameObject.name == "Block02")
             {
                 Debug.Log("Setting Pad2 on true!");
 
                 _leaf.SetActive(true);
 
-                block.gameObject.tag = "UnDraggable";
+                other.gameObject.tag = "UnDraggable";
 
                 Pad2Result = true;
 
                 enabled = false;
             }
             else
-            {
-                Pad2Result = false;
-            }
-        }
-
-        private void OnCollisionExit(Collision block)
-        {
-            // If leaf is active and by mistake
-            // block will go outside the puzzle
-            // area - prevent from changing result
-            // to false
-            if (!_leaf.activeInHierarchy)
             {
                 Pad2Result = false;
             }
