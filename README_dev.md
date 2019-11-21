@@ -5,20 +5,24 @@
 ## Dokumentacja developera
 
 ### Ciekawostki
-- liczba linii kodu katalogu Scripts na 13.11.19 - **5 435** (nie liczą się puste linie, tylko z jednego skryptu "Pad<numer>Check" zliczono linie)
-- liczba skryptów katalogu Scripts - ok. **92** (skrypty typu PadCheck które są od 2 do 9 zliczony tylko raz)
-- 40 podkładów muzycznych (po 1 na dany poziom) to łącznie **2 godziny 17 minut**
-- najdłużej trwającą czynnością było projektowanie (design) otoczenia mini-gier aby był zróżnicowany
-- najbardziej męczącą czynnością było projektowanie mini-gier z otoczeniem drzew (szczególnie dla języka PHP)
-- najlepszym pomysłem było wdrożenie konsoli deweloperskiej z racji skali projektu (okazała się dużą pomocą w testowaniu)
-- projekt na dzień dzisiejszy (16.11.19) waży **2,15GB**
-- początkowo nie było planu aby umieszczać coś w ksiażkach ale to się zmieniło po odkryciu fajnej biblioteki do animacji książek. Generalnie jak był coraz większy postęp w projekcie - zaczęły przychodzić kolejne pomysły na jej rozwój.
-- nagrody za medale, medale oraz dodatkowa postać nie były planowane
-- na terenie krainy C# mieli być ludzie ale nie było dostępnego ciekawego assetu
-- jako najbardziej złożony skrypt zakwalifikowac można NPCHandler 
-- najwięcej problemów było z przygotowaniem skryptu Pickup na minigrze typu Puzzle (efekt nie był taki jaki oczekiwano) ale został przerobiony i teraz wygląda lepiej 
-- gdyby nie (powolne) rozpoczęcie projektu już w czerwcu to na 100% nie zostałby ukończony
-- projekt osiągnął 41 dyskusji na github z czego 3 opatrzono znaczkiem 'bug'
+- liczba linii kodu (tzw. sloc) katalogu Scripts na 13.11.19 - **6 136** (wartość bez uwzględnienia pustych linii),
+- liczba skryptów katalogu Scripts - **108** ,
+- w projekcie użyto 42 utworów muzycznych co daje łącznie **2 godziny 23 minut** czasu potrzebnego do ich wysłuchania,
+- najdłużej trwającą czynnością było projektowanie (design) otoczenia mini-gier aby był zróżnicowany,
+- najbardziej męczącą czynnością było projektowanie mini-gier z otoczeniem drzew (szczególnie dla języka PHP),
+- najlepszym pomysłem było wdrożenie konsoli deweloperskiej z racji skali projektu (okazała się dużą pomocą w testowaniu),
+- projekt 'rozpakowany' przez edytor Unity waży **2,55GB**,
+- nagrody za medale, medale oraz dodatkowa postać nie były planowane w momencie ustalenia zakresu prac,
+- na terenie krainy C# mieli być ludzie ale nie było dostępnego ciekawego assetu,
+- jako najbardziej złożony skrypt zakwalifikowac można NPCHandler,
+- najwięcej problemów było z przygotowaniem skryptu Pickup w minigrze typu Puzzle (efekt nie był taki jaki oczekiwano) ale został przerobiony i teraz wygląda solidnie,
+- gdyby nie (powolne) rozpoczęcie projektu już w czerwcu to na 100% nie zostałby ukończony,
+- projekt osiągnął 45 dyskusji na github z czego 3 opatrzono znaczkiem 'bug',
+- czas okrążenia sceny Map najkrótszą ścieżką postacią Slime Rabbit wyniósł ok. 1min 47s,
+- przejście bez zatrzymania całej sceny Map postacią Slime Rabbit wyniósł ok. 4min 30s,
+- projekt zawiera 92 grafiki, 10 niestandardowych czcionek, 30 assetów,
+- inspiracją HUD gracza na scenie Map był ten zaproponowany w Tom Clancy's Rainbow Six Siege,
+- wersja grywalna posiada **52** sceny, a projekt posiada dodatkowo scene zaprojektowanej przedniej i tylnej okładki gry,
 - plecak miał być początkowo faktycznym plecakiem w którym są puste miejsca i jak się zakupi książki to do tych pustych miejsc zostają wrzucone. Z racji ograniczenia czasu wybrano wariant lżejszy czyli "panel z wszystkimi książkami" jednak aby je przeczytać należy je wykupić.
 
 ### Mechanika
@@ -38,13 +42,13 @@
 </p>
 
 ### Rodzaje krain, teren i istoty
-| Język | Rodzaj terenu | Imperium |
+| Język | Rodzaj terenu | Rodzaj istoty |
 | :---:  | :---: | :---: |
-| C# | teren zalesiony (styl wiosenny) | psów |
-| Java | teren pustynny | kotów |
-| HTML | teren górzysty | królików |
-| JavaScript | teren zimowy | pingwinów |
-| PHP | teren zalesiony (styl jesienny) | myszy | 
+| C# | teren zalesiony (styl wiosenny) | pies |
+| Java | teren pustynny | kot |
+| HTML | teren górzysty | królik |
+| JavaScript | teren zimowy | pingwin |
+| PHP | teren zalesiony (styl jesienny) | mysz | 
 
 ### Minigry
 W tej sekcji poznasz szczegóły zaimplementowanych minigier.
@@ -114,7 +118,6 @@ Minigra labirynt to gra, w której zadaniem gracza jest unikanie bloków będąc
 
 ### Klawiszologia 
 Uwaga! Klawiszologia może się różnić w zależności od tego w jaką mini-gierkę gramy bądź też czy znajdujemy się na mapie głównej <br/>
-Należy mieć także na uwadze fakt, że klawiszologia w finalnym projekcie może się różnić od tej zaprezentowanej poniżej! <br/>
 W - przód <br/> 
 A - lewo <br/>
 S - dół <br/>
@@ -127,22 +130,25 @@ LPM (lewy przycisk myszy) - klikanie w sklepie -> kupowanie książek, otwierani
 ### Wykorzystane materiały
 W pliku Wykorzystane.txt umieszczone są odnośniki do rzeczy, które zostały wykorzystane w projekcie - głównie są to assety, muzyka i grafiki. Będą one uwiecznione w sekcji "Uznania" w grze. Dokument można znaleźć <a href="https://github.com/trolit/projectZero/blob/master/Wykorzystane.txt">pod tym adresem</a>. 
 
+### Konfiguracja Edytora
+**Uwaga!** Aby uzyskać poprawny odczyt okna 'Game' należy utworzyć sobie profil rozdziałki **1920x1080**, ustawić go i zmniejszyć parametr Scale do minimum (t.j. **0,372**)
+
 ### Wersja narzędzia Unity
 2018.3.12f1 
 
 ### Wersja .NET Framework
 v 4.7.1 
 
-### Zdjęcia z projektowania
+### Zdjęcia z etapu projektowania
 Zdjęcia z etapu projektowania gry znaleźć można w <a href="https://github.com/trolit/projectZero/issues/33">tym</a> wątku. A <a href="https://github.com/trolit/projectZero/issues/29">pod tym</a> adresem dostępne są urywkowe zdjęcia ze scen mini-gier typu labirynt, puzzle i pinpin(przypinka).
 
-### Wideo z projektowania
+### Wideo z etapu projektowania
 Adresy do klipów wideo umieszczonych w serwisie youtube z etapu projektowania gry dostępne są <a href="https://github.com/trolit/projectZero/issues/35">tutaj</a>.
 
-### Analiza  
-Analizę odblokowań poziomów, prezentacji wynagrodzeń, kar można znaleźć <a href="https://github.com/trolit/projectZero/issues/5">w tym</a> poście natomiast wycenę książek <a href="https://github.com/trolit/projectZero/issues/38">tutaj</a>.
+### Analiza strategii 
+Analizę odblokowań poziomów, wynagrodzeń, kar można znaleźć <a href="https://github.com/trolit/projectZero/issues/5">w tym</a> poście natomiast wycenę książek <a href="https://github.com/trolit/projectZero/issues/38">tutaj</a>.
 
-### Klucze 
+### Zbiór kluczy 
 Wszystkie użyte klucze w projekcie wraz z opisem dostępne są w <a href="https://github.com/trolit/projectZero/issues/4" target="_blank">tym</a> wątku.
 
 ### Zawartość podsumowań
