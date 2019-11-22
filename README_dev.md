@@ -2,6 +2,7 @@
 <p align="left">
  <a href="https://github.com/trolit/projectZero"><img src="https://img.shields.io/badge/Dokumentacja%20dla%20u%C5%BCytkownika-gray?color=6B5B95&style=for-the-badge&logo=lgtm"></a> </br>
 <img src="https://img.shields.io/badge/DOKUMENTACJA%20DLA%20DEVELOPERA (tu jesteś)-gray?color=009B77&style=for-the-badge&logo=dev.to" style="max-height: 550px;"> <br/>
+ <a href="https://github.com/trolit/projectZero/blob/master/SHOWCASE.md"><img src="https://img.shields.io/badge/Animowane%20zrzuty%20z%20gry-gray?color=955251&style=for-the-badge&logo=big%20cartel" style="max-height: 550px;"></a> <br/>
  <a href="https://github.com/trolit/projectZero/blob/master/CREDITS.md"><img src="https://img.shields.io/badge/UZNANIA-gray?color=5B5EA6&style=for-the-badge&logo=showpad" style="max-height: 550px;"></a>
 </p>
 
