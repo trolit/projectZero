@@ -8,7 +8,7 @@
 ## Dokumentacja
 
 ### Ciekawostki
-- liczba linii kodu (tzw. sloc) katalogu Scripts na 13.11.19 - **6 136** (wartość bez uwzględnienia pustych linii),
+- liczba linii kodu (tzw. sloc) katalogu Scripts wynosi **6 136** (wartość bez uwzględnienia pustych linii),
 - liczba skryptów katalogu Scripts - **108** ,
 - w projekcie użyto 42 utworów muzycznych co daje łącznie **2 godziny 23 minut** czasu potrzebnego do ich wysłuchania,
 - najdłużej trwającą czynnością było projektowanie (design) otoczenia mini-gier aby był zróżnicowany,
