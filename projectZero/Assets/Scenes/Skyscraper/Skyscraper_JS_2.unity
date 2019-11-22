@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4488985, g: 0.49896544, b: 0.57570714, a: 1}
+  m_IndirectSpecularColor: {r: 0.44889897, g: 0.49896634, b: 0.575708, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -89905,6 +89905,21 @@ PrefabInstance:
       propertyPath: m_FontData.m_FontSize
       value: 35
       objectReference: {fileID: 0}
+    - target: {fileID: 1892338143094095024, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892338142477710020, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1892338142477710020, guid: 126f51190d27ec5469d88838e3497290,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1092
+      objectReference: {fileID: 0}
     - target: {fileID: 1892338143118689139, guid: 126f51190d27ec5469d88838e3497290,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -89954,11 +89969,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: "Dowiedz si\u0119 wi\u0119cej o <color=cyan>JavaScript</color>"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1892338143094095024, guid: 126f51190d27ec5469d88838e3497290,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126f51190d27ec5469d88838e3497290, type: 3}
