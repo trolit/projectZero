@@ -51,7 +51,7 @@ Poniżej znajdziesz kilka zrzutów ekranu, poczekaj chwilę żeby się załadowa
 #### Przykładowy poziom typu przypinka (pinpin) ####
 ![Error](https://github.com/trolit/projectZero/blob/storage/gifs/pinpin%20Java.gif)
 
-#### Przykładowy poziom typu wie¿owiec (skyscraper) ####
+#### Przykładowy poziom typu wieżowiec (skyscraper) ####
 ![Error](https://github.com/trolit/projectZero/blob/storage/gifs/skyscraper%20showcase.gif)
 
 #### Przykładowy poziom typu puzzle ####
