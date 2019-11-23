@@ -2,19 +2,20 @@
 <p align="left">
  <a href="https://github.com/trolit/projectZero"><img src="https://img.shields.io/badge/Dokumentacja%20dla%20u%C5%BCytkownika-gray?color=6B5B95&style=for-the-badge&logo=lgtm"></a> </br>
 <img src="https://img.shields.io/badge/DOKUMENTACJA%20DLA%20DEVELOPERA (tu jesteś)-gray?color=009B77&style=for-the-badge&logo=dev.to" style="max-height: 550px;"> <br/>
+ <a href="https://github.com/trolit/projectZero/blob/master/SHOWCASE.md"><img src="https://img.shields.io/badge/Animowane%20zrzuty%20z%20gry-gray?color=955251&style=for-the-badge&logo=big%20cartel" style="max-height: 550px;"></a> <br/>
  <a href="https://github.com/trolit/projectZero/blob/master/CREDITS.md"><img src="https://img.shields.io/badge/UZNANIA-gray?color=5B5EA6&style=for-the-badge&logo=showpad" style="max-height: 550px;"></a>
 </p>
 
 ## Dokumentacja
 
 ### Ciekawostki
-- liczba linii kodu (tzw. sloc) katalogu Scripts na 13.11.19 - **6 136** (wartość bez uwzględnienia pustych linii),
-- liczba skryptów katalogu Scripts - **108** ,
+- czas rozwijania Project Zero wyniósł 162 dni tj. 5 miesięcy i 9 dni - 44,38% roku 2019 (z uwzględnieniem dni wolnych od rozwijania aplikacji), 
+- liczba linii kodu (tzw. sloc) katalogu Scripts wynosi **6 119** (wartość bez uwzględnienia pustych linii),
+- liczba skryptów katalogu Scripts - **107** ,
 - w projekcie użyto 42 utworów muzycznych co daje łącznie **2 godziny 23 minut** czasu potrzebnego do ich wysłuchania,
 - najdłużej trwającą czynnością było projektowanie (design) otoczenia mini-gier aby był zróżnicowany,
 - najbardziej męczącą czynnością było projektowanie mini-gier z otoczeniem drzew (szczególnie dla języka PHP),
 - najlepszym pomysłem było wdrożenie konsoli deweloperskiej z racji skali projektu (okazała się dużą pomocą w testowaniu),
-- projekt 'rozpakowany' przez edytor Unity waży **2,55GB**,
 - nagrody za medale, medale oraz dodatkowa postać nie były planowane w momencie ustalenia zakresu prac,
 - na terenie krainy C# mieli być ludzie ale nie było dostępnego ciekawego assetu,
 - jako najbardziej złożony skrypt zakwalifikowac można NPCHandler,
@@ -23,7 +24,7 @@
 - projekt osiągnął 45 dyskusji na github z czego 3 opatrzono znaczkiem 'bug',
 - czas okrążenia sceny Map najkrótszą ścieżką postacią Slime Rabbit wyniósł ok. 1min 47s,
 - przejście bez zatrzymania całej sceny Map postacią Slime Rabbit wyniósł ok. 4min 30s,
-- projekt zawiera 92 grafiki, 10 niestandardowych czcionek, 30 assetów,
+- projekt zawiera m.in. 92 grafiki, 10 niestandardowych czcionek, 30 assetów,
 - inspiracją HUD gracza na scenie Map był ten zaproponowany w Tom Clancy's Rainbow Six Siege,
 - wersja grywalna posiada **52** sceny, a projekt posiada dodatkowo scene zaprojektowanej przedniej i tylnej okładki gry,
 - plecak miał być początkowo faktycznym plecakiem w którym są puste miejsca i jak się zakupi książki to do tych pustych miejsc zostają wrzucone. Z racji ograniczenia czasu wybrano wariant lżejszy czyli "panel z wszystkimi książkami" jednak aby je przeczytać należy je wykupić.
