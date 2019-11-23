@@ -15,7 +15,6 @@
 - najdłużej trwającą czynnością było projektowanie (design) otoczenia mini-gier aby był zróżnicowany,
 - najbardziej męczącą czynnością było projektowanie mini-gier z otoczeniem drzew (szczególnie dla języka PHP),
 - najlepszym pomysłem było wdrożenie konsoli deweloperskiej z racji skali projektu (okazała się dużą pomocą w testowaniu),
-- projekt 'rozpakowany' przez edytor Unity waży **2,55GB**,
 - nagrody za medale, medale oraz dodatkowa postać nie były planowane w momencie ustalenia zakresu prac,
 - na terenie krainy C# mieli być ludzie ale nie było dostępnego ciekawego assetu,
 - jako najbardziej złożony skrypt zakwalifikowac można NPCHandler,
@@ -24,7 +23,7 @@
 - projekt osiągnął 45 dyskusji na github z czego 3 opatrzono znaczkiem 'bug',
 - czas okrążenia sceny Map najkrótszą ścieżką postacią Slime Rabbit wyniósł ok. 1min 47s,
 - przejście bez zatrzymania całej sceny Map postacią Slime Rabbit wyniósł ok. 4min 30s,
-- projekt zawiera 92 grafiki, 10 niestandardowych czcionek, 30 assetów,
+- projekt zawiera m.in. 92 grafiki, 10 niestandardowych czcionek, 30 assetów,
 - inspiracją HUD gracza na scenie Map był ten zaproponowany w Tom Clancy's Rainbow Six Siege,
 - wersja grywalna posiada **52** sceny, a projekt posiada dodatkowo scene zaprojektowanej przedniej i tylnej okładki gry,
 - plecak miał być początkowo faktycznym plecakiem w którym są puste miejsca i jak się zakupi książki to do tych pustych miejsc zostają wrzucone. Z racji ograniczenia czasu wybrano wariant lżejszy czyli "panel z wszystkimi książkami" jednak aby je przeczytać należy je wykupić.
