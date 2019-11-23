@@ -10,8 +10,8 @@
 
 ### Ciekawostki
 - czas rozwijania Project Zero wyniósł 162 dni tj. 5 miesięcy i 9 dni - 44,38% roku 2019 (z uwzględnieniem dni wolnych od rozwijania aplikacji), 
-- liczba linii kodu (tzw. sloc) katalogu Scripts wynosi **6 136** (wartość bez uwzględnienia pustych linii),
-- liczba skryptów katalogu Scripts - **108** ,
+- liczba linii kodu (tzw. sloc) katalogu Scripts wynosi **6 119** (wartość bez uwzględnienia pustych linii),
+- liczba skryptów katalogu Scripts - **107** ,
 - w projekcie użyto 42 utworów muzycznych co daje łącznie **2 godziny 23 minut** czasu potrzebnego do ich wysłuchania,
 - najdłużej trwającą czynnością było projektowanie (design) otoczenia mini-gier aby był zróżnicowany,
 - najbardziej męczącą czynnością było projektowanie mini-gier z otoczeniem drzew (szczególnie dla języka PHP),
