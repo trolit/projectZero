@@ -2,6 +2,11 @@
  <img src="https://github.com/trolit/projectZero/blob/storage/photos/front.jpg?raw=true" height="450">
 </p>
 
+<p align="center">
+ <a href="https://github.com/trolit/projectZero/releases/download/v9.0/ProjectZero_installer.exe"><img src="https://github.com/trolit/projectZero/blob/storage/photos/downloadImg.png" height="125"/></a> </br>
+Ikona stworzona przez <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a> dostępna na <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+</p>
+
 ## Menu
 <p align="left">
 <img src="https://img.shields.io/badge/Dokumentacja%20dla%20u%C5%BCytkownika (tu jesteś)-gray?color=6B5B95&style=for-the-badge&logo=lgtm"> </br>
@@ -16,19 +21,17 @@
 <a href="https://en.wikipedia.org/wiki/List_of_video_game_genres"><img src="https://img.shields.io/badge/Gatunek-Sandbox%20RPG,%20Edukacyjna-blue?color=66a103&style=for-the-badge" style="max-height: 300px;"></a>
 <a><img src="https://img.shields.io/badge/Obs%C5%82ugiwany%20j%C4%99zyk-polski-blue?color=66a103&style=for-the-badge" style="max-height: 300px;"></a>
 <a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Inicjacja%20projektu-16%20czerwca%202019-blue?color=5B5EA6&style=for-the-badge" style="max-height: 300px;"></a>
- <a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Zamkni%C4%99cie%20projektu-2019-blue?color=5B5EA6&style=for-the-badge" style="max-height: 300px;"></a> <br/>
+ <a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Zamkni%C4%99cie%20projektu-24%20listopada%202019-blue?color=5B5EA6&style=for-the-badge" style="max-height: 300px;"></a> <br/>
 <a href="https://www.techopedia.com/definition/32207/target-platform"><img src="https://img.shields.io/badge/Platforma-Win32/Win64-green?style=for-the-badge&color=blueviolet" style="max-height: 300px;"></a> 
 <a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Framework-4.7.1-blueviolet.svg?style=for-the-badge&logo=.NET" style="max-height: 300px;"></a>
 <a href="https://unity3d.com/get-unity/download/archive"><img src="https://img.shields.io/badge/Wersja-2018.3.12f1-orange?color=blueviolet&style=for-the-badge&logo=unity" style="max-height: 300px;"></a>
 <a href="https://en.wikipedia.org/wiki/MIT_License"><img src="https://img.shields.io/badge/Licencja-MIT-blueviolet?style=for-the-badge" style="max-height: 300px;"></a> <br/>
-<a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Waga%20repozytorium (master)-X MB-blue?color=CD5C5C&style=for-the-badge" style="max-height: 300px;"></a>
-<a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Waga%20projektu-XYZ MB-blue?color=CD5C5C&style=for-the-badge" style="max-height: 300px;"></a>
- <a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Waga%20gry-XYZ MB-blue?color=CD5C5C&style=for-the-badge" style="max-height: 300px;"></a>
+<a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Waga%20repozytorium%20(master)-476%20MB-blue?color=CD5C5C&style=for-the-badge" style="max-height: 300px;"></a>
+<a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Waga%20importowanego%20projektu-1.39%20GB-blue?color=CD5C5C&style=for-the-badge" style="max-height: 300px;"></a>
+ <a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Waga%20gry-411 MB-blue?color=CD5C5C&style=for-the-badge" style="max-height: 300px;"></a>
 </p>
 
 ## O projekcie
-
-
 
 ### Wstęp
 <p align="justify">
