@@ -77,16 +77,6 @@ Przedstawione informacje są skondensowane w taki sposób aby
 - nie odrzucały/zamęczały odbiorcy nadmiarem tekstu,
 - były na zasadzie "haseł-kluczy" aby gracz mógł w łatwy sposób wyszukać te treści w Internecie
 
-### Od autora (Paweł Idzikowski)
-<p align="justify">
-Ze względu na zakres wykonanych zadań Project Zero uznać można za pełnoprawny tytuł. Projekt nie obejmuje wszystkich aspektów każdego z uwzględnionych języków i nie definiuje każdego z pojęć w sposób wyczerpujący. Dałoby się to co prawda zrobić, jednak postawmy sobie pytanie - Czy taka gra nie stałaby się nudna po X jednostek czasu? Moim zdaniem - tak. Czy pomógłby najwyższy budżet? Nie. Na chwilę obecną gry uczące programowania idą bardziej w kierunku podstaw, czyli myślenia, jak ułożyć kod z prostych komend typu idź do przodu, obróć się w prawo aby dotrzeć z punktu A do B aniżeli konkretów z danego języka. Przykładem takiej produkcji jest Rabbids Coding (od słynnego Ubisoft'u). Ćwiczenie znajomości konkretnego języka jest bardziej widoczne w aplikacjach (np. na platformę Android). Sam z ciekawości taką aplikację sprawdziłem jednak nie utrzymała się długo na moim urządzeniu. Wracając do tematu sensu takich gier.. Skupienie się na jakimś języku np. C# to już na starcie ograniczenie liczby odbiorców - nie każdy musi go lubić. W czasach obecnych nieodłącznym elementem większości topowych gier jest tryb wieloosobowy. Przy analizie produktu czynnikiem kluczowym jest też wiek odbiorców. Problematyczne w grach edukacyjnych tego typu są technologie. Stale się rozwijają więc gra, która nie byłaby modernizowana pod względem treści to gra martwa. Jedyny sposób, w jaki widzę takie gry, to produkcje z gatunku indie - nieduży budżet, masa fajnych rozwiązań i przemycona w jakimś stopniu liczba istotnych informacji. Z rywalizacją online? Czemu nie. W zwartym zespole posiadającym animatorów, designerów modeli, programistów i level designerów myślę, że produkt miałby szansę zyskać niemałe zainteresowanie nie tylko graczy ale i osób z obszaru edukacji w tematyce IT. W Project Zero wiedzę staramy się przekazywać tak aby zachęcać odbiorce do zgłębiania omawianych treści poza grą. Oprócz tworzenia czegoś, co miałoby mieć "użyteczne podłoże", zależało mi też na tym, aby był to projekt, którym warto się pochwalić i zapisać jako udany projekt do kolekcji. 
-</p>
-
-### Od autora (Adam Grabowski)
-<p align="justify">
-oczekiwanie na publikacje. oczekiwanie na publikacje. oczekiwanie na publikacje. oczekiwanie na publikacje.
-</p>
-
 ### Zrzuty ekranu
 |  |  |  |
 | :---:  | :---:  | :---:  |
