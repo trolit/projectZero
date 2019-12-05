@@ -343,8 +343,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000022888, y: -0.000013351}
-  m_SizeDelta: {x: 514.8, y: 153.3}
+  m_AnchoredPosition: {x: 0.000022888, y: 8}
+  m_SizeDelta: {x: 514.8, y: 79.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &63528054
 MonoBehaviour:
@@ -373,7 +373,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 60
-    m_Alignment: 4
+    m_Alignment: 7
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -4716,7 +4716,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000022888, y: -0.000013351}
-  m_SizeDelta: {x: 514.8, y: 153.3}
+  m_SizeDelta: {x: 514.8, y: 87.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1255147161
 MonoBehaviour:
@@ -7585,6 +7585,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1971926828}
+  - component: {fileID: 1971926829}
   m_Layer: 5
   m_Name: CharacterPickButtons
   m_TagString: Untagged
@@ -7615,6 +7616,19 @@ RectTransform:
   m_AnchoredPosition: {x: 2, y: -10}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1971926829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971926827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f4a74cee4c561f449f17bcbb7def8c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _knightButton: {fileID: 430949836}
 --- !u!1 &2047904808
 GameObject:
   m_ObjectHideFlags: 0
