@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
- <a href="https://github.com/trolit/projectZero/releases/download/v9.0/ProjectZero_installer.exe"><img src="https://github.com/trolit/projectZero/blob/storage/photos/downloadImg.png" height="125"/></a> </br>
+ <a href="https://github.com/trolit/projectZero/releases/download/v9.0/ProjectZero_installer.exe"><img src="https://github.com/trolit/projectZero/blob/storage/photos/downloadImg.png" height="220"/></a> </br>
 Ikona stworzona przez <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a> dostępna na <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 </p>
 
