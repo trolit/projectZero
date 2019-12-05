@@ -3,14 +3,14 @@
 </p>
 
 <p align="center">
- <a href="https://github.com/trolit/projectZero/releases/download/v9.0/ProjectZero_installer.exe"><img src="https://github.com/trolit/projectZero/blob/storage/photos/downloadImg.png" height="220"/></a> </br>
+ <a href="https://github.com/trolit/projectZero/releases/download/v0.91/ProjectZero_installer.exe"><img src="https://github.com/trolit/projectZero/blob/storage/photos/downloadImg.png" height="220"/></a> </br>
 Ikona stworzona przez <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a> dostępna na <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 
 <br>
 <br>
 <br>
 Bezpieczeństwo instalatora zweryfikujesz w serwisie <br> <br>
-<a href="https://www.virustotal.com/gui/url/e38eb1bd595b9f90db6f9fb3aaa6b1cec137a258cd122c494b37e17b566d01b5/detection"><img src="https://www.virustotal.com/gui/images/logo.svg" height="50"/></a>
+<a href="https://www.virustotal.com/gui/url/2a55ebd3ab9029397daf9d1d9d7ef02c84c89d665472c5670cf54e929b56940c/detection"><img src="https://www.virustotal.com/gui/images/logo.svg" height="50"/></a>
 </p>
 
 ## Menu
