@@ -1,17 +1,30 @@
 ﻿using Assets.Scripts.Game;
+using EasyButtons;
 using UnityEngine;
 
 namespace Assets.Scripts.Minigame_Puzzle
 {
     public class PuzzleManager : MonoBehaviour
     {
+        [Button]
+        public void CheckCurrentGameState()
+        {
+            Debug.Log($"<b>{PuzzleStatus}</b> out of <b>{_puzzleAmount}</b> blocks are placed correctly.");
+        }
+
+        [Button]
+        public void TriggerWinManually()
+        {
+            TriggerWin();
+        }
+
         public static int PuzzleStatus;
 
         [Tooltip("Define how many puzzles are set in level. Value must be greater than 0.")]
         [SerializeField]
         private int _puzzleAmount;
 
-        private void Start()
+        private void Awake()
         {
             if (_puzzleAmount <= 0)
             {
