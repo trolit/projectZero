@@ -18,6 +18,8 @@ namespace Assets.Scripts.Minigame_Puzzle
                 PuzzleManager.PuzzleStatus++;
 
                 _padSuccessGameObject.SetActive(true);
+
+                enabled = false;
             }
             else if (string.IsNullOrWhiteSpace(_validBlockName))
             {
