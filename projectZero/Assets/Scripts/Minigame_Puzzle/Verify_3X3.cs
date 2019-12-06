@@ -1,9 +1,11 @@
-﻿using Assets.Scripts.Game;
+﻿using System;
+using Assets.Scripts.Game;
 using EasyButtons;
 using UnityEngine;
 
 namespace Assets.Scripts.Minigame_Puzzle
 {
+    [Obsolete("THIS SCRIPT IS NO LONGER USED IN GAME")]
     public class Verify_3X3 : MonoBehaviour
     {
         [Button]
@@ -42,6 +44,9 @@ namespace Assets.Scripts.Minigame_Puzzle
         // Awake RUNS BEFORE Start
         private void Awake()
         {
+            Debug.LogError("This script will be deleted - use PuzzleManager instead");
+            Debug.Break();
+
             Pad2Result = false;
             Pad3Result = false;
             Pad4Result = false;
