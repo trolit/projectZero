@@ -11,11 +11,11 @@
 
 Po pobraniu repozytorium Project Zero (gałąź master), uruchom środowisko Unity. Użyj wersji 2018.3.12f1 64-bit o ile to możliwe. W panelu użytkownika wybierz przycisk Open, który został zaznaczony na poniższym zdjęciu.
 
-<img src="https://github.com/trolit/projectZero/blob/storage/photos/howToCompile/howToCompile0.PNG" height="250"/>
+<img src="https://github.com/trolit/projectZero/blob/storage/photos/howToCompile/howToCompile0.PNG" width="850"/>
 
 Wskaż wypakowany z ```projectZero-master.zip``` katalog Project Zero i naciśnij przycisk 'Wybierz folder'. 
 
-<img src="https://github.com/trolit/projectZero/blob/storage/photos/howToCompile/howToCompile1.PNG" height="350"/>
+<img src="https://github.com/trolit/projectZero/blob/storage/photos/howToCompile/howToCompile1.PNG" height="250"/>
 
 Rozpocznie się proces importowania projektu do Unity, który może chwilę potrwać. Wraz z zakończeniem importu projektu ukaże się narzędzie Unity z pustą sceną. Jeżeli chcesz zbudować projekt wybierz z menu ```File``` opcję ```Build Settings```. 
 
