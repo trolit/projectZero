@@ -11,35 +11,35 @@
 
 ### Ciekawostki
 - czas rozwijania Project Zero wyniósł 162 dni tj. 5 miesięcy i 9 dni - 44,38% roku 2019 (z uwzględnieniem dni wolnych od rozwijania aplikacji), 
-- liczba linii kodu (tzw. sloc) katalogu Scripts wynosi **6 119** (wartość bez uwzględnienia pustych linii),
-- liczba skryptów katalogu Scripts - **107** ,
-- w projekcie użyto 42 utworów muzycznych co daje łącznie **2 godziny 23 minut** czasu potrzebnego do ich wysłuchania,
-- najdłużej trwającą czynnością było projektowanie (design) otoczenia mini-gier aby był zróżnicowany,
-- najbardziej męczącą czynnością było projektowanie mini-gier z otoczeniem drzew (szczególnie dla języka PHP),
+- liczba linii kodu (tzw. sloc) katalogu Scripts wynosi +/- **6 000** (wartość bez uwzględnienia pustych linii),
+- liczba skryptów katalogu Scripts - **101** ,
+- w projekcie użyto 42 utworów muzycznych. Daje to łącznie **2 godziny 23 minut** czasu potrzebnego do ich wysłuchania,
+- najdłużej trwającą czynnością było projektowanie (design) otoczenia każdej z minigier,
+- najbardziej 'męczącą' czynnością było projektowanie minigier z otoczeniem drzew (szczególnie dla języka PHP),
 - najlepszym pomysłem było wdrożenie konsoli deweloperskiej z racji skali projektu (okazała się dużą pomocą w testowaniu),
-- nagrody za medale, medale oraz dodatkowa postać nie były planowane w momencie ustalenia zakresu prac,
-- na terenie krainy C# mieli być ludzie ale nie było dostępnego ciekawego assetu,
-- jako najbardziej złożony skrypt zakwalifikowac można NPCHandler,
-- najwięcej problemów było z przygotowaniem skryptu Pickup w minigrze typu Puzzle (efekt nie był taki jaki oczekiwano) ale został przerobiony i teraz wygląda solidnie,
+- nagrody za medale, medale, mapa świata Project Zero, minimapa oraz dodatkowa postać nie były planowane w momencie ustalenia zakresu prac,
+- na terenie krainy C# mieli być ludzie, nie było jednak dostępnego ciekawego assetu,
+- jako najbardziej złożony skrypt, zakwalifikować można NPCHandler,
+- najwięcej problemów było z przygotowaniem skryptu Pickup w minigrze typu Puzzle (efekt nie był taki jaki oczekiwano) ale został przerobiony i wygląda solidnie,
 - gdyby nie (powolne) rozpoczęcie projektu już w czerwcu to na 100% nie zostałby ukończony,
-- projekt osiągnął 45 dyskusji na github z czego 3 opatrzono znaczkiem 'bug',
-- czas okrążenia sceny Map najkrótszą ścieżką postacią Slime Rabbit wyniósł ok. 1min 47s,
-- przejście bez zatrzymania całej sceny Map postacią Slime Rabbit wyniósł ok. 4min 30s,
-- projekt zawiera m.in. 92 grafiki, 10 niestandardowych czcionek, 30 assetów,
+- projekt osiągnął 45 dyskusji na github, z czego 3 opatrzono znaczkiem 'bug',
+- czas okrążenia sceny Map najkrótszą ścieżką, postacią Slime Rabbit, wyniósł ok. 1min 47s,
+- przejście bez zatrzymania całej sceny Map, postacią Slime Rabbit, wyniósł ok. 4min 30s,
+- projekt zawiera m.in. 92 grafiki, 30 assetów (paczek Unity),
 - inspiracją HUD gracza na scenie Map był ten zaproponowany w Tom Clancy's Rainbow Six Siege,
 - wersja grywalna posiada **52** sceny, a projekt posiada dodatkowo scene zaprojektowanej przedniej i tylnej okładki gry,
-- plecak miał być początkowo faktycznym plecakiem w którym są puste miejsca i jak się zakupi książki to do tych pustych miejsc zostają wrzucone. Z racji ograniczenia czasu wybrano wariant lżejszy czyli "panel z wszystkimi książkami" jednak aby je przeczytać należy je wykupić.
+- plecak miał być początkowo faktycznym plecakiem w którym są puste miejsca i jak się zakupi książki to do tych pustych miejsc zostają wrzucone. Z racji ograniczenia czasu, wybrano wariant lżejszy czyli "panel z wszystkimi książkami" jednak, aby je przeczytać, należy je wykupić.
 
 ### Mechanika
 <p align="justify">
-:small_orange_diamond:Gracz tworzy swoją postać nadając jej pseudonim, wybierając model spośród dostępnych oraz przyznając punkty umiejętności z podstawowej puli. Nie jest obowiązkowym nadanie pseudonimu, wybranie modelu i rozdanie wszystkich dostępnych punktów do rozdysponowania. Gracz ma pełną dowolność. <br/>
-:small_orange_diamond: Rozgrywka toczy się na mapie w której rozlokowane są krainy, które gracz ma możliwość zwiedzać. Każda kraina jest reprezentowana przez specyficzny język i teren. W jej obszarach znajdują się postaci, z którymi gracz może wejść w interakcje (NPC). <br/>
+:small_orange_diamond:Gracz tworzy swoją postać nadając jej pseudonim, wybierając model spośród dostępnych oraz przyznając punkty umiejętności z podstawowej puli. Nie jest obowiązkowym nadanie pseudonimu, wybranie modelu i rozdanie wszystkich dostępnych punktów. Gracz ma pełną dowolność. <br/>
+:small_orange_diamond: Rozgrywka toczy się na mapie, w której rozlokowane są krainy, które gracz ma możliwość zwiedzać. Każda kraina jest reprezentowana przez specyficzny język i teren. W jej obszarach znajdują się postaci, z którymi gracz może wejść w interakcje (NPC). <br/>
 :small_orange_diamond:NPC posiadają zadania, które gracz może wykonać. Podejście do zadania, to rozegranie minigry pod warunkiem, że poziom umiejętności gracza jest przynajmniej równy wymaganemu poziomowi. Szczegółowe informacje dotyczące mechaniki poszczególnych minigier zostały przedstawione w dziale odnośnie minigier.  <br/>
-:small_orange_diamond:Ukończenie minigry wiąże się z otrzymaniem wynagrodzenia i informacji. O ile, w grze typu puzzle uzyskuje się stałą wartość pieniędzy, to w pozostałych trzech wpływ na wysokość kwoty ma liczba pomyłek. Przekazywana treść także zależy od typu minigry o czym wspomniane jest w sekcji - walory edukacyjne. <br/>
+:small_orange_diamond:Ukończenie minigry wiąże się z otrzymaniem wynagrodzenia i informacji. O ile, w grze typu puzzle uzyskuje się stałą wartość pieniędzy, to w pozostałych trzech wpływ na wysokość kwoty ma liczba popełnionych pomyłek. Przekazywana treść także zależy od typu minigry o czym wspomniane jest w sekcji - walory edukacyjne. <br/>
 :small_orange_diamond: Pieniądze mogą być wydane w sklepach. <br/>
 :small_orange_diamond: Podstawowym asortymentem sklepów są książki. <br/>
 :small_orange_diamond: Na każdą krainę przypada jeden sklep. <br/>
-:small_orange_diamond: Książka zawiera informacje na temat wybranego języka. Odczytanie jej rozwija umiejętności gracza w języku, którego dotyczy pozwalając uzyskać dostęp do kolejnych minigier. <br/>
+:small_orange_diamond: Książka zawiera informacje na temat wybranego języka. Odczytanie jej rozwija umiejętności gracza w języku, którego dotyczy, pozwalając uzyskać dostęp do kolejnych minigier. <br/>
 :small_orange_diamond: Celem gry jest poznanie/przypomnienie elementów, które gra porusza. <br/>
 :small_orange_diamond: Grę można uznać za "ukończoną" w 100%, jeżeli gracz przejdzie wszystkie dostępne minigry (nie jednym podejściem!). <br/>
 :small_orange_diamond: Nie jest możliwe przegranie rozgrywki z koniecznością rozpoczęcia nowej. <br/>
@@ -87,30 +87,34 @@ Minigra labirynt to gra, w której zadaniem gracza jest unikanie bloków będąc
 | Tworzenie postaci | NPC (1) | NPC (2) |
 | <img src="https://github.com/trolit/projectZero/blob/storage/photos/con_6.jpg?raw=true" alt="Koncepcja tworzenia postaci" width="350px" height="140px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/con_7.png?raw=true" alt="Koncepcja tworzenia postaci" width="350px" height="140px"></img> | <img src="https://github.com/trolit/projectZero/blob/storage/photos/con_8.png?raw=true" alt="Koncepcja tworzenia postaci" width="350px" height="140px"></img> |
 
-### Planowane elementy
-:zero::zero: perspektywa rozgrywki z lotu ptaka (top down view) <br/>
+### Aplikacja zawiera
+:zero::zero: perspektywę rozgrywki z lotu ptaka (top down view) <br/>
 :zero::one: główny świat podzielony na 5 krain </br>
 :zero::two: zróżnicowany styl każdej z przygotowanych krain </br>
 :zero::three: poruszające się istoty dzięki technologii Unity <br/>
-:zero::four: możliwość interakcji z wybranymi istotami <br/>
-:zero::five: plecak w którym znajdują się książki, które można odczytać <br/>
+:zero::four: możliwość interakcji z wybranymi istotami (NPC) <br/>
+:zero::five: panel w którym znajdują się książki, które można odczytać <br/>
 :zero::six: kreator postaci <br/>
-:zero::seven: waluta <br/>
+:zero::seven: walutę do wydania w księgarniach <br/>
 :zero::eight: rozwój postaci poprzez czytanie książek <br/>
-:zero::nine: minigra typu wieżowiec (quiz) <br/>
-:one::zero: minigra typu labirynt <br/>
-:one::one: minigra typu pinpin (podpięcie) <br/>
-:one::two: minigra typu puzzle <br/>
-:one::three: łączna liczba 40 minigier do rozegrania <br/>
-:one::four: łączna liczba 20 książek do sprawdzenia <br/>
+:zero::nine: minigrę typu wieżowiec (quiz) <br/>
+:one::zero: minigrę typu labirynt <br/>
+:one::one: minigrę typu pinpin (podpięcie) <br/>
+:one::two: minigrę typu puzzle <br/>
+:one::three: łączną liczbę 40 minigier do rozegrania <br/>
+:one::four: łączną liczbę 20 książek do sprawdzenia <br/>
 :one::five: ponad 40 utworów muzycznych do zbadania <br/>
 :one::six: podsumowania minigier oraz ekrany wczytywania z dawką programistycznej wiedzy <br/>
 :one::seven: zróżnicowany design poziomów minigier <br/>
-:one::eight: zróżnicowana oprawa muzyczna w każdej minigrze <br/> 
+:one::eight: zróżnicowaną oprawę muzyczną w każdej minigrze <br/> 
 :one::nine: ustawienia najważniejszych aspektów gry <br/>
 :two::zero: repetytywność (nie uda się rozegrać wszystkich minigier za jednym podejściem) <br/>
 :two::one: medale <br/>
-:two::two: nagrody za medale <br/>
+:two::two: nagrody za medale (w tym dodatkowa postać do odblokowania) <br/>
+:two::three: własną ikonę zapisu stanu gry <br/>
+:two::four: funkcję podglądu mapy świata Project Zero <br/>
+:two::five: minimapę w interfejsie gracza, która jest widoczna podczas podróżowania po świecie Project Zero <br/>
+:two::six: konsolę deweloperską do testowania aplikacji <br/>
 
 ### Kolory reprezentacyjne krain
 | Język | Kolor | Kodowa nazwa w Unity | Próbka |
@@ -122,21 +126,21 @@ Minigra labirynt to gra, w której zadaniem gracza jest unikanie bloków będąc
 | PHP | pomarańczowy | orange | ![#FFA500](https://placehold.it/25/FFA500/000000?text=+) |
 
 ### Klawiszologia 
-Uwaga! Klawiszologia może się różnić w zależności od tego w jaką mini-gierkę gramy bądź też czy znajdujemy się na mapie głównej <br/>
-W - przód <br/> 
-A - lewo <br/>
-S - dół <br/>
-D - prawo <br/>
-B - otwarcie plecaka w którym mamy książki (badz tez nie jak zadnej jeszcze nie kupilismy) <br/>
+Uwaga! Klawiszologia może się różnić w zależności od tego w jaką minigierkę gramy bądź też czy znajdujemy się na mapie głównej <br/>
+W - ruch w przód <br/> 
+A - ruch w lewo <br/>
+S - ruch w dół <br/>
+D - ruch w prawo <br/>
+B - otwarcie panelu w którym mamy książki <br/>
 F - interakcja z NPC (wejście w rozmowe) <br/>
 Spacja [przytrzymanie] - złapanie i przesuwanie puzzla/pinezki <br/>
 LPM (lewy przycisk myszy) - klikanie w sklepie -> kupowanie książek, otwieranie książek z inventory(plecaka) etc 
 
 ### Wykorzystane materiały
-W pliku Wykorzystane.txt umieszczone są odnośniki do rzeczy, które zostały wykorzystane w projekcie - głównie są to assety, muzyka i grafiki. Będą one uwiecznione w sekcji "Uznania" w grze. Dokument można znaleźć <a href="https://github.com/trolit/projectZero/blob/master/Wykorzystane.txt">pod tym adresem</a>. 
+W pliku CREDITS.md umieszczone są odnośniki do rzeczy, które zostały wykorzystane w projekcie - głównie są to assety, muzyka i grafiki. Będą one uwiecznione w sekcji "Uznania" w grze. Dokument można znaleźć <a href="https://github.com/trolit/projectZero/blob/master/CREDITS.md">pod tym adresem</a>. 
 
 ### Konfiguracja Edytora
-**Uwaga!** Aby uzyskać poprawny odczyt okna 'Game' należy utworzyć sobie profil rozdziałki **1920x1080**, ustawić go i zmniejszyć parametr Scale do minimum (t.j. **0,372**)
+**Uwaga!** Aby uzyskać poprawny odczyt okna 'Game' w środowisku Unity, należy utworzyć sobie profil rozdziałki **1920x1080**, ustawić go i zmniejszyć parametr Scale do minimum (t.j. **0,372**)
 
 ### Wersja narzędzia Unity
 2018.3.12f1 
@@ -145,10 +149,10 @@ W pliku Wykorzystane.txt umieszczone są odnośniki do rzeczy, które zostały w
 v 4.7.1 
 
 ### Zdjęcia z etapu projektowania
-Zdjęcia z etapu projektowania gry znaleźć można w <a href="https://github.com/trolit/projectZero/issues/33">tym</a> wątku. A <a href="https://github.com/trolit/projectZero/issues/29">pod tym</a> adresem dostępne są urywkowe zdjęcia ze scen mini-gier typu labirynt, puzzle i pinpin(przypinka).
+Zdjęcia z etapu projektowania gry znaleźć można w <a href="https://github.com/trolit/projectZero/issues/33">tym</a> wątku. A <a href="https://github.com/trolit/projectZero/issues/29">pod tym</a> adresem dostępne są 'urywkowe' zdjęcia ze scen mini-gier typu labirynt, puzzle i pinpin(przypinka).
 
 ### Wideo z etapu projektowania
-Adresy do klipów wideo umieszczonych w serwisie youtube z etapu projektowania gry dostępne są <a href="https://github.com/trolit/projectZero/issues/35">tutaj</a>.
+Adresy do klipów wideo, umieszczonych w serwisie youtube z etapu projektowania gry dostępne są <a href="https://github.com/trolit/projectZero/issues/35">tutaj</a>.
 
 ### Analiza strategii 
 Analizę odblokowań poziomów, wynagrodzeń, kar można znaleźć <a href="https://github.com/trolit/projectZero/issues/5">w tym</a> poście natomiast wycenę książek <a href="https://github.com/trolit/projectZero/issues/38">tutaj</a>.
@@ -160,4 +164,4 @@ Wszystkie użyte klucze w projekcie wraz z opisem dostępne są w <a href="https
 Zawartość podsumowań dla mini-gier typu labirynt/pinpin/puzzle znajdziesz <a href="https://github.com/trolit/projectZero/issues/7">tu</a>.
 
 ### Zrealizowane zadania
-Zadania jakie zostały zrealizowane w ramach projektu dostępne są <a href="https://github.com/trolit/projectZero/issues/2">tutaj</a>.
+Zadania jakie zostały zrealizowane w ramach projektu dostępne są <a href="https://github.com/trolit/projectZero/issues/2">w tym wątku</a>.
