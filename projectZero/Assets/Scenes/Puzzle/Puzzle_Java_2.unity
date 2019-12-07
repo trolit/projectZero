@@ -1467,11 +1467,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 178268022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43d508313edd4b0419427723b68eb67e, type: 3}
+  m_Script: {fileID: 11500000, guid: 849bad0b1507931459119235ee6363ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _command: 
-  _leaf: {fileID: 1772719572}
+  _padSuccessGameObject: {fileID: 1772719572}
+  _validBlockName: Block08
 --- !u!65 &178268024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1970,11 +1970,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 251220414}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8120768b85d4c8244b13df48e86a1aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 849bad0b1507931459119235ee6363ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _command: 
-  _leaf: {fileID: 1005444440}
+  _padSuccessGameObject: {fileID: 1005444440}
+  _validBlockName: Block05
 --- !u!65 &251220416
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2912,11 +2912,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 325565539}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c37fd4cec82a6f4fb09844c3b81e2fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 849bad0b1507931459119235ee6363ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _command: 
-  _leaf: {fileID: 876568272}
+  _padSuccessGameObject: {fileID: 876568272}
+  _validBlockName: Block06
 --- !u!65 &325565541
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3714,11 +3714,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 477824871}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f057dcb8fa1e7ae4f9294b103124510e, type: 3}
+  m_Script: {fileID: 11500000, guid: 849bad0b1507931459119235ee6363ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _command: 
-  _leaf: {fileID: 954511359}
+  _padSuccessGameObject: {fileID: 954511359}
+  _validBlockName: Block02
 --- !u!65 &477824873
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4797,11 +4797,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 576966087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f070090640ec8d248ab79ffd2b6e1bd1, type: 3}
+  m_Script: {fileID: 11500000, guid: 849bad0b1507931459119235ee6363ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _command: 
-  _leaf: {fileID: 684860339}
+  _padSuccessGameObject: {fileID: 684860339}
+  _validBlockName: Block04
 --- !u!65 &576966089
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8030,11 +8030,11 @@ GameObject:
   - component: {fileID: 1023038084}
   - component: {fileID: 1023038087}
   - component: {fileID: 1023038088}
-  - component: {fileID: 1023038089}
   - component: {fileID: 1023038091}
   - component: {fileID: 1023038092}
   - component: {fileID: 1023038093}
   - component: {fileID: 1023038090}
+  - component: {fileID: 1023038094}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8147,19 +8147,6 @@ MonoBehaviour:
   Distance: 182.4
   Angle: 0
   SmoothSpeed: 0.5
---- !u!114 &1023038089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023038083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b189fca35d29c464b833a8942134208a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _command: 
 --- !u!82 &1023038090
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8383,6 +8370,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _infoWindow: {fileID: 174159543}
+--- !u!114 &1023038094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023038083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f260061ab059a4f849805971687e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _puzzleAmount: 8
 --- !u!1001 &1024046049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12513,11 +12513,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1565869893}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43500819287d3584db15be4278d23f25, type: 3}
+  m_Script: {fileID: 11500000, guid: 849bad0b1507931459119235ee6363ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _command: 
-  _leaf: {fileID: 1401388647}
+  _padSuccessGameObject: {fileID: 1401388647}
+  _validBlockName: Block07
 --- !u!65 &1565869895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17367,11 +17367,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2014434017}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c24b613b35f31f468eac06dae5652a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 849bad0b1507931459119235ee6363ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _command: 
-  _leaf: {fileID: 1554914329}
+  _padSuccessGameObject: {fileID: 1554914329}
+  _validBlockName: Block03
 --- !u!65 &2014434019
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17783,11 +17783,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2076209304}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80b23662fa57f8f40b1b3665894c4df3, type: 3}
+  m_Script: {fileID: 11500000, guid: 849bad0b1507931459119235ee6363ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _command: 
-  _leaf: {fileID: 1580299449}
+  _padSuccessGameObject: {fileID: 1580299449}
+  _validBlockName: Block09
 --- !u!1001 &2077508578
 PrefabInstance:
   m_ObjectHideFlags: 0
