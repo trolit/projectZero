@@ -11,18 +11,18 @@
 
 Po pobraniu repozytorium Project Zero (gałąź master), uruchom środowisko Unity (użyj wersji 2018.3.12f1 (64-bit) o ile to możliwe). W panelu użytkownika wybierz przycisk Open
 
-<img src="https://github.com/trolit/projectZero/blob/storage/photos/howToCompile/howToCompile0.PNG" height="50"/>
+<img src="https://github.com/trolit/projectZero/blob/storage/photos/howToCompile/howToCompile0.PNG" height="250"/>
 
 Wskaż wypakowany z ```projectZero-master.zip``` katalog Project Zero i naciśnij przycisk 'Wybierz folder'.
 
-<img src="https://github.com/trolit/projectZero/blob/storage/photos/howToCompile/howToCompile1.PNG" height="50"/>
+<img src="https://github.com/trolit/projectZero/blob/storage/photos/howToCompile/howToCompile1.PNG" height="350"/>
 
 Rozpocznie się proces importowania projektu do Unity, który może chwilę potrwać. Wraz z zakończeniem importu projektu ukaże się narzędzie Unity z pustą sceną. Jeżeli chcesz zbudować projekt i uzyskać aplikację wybierz z menu File opcję Build Settings. 
 
-<img src="https://github.com/trolit/projectZero/blob/storage/photos/howToCompile/howToCompile2.png" height="50"/>
+<img src="https://github.com/trolit/projectZero/blob/storage/photos/howToCompile/howToCompile2.png" width="900"/>
 
 Ukaże Ci się panel w którym możesz zdecydować o szczegółach kompilacji. 
 
-<img src="https://github.com/trolit/projectZero/blob/storage/photos/howToCompile/howToCompile3.png" height="50"/>
+<img src="https://github.com/trolit/projectZero/blob/storage/photos/howToCompile/howToCompile3.png" height="550"/>
 
 Upewnij się, że platforma jest ustawiona na Windows, typ systemu - x86 (dopuszcza wtedy architekturę i 32 i 64 bity) oraz, że metoda kompresji jest ustawiona na LZ4HC. Kolejno, naciśnij jeden z dwóch przycisków umieszczonych przy dolnej krawędzi okna - Build lub Build And Run. W obu przypadkach zostaniesz poproszony o podanie katalogu w którym będzie budowany projekt. Jeżeli wybierzesz opcję Build And Run, aplikacja po udanej kompilacji zostanie automatycznie uruchomiona. W katalogu w którym miała zostać umieszczona aplikacja znajdziesz też plik wykonywalny ProjectZero.exe, którym możesz uruchomić grę. 
