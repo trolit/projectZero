@@ -2,6 +2,10 @@
 <a href="https://github.com/trolit/projectZero/blob/master/README_en.md"><img src="https://img.shields.io/badge/English-gray?color=0033B2&style=for-the-badge"/></a> &nbsp; <a href="https://github.com/trolit/projectZero"><img src="https://img.shields.io/badge/Polish-gray?color=D00C3D&style=for-the-badge"/></a>
 </p>
 
+<br/>
+<br/>
+<br/>
+
 <p align="center">
  <img src="https://github.com/trolit/projectZero/blob/storage/photos/front.jpg?raw=true" height="450">
 </p>
