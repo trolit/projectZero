@@ -34,7 +34,7 @@ Bezpieczeństwo instalatora zweryfikujesz w serwisie <br> <br>
  
 <p align="center">
 <a href="https://en.wikipedia.org/wiki/List_of_video_game_genres"><img src="https://img.shields.io/badge/Gatunek-Sandbox%20RPG,%20Edukacyjna-blue?color=66a103&style=for-the-badge" style="max-height: 300px;"></a>
-<a><img src="https://img.shields.io/badge/Obs%C5%82ugiwany%20j%C4%99zyk-polski-blue?color=66a103&style=for-the-badge" style="max-height: 300px;"></a>
+<a><img src="https://img.shields.io/badge/Obs%C5%82ugiwany%20j%C4%99zyk-polski-blue?color=66a103&style=for-the-badge" style="max-height: 300px;"></a> <br/>
 <a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Inicjacja%20projektu-16%20czerwca%202019-blue?color=5B5EA6&style=for-the-badge" style="max-height: 300px;"></a>
  <a href="https://www.microsoft.com/net"><img src="https://img.shields.io/badge/Zamkni%C4%99cie%20projektu-24%20listopada%202019-blue?color=5B5EA6&style=for-the-badge" style="max-height: 300px;"></a> <br/>
 <a href="https://www.techopedia.com/definition/32207/target-platform"><img src="https://img.shields.io/badge/Platforma-Win32/Win64-green?style=for-the-badge&color=blueviolet" style="max-height: 300px;"></a> 
