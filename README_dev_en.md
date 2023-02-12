@@ -9,26 +9,33 @@
 
 ## Documentation
 
+### Cloning Repository
+- Download GitHub Desktop: https://desktop.github.com/
+- Fork the repository.
+- Open GitHub Desktop and Clone repository.
+- View information on compiling the project via <a href="https://github.com/trolit/projectZero/blob/master/COMPILE_en.md">this link<a>
+- To make a pull request, changes can be made on a forked repository, or a new branch in the repo.
+
 ### Curiosities
-- time passed between start and end date(including free days), 162 days(5 months and 9 days), thats 44,38% of the 2019 year,
-- source lines of code equals +/- 6000 (value without empty lines),
-- Scripts dir contains 101 files,
-- 42 music tracks were used, to hear them all you would need 2 hours and 23 minutes,
-- the longest thing to do was evironment designing for each minigame level,
-- the most tiring work to do for us was projecting minigames with trees (especially for PHP lang),
-- adding developer console was the best idea to faster testing times,
-- prizes for medals, medals, ProjectZero map overview and additional character were not planned from the start,
-- we wanted C# land to be lived by humans but we did not find any interesting asset,
-- the most advanced script is NPCHandler,
-- most problems were with setting up Pickup script for Puzzle minigame but was edited and now it looks solid,
-- thanks to starting project early we managed to finish it in 100%,
-- project reached 45 discussions over GitHub, 3 of them were marked as bugs,
-- time to ring Project Zero map using the shortest path and fastest character(Slime Rabbit) - 1min 47sec,
-- time to ring all paths of Project Zero map with Slime Rabbit character - 4min 30sec,
-- project includes 92 graphics, 30 Unity assets,
-- HUD inspiraction was from TC: Rainbow Six Siege game,
-- playable version contains 52 scenes, project also contains additionat scenes for game cover,
-- we wanted to make backpack work like box in which books are stored but due to time limit we took lighter variant and created panel with all books.
+- Time passed between start and end date(including free days): 162 days(5 months and 9 days), thats 44,38% of the 2019 year
+- Source lines of code equals +/- 6000 (value without empty lines)
+- Scripts dir contains 101 files
+- 42 music tracks were used, to hear them all you would need 2 hours and 23 minutes
+- The longest thing to do was environment designing for each minigame level
+- The most tiring work to do for us was projecting minigames with trees (especially for PHP lang)
+- Adding developer console was the best idea to faster testing times
+- Prizes for medals, ProjectZero map overview and additional character were not planned from the start
+- We wanted C# land to be lived by humans, but we did not find any interesting asset
+- The most advanced script is NPCHandler
+- Most problems were with setting up Pickup script for Puzzle minigame but was edited and now it looks solid
+- Thanks to starting the project early, we managed to finish it
+- Project reached 45 discussions over GitHub, 3 of them were marked as bugs
+- Time to ring Project Zero map using the shortest path and fastest character(Slime Rabbit) - 1min 47sec
+- Time to ring all paths of Project Zero map with Slime Rabbit character - 4min 30sec
+- Project includes 92 graphics, 30 Unity assets
+- HUD inspiraction was from TC: Rainbow Six Siege game
+- Playable version contains 52 scenes, project also contains additionat scenes for game cover
+- We wanted to make backpack work like box in which books are stored but due to time limit, we took lighter variant and created panel with all books.
 
 ### Mechanic
 <p align="justify">
@@ -124,7 +131,7 @@ In maze minigame player must collect proper code fragments and evade bugs. Colle
 | HTML | magenta | magenta | ![#ff00ff](https://placehold.it/25/ff00ff/000000?text=+) |
 | PHP | orange | orange | ![#FFA500](https://placehold.it/25/FFA500/000000?text=+) |
 
-### Keylogic 
+### Controls
 Keys might differ depending on minigame that is played or current location <br/>
 W - forward <br/> 
 A - left <br/>
@@ -140,6 +147,8 @@ In CREDITS_en.md file you will find references to the elements that were used in
 
 ### Editor configuration
 **Warning!** To get correct view of 'Game' window in Unity, create profile with 1920x1080 resolution. Set it and then change Scale parameter to minimum assignable value.
+
+If using Unity Hub, the <a href="https://unity.com/releases/editor/archive">Unity download archive<a> has a direct link for installing the Unity version.
 
 ### Unity tool version
 2018.3.12f1 
